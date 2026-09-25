@@ -44,3 +44,5 @@ https://msk-maskarad-c02trzuis-mintallart-9640.vercel.app/
 Полный паспорт проекта, правила по портам и этапы дальнейшей разработки лежат в `PROJECT_PASSPORT.md`.
 
 Смысловая стратегия сайта, акцент на театрализованные праздники и будущие SEO-страницы описаны в `POSITIONING_AND_SEO_STRATEGY.md`.
+
+Публично найденные материалы и идеи из Instagram `@maskarad_teatr` собраны в `INSTAGRAM_CONTENT_NOTES.md`.

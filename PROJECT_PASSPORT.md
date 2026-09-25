@@ -54,6 +54,7 @@ http://localhost:4310
 - `vercel.json` — базовая настройка под Vercel.
 - `MIGRATION_PLAN.md` — карта переноса старого сайта и SEO-URL.
 - `POSITIONING_AND_SEO_STRATEGY.md` — смысловая стратегия сайта, акцент на театральность и SEO-развитие.
+- `INSTAGRAM_CONTENT_NOTES.md` — публично найденные материалы и идеи из Instagram `@maskarad_teatr`.
 - `README.md` — короткая инструкция по запуску и деплою.
 
 ## 5. Что уже сделано
@@ -79,6 +80,7 @@ http://localhost:4310
 - После обновления Next.js проверка `npm audit` показывала `0 vulnerabilities`.
 - Для проекта закреплен отдельный порт `4310`.
 - Зафиксирована новая смысловая стратегия: сайт должен продавать театрализованные праздники с режиссурой, сценариями и актерским подходом, а не обычную анимацию.
+- Создана рабочая выжимка публичных материалов из Instagram `@maskarad_teatr`.
 
 ## 6. Новая структура сайта
 
@@ -231,5 +233,6 @@ Vercel URL: https://msk-maskarad-c02trzuis-mintallart-9640.vercel.app/
 Главный документ проекта: PROJECT_PASSPORT.md
 Карта SEO-переноса: MIGRATION_PLAN.md
 Смысловая и SEO-стратегия: POSITIONING_AND_SEO_STRATEGY.md
+Instagram-заметки: INSTAGRAM_CONTENT_NOTES.md
 Нужно продолжать разработку с учетом уже добавленных редиректов и структуры.
 ```
