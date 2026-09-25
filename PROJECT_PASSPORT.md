@@ -14,6 +14,7 @@
 - UI: React, CSS без сторонней UI-библиотеки.
 - TypeScript: включен strict mode.
 - Публикация: Vercel.
+- Текущий Vercel preview/prod URL: https://msk-maskarad-c02trzuis-mintallart-9640.vercel.app/
 - Домен после публикации: `maskarad-teatr.ru`.
 
 ## 3. Важное правило по портам
@@ -72,6 +73,7 @@ http://localhost:4310
 - Добавлены SEO-метаданные, sitemap и robots.
 - Добавлены 301-редиректы со старых адресов на новые разделы.
 - Проект подготовлен к Vercel.
+- Проект опубликован на Vercel: https://msk-maskarad-c02trzuis-mintallart-9640.vercel.app/
 - Production-сборка `npm run build` успешно проходила.
 - После обновления Next.js проверка `npm audit` показывала `0 vulnerabilities`.
 - Для проекта закреплен отдельный порт `4310`.
@@ -213,6 +215,7 @@ http://localhost:4310
 Мы работаем над сайтом детского выездного театра «Маскарад».
 Папка проекта: /Users/avtormirov/Documents/Маскарад сайт
 Это отдельный Next.js-проект под Vercel, не Автозабота.
+Vercel URL: https://msk-maskarad-c02trzuis-mintallart-9640.vercel.app/
 Порт проекта: 4310. Не использовать 3000, 3001, 3002.
 Главный документ проекта: PROJECT_PASSPORT.md
 Карта SEO-переноса: MIGRATION_PLAN.md

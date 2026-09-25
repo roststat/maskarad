@@ -2,6 +2,8 @@
 
 Первая современная версия сайта детского выездного театра «Маскарад» под Vercel.
 
+Vercel URL: https://msk-maskarad-c02trzuis-mintallart-9640.vercel.app/
+
 ## Локальная работа
 
 ```bash
@@ -25,13 +27,17 @@ npm run build
 
 ## Публикация на Vercel
 
-1. Создать git-репозиторий из этой папки.
-2. Загрузить проект в GitHub, GitLab или Bitbucket.
-3. В Vercel выбрать Import Project.
-4. Framework Preset: Next.js.
-5. Build Command: `npm run build`.
-6. После проверки подключить домен `maskarad-teatr.ru`.
-7. Убедиться, что старые URL отдают 301-редиректы на новые разделы.
+Проект уже опубликован на Vercel:
+
+```text
+https://msk-maskarad-c02trzuis-mintallart-9640.vercel.app/
+```
+
+Следующие шаги:
+
+1. Проверить сайт на Vercel URL.
+2. После проверки подключить домен `maskarad-teatr.ru`.
+3. Убедиться, что старые URL отдают 301-редиректы на новые разделы.
 
 Карта переноса старого сайта и список важных SEO-страниц лежат в `MIGRATION_PLAN.md`.
 
