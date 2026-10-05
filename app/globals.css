@@ -88,6 +88,54 @@ main {
   display: block;
 }
 
+.palette-test {
+  min-height: 100vh;
+  background: #f7f3ed;
+  color: #142b50;
+}
+
+.palette-hero {
+  position: relative;
+  overflow: hidden;
+  min-height: 640px;
+  display: grid;
+  place-items: center;
+  padding: 72px 24px;
+  background: radial-gradient(circle at 50% 0%, #347fca 0, #13538d 42%, #092d5c 100%);
+}
+
+.palette-content {
+  position: relative;
+  z-index: 1;
+  max-width: 760px;
+  text-align: center;
+  color: #fff;
+}
+
+.palette-kicker { color: #f4c95d; font-weight: 800; letter-spacing: .1em; text-transform: uppercase; }
+.palette-logo { width: min(520px, 100%); height: auto; margin: 28px auto 20px; }
+.palette-content h1 { max-width: 700px; margin: 0 auto 18px; font-size: clamp(2rem, 5vw, 4.5rem); line-height: .98; }
+.palette-content p { max-width: 630px; margin: 0 auto; font-size: 1.1rem; line-height: 1.65; color: #e6f3ff; }
+.palette-actions { display: flex; justify-content: center; flex-wrap: wrap; gap: 12px; margin-top: 30px; }
+.palette-button { border-radius: 999px; padding: 14px 22px; font-weight: 800; text-decoration: none; }
+.palette-button-main { background: #d71920; color: #fff; }
+.palette-button-light { background: #fff; color: #123d72; }
+.palette-curtain { position: absolute; top: -45px; width: 25vw; min-width: 180px; height: 130%; background: linear-gradient(90deg, #6e0c1d, #d71920 43%, #74091c); box-shadow: inset -18px 0 22px #3b0611; transform: skewY(-8deg); }
+.palette-curtain-left { left: -12vw; }
+.palette-curtain-right { right: -12vw; transform: skewY(8deg) scaleX(-1); }
+.palette-notes { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px; max-width: 1060px; margin: -54px auto 0; padding: 0 24px 72px; position: relative; z-index: 2; }
+.palette-notes > div { background: #fff; border-radius: 20px; padding: 28px; box-shadow: 0 16px 48px #17365d1c; }
+.palette-notes strong { display: block; margin-top: 12px; font-size: 1.1rem; }
+.palette-notes p { margin: 8px 0 0; color: #51657c; line-height: 1.55; }
+.palette-dot { display: block; width: 34px; height: 34px; border-radius: 50%; }
+.palette-blue { background: #13538d; }.palette-red { background: #d71920; }.palette-gold { background: #f4c95d; }
+
+@media (max-width: 700px) {
+  .palette-hero { min-height: 570px; padding: 60px 22px; }
+  .palette-curtain { width: 33vw; opacity: .78; }
+  .palette-notes { grid-template-columns: 1fr; margin-top: -28px; padding-bottom: 44px; }
+}
+
 .brand strong {
   font-family: Georgia, serif;
   font-size: 1.25rem;
