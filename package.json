@@ -7,7 +7,13 @@
     "dev:maskarad": "next dev --port 4310",
     "build": "next build",
     "start": "next start --port 4310",
-    "lint": "next lint"
+    "seo:prelaunch": "node scripts/seo/prelaunch-check.mjs",
+    "seo:old-url-coverage": "node scripts/migration/check-url-coverage.mjs",
+    "seo:migration-relevance": "node scripts/migration/check-migration-relevance.mjs",
+    "seo:redirect-audit": "node scripts/migration/check-redirect-chains.mjs",
+    "seo:image-alt": "node scripts/seo/check-image-alt.mjs",
+    "seo:predeploy": "npm run seo:old-url-coverage && npm run seo:redirect-audit && npm run seo:image-alt && npm run lint && npm run build",
+    "lint": "tsc --noEmit"
   },
   "dependencies": {
     "next": "^16.3.5",

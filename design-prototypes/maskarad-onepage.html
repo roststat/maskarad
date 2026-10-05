@@ -1,0 +1,786 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Маскарад — one-page прототип</title>
+    <style>
+      :root {
+        --ink: #26141c;
+        --muted: #78656c;
+        --wine: #681c3c;
+        --plum: #331020;
+        --gold: #e8b84e;
+        --paper: #fff8ed;
+        --milk: #fffdf8;
+        --rose: #f7e5eb;
+        --line: rgba(104, 28, 60, 0.16);
+        --shadow: 0 26px 70px rgba(43, 13, 26, 0.16);
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        margin: 0;
+        color: var(--ink);
+        background:
+          radial-gradient(circle at 12% 10%, rgba(232, 184, 78, 0.22), transparent 30rem),
+          linear-gradient(135deg, #fff8ed 0%, #fffdf8 42%, #f7e5eb 100%);
+        font-family:
+          Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      }
+
+      a {
+        color: inherit;
+        text-decoration: none;
+      }
+
+      .shell {
+        min-height: 100vh;
+        padding: 1rem;
+      }
+
+      .app {
+        display: grid;
+        grid-template-columns: 18rem minmax(0, 1fr);
+        min-height: calc(100vh - 2rem);
+        border: 1px solid var(--line);
+        border-radius: 1.4rem;
+        overflow: hidden;
+        background: rgba(255, 253, 248, 0.72);
+        box-shadow: var(--shadow);
+      }
+
+      .rail {
+        display: flex;
+        flex-direction: column;
+        gap: 1.2rem;
+        padding: 1.1rem;
+        color: #fff;
+        background:
+          linear-gradient(180deg, rgba(51, 16, 32, 0.95), rgba(104, 28, 60, 0.94)),
+          var(--wine);
+      }
+
+      .brand {
+        display: flex;
+        align-items: center;
+        gap: 0.75rem;
+      }
+
+      .mark {
+        display: grid;
+        width: 3rem;
+        height: 3rem;
+        place-items: center;
+        border: 1px solid rgba(255, 255, 255, 0.25);
+        border-radius: 0.9rem;
+        background: rgba(255, 255, 255, 0.1);
+        font-family: Georgia, serif;
+        font-size: 1.55rem;
+        font-weight: 800;
+      }
+
+      .brand strong,
+      .brand span {
+        display: block;
+      }
+
+      .brand strong {
+        font-family: Georgia, serif;
+        font-size: 1.35rem;
+      }
+
+      .brand span {
+        color: rgba(255, 255, 255, 0.72);
+        font-size: 0.83rem;
+      }
+
+      .rail-note {
+        margin: 0;
+        color: rgba(255, 255, 255, 0.72);
+        line-height: 1.55;
+      }
+
+      .nav {
+        display: grid;
+        gap: 0.35rem;
+        margin-top: auto;
+      }
+
+      .nav a {
+        display: flex;
+        justify-content: space-between;
+        gap: 0.8rem;
+        padding: 0.75rem 0.85rem;
+        border: 1px solid rgba(255, 255, 255, 0.12);
+        border-radius: 0.85rem;
+        color: rgba(255, 255, 255, 0.82);
+      }
+
+      .nav a:hover {
+        color: #fff;
+        background: rgba(255, 255, 255, 0.1);
+      }
+
+      .phone {
+        display: grid;
+        gap: 0.2rem;
+        margin-top: 0.7rem;
+        padding: 0.9rem;
+        border-radius: 1rem;
+        color: var(--plum);
+        background: var(--gold);
+        font-weight: 800;
+      }
+
+      .phone small {
+        color: rgba(38, 20, 28, 0.66);
+        font-weight: 700;
+      }
+
+      .stage {
+        display: grid;
+        grid-template-rows: auto minmax(0, 1fr);
+        min-width: 0;
+      }
+
+      .topbar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1rem;
+        padding: 1rem 1.2rem;
+        border-bottom: 1px solid var(--line);
+        background: rgba(255, 253, 248, 0.74);
+        backdrop-filter: blur(18px);
+      }
+
+      .topbar strong {
+        font-size: 0.92rem;
+      }
+
+      .topbar span {
+        color: var(--muted);
+        font-size: 0.9rem;
+      }
+
+      .topbar a {
+        min-width: max-content;
+        border-radius: 999px;
+        padding: 0.72rem 1rem;
+        color: #fff;
+        background: var(--wine);
+        font-weight: 800;
+      }
+
+      .sections {
+        display: grid;
+        grid-auto-columns: minmax(min(100%, 70rem), 100%);
+        grid-auto-flow: column;
+        min-width: 0;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+      }
+
+      .panel {
+        display: grid;
+        min-height: calc(100vh - 6.4rem);
+        padding: clamp(1rem, 3vw, 2rem);
+        scroll-snap-align: start;
+      }
+
+      .dashboard {
+        grid-template-columns: minmax(0, 0.9fr) minmax(26rem, 1.1fr);
+        gap: 1.2rem;
+        align-items: stretch;
+      }
+
+      .hero-card,
+      .quick-card,
+      .wide-card,
+      .compact-card {
+        border: 1px solid var(--line);
+        border-radius: 1.2rem;
+        background: rgba(255, 255, 255, 0.72);
+        box-shadow: 0 14px 42px rgba(43, 13, 26, 0.08);
+      }
+
+      .hero-card {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        min-height: 100%;
+        padding: clamp(1.2rem, 3vw, 2rem);
+        background:
+          linear-gradient(180deg, rgba(255, 255, 255, 0.78), rgba(255, 248, 237, 0.9)),
+          url("https://maskarad-teatr.ru/files/image/mainart1.jpg") center bottom / cover;
+        background-blend-mode: screen;
+      }
+
+      .eyebrow {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.55rem;
+        color: var(--wine);
+        font-size: 0.78rem;
+        font-weight: 900;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+      }
+
+      .eyebrow::before {
+        width: 2rem;
+        height: 2px;
+        background: var(--gold);
+        content: "";
+      }
+
+      h1,
+      h2,
+      h3 {
+        margin: 0;
+        font-family: Georgia, "Times New Roman", serif;
+        letter-spacing: 0;
+      }
+
+      h1 {
+        max-width: 11ch;
+        margin-top: 0.8rem;
+        font-size: clamp(3.2rem, 7vw, 6.8rem);
+        line-height: 0.92;
+      }
+
+      h2 {
+        font-size: clamp(2rem, 4vw, 3.4rem);
+        line-height: 1;
+      }
+
+      h3 {
+        font-size: 1.42rem;
+      }
+
+      p {
+        color: var(--muted);
+        line-height: 1.65;
+      }
+
+      .lead {
+        max-width: 42rem;
+        font-size: 1.08rem;
+      }
+
+      .hero-actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.65rem;
+        margin-top: 1.2rem;
+      }
+
+      .button {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 3rem;
+        border-radius: 999px;
+        padding: 0.85rem 1.08rem;
+        font-weight: 850;
+      }
+
+      .primary {
+        color: #fff;
+        background: var(--wine);
+      }
+
+      .ghost {
+        border: 1px solid var(--line);
+        color: var(--wine);
+        background: rgba(255, 255, 255, 0.7);
+      }
+
+      .hero-bottom {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 0.6rem;
+        margin-top: 3rem;
+      }
+
+      .mini-stat {
+        padding: 0.85rem;
+        border-radius: 0.9rem;
+        background: rgba(255, 253, 248, 0.82);
+      }
+
+      .mini-stat strong,
+      .mini-stat span {
+        display: block;
+      }
+
+      .mini-stat strong {
+        color: var(--wine);
+        font-family: Georgia, serif;
+        font-size: 1.5rem;
+      }
+
+      .mini-stat span {
+        color: var(--muted);
+        font-size: 0.88rem;
+        line-height: 1.35;
+      }
+
+      .quick-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 0.8rem;
+      }
+
+      .quick-card {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        min-height: 12rem;
+        padding: 1.1rem;
+      }
+
+      .quick-card.featured {
+        grid-column: 1 / -1;
+        min-height: 13rem;
+        color: #fff;
+        background:
+          linear-gradient(135deg, rgba(51, 16, 32, 0.92), rgba(104, 28, 60, 0.88)),
+          url("https://maskarad-teatr.ru/files/image/mainart2.jpg") center / cover;
+      }
+
+      .quick-card.featured p,
+      .quick-card.featured small {
+        color: rgba(255, 255, 255, 0.78);
+      }
+
+      .quick-card small {
+        color: var(--muted);
+        font-weight: 850;
+      }
+
+      .quick-card p {
+        margin-bottom: 0;
+      }
+
+      .page-grid {
+        display: grid;
+        grid-template-columns: 0.72fr 1fr;
+        gap: 1rem;
+        align-items: stretch;
+      }
+
+      .wide-card {
+        padding: clamp(1.2rem, 3vw, 2rem);
+      }
+
+      .world-map {
+        display: grid;
+        gap: 0.75rem;
+      }
+
+      .world-row {
+        display: grid;
+        grid-template-columns: 8rem minmax(0, 1fr);
+        gap: 1rem;
+        align-items: start;
+        padding: 0.9rem;
+        border: 1px solid var(--line);
+        border-radius: 0.9rem;
+        background: rgba(255, 255, 255, 0.65);
+      }
+
+      .world-row strong {
+        color: var(--wine);
+      }
+
+      .world-row span {
+        color: var(--muted);
+      }
+
+      .card-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 0.85rem;
+      }
+
+      .compact-card {
+        min-height: 10rem;
+        padding: 1rem;
+      }
+
+      .compact-card p {
+        margin-bottom: 0;
+      }
+
+      .chips {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.55rem;
+        margin-top: 1rem;
+      }
+
+      .chip {
+        border: 1px solid var(--line);
+        border-radius: 999px;
+        padding: 0.62rem 0.8rem;
+        color: var(--wine);
+        background: #fff;
+        font-weight: 800;
+      }
+
+      .photo-wall {
+        display: grid;
+        grid-template-columns: 1.2fr 0.8fr;
+        gap: 0.8rem;
+      }
+
+      .photo-wall img {
+        width: 100%;
+        min-height: 15rem;
+        height: 100%;
+        border-radius: 1rem;
+        object-fit: cover;
+        box-shadow: 0 14px 42px rgba(43, 13, 26, 0.12);
+      }
+
+      .photo-stack {
+        display: grid;
+        gap: 0.8rem;
+      }
+
+      .form {
+        display: grid;
+        gap: 0.75rem;
+        margin-top: 1rem;
+      }
+
+      .form label {
+        display: grid;
+        gap: 0.35rem;
+        color: var(--muted);
+        font-size: 0.92rem;
+        font-weight: 850;
+      }
+
+      .form input,
+      .form textarea {
+        width: 100%;
+        border: 1px solid var(--line);
+        border-radius: 0.9rem;
+        padding: 0.9rem 1rem;
+        color: var(--ink);
+        background: var(--paper);
+        font: inherit;
+      }
+
+      .form textarea {
+        min-height: 7rem;
+      }
+
+      .hint {
+        color: var(--muted);
+        font-size: 0.9rem;
+      }
+
+      @media (max-width: 1060px) {
+        .app {
+          grid-template-columns: 1fr;
+        }
+
+        .rail {
+          position: sticky;
+          top: 0;
+          z-index: 4;
+          min-height: auto;
+        }
+
+        .nav {
+          grid-template-columns: repeat(4, minmax(0, 1fr));
+          margin-top: 0;
+        }
+
+        .dashboard,
+        .page-grid,
+        .photo-wall {
+          grid-template-columns: 1fr;
+        }
+      }
+
+      @media (max-width: 720px) {
+        .shell {
+          padding: 0;
+        }
+
+        .app {
+          min-height: 100vh;
+          border: 0;
+          border-radius: 0;
+        }
+
+        .topbar {
+          align-items: flex-start;
+          flex-direction: column;
+        }
+
+        .sections {
+          display: block;
+          overflow-x: visible;
+        }
+
+        .panel {
+          min-height: auto;
+        }
+
+        .quick-grid,
+        .hero-bottom,
+        .card-grid,
+        .nav {
+          grid-template-columns: 1fr;
+        }
+
+        h1 {
+          font-size: clamp(3rem, 17vw, 4.6rem);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="shell">
+      <div class="app">
+        <aside class="rail">
+          <div class="brand">
+            <div class="mark">М</div>
+            <div>
+              <strong>Маскарад</strong>
+              <span>выездной детский театр</span>
+            </div>
+          </div>
+          <p class="rail-note">
+            Театрализованные детские события как отдельный мир: сценарий, режиссура, актеры,
+            декорации и программа под площадку.
+          </p>
+          <nav class="nav" aria-label="Быстрые разделы">
+            <a href="#home">Пульт <span>01</span></a>
+            <a href="#worlds">Миры <span>02</span></a>
+            <a href="#newyear">Новый год <span>03</span></a>
+            <a href="#proof">Доверие <span>04</span></a>
+            <a href="#request">Заявка <span>05</span></a>
+          </nav>
+          <a class="phone" href="tel:+79951219467">
+            +79951219467
+            <small>обсудить дату и площадку</small>
+          </a>
+        </aside>
+
+        <main class="stage">
+          <div class="topbar">
+            <div>
+              <strong>One-page concept</strong>
+              <span>все ключевые смыслы на одном рабочем экране со скроллом</span>
+            </div>
+            <a href="#request">Оставить заявку</a>
+          </div>
+
+          <div class="sections">
+            <section class="panel dashboard" id="home">
+              <div class="hero-card">
+                <div>
+                  <span class="eyebrow">Не аниматоры</span>
+                  <h1>Праздник как спектакль</h1>
+                  <p class="lead">
+                    Создаем театрализованные детские события: с драматургией, режиссурой, актерами,
+                    интерактивом и программой под возраст, площадку и задачу заказчика.
+                  </p>
+                  <div class="hero-actions">
+                    <a class="button primary" href="#newyear">Новогодний корпоратив</a>
+                    <a class="button ghost" href="#worlds">Выбрать тему</a>
+                  </div>
+                </div>
+                <div class="hero-bottom">
+                  <div class="mini-stat">
+                    <strong>театр</strong>
+                    <span>актеры, сцены, персонажи</span>
+                  </div>
+                  <div class="mini-stat">
+                    <strong>сценарий</strong>
+                    <span>история под событие</span>
+                  </div>
+                  <div class="mini-stat">
+                    <strong>выезд</strong>
+                    <span>дом, офис, школа, зал</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="quick-grid">
+                <a class="quick-card featured" href="#newyear">
+                  <small>Для компаний</small>
+                  <div>
+                    <h3>Новогодняя елка для детей сотрудников</h3>
+                    <p>Театральная программа под офис, зал, ресторан, ДК или лофт.</p>
+                  </div>
+                </a>
+                <a class="quick-card" href="#worlds">
+                  <small>Семьи</small>
+                  <h3>День рождения</h3>
+                  <p>Именинник становится главным героем истории.</p>
+                </a>
+                <a class="quick-card" href="#worlds">
+                  <small>Сады и школы</small>
+                  <h3>Спектакли</h3>
+                  <p>Выездная постановка с участием детей.</p>
+                </a>
+                <a class="quick-card" href="#proof">
+                  <small>Дополнить</small>
+                  <h3>Шоу и мастер-классы</h3>
+                  <p>Аквагрим, световое рисование, фокусы, съемка, оформление.</p>
+                </a>
+                <a class="quick-card" href="#request">
+                  <small>Быстрый старт</small>
+                  <h3>Подобрать программу</h3>
+                  <p>Дата, возраст, площадка — и мы собираем сценарий.</p>
+                </a>
+              </div>
+            </section>
+
+            <section class="panel page-grid" id="worlds">
+              <article class="wide-card">
+                <span class="eyebrow">Выберите мир</span>
+                <h2>У каждой программы есть тема, но каждый праздник собирается заново</h2>
+                <p>
+                  Мы не продаем одинаковый набор конкурсов. Тема становится основой сценария:
+                  кто герои, как дети входят в историю, где кульминация, какой финал и как площадка
+                  помогает сказке работать.
+                </p>
+                <div class="chips">
+                  <span class="chip">Золушка</span>
+                  <span class="chip">Алиса</span>
+                  <span class="chip">Пираты</span>
+                  <span class="chip">Мэри Поппинс</span>
+                  <span class="chip">Новогодняя сказка</span>
+                  <span class="chip">История игрушек</span>
+                </div>
+              </article>
+              <div class="world-map">
+                <div class="world-row">
+                  <strong>Сюжет</strong>
+                  <span>Что происходит с детьми, какая цель у героев, чем заканчивается история.</span>
+                </div>
+                <div class="world-row">
+                  <strong>Режиссура</strong>
+                  <span>Темп, входы актеров, музыка, интерактив и внимание к возрасту детей.</span>
+                </div>
+                <div class="world-row">
+                  <strong>Площадка</strong>
+                  <span>Офис, ресторан, школа, сад, лофт или дом — сценарий подстраивается под место.</span>
+                </div>
+                <div class="world-row">
+                  <strong>Финал</strong>
+                  <span>Подарки, фото, поздравление, общий танец или театральная развязка.</span>
+                </div>
+              </div>
+            </section>
+
+            <section class="panel page-grid" id="newyear">
+              <article class="wide-card">
+                <span class="eyebrow">HR и event</span>
+                <h2>Новогодний праздник как событие для семей сотрудников</h2>
+                <p>
+                  Корпоративная елка может быть не очередью к Деду Морозу, а цельной театральной
+                  историей. Мы собираем сценарий под компанию, возраст детей, площадку, тайминг и
+                  дополнительные зоны.
+                </p>
+                <div class="hero-actions">
+                  <a class="button primary" href="#request">Обсудить корпоратив</a>
+                  <a class="button ghost" href="tel:+79951219467">Позвонить</a>
+                </div>
+              </article>
+              <div class="card-grid">
+                <article class="compact-card">
+                  <h3>Сценарий</h3>
+                  <p>Дед Мороз, Снегурочка, герои, интерактив и сюжет под возраст детей.</p>
+                </article>
+                <article class="compact-card">
+                  <h3>Площадка</h3>
+                  <p>Офис, ресторан, зал, ДК, школа, лофт или загородное пространство.</p>
+                </article>
+                <article class="compact-card">
+                  <h3>Зоны</h3>
+                  <p>Мастер-классы, фото, сладкий стол, подарки, грим-бар, шоу.</p>
+                </article>
+                <article class="compact-card">
+                  <h3>Согласование</h3>
+                  <p>Понятная структура для HR: тайминг, состав, требования и сценарный план.</p>
+                </article>
+              </div>
+            </section>
+
+            <section class="panel page-grid" id="proof">
+              <div class="photo-wall">
+                <img src="https://maskarad-teatr.ru/files/image/mainart2.jpg" alt="Актеры театра Маскарад" />
+                <div class="photo-stack">
+                  <img src="https://maskarad-teatr.ru/templates/images/photo2.jpg" alt="Детский праздник" />
+                  <img src="https://maskarad-teatr.ru/templates/images/photo3.jpg" alt="Детский спектакль" />
+                </div>
+              </div>
+              <article class="wide-card">
+                <span class="eyebrow">Доверие</span>
+                <h2>На сайте должны работать не обещания, а доказательства</h2>
+                <p>
+                  В финальной версии сюда войдут реальные фотографии, отзывы родителей, пресса,
+                  корпоративные клиенты и ссылки на отдельные SEO-страницы. Старые страницы не теряем:
+                  лучшие превращаем в полноценные посадочные.
+                </p>
+                <div class="chips">
+                  <span class="chip">отзывы</span>
+                  <span class="chip">пресса</span>
+                  <span class="chip">кейсы</span>
+                  <span class="chip">фото</span>
+                  <span class="chip">SEO-страницы</span>
+                </div>
+              </article>
+            </section>
+
+            <section class="panel page-grid" id="request">
+              <article class="wide-card">
+                <span class="eyebrow">Заявка</span>
+                <h2>Начинаем с короткого брифа, а не с прайса в пустоту</h2>
+                <p>
+                  Для театрализованной программы важны возраст детей, площадка, дата, количество
+                  гостей и желаемая тема. После этого можно предложить сценарий и формат.
+                </p>
+                <p class="hint">Телефон для всех материалов: +79951219467</p>
+              </article>
+              <article class="wide-card">
+                <form class="form">
+                  <label>
+                    Имя
+                    <input placeholder="Как к вам обращаться" />
+                  </label>
+                  <label>
+                    Телефон
+                    <input placeholder="+79951219467" />
+                  </label>
+                  <label>
+                    Что планируете
+                    <textarea placeholder="Новогодний корпоратив, день рождения, спектакль в школе..." ></textarea>
+                  </label>
+                  <a class="button primary" href="tel:+79951219467">Отправить заявку</a>
+                </form>
+              </article>
+            </section>
+          </div>
+        </main>
+      </div>
+    </div>
+  </body>
+</html>

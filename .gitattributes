@@ -1,0 +1,2 @@
+# Архивная CSV-инвентаризация сохраняется в исходном виде: пробелы в полях значимы.
+development-docs/reports/old-site-inventory/*.csv -whitespace

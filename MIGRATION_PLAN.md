@@ -1,5 +1,19 @@
 # Карта переноса сайта maskarad-teatr.ru
 
+## Принцип миграции
+
+Это не копирование старого сайта один в один, а SEO-миграция: сохранить поисковую ценность старых URL,
+забрать полезный контент, убрать устаревшее и собрать новую структуру вокруг сильных посадочных страниц.
+
+## Что желательно получить от владельца старого сайта
+
+- Доступ к хостингу/серверу старого сайта или архив файлов.
+- Если есть CMS/база — доступ к админке или дамп базы.
+- Папки с фото, видео и документами.
+- `sitemap.xml`, `robots.txt`, `.htaccess`, список старых редиректов.
+- Доступ к домену/DNS для финального переезда.
+- По возможности — Яндекс.Метрика, Яндекс.Вебмастер, Google Search Console.
+
 ## Что проверено
 
 - Текущая папка была пустой и не являлась git-репозиторием.
@@ -38,20 +52,41 @@
 
 ## SEO-страницы, которые важно сохранить через URL или редиректы
 
-При первой публикации достаточно 301-редиректов на новые разделы. На следующем этапе лучше сделать отдельные посадочные страницы для самых ценных запросов:
+При первой публикации достаточно 301-редиректов на новые разделы. На следующем этапе лучше сделать отдельные посадочные страницы для самых ценных запросов.
 
-- `/detskie-prazdniki/detskii-den-rozhdeniya.html` — день рождения ребенка.
-- `/detskie-prazdniki/detskii-sad-prazdnik.html` — праздники в детском саду.
-- `/detskie-prazdniki/shkolnye-prazdniki.html` — праздники в школе.
-- `/detskie-prazdniki/vypusknoi/` — выпускные.
-- `/detskie-prazdniki/detskii-novogodnii-prazdnik.html` — новогодний праздник.
-- `/detskii-prazdnik/zolushka.html` — спектакль «Золушка».
-- `/detskii-prazdnik/alisa.html` — спектакль «Алиса в стране чудес».
-- `/detskii-prazdnik/peppi-dlinnii-chulok.html` — спектакль «Пеппи Длинный Чулок».
-- `/detskii-prazdnik/piraty-karibskogo-morya.html` — спектакль «Пираты карибского моря».
-- `/detskie-uslugi/shou-mylnyh-puzyrei.html` — шоу мыльных пузырей.
-- `/detskie-uslugi/akvagrim.html` — аквагрим.
-- `/detskie-uslugi/master-klassy.html` — мастер-классы.
+Уже вынесены в отдельные страницы:
+
+- `/detskie-prazdniki/detskii-novogodnii-prazdnik.html` → `/prazdniki/korporativnyy-novogodniy-prazdnik`
+- `/detskie-prazdniki/detskii-den-rozhdeniya.html` → `/prazdniki/detskiy-den-rozhdeniya`
+- `/detskii-prazdnik/zolushka.html` → `/spektakli/zolushka`
+- `/detskii-prazdnik/alisa.html` → `/spektakli/alisa-v-strane-chudes`
+- `/detskii-prazdnik/peppi-dlinnii-chulok.html` → `/spektakli/peppi-dlinnyy-chulok`
+- `/detskii-prazdnik/piraty-karibskogo-morya.html` → `/spektakli/piraty-karibskogo-morya`
+- `/detskie-uslugi/akvagrim.html` → `/uslugi/akvagrim`
+- `/detskie-uslugi/shou-mylnyh-puzyrei.html` → `/uslugi/shou-mylnyh-puzyrey`
+- `/detskie-uslugi/master-klassy.html` → `/uslugi/master-klassy`
+- `/detskie-prazdniki/detskii-sad-prazdnik.html` → `/prazdniki/detskiy-sad`
+- `/detskie-prazdniki/shkolnye-prazdniki.html` → `/prazdniki/shkolnyy-prazdnik`
+- `/detskie-prazdniki/vypusknoi/` → `/prazdniki/vypusknoy`
+- `/detskie-prazdniki/vypusknoi/index.html` → `/prazdniki/vypusknoy`
+- `/detskie-prazdniki/vypusknoi/detskii-sad.html` → `/prazdniki/vypusknoy`
+- `/detskie-prazdniki/vypusknoi/mladsheklassniki.html` → `/prazdniki/vypusknoy`
+- `/detskie-prazdniki/vypusknoi/starsheklassniki.html` → `/prazdniki/vypusknoy`
+
+Следующие кандидаты:
+
+- точные спектакли из `/teatr/spektakl/*` и `/detskii-prazdnik/*`, которые сейчас уходят в общий `/spektakli`;
+- сильные услуги из `/detskie-uslugi/*`, которые сейчас уходят в общий `/uslugi`;
+- сценарии из `/scenarii/*`: решить, что объединять в праздники, а что не переносить отдельными страницами.
+
+## Рабочий процесс для каждой старой страницы
+
+- Собрать старый URL, title, description, H1, основные тексты, изображения и внутренние ссылки.
+- Отметить актуальность услуги, спектакля, цены, телефона, соцсетей и фото.
+- Решить судьбу страницы: отдельная посадочная, объединение в раздел, частичный перенос, 301-редирект или исключение.
+- Переписать текст под новую стратегию: театрализованный праздник, режиссура, сценарий, актеры, интерактив.
+- Добавить FAQ, CTA, внутренние ссылки и уникальные метаданные.
+- Настроить `старый URL → новый URL`, проверить редирект и sitemap.
 
 ## Подготовка к Vercel
 
