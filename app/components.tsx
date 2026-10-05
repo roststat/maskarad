@@ -10,7 +10,15 @@ export function Header() {
     <>
       <header className="site-header">
         <Link className="brand" href="/" aria-label="Маскарад, на главную">
-          <span className="brand-mark">М</span>
+          <Image
+            className="brand-mark-image"
+            src="/images/legacy/maskarad-mask-transparent.png"
+            alt=""
+            width={1282}
+            height={1227}
+            sizes="43px"
+            priority
+          />
           <span>
             <strong>Маскарад</strong>
             <small>детский выездной театр</small>
