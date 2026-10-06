@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { createContext, FormEvent, ReactNode, useCallback, useContext, useEffect, useRef, useState } from "react";
+import { createContext, ReactNode, useCallback, useContext, useEffect, useRef, useState } from "react";
 import { createPortal } from "react-dom";
 import type { TDocumentDefinitions } from "pdfmake/interfaces";
 
@@ -68,10 +68,7 @@ export function PartyAssistantWidget() {
 function PartyAssistantDialog({ open, onClose }: { open: boolean; onClose: () => void }) {
   const [wish, setWish] = useState("");
   const [ready, setReady] = useState(false);
-  const [showContact, setShowContact] = useState(false);
-  const [sent, setSent] = useState(false);
   const [busy, setBusy] = useState(false);
-  const [sending, setSending] = useState(false);
   const [status, setStatus] = useState("");
   const textareaRef = useRef<HTMLTextAreaElement>(null);
 
@@ -84,7 +81,6 @@ function PartyAssistantDialog({ open, onClose }: { open: boolean; onClose: () =>
 
     const onKeyDown = (event: KeyboardEvent) => {
       if (event.key === "Escape") {
-        setShowContact(false);
         setStatus("");
         onClose();
       }
@@ -99,9 +95,13 @@ function PartyAssistantDialog({ open, onClose }: { open: boolean; onClose: () =>
   }, [open, onClose]);
 
   function close() {
-    setShowContact(false);
     setStatus("");
     onClose();
+  }
+
+  function goToApplication() {
+    close();
+    window.requestAnimationFrame(() => document.getElementById("zayavka")?.scrollIntoView({ behavior: "smooth", block: "start" }));
   }
 
   function dictate() {
@@ -117,37 +117,19 @@ function PartyAssistantDialog({ open, onClose }: { open: boolean; onClose: () =>
     recognition.onerror = () => setStatus("Не удалось распознать речь. Попробуйте ещё раз или напишите текстом.");
     recognition.onend = () => undefined;
     recognition.start();
-    setStatus("Слушаю вас…");
+    setStatus("Слушаю вас… Голосовой ввод может обрабатываться сервисом вашего браузера.");
   }
 
-  async function makeBrief() {
+  function makeBrief() {
     const input = wish.trim();
     if (input.length < 12) {
       setStatus("Расскажите чуть подробнее — хотя бы одной-двумя фразами.");
       return;
     }
 
-    setBusy(true);
-    setStatus("Собираем бриф…");
-    try {
-      const response = await fetch("/api/party-brief", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ wish: input })
-      });
-      const result = (await response.json()) as { brief?: string };
-      if (response.ok && result.brief) {
-        setWish(result.brief);
-        setStatus("Бриф готов. Проверьте детали и при желании поправьте текст.");
-      } else {
-        setStatus("Помощник пока не смог упорядочить текст. Ваши пожелания сохранены как черновик для PDF.");
-      }
-    } catch {
-      setStatus("Помощник пока не смог упорядочить текст. Ваши пожелания сохранены как черновик для PDF.");
-    } finally {
-      setReady(true);
-      setBusy(false);
-    }
+    setWish(["Пожелания к празднику", input, "", "Детали, которые стоит уточнить", "Дата и время: ", "Место проведения: ", "Количество и возраст гостей: ", "Длительность программы: "].join("\n"));
+    setReady(true);
+    setStatus("Черновик готов. Поправьте детали и сохраните PDF для себя.");
   }
 
   async function downloadBriefPdf() {
@@ -197,39 +179,6 @@ function PartyAssistantDialog({ open, onClose }: { open: boolean; onClose: () =>
     }
   }
 
-  async function submit(event: FormEvent<HTMLFormElement>) {
-    event.preventDefault();
-    const data = new FormData(event.currentTarget);
-    const phone = String(data.get("phone") || "").trim();
-    if (phone.length < 6) return setStatus("Добавьте телефон, чтобы театр смог связаться с вами.");
-
-    setSending(true);
-    setStatus("Отправляем бриф театру…");
-    const leadText = [
-      "Заявка по брифу праздника",
-      "Имя: " + String(data.get("name") || "").trim(),
-      "Телефон: " + phone,
-      "Бриф: " + wish.trim()
-    ].join("\n");
-    try {
-      const response = await fetch("/api/leads", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ name: data.get("name"), phone, message: wish.trim(), leadText, page: window.location.pathname })
-      });
-      if (response.ok) {
-        setSent(true);
-        setStatus("Бриф отправлен. Мы свяжемся с вами.");
-      } else {
-        setStatus("Не удалось отправить бриф. PDF можно сохранить и связаться с нами по телефону.");
-      }
-    } catch {
-      setStatus("Не удалось отправить бриф. PDF можно сохранить и связаться с нами по телефону.");
-    } finally {
-      setSending(false);
-    }
-  }
-
   if (!open || typeof document === "undefined") return null;
 
   return createPortal(
@@ -241,7 +190,7 @@ function PartyAssistantDialog({ open, onClose }: { open: boolean; onClose: () =>
         <p>
           {ready
             ? "Проверьте текст, поправьте детали и скачайте PDF. Имя и телефон для этого не нужны."
-            : "Напишите или надиктуйте пожелания — помощник соберёт их в бриф, который можно сохранить себе."}
+            : "Запишите идеи для праздника — получите редактируемый бриф и сохраните PDF для себя."}
         </p>
         <label className="party-wish-label" htmlFor="party-brief-wish">{ready ? "Бриф — его можно редактировать" : "Каким вы представляете праздник?"}</label>
         <div className="party-wish-field">
@@ -258,10 +207,11 @@ function PartyAssistantDialog({ open, onClose }: { open: boolean; onClose: () =>
             </button>
           )}
         </div>
+        {!ready && <p className="party-voice-note">Диктовка запускается только по нажатию микрофона и может использовать сервис вашего браузера.</p>}
         {!ready ? (
           <div className="party-modal-tools">
             <button type="button" className="party-make-brief" onClick={makeBrief} disabled={busy}>
-              {busy ? "Собираем бриф…" : "Составить бриф"}
+              Составить черновик
             </button>
           </div>
         ) : (
@@ -271,21 +221,11 @@ function PartyAssistantDialog({ open, onClose }: { open: boolean; onClose: () =>
                 <PdfIcon /> {busy ? "Готовим PDF…" : "Скачать PDF для себя"}
               </button>
             </div>
-            <p className="party-private-note">PDF создаётся на вашем устройстве. Заявка не отправится сама.</p>
+            <p className="party-private-note">При вводе с клавиатуры бриф и PDF создаются на вашем устройстве. Текст не отправляется театру.</p>
             <div className="party-offer">
               <strong>Хотите, чтобы мы предложили программу?</strong>
-              <p>Если решите обратиться к нам, отправьте бриф — мы обсудим подходящий формат праздника.</p>
-              {!showContact && !sent && (
-                <button type="button" className="party-offer-button" onClick={() => setShowContact(true)}>Отправить бриф театру</button>
-              )}
-              {showContact && !sent && (
-                <form className="party-modal-form" onSubmit={submit}>
-                  <input name="name" placeholder="Ваше имя" aria-label="Ваше имя" autoComplete="name" />
-                  <input name="phone" placeholder="Телефон" aria-label="Телефон" inputMode="tel" autoComplete="tel" />
-                  <button type="submit" disabled={sending}>{sending ? "Отправляем…" : "Отправить бриф"}</button>
-                </form>
-              )}
-              {sent && <p className="party-offer-sent">Спасибо! Бриф отправлен театру.</p>}
+              <p>Заявка находится отдельно. Если решите обсудить праздник, оставьте контакт в форме.</p>
+              <button type="button" className="party-offer-button" onClick={goToApplication}>Перейти к заявке</button>
             </div>
           </>
         )}

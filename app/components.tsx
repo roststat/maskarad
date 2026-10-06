@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { galleryImages, phone, phoneHref } from "./data";
 import { HeaderNav } from "./header-nav";
-import { LeadForm } from "./lead-form";
+import { BriefEntry, LeadForm } from "./lead-form";
 import { MobileQuickActions } from "./mobile-quick-actions";
 import { PartyAssistantWidget } from "./party-assistant-widget";
 
@@ -51,17 +51,17 @@ export function Footer() {
 
 export function CTA({ label = "Оставить заявку" }: { label?: string }) {
   return (
-    <div className="cta-panel" id="zayavka">
-      <div>
-        <span className="eyebrow">Заявка</span>
-        <h2>Подберём программу для вашего праздника</h2>
-        <p>
-          Оставьте имя и телефон — обсудим формат и предложим варианты. Если пока собираете идеи, составьте бриф
-          и сохраните его для себя.
-        </p>
+    <section className="cta-stack" id="zayavka">
+      <div className="cta-panel">
+        <div>
+          <span className="eyebrow">Заявка</span>
+          <h2>Подберём программу для вашего праздника</h2>
+          <p>Оставьте имя и телефон — обсудим формат и предложим варианты.</p>
+        </div>
+        <LeadForm label={label} />
       </div>
-      <LeadForm label={label} />
-    </div>
+      <BriefEntry />
+    </section>
   );
 }
 

@@ -1200,12 +1200,25 @@ main {
   grid-template-columns: 0.9fr 1fr;
   gap: 2rem;
   align-items: start;
-  margin-bottom: 4rem;
   padding: clamp(1.2rem, 4vw, 2rem);
   border: 1px solid var(--line);
   border-radius: 1.4rem;
   background: #fff;
   box-shadow: var(--shadow);
+}
+
+.cta-stack {
+  display: grid;
+  gap: 1rem;
+  width: min(1160px, calc(100% - 2rem));
+  margin-inline: auto;
+  margin-bottom: 4rem;
+  scroll-margin-top: calc(var(--header-height) + var(--breadcrumb-height) + 1rem);
+}
+
+.cta-stack > .cta-panel {
+  width: 100%;
+  margin: 0;
 }
 
 .lead-form {
@@ -1298,12 +1311,15 @@ main {
   text-align: center;
 }
 
-.lead-brief-option {
-  border-top: 1px solid var(--line);
-  padding-top: 0.9rem;
+.brief-entry {
+  border: 1px solid rgba(91, 24, 51, 0.16);
+  border-radius: 1.25rem;
+  padding: 1rem;
+  background: linear-gradient(110deg, #fff8f7, #fffdf9);
+  box-shadow: 0 10px 28px rgba(91, 24, 51, 0.07);
 }
 
-.lead-brief-option button {
+.brief-entry button {
   display: flex;
   align-items: center;
   gap: 0.85rem;
@@ -1408,13 +1424,13 @@ main {
 .lead-brief-equalizer i:nth-child(2) { animation-delay: -0.45s; }
 .lead-brief-equalizer i:nth-child(3) { animation-delay: -0.72s; }
 
-.lead-brief-option button:hover .lead-brief-copy strong,
-.lead-brief-option button:focus-visible .lead-brief-copy strong {
+.brief-entry button:hover .lead-brief-copy strong,
+.brief-entry button:focus-visible .lead-brief-copy strong {
   text-decoration-color: currentColor;
 }
 
-.lead-brief-option button:hover .lead-brief-art,
-.lead-brief-option button:focus-visible .lead-brief-art {
+.brief-entry button:hover .lead-brief-art,
+.brief-entry button:focus-visible .lead-brief-art {
   background: #f6e3e8;
   transform: translateY(-2px);
 }
@@ -1502,18 +1518,6 @@ main {
   font-weight: 800;
 }
 
-.party-pdf-note {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.28rem;
-  border-radius: 999px;
-  padding: 0.14rem 0.45rem 0.14rem 0.32rem;
-  color: var(--wine);
-  background: rgba(242, 189, 77, 0.2);
-  font-weight: 800;
-  white-space: nowrap;
-}
-
 .pdf-icon {
   width: 1rem;
   height: 1rem;
@@ -1524,8 +1528,7 @@ main {
   stroke-width: 1.8;
 }
 
-.party-modal-card textarea,
-.party-modal-card input {
+.party-modal-card textarea {
   width: 100%;
   border: 1px solid var(--line);
   border-radius: 0.85rem;
@@ -1548,8 +1551,7 @@ main {
   padding-right: 4rem;
 }
 
-.party-modal-card textarea:focus,
-.party-modal-card input:focus {
+.party-modal-card textarea:focus {
   outline: 3px solid rgba(242, 189, 77, 0.3);
   border-color: rgba(91, 24, 51, 0.42);
   background: #fff;
@@ -1574,19 +1576,14 @@ main {
   line-height: 1;
 }
 
-.party-modal-tools,
-.party-modal-form {
+.party-modal-tools {
   display: grid;
   gap: 0.7rem;
   margin-top: 0.75rem;
-}
-
-.party-modal-tools {
   grid-template-columns: 1fr;
 }
 
-.party-modal-tools button,
-.party-modal-form button {
+.party-modal-tools button {
   min-height: 2.8rem;
   border-radius: 0.85rem;
   padding: 0.75rem 0.95rem;
@@ -1610,8 +1607,7 @@ main {
   color: #fff;
 }
 
-.party-modal-tools button:disabled,
-.party-modal-form button:disabled {
+.party-modal-tools button:disabled {
   cursor: wait;
   opacity: 0.65;
 }
@@ -1619,6 +1615,11 @@ main {
 .party-modal-card > .party-private-note {
   margin: 0.45rem 0 0;
   font-size: 0.86rem;
+}
+
+.party-modal-card > .party-voice-note {
+  margin: 0.45rem 0 0;
+  font-size: 0.82rem;
 }
 
 .party-offer {
@@ -1670,7 +1671,7 @@ main {
   border-radius: 50%;
   padding: 0;
   color: #fff;
-  background: var(--wine);
+  background: #258055;
   box-shadow: 0 5px 14px rgba(49, 19, 31, 0.19);
   cursor: pointer;
 }
@@ -1683,17 +1684,6 @@ main {
 .party-dictate svg {
   width: 1.1rem;
   height: 1.1rem;
-}
-
-.party-modal-form {
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-}
-
-.party-modal-form button {
-  grid-column: 1 / -1;
-  border: 0;
-  color: #fff;
-  background: var(--wine);
 }
 
 .party-modal-status {
@@ -2322,7 +2312,7 @@ main > :where(
     .process,
     .new-year-band,
     .gallery-strip,
-    .cta-panel,
+    .cta-stack,
     .catalog-summary,
     .catalog-related,
     .listing-heading,
@@ -2499,13 +2489,8 @@ main > .article-hero + .article-layout {
     border-radius: 1.2rem;
   }
 
-  .party-modal-tools,
-  .party-modal-form {
+  .party-modal-tools {
     grid-template-columns: 1fr;
-  }
-
-  .party-modal-form button {
-    grid-column: auto;
   }
 
   .menu-toggle {

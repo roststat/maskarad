@@ -12,6 +12,10 @@ const briefSchema = {
 };
 
 export async function POST(request: Request) {
+  if (process.env.BRIEF_AI_ENABLED !== "true") {
+    return NextResponse.json({ ok: false, error: "assistant_disabled" }, { status: 503 });
+  }
+
   const apiKey = process.env.OPENAI_API_KEY;
 
   if (!apiKey) {
