@@ -1,8 +1,8 @@
 # Маскарад — Next.js сайт
 
-Первая современная версия сайта детского выездного театра «Маскарад» под Vercel.
+Сайт детского выездного театра «Маскарад» на собственном сервере.
 
-Vercel URL: https://msk-maskarad-c02trzuis-mintallart-9640.vercel.app/
+Production: https://maskarad-teatr.ru/
 
 ## Локальная работа
 
@@ -46,13 +46,13 @@ npm run seo:predeploy
 
 Она проверяет покрытие старых URL, карту 301-редиректов, `alt` у изображений, TypeScript и production-сборку.
 
-После публикации на открытом preview:
+После публикации на домене:
 
 ```bash
-npm run seo:prelaunch -- https://your-vercel-preview.example
+npm run seo:prelaunch -- https://maskarad-teatr.ru
 ```
 
-Preview должен быть доступен без страницы авторизации Vercel, иначе SEO-проверка не сможет получить robots, sitemap и HTML.
+Проверка `12/12` подтверждает SEO-ответы, но не доказывает, что сервер запустил последний коммит. Свежесть версии нужно сверять отдельно.
 
 ## Канал заявок
 
@@ -64,19 +64,21 @@ LEAD_WEBHOOK_URL=https://example.com/lead-webhook
 
 Webhook должен принимать `POST` JSON. Без этой переменной форма показывает запасные действия: звонок, мессенджер и копирование текста заявки. WhatsApp не считать рабочим каналом для РФ: fallback нужно перенастроить вместе с CRM на отдельном шаге заявок.
 
-## Публикация на Vercel
+## Публикация на сервере
 
-Проект уже опубликован на Vercel:
+`origin/main` — источник кода для `/opt/maskarad/app` на Timeweb VPS. `maskarad-auto-deploy.timer` проверяет новые коммиты каждые две минуты, выполняет `npm ci`, `npm run seo:predeploy` и перезагружает только PM2-процесс `maskarad-site`. Nginx проксирует домен на `127.0.0.1:3200`.
 
-```text
-https://msk-maskarad-c02trzuis-mintallart-9640.vercel.app/
+При расхождении кода и публичной страницы проверять на **подтвержденном VPS**, где существует `/opt/maskarad/app`:
+
+```bash
+git -C /opt/maskarad/app rev-parse --short HEAD
+systemctl status maskarad-auto-deploy.timer --no-pager
+systemctl status maskarad-auto-deploy.service --no-pager
+journalctl -u maskarad-auto-deploy.service -n 100 --no-pager
+pm2 status maskarad-site
 ```
 
-Следующие шаги:
-
-1. Проверить сайт на Vercel URL.
-2. После проверки подключить домен `maskarad-teatr.ru`.
-3. Убедиться, что старые URL отдают 301-редиректы на новые разделы.
+Публичный `200 OK` и успешный `seo:prelaunch` не заменяют проверку журнала автодеплоя и коммита работающего процесса. IP публичного сайта не следует автоматически считать SSH-адресом VPS.
 
 Карта переноса старого сайта и список важных SEO-страниц лежат в `MIGRATION_PLAN.md`.
 
