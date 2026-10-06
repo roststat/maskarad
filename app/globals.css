@@ -900,6 +900,27 @@ main {
   transform: translateY(-2px);
 }
 
+.listing-card-media {
+  display: block;
+  aspect-ratio: 16 / 8.5;
+  overflow: hidden;
+  margin: -0.45rem -0.45rem 0.1rem;
+  border-radius: 0.75rem;
+  background: var(--rose);
+}
+
+.listing-card-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 240ms ease;
+}
+
+.listing-card-link:hover .listing-card-media img,
+.listing-card-link:focus-visible .listing-card-media img {
+  transform: scale(1.04);
+}
+
 .feature-card h3,
 .listing h2 {
   margin: 0;
@@ -1059,6 +1080,33 @@ main {
   padding: 1.2rem 0 0.2rem;
 }
 
+.back-to-show-catalog {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+  width: min(1160px, calc(100% - 2rem));
+  margin: var(--section-space-compact) auto 0;
+  border: 0;
+  padding: 0;
+  color: var(--wine);
+  background: transparent;
+  box-shadow: none;
+  font: inherit;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.back-to-show-catalog span {
+  font-size: 1.2em;
+  line-height: 1;
+  transition: transform 180ms ease;
+}
+
+.back-to-show-catalog:hover span,
+.back-to-show-catalog:focus-visible span {
+  transform: translateX(-0.2rem);
+}
+
 .listing-heading h2 {
   margin: 0.45rem 0 0;
   font-family: Georgia, serif;
@@ -1215,6 +1263,16 @@ main {
   border-bottom: 2px solid rgba(242, 189, 77, 0.75);
   color: var(--wine);
   font-weight: 850;
+}
+
+.listing-card strong span {
+  display: inline-block;
+  transition: transform 180ms ease;
+}
+
+.listing-card-link:hover strong span,
+.listing-card-link:focus-visible strong span {
+  transform: translateX(0.18rem);
 }
 
 .note-band {

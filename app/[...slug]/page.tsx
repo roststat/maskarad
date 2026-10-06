@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { CTA, GalleryStrip, SectionHero } from "../components";
+import { BackToShowCatalog } from "../back-to-show-catalog";
 import {
   contentHubs,
   contentPages,
@@ -390,6 +391,7 @@ export default async function ContentPage({ params }: Params) {
       <>
         <JsonLd data={jsonLd} />
         <Breadcrumbs items={breadcrumbs} />
+        {landingPath.startsWith("/spektakli/") && <BackToShowCatalog />}
         <section className={page.media ? "section-hero landing-hero landing-hero-media" : "section-hero landing-hero"}>
           <div>
             <span className="eyebrow">{page.kicker}</span>
@@ -577,15 +579,21 @@ function CatalogRelated({ page, isContactPage }: { page: (typeof pages)[PagePath
 }
 
 function CatalogCard({ item }: { item: CatalogItem }) {
+  const media = item.href && item.href in landingPages ? landingPages[item.href as LandingPath].media : undefined;
   const content = (
     <>
+      {media && (
+        <span className="listing-card-media">
+          <Image src={media.src} alt={media.alt} width={680} height={360} />
+        </span>
+      )}
       <span className="listing-mark" />
       <div>
-        <small>{item.tag}</small>
+        <small>{item.group ?? item.tag}</small>
         <h2>{item.title}</h2>
       </div>
       <p>{item.text}</p>
-      {item.href && <strong>{item.href.startsWith("tel:") || item.href.startsWith("#") ? "Перейти" : "Подробнее"}</strong>}
+      {item.href && <strong>{item.href.startsWith("tel:") || item.href.startsWith("#") ? "Перейти" : item.href.startsWith("/spektakli/") ? "Смотреть спектакль" : "Подробнее"} <span aria-hidden="true">→</span></strong>}
     </>
   );
 
