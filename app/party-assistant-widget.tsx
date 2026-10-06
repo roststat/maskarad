@@ -120,16 +120,36 @@ function PartyAssistantDialog({ open, onClose }: { open: boolean; onClose: () =>
     setStatus("Слушаю вас… Голосовой ввод может обрабатываться сервисом вашего браузера.");
   }
 
-  function makeBrief() {
+  async function makeBrief() {
     const input = wish.trim();
     if (input.length < 12) {
       setStatus("Расскажите чуть подробнее — хотя бы одной-двумя фразами.");
       return;
     }
 
-    setWish(["Пожелания к празднику", input, "", "Детали, которые стоит уточнить", "Дата и время: ", "Место проведения: ", "Количество и возраст гостей: ", "Длительность программы: "].join("\n"));
-    setReady(true);
-    setStatus("Черновик готов. Поправьте детали и сохраните PDF для себя.");
+    setBusy(true);
+    setStatus("ИИ собирает бриф…");
+    try {
+      const response = await fetch("/api/party-brief", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ wish: input })
+      });
+      const result = (await response.json()) as { brief?: string };
+
+      if (!response.ok || !result.brief) {
+        setStatus("Не удалось собрать бриф с ИИ. Проверьте текст и попробуйте ещё раз.");
+        return;
+      }
+
+      setWish(result.brief);
+      setReady(true);
+      setStatus("Бриф готов. Его можно поправить и собрать с ИИ ещё раз.");
+    } catch {
+      setStatus("Не удалось связаться с помощником. Попробуйте ещё раз.");
+    } finally {
+      setBusy(false);
+    }
   }
 
   async function downloadBriefPdf() {
@@ -186,11 +206,11 @@ function PartyAssistantDialog({ open, onClose }: { open: boolean; onClose: () =>
       <div className="party-modal-card" onMouseDown={(event) => event.stopPropagation()}>
         <button className="party-modal-close" type="button" onClick={close} aria-label="Закрыть окно">×</button>
         <span className="eyebrow">Помощник по празднику</span>
-        <h2>{ready ? "Ваш бриф праздника" : "Составьте бриф для себя"}</h2>
+        <h2>{ready ? "Ваш бриф праздника" : "Расскажите, какой праздник хотите"}</h2>
         <p>
           {ready
             ? "Проверьте текст, поправьте детали и скачайте PDF. Имя и телефон для этого не нужны."
-            : "Запишите идеи для праздника — получите редактируемый бриф и сохраните PDF для себя."}
+            : "Надиктуйте или напишите пожелания. Помощник соберёт их в понятный бриф, который можно поправить и сохранить себе в PDF."}
         </p>
         <label className="party-wish-label" htmlFor="party-brief-wish">{ready ? "Бриф — его можно редактировать" : "Каким вы представляете праздник?"}</label>
         <div className="party-wish-field">
@@ -201,27 +221,30 @@ function PartyAssistantDialog({ open, onClose }: { open: boolean; onClose: () =>
             onChange={(event) => { setWish(event.target.value); setStatus(""); }}
             placeholder="Например: дочке 6 лет, будут друзья дома, любит русалок…"
           />
-          {!ready && (
-            <button type="button" className="party-dictate" onClick={dictate} aria-label="Надиктовать пожелания" title="Надиктовать пожелания">
-              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="9" y="3" width="6" height="11" rx="3" /><path d="M6.5 11.5a5.5 5.5 0 0 0 11 0M12 17v3M8.5 20h7" /></svg>
+          <div className="party-details-prompt" aria-hidden="true">
+            <strong>Детали, которые стоит уточнить</strong>
+            <span>Дата и время:</span>
+            <span>Место проведения, если есть:</span>
+            <span>Количество и возраст гостей:</span>
+          </div>
+          <button type="button" className="party-dictate" onClick={dictate} aria-label="Надиктовать пожелания" title="Надиктовать пожелания">
+            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="9" y="3" width="6" height="11" rx="3" /><path d="M6.5 11.5a5.5 5.5 0 0 0 11 0M12 17v3M8.5 20h7" /></svg>
+          </button>
+        </div>
+        <p className="party-voice-note">Диктовка запускается только по нажатию микрофона и может использовать сервис вашего браузера.</p>
+        <div className={"party-modal-tools" + (ready ? " is-ready" : "")}>
+          <button type="button" className="party-make-brief" onClick={makeBrief} disabled={busy}>
+            <MagicIcon /> {busy ? "ИИ собирает бриф…" : "Собрать бриф с ИИ"}
+          </button>
+          {ready && (
+            <button type="button" className="party-download-pdf" onClick={downloadBriefPdf} disabled={busy || !wish.trim()}>
+              <PdfIcon /> {busy ? "Готовим PDF…" : "Скачать PDF"}
             </button>
           )}
         </div>
-        {!ready && <p className="party-voice-note">Диктовка запускается только по нажатию микрофона и может использовать сервис вашего браузера.</p>}
-        {!ready ? (
-          <div className="party-modal-tools">
-            <button type="button" className="party-make-brief" onClick={makeBrief} disabled={busy}>
-              Составить черновик
-            </button>
-          </div>
-        ) : (
+        {ready && (
           <>
-            <div className="party-modal-tools">
-              <button type="button" className="party-download-pdf" onClick={downloadBriefPdf} disabled={busy || !wish.trim()}>
-                <PdfIcon /> {busy ? "Готовим PDF…" : "Скачать PDF для себя"}
-              </button>
-            </div>
-            <p className="party-private-note">При вводе с клавиатуры бриф и PDF создаются на вашем устройстве. Текст не отправляется театру.</p>
+            <p className="party-private-note">PDF создаётся на вашем устройстве. Текст брифа не отправляется театру; он передаётся ИИ только при нажатии «Собрать бриф с ИИ».</p>
             <div className="party-offer">
               <strong>Хотите, чтобы мы предложили программу?</strong>
               <p>Заявка находится отдельно. Если решите обсудить праздник, оставьте контакт в форме.</p>
@@ -233,6 +256,15 @@ function PartyAssistantDialog({ open, onClose }: { open: boolean; onClose: () =>
       </div>
     </div>,
     document.body
+  );
+}
+
+function MagicIcon() {
+  return (
+    <svg className="magic-icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+      <path d="m12 2 1.5 5.5L19 9l-5.5 1.5L12 16l-1.5-5.5L5 9l5.5-1.5L12 2Z" />
+      <path d="m19 15 .7 2.3L22 18l-2.3.7L19 21l-.7-2.3L16 18l2.3-.7L19 15Z" />
+    </svg>
   );
 }
 
