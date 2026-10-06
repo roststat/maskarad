@@ -2,7 +2,7 @@
 
 import { FormEvent, useId, useMemo, useState } from "react";
 import { phoneHref } from "./data";
-import { useBriefForLead, usePartyAssistant } from "./party-assistant-widget";
+import { usePartyAssistant } from "./party-assistant-widget";
 
 const whatsappPhone = "79951219467";
 
@@ -16,7 +16,6 @@ export function LeadForm({ label }: LeadFormProps) {
   const formId = useId();
   const [status, setStatus] = useState<LeadStatus>("idle");
   const [leadText, setLeadText] = useState("");
-  const { briefForLead, clearBriefForLead } = useBriefForLead();
 
   const fields = useMemo(
     () => ({
@@ -41,7 +40,6 @@ export function LeadForm({ label }: LeadFormProps) {
       "Здравствуйте! Хочу обсудить детский праздник.",
       formatLine("Имя", data.get("name")),
       formatLine("Телефон", phone),
-      briefForLead ? `Бриф праздника:\n${briefForLead}` : "",
     ]
       .filter(Boolean)
       .join("\n");
@@ -58,7 +56,7 @@ export function LeadForm({ label }: LeadFormProps) {
         body: JSON.stringify({
           name: String(data.get("name") || "").trim(),
           phone,
-          message: briefForLead,
+          message: "",
           page: window.location.pathname,
           leadText: nextLeadText
         })
@@ -67,7 +65,6 @@ export function LeadForm({ label }: LeadFormProps) {
       if (response.ok) {
         setStatus("sent");
         form.reset();
-        clearBriefForLead();
         return;
       }
 
@@ -90,15 +87,6 @@ export function LeadForm({ label }: LeadFormProps) {
 
   return (
     <form className="lead-form" onSubmit={submitLead}>
-      {briefForLead && (
-        <div className="lead-attached-brief">
-          <div>
-            <strong>Бриф будет приложен к заявке</strong>
-            <span>Проверьте имя и телефон, затем отправьте его театру.</span>
-          </div>
-          <button type="button" onClick={clearBriefForLead}>Убрать</button>
-        </div>
-      )}
       <div className="lead-form-grid">
         <label htmlFor={fields.name}>
           Имя
@@ -118,7 +106,7 @@ export function LeadForm({ label }: LeadFormProps) {
       </div>
       <div className="lead-form-actions">
         <button type="submit" disabled={status === "sending"}>
-          {status === "sending" ? "Отправляем..." : briefForLead ? "Отправить бриф театру" : label}
+          {status === "sending" ? "Отправляем..." : label}
         </button>
         <a href={phoneHref}>Позвонить</a>
       </div>

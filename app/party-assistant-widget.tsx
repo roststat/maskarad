@@ -20,25 +20,15 @@ type RecognitionWindow = Window & typeof globalThis & {
   webkitSpeechRecognition?: new () => Recognition;
 };
 
-type PartyAssistantContextValue = {
-  openBrief: () => void;
-  briefForLead: string;
-  prepareLead: (brief: string) => void;
-  clearBriefForLead: () => void;
-};
-
-const PartyAssistantContext = createContext<PartyAssistantContextValue | null>(null);
+const PartyAssistantContext = createContext<(() => void) | null>(null);
 
 export function PartyAssistantProvider({ children }: { children: ReactNode }) {
   const [open, setOpen] = useState(false);
-  const [briefForLead, setBriefForLead] = useState("");
   const openBrief = useCallback(() => setOpen(true), []);
   const closeBrief = useCallback(() => setOpen(false), []);
-  const prepareLead = useCallback((brief: string) => setBriefForLead(brief), []);
-  const clearBriefForLead = useCallback(() => setBriefForLead(""), []);
 
   return (
-    <PartyAssistantContext.Provider value={{ openBrief, briefForLead, prepareLead, clearBriefForLead }}>
+    <PartyAssistantContext.Provider value={openBrief}>
       {children}
       <PartyAssistantDialog open={open} onClose={closeBrief} />
     </PartyAssistantContext.Provider>
@@ -46,15 +36,9 @@ export function PartyAssistantProvider({ children }: { children: ReactNode }) {
 }
 
 export function usePartyAssistant() {
-  const context = useContext(PartyAssistantContext);
-  if (!context) throw new Error("PartyAssistantProvider is missing");
-  return context.openBrief;
-}
-
-export function useBriefForLead() {
-  const context = useContext(PartyAssistantContext);
-  if (!context) throw new Error("PartyAssistantProvider is missing");
-  return context;
+  const openBrief = useContext(PartyAssistantContext);
+  if (!openBrief) throw new Error("PartyAssistantProvider is missing");
+  return openBrief;
 }
 
 export function PartyAssistantWidget() {
@@ -83,14 +67,18 @@ export function PartyAssistantWidget() {
 }
 
 function PartyAssistantDialog({ open, onClose }: { open: boolean; onClose: () => void }) {
-  const { prepareLead } = useBriefForLead();
-  const [wish, setWish] = useState("");
-  const [ready, setReady] = useState(false);
+  const [sourceWish, setSourceWish] = useState("");
+  const [brief, setBrief] = useState("");
   const [busy, setBusy] = useState(false);
   const [status, setStatus] = useState("");
   const [isListening, setIsListening] = useState(false);
+  const [sendOpen, setSendOpen] = useState(false);
+  const [sendName, setSendName] = useState("");
+  const [sendPhone, setSendPhone] = useState("");
+  const [hasConsent, setHasConsent] = useState(false);
   const textareaRef = useRef<HTMLTextAreaElement>(null);
   const recognitionRef = useRef<Recognition | null>(null);
+  const ready = Boolean(brief);
 
   useEffect(() => {
     if (!open) return;
@@ -122,10 +110,11 @@ function PartyAssistantDialog({ open, onClose }: { open: boolean; onClose: () =>
     onClose();
   }
 
-  function goToApplication() {
-    prepareLead(wish.trim());
-    close();
-    window.requestAnimationFrame(() => document.getElementById("zayavka")?.scrollIntoView({ behavior: "smooth", block: "start" }));
+  function editSource() {
+    setBrief("");
+    setSendOpen(false);
+    setStatus("");
+    window.requestAnimationFrame(() => textareaRef.current?.focus());
   }
 
   function dictate() {
@@ -141,7 +130,7 @@ function PartyAssistantDialog({ open, onClose }: { open: boolean; onClose: () =>
     recognition.lang = "ru-RU";
     recognition.interimResults = false;
     recognition.onresult = (event) => {
-      setWish((value) => (value + " " + event.results[0][0].transcript).trim());
+      setSourceWish((value) => (value + " " + event.results[0][0].transcript).trim());
       setStatus("Текст готов — его можно поправить перед сборкой брифа.");
     };
     recognition.onerror = () => setStatus("Не удалось распознать речь. Попробуйте ещё раз или напишите текстом.");
@@ -156,7 +145,7 @@ function PartyAssistantDialog({ open, onClose }: { open: boolean; onClose: () =>
   }
 
   async function makeBrief() {
-    const input = wish.trim();
+    const input = sourceWish.trim();
     if (input.length < 12) {
       setStatus("Расскажите чуть подробнее — хотя бы одной-двумя фразами.");
       return;
@@ -177,9 +166,9 @@ function PartyAssistantDialog({ open, onClose }: { open: boolean; onClose: () =>
         return;
       }
 
-      setWish(formatBriefParagraphs(result.brief));
-      setReady(true);
-      setStatus("Бриф готов. Его можно поправить и собрать с ИИ ещё раз.");
+      setBrief(formatBriefParagraphs(result.brief));
+      setSendOpen(false);
+      setStatus("");
     } catch {
       setStatus("Не удалось связаться с помощником. Попробуйте ещё раз.");
     } finally {
@@ -188,7 +177,6 @@ function PartyAssistantDialog({ open, onClose }: { open: boolean; onClose: () =>
   }
 
   async function downloadBriefPdf() {
-    const brief = wish.trim();
     if (!brief) {
       setStatus("Добавьте пожелания, чтобы сохранить PDF.");
       return;
@@ -234,6 +222,53 @@ function PartyAssistantDialog({ open, onClose }: { open: boolean; onClose: () =>
     }
   }
 
+  async function sendBrief() {
+    const phone = sendPhone.trim();
+    if (phone.length < 6) {
+      setStatus("Добавьте телефон, чтобы театр смог связаться с вами.");
+      return;
+    }
+    if (!hasConsent) {
+      setStatus("Подтвердите согласие на обработку данных для ответа на заявку.");
+      return;
+    }
+
+    const leadText = [
+      "Здравствуйте! Хочу обсудить праздник.",
+      sendName.trim() ? `Имя: ${sendName.trim()}` : "",
+      `Телефон: ${phone}`,
+      `Бриф праздника:\n${brief}`
+    ].filter(Boolean).join("\n");
+
+    setBusy(true);
+    setStatus("Отправляем бриф театру…");
+    try {
+      const response = await fetch("/api/leads", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          name: sendName.trim(),
+          phone,
+          message: brief,
+          page: window.location.pathname,
+          leadText
+        })
+      });
+
+      if (!response.ok) {
+        setStatus("Не удалось отправить бриф. Попробуйте ещё раз или позвоните нам.");
+        return;
+      }
+
+      setStatus("Бриф отправлен. Скоро свяжемся с вами.");
+      setSendOpen(false);
+    } catch {
+      setStatus("Не удалось отправить бриф. Попробуйте ещё раз или позвоните нам.");
+    } finally {
+      setBusy(false);
+    }
+  }
+
   if (!open || typeof document === "undefined") return null;
 
   return createPortal(
@@ -241,50 +276,64 @@ function PartyAssistantDialog({ open, onClose }: { open: boolean; onClose: () =>
       <div className="party-modal-card" onMouseDown={(event) => event.stopPropagation()}>
         <button className="party-modal-close" type="button" onClick={close} aria-label="Закрыть окно">×</button>
         <span className="eyebrow">Помощник по празднику</span>
-        <h2>{ready ? "Ваш бриф праздника" : "Расскажите, какой праздник хотите"}</h2>
-        <p>
-          {ready
-            ? "Проверьте текст, поправьте детали и скачайте PDF. Имя и телефон для этого не нужны."
-            : "Надиктуйте или напишите пожелания. Помощник соберёт их в понятный бриф, который можно поправить и сохранить себе в PDF."}
-        </p>
-        <label className="party-wish-label" htmlFor="party-brief-wish">{ready ? "Бриф — его можно редактировать" : "Каким вы представляете праздник?"}</label>
-        <div className="party-wish-field">
-          <textarea
-            id="party-brief-wish"
-            ref={textareaRef}
-            value={wish}
-            onChange={(event) => { setWish(event.target.value); setStatus(""); }}
-            placeholder="Например: дочке 6 лет, будут друзья дома, любит русалок…"
-          />
-          {isListening && <span className="party-listening-indicator" aria-live="polite">Слушаю…</span>}
-          <button
-            type="button"
-            className={"party-dictate" + (isListening ? " is-listening" : "")}
-            onClick={dictate}
-            aria-label={isListening ? "Остановить диктовку" : "Надиктовать пожелания"}
-            aria-pressed={isListening}
-            title={isListening ? "Остановить диктовку" : "Надиктовать пожелания"}
-          >
-            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="9" y="3" width="6" height="11" rx="3" /><path d="M6.5 11.5a5.5 5.5 0 0 0 11 0M12 17v3M8.5 20h7" /></svg>
-          </button>
-        </div>
-        <p className="party-voice-note">Диктовка запускается только по нажатию микрофона и может использовать сервис вашего браузера.</p>
-        <div className={"party-modal-tools" + (ready ? " is-ready" : "")}>
-          <button type="button" className="party-make-brief" onClick={makeBrief} disabled={busy}>
-            <MagicIcon /> {busy ? "ИИ собирает бриф…" : "Собрать бриф с ИИ"}
-          </button>
-          {ready && (
-            <button type="button" className="party-download-pdf" onClick={downloadBriefPdf} disabled={busy || !wish.trim()}>
-              <PdfIcon /> {busy ? "Готовим PDF…" : "Скачать PDF"}
-            </button>
-          )}
-        </div>
-        {ready && (
-          <div className="party-offer">
-            <strong>Хотите обсудить этот праздник?</strong>
-            <p>Приложим бриф к заявке. Останется оставить имя и телефон, чтобы мы могли ответить.</p>
-            <button type="button" className="party-offer-button" onClick={goToApplication}>Отправить бриф театру</button>
-          </div>
+        {!ready ? (
+          <>
+            <h2>Расскажите, какой праздник хотите</h2>
+            <p>Надиктуйте или напишите так, как рассказали бы нам по телефону. Помощник только приведёт ваши слова в порядок.</p>
+            <label className="party-wish-label" htmlFor="party-brief-wish">Ваш рассказ о празднике</label>
+            <div className="party-wish-field">
+              <textarea
+                id="party-brief-wish"
+                ref={textareaRef}
+                value={sourceWish}
+                onChange={(event) => { setSourceWish(event.target.value); setStatus(""); }}
+                placeholder="Например: дочке 6 лет, будут друзья дома, любит русалок…"
+              />
+              {isListening && <span className="party-listening-indicator" aria-live="polite">Слушаю…</span>}
+              <button
+                type="button"
+                className={"party-dictate" + (isListening ? " is-listening" : "")}
+                onClick={dictate}
+                aria-label={isListening ? "Остановить диктовку" : "Надиктовать пожелания"}
+                aria-pressed={isListening}
+                title={isListening ? "Остановить диктовку" : "Надиктовать пожелания"}
+              >
+                <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="9" y="3" width="6" height="11" rx="3" /><path d="M6.5 11.5a5.5 0 0 0 11 0M12 17v3M8.5 20h7" /></svg>
+              </button>
+            </div>
+            <p className="party-voice-note">Диктовка запускается только по нажатию микрофона и может использовать сервис вашего браузера.</p>
+            <div className="party-modal-tools">
+              <button type="button" className="party-make-brief" onClick={makeBrief} disabled={busy}>
+                <MagicIcon /> {busy ? "ИИ собирает бриф…" : "Собрать бриф с ИИ"}
+              </button>
+            </div>
+          </>
+        ) : (
+          <>
+            <h2>Ваш праздник — вашими словами</h2>
+            <p>Мы ничего не добавляли: только сделали рассказ понятнее.</p>
+            <div className="party-brief-result" aria-label="Готовый бриф праздника">
+              {brief.split(/\n\s*\n/).map((paragraph, index) => <p key={`${paragraph}-${index}`}>{paragraph}</p>)}
+            </div>
+            <div className="party-result-actions">
+              <button type="button" className="party-offer-button" onClick={editSource}>Изменить рассказ</button>
+              <button type="button" className="party-make-brief" onClick={makeBrief} disabled={busy}><MagicIcon /> Собрать заново</button>
+              <button type="button" className="party-download-pdf" onClick={downloadBriefPdf} disabled={busy}><PdfIcon /> Скачать PDF</button>
+            </div>
+            {!sendOpen ? (
+              <button type="button" className="party-send-brief" onClick={() => { setSendOpen(true); setStatus(""); }}>Отправить бриф театру</button>
+            ) : (
+              <form className="party-send-form" onSubmit={(event) => { event.preventDefault(); void sendBrief(); }}>
+                <strong>Куда ответить?</strong>
+                <div className="party-send-fields">
+                  <label>Имя<input value={sendName} onChange={(event) => setSendName(event.target.value)} placeholder="Как к вам обращаться" autoComplete="name" /></label>
+                  <label>Телефон<input value={sendPhone} onChange={(event) => setSendPhone(event.target.value)} placeholder="+7 ..." inputMode="tel" autoComplete="tel" /></label>
+                </div>
+                <label className="party-consent"><input type="checkbox" checked={hasConsent} onChange={(event) => setHasConsent(event.target.checked)} /> <span>Согласен(на) на обработку данных для ответа на заявку.</span></label>
+                <button type="submit" className="party-send-brief" disabled={busy}>{busy ? "Отправляем…" : "Отправить бриф"}</button>
+              </form>
+            )}
+          </>
         )}
         <p className="party-modal-status" aria-live="polite">{status}</p>
       </div>
