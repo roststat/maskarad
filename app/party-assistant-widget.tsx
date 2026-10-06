@@ -12,6 +12,7 @@ type Recognition = {
   onerror: () => void;
   onend: () => void;
   start: () => void;
+  stop: () => void;
 };
 
 type RecognitionWindow = Window & typeof globalThis & {
@@ -19,15 +20,25 @@ type RecognitionWindow = Window & typeof globalThis & {
   webkitSpeechRecognition?: new () => Recognition;
 };
 
-const PartyAssistantContext = createContext<(() => void) | null>(null);
+type PartyAssistantContextValue = {
+  openBrief: () => void;
+  briefForLead: string;
+  prepareLead: (brief: string) => void;
+  clearBriefForLead: () => void;
+};
+
+const PartyAssistantContext = createContext<PartyAssistantContextValue | null>(null);
 
 export function PartyAssistantProvider({ children }: { children: ReactNode }) {
   const [open, setOpen] = useState(false);
+  const [briefForLead, setBriefForLead] = useState("");
   const openBrief = useCallback(() => setOpen(true), []);
   const closeBrief = useCallback(() => setOpen(false), []);
+  const prepareLead = useCallback((brief: string) => setBriefForLead(brief), []);
+  const clearBriefForLead = useCallback(() => setBriefForLead(""), []);
 
   return (
-    <PartyAssistantContext.Provider value={openBrief}>
+    <PartyAssistantContext.Provider value={{ openBrief, briefForLead, prepareLead, clearBriefForLead }}>
       {children}
       <PartyAssistantDialog open={open} onClose={closeBrief} />
     </PartyAssistantContext.Provider>
@@ -35,9 +46,15 @@ export function PartyAssistantProvider({ children }: { children: ReactNode }) {
 }
 
 export function usePartyAssistant() {
-  const openBrief = useContext(PartyAssistantContext);
-  if (!openBrief) throw new Error("PartyAssistantProvider is missing");
-  return openBrief;
+  const context = useContext(PartyAssistantContext);
+  if (!context) throw new Error("PartyAssistantProvider is missing");
+  return context.openBrief;
+}
+
+export function useBriefForLead() {
+  const context = useContext(PartyAssistantContext);
+  if (!context) throw new Error("PartyAssistantProvider is missing");
+  return context;
 }
 
 export function PartyAssistantWidget() {
@@ -66,11 +83,14 @@ export function PartyAssistantWidget() {
 }
 
 function PartyAssistantDialog({ open, onClose }: { open: boolean; onClose: () => void }) {
+  const { prepareLead } = useBriefForLead();
   const [wish, setWish] = useState("");
   const [ready, setReady] = useState(false);
   const [busy, setBusy] = useState(false);
   const [status, setStatus] = useState("");
+  const [isListening, setIsListening] = useState(false);
   const textareaRef = useRef<HTMLTextAreaElement>(null);
+  const recognitionRef = useRef<Recognition | null>(null);
 
   useEffect(() => {
     if (!open) return;
@@ -88,6 +108,9 @@ function PartyAssistantDialog({ open, onClose }: { open: boolean; onClose: () =>
     window.addEventListener("keydown", onKeyDown);
 
     return () => {
+      recognitionRef.current?.stop();
+      recognitionRef.current = null;
+      setIsListening(false);
       document.body.style.overflow = previousOverflow;
       window.removeEventListener("keydown", onKeyDown);
       previousFocus?.focus();
@@ -100,11 +123,18 @@ function PartyAssistantDialog({ open, onClose }: { open: boolean; onClose: () =>
   }
 
   function goToApplication() {
+    prepareLead(wish.trim());
     close();
     window.requestAnimationFrame(() => document.getElementById("zayavka")?.scrollIntoView({ behavior: "smooth", block: "start" }));
   }
 
   function dictate() {
+    if (isListening) {
+      recognitionRef.current?.stop();
+      setStatus("Останавливаю диктовку…");
+      return;
+    }
+
     const Recognition = (window as RecognitionWindow).SpeechRecognition ?? (window as RecognitionWindow).webkitSpeechRecognition;
     if (!Recognition) return setStatus("Голосовой ввод не поддерживается этим браузером. Напишите пожелания текстом.");
     const recognition = new Recognition();
@@ -115,9 +145,14 @@ function PartyAssistantDialog({ open, onClose }: { open: boolean; onClose: () =>
       setStatus("Текст готов — его можно поправить перед сборкой брифа.");
     };
     recognition.onerror = () => setStatus("Не удалось распознать речь. Попробуйте ещё раз или напишите текстом.");
-    recognition.onend = () => undefined;
+    recognition.onend = () => {
+      recognitionRef.current = null;
+      setIsListening(false);
+    };
+    recognitionRef.current = recognition;
     recognition.start();
-    setStatus("Слушаю вас… Голосовой ввод может обрабатываться сервисом вашего браузера.");
+    setIsListening(true);
+    setStatus("Слушаю вас… Нажмите микрофон ещё раз, чтобы остановить запись.");
   }
 
   async function makeBrief() {
@@ -142,7 +177,7 @@ function PartyAssistantDialog({ open, onClose }: { open: boolean; onClose: () =>
         return;
       }
 
-      setWish(result.brief);
+      setWish(formatBriefParagraphs(result.brief));
       setReady(true);
       setStatus("Бриф готов. Его можно поправить и собрать с ИИ ещё раз.");
     } catch {
@@ -221,13 +256,15 @@ function PartyAssistantDialog({ open, onClose }: { open: boolean; onClose: () =>
             onChange={(event) => { setWish(event.target.value); setStatus(""); }}
             placeholder="Например: дочке 6 лет, будут друзья дома, любит русалок…"
           />
-          <div className="party-details-prompt" aria-hidden="true">
-            <strong>Детали, которые стоит уточнить</strong>
-            <span>Дата и время:</span>
-            <span>Место проведения, если есть:</span>
-            <span>Количество и возраст гостей:</span>
-          </div>
-          <button type="button" className="party-dictate" onClick={dictate} aria-label="Надиктовать пожелания" title="Надиктовать пожелания">
+          {isListening && <span className="party-listening-indicator" aria-live="polite">Слушаю…</span>}
+          <button
+            type="button"
+            className={"party-dictate" + (isListening ? " is-listening" : "")}
+            onClick={dictate}
+            aria-label={isListening ? "Остановить диктовку" : "Надиктовать пожелания"}
+            aria-pressed={isListening}
+            title={isListening ? "Остановить диктовку" : "Надиктовать пожелания"}
+          >
             <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="9" y="3" width="6" height="11" rx="3" /><path d="M6.5 11.5a5.5 5.5 0 0 0 11 0M12 17v3M8.5 20h7" /></svg>
           </button>
         </div>
@@ -243,20 +280,26 @@ function PartyAssistantDialog({ open, onClose }: { open: boolean; onClose: () =>
           )}
         </div>
         {ready && (
-          <>
-            <p className="party-private-note">PDF создаётся на вашем устройстве. Текст брифа не отправляется театру; он передаётся ИИ только при нажатии «Собрать бриф с ИИ».</p>
-            <div className="party-offer">
-              <strong>Хотите, чтобы мы предложили программу?</strong>
-              <p>Заявка находится отдельно. Если решите обсудить праздник, оставьте контакт в форме.</p>
-              <button type="button" className="party-offer-button" onClick={goToApplication}>Перейти к заявке</button>
-            </div>
-          </>
+          <div className="party-offer">
+            <strong>Хотите обсудить этот праздник?</strong>
+            <p>Приложим бриф к заявке. Останется оставить имя и телефон, чтобы мы могли ответить.</p>
+            <button type="button" className="party-offer-button" onClick={goToApplication}>Отправить бриф театру</button>
+          </div>
         )}
         <p className="party-modal-status" aria-live="polite">{status}</p>
       </div>
     </div>,
     document.body
   );
+}
+
+function formatBriefParagraphs(brief: string) {
+  return brief
+    .replace(/\r\n/g, "\n")
+    .split(/\n+/)
+    .map((paragraph) => paragraph.trim())
+    .filter(Boolean)
+    .join("\n\n");
 }
 
 function MagicIcon() {
