@@ -158,7 +158,7 @@ expectMeta({
   path: "/spektakli/zolushka",
   canonical: "https://maskarad-teatr.ru/spektakli/zolushka",
   ogType: "website",
-  ogImageIncludes: "/images/legacy/teatr-zolushka.jpg"
+  ogImageIncludes: "/images/legacy/teatr-zolushka-enhanced.jpg"
 });
 
 expectRedirect("/index.html", "/");
