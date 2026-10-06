@@ -119,7 +119,7 @@ function PartyAssistantDialog({ open, onClose }: { open: boolean; onClose: () =>
       <button className="party-modal-close" type="button" onClick={onClose} aria-label="Закрыть окно">×</button>
       <span className="eyebrow">Написать организатору</span>
       <h2>Коротко расскажите о празднике</h2>
-      <p>Напишите или надиктуйте пожелания. Мы передадим ваш запрос организатору.</p>
+      <p>Напишите или надиктуйте пожелания — мы получим запрос и свяжемся с вами.</p>
       <label className="party-wish-label" htmlFor="party-quick-wish">Ваш запрос</label>
       <div className="party-wish-field">
         <textarea id="party-quick-wish" ref={textareaRef} value={message} onChange={(event) => { setMessage(event.target.value); setSent(false); setStatus(""); }} placeholder="Например: день рождения для дочки, 6 лет, дома в субботу…" />
