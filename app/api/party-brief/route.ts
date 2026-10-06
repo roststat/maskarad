@@ -42,10 +42,11 @@ export async function POST(request: Request) {
       headers: { Authorization: `Bearer ${apiKey}`, "Content-Type": "application/json" },
       body: JSON.stringify({
         model: process.env.OPENAI_BRIEF_MODEL || "gpt-5",
+        reasoning: { effort: "minimal" },
         instructions:
           "Ты помощник театра праздника «Маскарад». Преврати пожелания клиента в краткий, доброжелательный и готовый к отправке бриф на русском. Не придумывай факты. Сохрани все детали, а неизвестное обозначь как «уточнить». Не обещай цену, наличие актеров или конкретную программу.",
         input: wish,
-        max_output_tokens: 700,
+        max_output_tokens: 1000,
         text: { format: { type: "json_schema", name: "party_brief", strict: true, schema: briefSchema } }
       }),
       cache: "no-store"
