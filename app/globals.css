@@ -1153,6 +1153,44 @@ main {
   padding: 1rem 0 4rem;
 }
 
+.show-catalog-groups {
+  width: min(1160px, calc(100% - 2rem));
+  margin-inline: auto;
+}
+
+.show-catalog-group {
+  margin-top: 2.4rem;
+}
+
+.show-catalog-group:first-child {
+  margin-top: 1rem;
+}
+
+.show-catalog-group-heading {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem;
+  border-bottom: 1px solid var(--line);
+  padding-bottom: 0.7rem;
+}
+
+.show-catalog-group-heading h2 {
+  margin: 0;
+  color: var(--wine);
+  font-family: Georgia, serif;
+  font-size: clamp(1.55rem, 3vw, 2.15rem);
+}
+
+.show-catalog-group-heading .eyebrow {
+  order: 2;
+  color: var(--muted);
+}
+
+.show-catalog-group .listing {
+  padding-bottom: 0;
+}
+
 .listing-mark {
   display: block;
   width: 2.6rem;

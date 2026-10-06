@@ -499,11 +499,13 @@ export default async function ContentPage({ params }: Params) {
         <span className="eyebrow">{isContactPage ? "Связаться" : "Каталог"}</span>
         <h2>{isContactPage ? "Выберите удобный способ" : "Популярные направления"}</h2>
       </section>
-      <section className="listing">
-        {page.items.map((item) => (
-          <CatalogCard item={item} key={item.title} />
-        ))}
-      </section>
+      {path === "/spektakli" ? <GroupedShowCatalog items={page.items} /> : (
+        <section className="listing">
+          {page.items.map((item) => (
+            <CatalogCard item={item} key={item.title} />
+          ))}
+        </section>
+      )}
       {path === "/tseny" && (
         <section className="note-band" id="discount">
           <h2>Повторный заказ</h2>
@@ -596,4 +598,28 @@ function CatalogCard({ item }: { item: CatalogItem }) {
   }
 
   return <article className="listing-card">{content}</article>;
+}
+
+const showGroupOrder = ["Классика", "Приключения", "Сказки", "Персонажи", "Новый год"] as const;
+
+function GroupedShowCatalog({ items }: { items: CatalogItem[] }) {
+  return (
+    <div className="show-catalog-groups">
+      {showGroupOrder.map((group) => {
+        const groupItems = items.filter((item) => item.group === group);
+        if (!groupItems.length) return null;
+        return (
+          <section className="show-catalog-group" key={group}>
+            <div className="show-catalog-group-heading">
+              <span className="eyebrow">{groupItems.length} программ</span>
+              <h2>{group}</h2>
+            </div>
+            <div className="listing">
+              {groupItems.map((item) => <CatalogCard item={item} key={item.title} />)}
+            </div>
+          </section>
+        );
+      })}
+    </div>
+  );
 }
