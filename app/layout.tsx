@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Footer, Header } from "./components";
+import { PartyAssistantProvider } from "./party-assistant-widget";
 import { JsonLd, createOrganizationJsonLd, createWebsiteJsonLd } from "./seo";
 import "./globals.css";
 
@@ -53,9 +54,11 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
     <html lang="ru">
       <body>
         <JsonLd data={[createOrganizationJsonLd(), createWebsiteJsonLd()]} />
-        <Header />
-        <main>{children}</main>
-        <Footer />
+        <PartyAssistantProvider>
+          <Header />
+          <main>{children}</main>
+          <Footer />
+        </PartyAssistantProvider>
       </body>
     </html>
   );
