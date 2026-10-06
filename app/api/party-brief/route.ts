@@ -11,6 +11,13 @@ const briefSchema = {
   }
 };
 
+const defaultOpenAiBaseUrl = "https://api.openai.com/v1";
+
+function openAiUrl(path: string) {
+  const baseUrl = (process.env.OPENAI_BASE_URL || defaultOpenAiBaseUrl).trim().replace(/\/+$/, "");
+  return `${baseUrl}${path.startsWith("/") ? path : `/${path}`}`;
+}
+
 export async function POST(request: Request) {
   const apiKey = process.env.OPENAI_API_KEY;
 
@@ -30,7 +37,7 @@ export async function POST(request: Request) {
   }
 
   try {
-    const response = await fetch("https://api.openai.com/v1/responses", {
+    const response = await fetch(openAiUrl("/responses"), {
       method: "POST",
       headers: { Authorization: `Bearer ${apiKey}`, "Content-Type": "application/json" },
       body: JSON.stringify({
