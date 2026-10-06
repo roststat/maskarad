@@ -1334,49 +1334,8 @@ main {
   cursor: pointer;
 }
 
-.lead-brief-art {
-  position: relative;
-  display: grid;
-  flex: 0 0 4.4rem;
-  place-items: center;
-  width: 4.4rem;
-  height: 4.8rem;
-  border-radius: 0.85rem;
-  background: #f9ecee;
-  transition: transform 180ms ease, background 180ms ease;
-}
-
-.lead-brief-art svg {
-  width: 3.8rem;
-  height: 4.2rem;
-}
-
-.lead-brief-mic {
-  position: absolute;
-  top: 0.1rem;
-  right: -0.1rem;
-  display: grid;
-  width: 1.5rem;
-  height: 1.5rem;
-  place-items: center;
-  border: 2px solid #fffdf9;
-  border-radius: 50%;
-  color: #fff;
-  background: #258055;
-  box-shadow: 0 3px 9px rgba(23, 97, 61, 0.3);
-  animation: assistant-badge-pulse 2.8s ease-in-out infinite;
-}
-
-.lead-brief-mic svg {
-  width: 0.8rem;
-  height: 0.8rem;
-  stroke: currentColor;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-  stroke-width: 1.9;
-}
-
 .lead-brief-copy {
+  width: 100%;
   display: grid;
   gap: 0.25rem;
 }
@@ -1427,12 +1386,6 @@ main {
 .brief-entry button:hover .lead-brief-copy strong,
 .brief-entry button:focus-visible .lead-brief-copy strong {
   text-decoration-color: currentColor;
-}
-
-.brief-entry button:hover .lead-brief-art,
-.brief-entry button:focus-visible .lead-brief-art {
-  background: #f6e3e8;
-  transform: translateY(-2px);
 }
 
 .lead-form-fallback {

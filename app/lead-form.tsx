@@ -137,19 +137,6 @@ export function BriefEntry() {
   return (
     <aside className="brief-entry" aria-label="Написать организатору о празднике">
       <button type="button" onClick={openBrief}>
-        <span className="lead-brief-art" aria-hidden="true">
-          <svg viewBox="0 0 74 82" fill="none">
-            <rect x="11" y="5" width="48" height="64" rx="7" fill="#fff" stroke="#6A2841" strokeWidth="2" />
-            <path d="M45 5v10a5 5 0 0 0 5 5h9" fill="#F9EAD8" stroke="#6A2841" strokeWidth="2" />
-            <path d="M21 28h27M21 35h22M21 42h26" stroke="#D4AFC0" strokeWidth="2.5" strokeLinecap="round" />
-            <rect x="26" y="52" width="44" height="23" rx="6" fill="#6A2841" />
-            <path d="m35 63 8 5 17-13" fill="none" stroke="white" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" />
-            <path d="m5 51 3 2 2 4 2-4 3-2-3-2-2-4-2 4-3 2Z" fill="#EFB952" />
-          </svg>
-          <span className="lead-brief-mic">
-            <svg viewBox="0 0 24 24" fill="none"><rect x="9" y="3" width="6" height="11" rx="3" /><path d="M6.5 11.5a5.5 5.5 0 0 0 11 0M12 17v3M8.5 20h7" /></svg>
-          </span>
-        </span>
         <span className="lead-brief-copy">
           <strong>Написать организатору <span aria-hidden="true">→</span></strong>
           <span>Коротко расскажите о празднике текстом или голосом и отправьте запрос.</span>
