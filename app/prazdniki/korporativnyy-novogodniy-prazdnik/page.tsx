@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { CTA, GalleryStrip } from "../../components";
 import { phone, phoneHref } from "../../data";
-import { AdSlot, Breadcrumbs, JsonLd, buildBreadcrumbs, createBreadcrumbJsonLd, createWebPageJsonLd } from "../../seo";
+import { Breadcrumbs, JsonLd, buildBreadcrumbs, createBreadcrumbJsonLd, createWebPageJsonLd } from "../../seo";
 
 const pagePath = "/prazdniki/korporativnyy-novogodniy-prazdnik";
 const pageTitle = "Новогодние корпоративные праздники для детей сотрудников";
@@ -101,8 +101,6 @@ export default function CorporateNewYearPage() {
           <p>Программу собирает команда театра: актерская подача, темп, внимание к детям и мягкое управление группой.</p>
         </article>
       </section>
-
-      <AdSlot id="ad-inline-corporate-new-year" />
 
       <section className="ny-section">
         <div className="intro">

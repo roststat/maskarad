@@ -4,34 +4,32 @@ import { galleryImages, phone, phoneHref } from "./data";
 import { HeaderNav } from "./header-nav";
 import { LeadForm } from "./lead-form";
 import { MobileQuickActions } from "./mobile-quick-actions";
+import { PartyAssistantWidget } from "./party-assistant-widget";
 
 export function Header() {
   return (
     <>
       <header className="site-header">
-        <Link className="brand" href="/" aria-label="Маскарад, на главную">
-          <Image
-            className="brand-mark-image"
-            src="/images/legacy/maskarad-mask-transparent.png"
-            alt=""
-            width={1282}
-            height={1227}
-            sizes="43px"
-            priority
-          />
-          <span>
-            <strong>Маскарад</strong>
-            <small>детский выездной театр</small>
-          </span>
-        </Link>
-        <HeaderNav />
-        <div className="header-actions">
-          <a className="header-phone" href={phoneHref}>
-            {phone}
-          </a>
-          <a className="header-request" href="#zayavka">
-            Заявка
-          </a>
+        <div className="site-header-inner">
+          <HeaderNav />
+          <div className="brand">
+            <PartyAssistantWidget />
+            <Link className="brand-link" href="/" aria-label="Маскарад, на главную">
+            <span>
+              <strong>Маскарад</strong>
+              <small>театр праздника</small>
+            </span>
+            </Link>
+          </div>
+          <div className="header-actions">
+            <a className="header-phone" href={phoneHref}>
+              <svg className="header-phone-icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <rect x="7" y="2.5" width="10" height="19" rx="2" />
+                <path d="M10 5h4M11.25 18.5h1.5M19 6.5c1.7 1.5 1.7 3.5 0 5M21 4.5c2.8 2.7 2.8 6.3 0 9" />
+              </svg>
+              <span className="header-phone-text">{phone}</span>
+            </a>
+          </div>
         </div>
       </header>
       <MobileQuickActions />
@@ -43,7 +41,7 @@ export function Footer() {
   return (
     <footer className="footer">
       <div>
-        <strong>Детский выездной театр «Маскарад»</strong>
+        <strong>Театр праздника «Маскарад»</strong>
         <p>Спектакли, праздники и программы под ключ в Москве и Московской области.</p>
       </div>
       <a href={phoneHref}>{phone}</a>

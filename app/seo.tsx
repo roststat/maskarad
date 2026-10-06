@@ -1,10 +1,10 @@
-import Link from "next/link";
 import { contentHubs, contentPages, type ContentHubPath, type ContentPagePath } from "./content-data";
 import { pages, type PagePath } from "./data";
 import { landingPages, type LandingPath } from "./landing-data";
+import { StickyBreadcrumbs } from "./sticky-breadcrumbs";
 
 const siteUrl = "https://maskarad-teatr.ru";
-const siteName = "Детский выездной театр «Маскарад»";
+const siteName = "Театр праздника «Маскарад»";
 
 type BreadcrumbItem = {
   href: string;
@@ -60,27 +60,9 @@ export function buildBreadcrumbs(path: string): BreadcrumbItem[] {
 }
 
 export function Breadcrumbs({ items }: { items: BreadcrumbItem[] }) {
-  if (items.length < 2) return null;
+  if (items.length === 0) return null;
 
-  return (
-    <nav className="breadcrumbs" aria-label="Хлебные крошки">
-      <ol>
-        {items.map((item, index) => {
-          const isLast = index === items.length - 1;
-
-          return (
-            <li key={item.href}>
-              {isLast ? (
-                <span aria-current="page">{item.label}</span>
-              ) : (
-                <Link href={item.href}>{item.label}</Link>
-              )}
-            </li>
-          );
-        })}
-      </ol>
-    </nav>
-  );
+  return <StickyBreadcrumbs items={items} />;
 }
 
 export function JsonLd({ data }: { data: Record<string, unknown> | Record<string, unknown>[] }) {
@@ -278,13 +260,4 @@ export function createFaqJsonLd({
       }
     }))
   };
-}
-
-export function AdSlot({ id, label = "Рекламный блок" }: { id: string; label?: string }) {
-  return (
-    <aside className="ad-slot" data-ad-slot={id} aria-label={label}>
-      <span>{label}</span>
-      <p>Место под РСЯ, партнерский баннер или сезонное предложение.</p>
-    </aside>
-  );
 }

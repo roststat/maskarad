@@ -20,11 +20,6 @@ export function LeadForm({ label }: LeadFormProps) {
     () => ({
       name: `${formId}-name`,
       phone: `${formId}-phone`,
-      occasion: `${formId}-occasion`,
-      date: `${formId}-date`,
-      age: `${formId}-age`,
-      location: `${formId}-location`,
-      message: `${formId}-message`
     }),
     [formId]
   );
@@ -44,11 +39,6 @@ export function LeadForm({ label }: LeadFormProps) {
       "Здравствуйте! Хочу обсудить детский праздник.",
       formatLine("Имя", data.get("name")),
       formatLine("Телефон", phone),
-      formatLine("Формат", data.get("occasion")),
-      formatLine("Дата", data.get("date")),
-      formatLine("Возраст детей", data.get("age")),
-      formatLine("Площадка", data.get("location")),
-      formatLine("Комментарий", data.get("message"))
     ]
       .filter(Boolean)
       .join("\n");
@@ -65,11 +55,7 @@ export function LeadForm({ label }: LeadFormProps) {
         body: JSON.stringify({
           name: String(data.get("name") || "").trim(),
           phone,
-          occasion: String(data.get("occasion") || "").trim(),
-          date: String(data.get("date") || "").trim(),
-          age: String(data.get("age") || "").trim(),
-          location: String(data.get("location") || "").trim(),
-          message: String(data.get("message") || "").trim(),
+          message: "",
           page: window.location.pathname,
           leadText: nextLeadText
         })
@@ -116,38 +102,7 @@ export function LeadForm({ label }: LeadFormProps) {
             aria-invalid={status === "error"}
           />
         </label>
-        <label htmlFor={fields.occasion}>
-          Формат
-          <select id={fields.occasion} name="occasion" defaultValue="">
-            <option value="" disabled>
-              Что планируете
-            </option>
-            <option>День рождения</option>
-            <option>Спектакль</option>
-            <option>Детский сад</option>
-            <option>Школа</option>
-            <option>Выпускной</option>
-            <option>Новогодний праздник</option>
-            <option>Другое</option>
-          </select>
-        </label>
-        <label htmlFor={fields.date}>
-          Дата
-          <input id={fields.date} name="date" placeholder="Например, 20 октября" />
-        </label>
-        <label htmlFor={fields.age}>
-          Возраст детей
-          <input id={fields.age} name="age" placeholder="Например, 5-7 лет" />
-        </label>
-        <label htmlFor={fields.location}>
-          Площадка
-          <input id={fields.location} name="location" placeholder="Дом, сад, школа, ресторан..." />
-        </label>
       </div>
-      <label htmlFor={fields.message}>
-        Комментарий
-        <textarea id={fields.message} name="message" placeholder="Любимая тема, количество детей, пожелания..." />
-      </label>
       <div className="lead-form-actions">
         <button type="submit" disabled={status === "sending"}>
           {status === "sending" ? "Отправляем..." : label}

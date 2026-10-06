@@ -14,7 +14,6 @@ import {
 import { pages, type CatalogItem, type PagePath } from "../data";
 import { landingPages, type LandingPath } from "../landing-data";
 import {
-  AdSlot,
   Breadcrumbs,
   JsonLd,
   buildBreadcrumbs,
@@ -47,7 +46,7 @@ function createSocialMetadata({
       type,
       locale: "ru_RU",
       url: path,
-      siteName: "Детский выездной театр «Маскарад»",
+      siteName: "Театр праздника «Маскарад»",
       title,
       description,
       images: [
@@ -232,11 +231,10 @@ export default async function ContentPage({ params }: Params) {
 
           <div className="article-layout">
             <div className="article-content">
-              {page.sections.map((section, index) => (
+              {page.sections.map((section) => (
                 <section key={section.title}>
                   <h2>{section.title}</h2>
                   <p>{section.text}</p>
-                  {index === (page.adSlots?.inlineAfterSection ?? 0) && <AdSlot id="ad-inline-article" />}
                 </section>
               ))}
               {page.authorNote && (
@@ -248,7 +246,6 @@ export default async function ContentPage({ params }: Params) {
               )}
             </div>
             <aside className="article-aside">
-              <AdSlot id="ad-sidebar-desktop" label={page.adSlots?.sidebarLabel ?? "Баннер"} />
               <div>
                 <span className="eyebrow">Связано</span>
                 {page.related.map((item) => (
@@ -276,8 +273,6 @@ export default async function ContentPage({ params }: Params) {
               </div>
             </section>
           )}
-
-          {page.adSlots?.midPage && <AdSlot id="ad-mid-content-page" label="Рекламное место в материале" />}
 
           {page.nextSteps && (
             <section className="article-next">
@@ -363,7 +358,6 @@ export default async function ContentPage({ params }: Params) {
             </div>
           </section>
         )}
-        <AdSlot id="ad-inline-content-hub" />
         <section className="listing-heading">
           <span className="eyebrow">Материалы</span>
           <h2>Страницы для роста трафика</h2>
@@ -413,7 +407,7 @@ export default async function ContentPage({ params }: Params) {
           {page.media && (
             <figure className="landing-media">
               <Image src={page.media.src} alt={page.media.alt} width={680} height={480} priority />
-              <figcaption>{page.media.caption}</figcaption>
+              {shouldShowMediaCaption(page.media.caption) && <figcaption>{page.media.caption}</figcaption>}
             </figure>
           )}
         </section>
@@ -435,8 +429,6 @@ export default async function ContentPage({ params }: Params) {
             </article>
           ))}
         </section>
-
-        <AdSlot id="ad-inline-after-intro" />
 
         <section className="ny-places landing-includes">
           <div>
@@ -476,11 +468,6 @@ export default async function ContentPage({ params }: Params) {
           </div>
         </section>
 
-        <section className="source-note">
-          <span>SEO-источник старой страницы:</span>
-          <code>{page.sourceUrl}</code>
-        </section>
-
         <CTA label={page.cta} />
       </>
     );
@@ -507,8 +494,6 @@ export default async function ContentPage({ params }: Params) {
       <JsonLd data={jsonLd} />
       <Breadcrumbs items={breadcrumbs} />
       <SectionHero kicker={page.kicker} title={page.title} description={page.description} cta={page.cta} />
-      <CatalogSummary items={page.items} cta={page.cta} />
-      <AdSlot id="ad-inline-after-summary" />
       <CatalogRelated page={page} isContactPage={isContactPage} />
       <section className="listing-heading">
         <span className="eyebrow">{isContactPage ? "Связаться" : "Каталог"}</span>
@@ -564,6 +549,12 @@ function formatDate(value: string) {
   }).format(new Date(`${value}T00:00:00`));
 }
 
+function shouldShowMediaCaption(caption: string) {
+  return !/(архив старого сайта|отдельн(?:ая|ой) (?:страниц|seo)|seo-(?:маршрут|кластер)|переносится в новую структуру|коммерческим интентом)/i.test(
+    caption
+  );
+}
+
 function CatalogRelated({ page, isContactPage }: { page: (typeof pages)[PagePath]; isContactPage: boolean }) {
   return (
     <section className="catalog-related">
@@ -579,29 +570,6 @@ function CatalogRelated({ page, isContactPage }: { page: (typeof pages)[PagePath
           </Link>
         ))}
       </div>
-    </section>
-  );
-}
-
-function CatalogSummary({ items, cta }: { items: CatalogItem[]; cta: string }) {
-  const linkedCount = items.filter((item) => item.href && !item.href.startsWith("#") && !item.href.startsWith("tel:")).length;
-  const pendingCount = items.length - linkedCount;
-
-  return (
-    <section className="catalog-summary" aria-label="Кратко о разделе">
-      <div>
-        <strong>{items.length}</strong>
-        <span>направлений в разделе</span>
-      </div>
-      <div>
-        <strong>{linkedCount}</strong>
-        <span>страниц уже раскрыты подробно</span>
-      </div>
-      <div>
-        <strong>{pendingCount}</strong>
-        <span>{pendingCount === 0 ? "без черновых карточек" : "еще ждут точного переноса"}</span>
-      </div>
-      <a href="#zayavka">{cta}</a>
     </section>
   );
 }

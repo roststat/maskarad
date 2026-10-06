@@ -1,10 +1,11 @@
 import Image from "next/image";
 import Link from "next/link";
 import { CTA, GalleryStrip } from "./components";
+import { Breadcrumbs, buildBreadcrumbs } from "./seo";
 
 const stats = [
   ["с 2005", "создаем детские праздники"],
-  ["10%", "скидка при повторном заказе"],
+  ["200+", "спектаклей и программ"],
   ["Москва", "и Московская область"]
 ];
 
@@ -67,9 +68,10 @@ const featureGroups = [
 export default function Home() {
   return (
     <>
+      <Breadcrumbs items={buildBreadcrumbs("/")} />
       <section className="hero">
         <div className="hero-copy">
-          <span className="eyebrow">Детский выездной театр</span>
+          <span className="eyebrow">Театр праздника</span>
           <h1>Спектакль, где ребенок становится частью сказки</h1>
           <p>
             «Маскарад» привозит актеров, костюмы, декорации и интерактивную программу домой, в сад,
