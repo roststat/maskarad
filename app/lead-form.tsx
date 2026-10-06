@@ -135,7 +135,7 @@ export function BriefEntry() {
   const openBrief = usePartyAssistant();
 
   return (
-    <aside className="brief-entry" aria-label="Бриф праздника для себя">
+    <aside className="brief-entry" aria-label="Написать организатору о празднике">
       <button type="button" onClick={openBrief}>
         <span className="lead-brief-art" aria-hidden="true">
           <svg viewBox="0 0 74 82" fill="none">
@@ -143,7 +143,7 @@ export function BriefEntry() {
             <path d="M45 5v10a5 5 0 0 0 5 5h9" fill="#F9EAD8" stroke="#6A2841" strokeWidth="2" />
             <path d="M21 28h27M21 35h22M21 42h26" stroke="#D4AFC0" strokeWidth="2.5" strokeLinecap="round" />
             <rect x="26" y="52" width="44" height="23" rx="6" fill="#6A2841" />
-            <text x="48" y="68" fill="white" fontFamily="Arial, sans-serif" fontSize="11" fontWeight="700" textAnchor="middle">PDF</text>
+            <path d="m35 63 8 5 17-13" fill="none" stroke="white" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" />
             <path d="m5 51 3 2 2 4 2-4 3-2-3-2-2-4-2 4-3 2Z" fill="#EFB952" />
           </svg>
           <span className="lead-brief-mic">
@@ -151,8 +151,8 @@ export function BriefEntry() {
           </span>
         </span>
         <span className="lead-brief-copy">
-          <strong>Бриф праздника в PDF для себя <span aria-hidden="true">→</span></strong>
-          <span>Соберите идеи и сохраните документ без заявки и номера телефона.</span>
+          <strong>Написать организатору <span aria-hidden="true">→</span></strong>
+          <span>Коротко расскажите о празднике текстом или голосом и отправьте запрос.</span>
           <span className="lead-brief-hint">Можно надиктовать <span className="lead-brief-equalizer" aria-hidden="true"><i /><i /><i /></span></span>
         </span>
       </button>
