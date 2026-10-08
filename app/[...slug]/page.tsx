@@ -22,6 +22,7 @@ import {
   createBreadcrumbJsonLd,
   createFaqJsonLd,
   createItemListJsonLd,
+  createServiceJsonLd,
   createWebPageJsonLd
 } from "../seo";
 
@@ -136,7 +137,8 @@ export async function generateMetadata({ params }: Params): Promise<Metadata> {
       title: page.title,
       description: page.description,
       alternates: {
-        canonical: landingPath
+        canonical: landingPath,
+        types: { "text/markdown": `/markdown${landingPath}` }
       },
       ...createSocialMetadata({
         path: landingPath,
@@ -384,7 +386,11 @@ export default async function ContentPage({ params }: Params) {
         description: page.description,
         image: page.media?.src
       }),
-      createBreadcrumbJsonLd(breadcrumbs)
+      createBreadcrumbJsonLd(breadcrumbs),
+      createFaqJsonLd({ path: landingPath, items: page.faq }),
+      ...(/^(\/prazdniki|\/spektakli|\/uslugi)\//.test(landingPath)
+        ? [createServiceJsonLd({ path: landingPath, title: page.title, description: page.description })]
+        : [])
     ];
 
     return (

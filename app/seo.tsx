@@ -261,3 +261,28 @@ export function createFaqJsonLd({
     }))
   };
 }
+
+export function createServiceJsonLd({
+  path,
+  title,
+  description
+}: {
+  path: string;
+  title: string;
+  description: string;
+}) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "@id": `${siteUrl}${path}#service`,
+    name: title,
+    description,
+    url: `${siteUrl}${path}`,
+    provider: { "@id": `${siteUrl}#organization` },
+    areaServed: ["Москва", "Московская область"],
+    potentialAction: {
+      "@type": "CommunicateAction",
+      target: `${siteUrl}${path}#zayavka`
+    }
+  };
+}

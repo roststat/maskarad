@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { CTA, GalleryStrip } from "./components";
-import { Breadcrumbs, buildBreadcrumbs } from "./seo";
+import { Breadcrumbs, JsonLd, buildBreadcrumbs, createFaqJsonLd } from "./seo";
 
 const stats = [
   ["с 2005", "создаем детские праздники"],
@@ -65,9 +65,33 @@ const featureGroups = [
   }
 ];
 
+const homeFaq = [
+  {
+    question: "Где можно провести праздник с театром «Маскарад»?",
+    answer: "Мы проводим выездные спектакли и праздники в Москве и Московской области: дома, в детском саду, школе, ресторане, лофте или детском центре. Программу адаптируем под площадку."
+  },
+  {
+    question: "Как подобрать спектакль для детей разного возраста?",
+    answer: "Расскажите возраст детей, количество гостей, площадку и пожелания к сюжету. Мы предложим подходящий спектакль и подстроим темп интерактива под группу."
+  },
+  {
+    question: "Можно ли дополнить спектакль другими услугами?",
+    answer: "Да. К спектаклю можно добавить мастер-класс, аквагрим, шоу мыльных пузырей, оформление или съемку. Состав программы обсуждаем перед заказом."
+  },
+  {
+    question: "Проводите ли вы праздники для детских садов и школ?",
+    answer: "Да. Для детских садов и школ есть выездные спектакли, утренники, выпускные и тематические программы. Формат подбираем под возраст, размер группы и помещение."
+  },
+  {
+    question: "Как узнать стоимость и оставить заявку?",
+    answer: "Посмотрите раздел «Цены и форматы» или оставьте имя и телефон в форме на сайте. Мы уточним дату, место и состав программы, затем предложим подходящий вариант."
+  }
+];
+
 export default function Home() {
   return (
     <>
+      <JsonLd data={createFaqJsonLd({ path: "/", items: homeFaq })} />
       <Breadcrumbs items={buildBreadcrumbs("/")} />
       <section className="hero">
         <div className="hero-copy">
@@ -172,6 +196,19 @@ export default function Home() {
         <Link className="button primary" href="/prazdniki/korporativnyy-novogodniy-prazdnik">
           Новогодние корпоративы
         </Link>
+      </section>
+
+      <section className="ny-faq" aria-labelledby="home-faq-title">
+        <span className="eyebrow">Частые вопросы</span>
+        <h2 id="home-faq-title">Ответы перед заказом праздника</h2>
+        <div>
+          {homeFaq.map((item) => (
+            <article key={item.question}>
+              <h3>{item.question}</h3>
+              <p>{item.answer}</p>
+            </article>
+          ))}
+        </div>
       </section>
 
       <GalleryStrip />
