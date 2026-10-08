@@ -1,0 +1,10 @@
+[Unit]
+Description=Daily Maskarad lead retention cleanup
+
+[Timer]
+OnCalendar=daily
+Persistent=true
+Unit=maskarad-leads-purge.service
+
+[Install]
+WantedBy=timers.target

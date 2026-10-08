@@ -3,6 +3,7 @@
 import Image from "next/image";
 import { createContext, ReactNode, useCallback, useContext, useEffect, useRef, useState } from "react";
 import { createPortal } from "react-dom";
+import { consentVersion } from "./legal-data";
 
 type Recognition = {
   lang: string;
@@ -105,7 +106,7 @@ function PartyAssistantDialog({ open, onClose }: { open: boolean; onClose: () =>
     setBusy(true);
     setStatus("Отправляем запрос организатору…");
     try {
-      const response = await fetch("/api/leads", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ name: name.trim(), phone: phone.trim(), message: message.trim(), page: window.location.pathname, leadText }) });
+      const response = await fetch("/api/leads", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ name: name.trim(), phone: phone.trim(), message: message.trim(), page: window.location.pathname, leadText, consent: true, consentVersion }) });
       if (!response.ok) throw new Error("lead_failed");
       setSent(true);
       setStatus("Запрос отправлен организатору. Скоро свяжемся с вами.");
@@ -130,7 +131,7 @@ function PartyAssistantDialog({ open, onClose }: { open: boolean; onClose: () =>
       <div className="party-send-form">
         <strong>Куда ответить?</strong>
         <div className="party-send-fields"><label>Имя<input value={name} onChange={(event) => setName(event.target.value)} placeholder="Как к вам обращаться" autoComplete="name" /></label><label>Телефон<input value={phone} onChange={(event) => { setPhone(event.target.value); setSent(false); }} placeholder="+7 ..." inputMode="tel" autoComplete="tel" /></label></div>
-        <label className="party-consent"><input type="checkbox" checked={consent} onChange={(event) => setConsent(event.target.checked)} /><span>Согласен(на) на обработку данных для ответа на заявку.</span></label>
+        <label className="party-consent"><input type="checkbox" checked={consent} onChange={(event) => setConsent(event.target.checked)} required /><span>Даю <a href="/personal-data-consent" target="_blank" rel="noopener noreferrer">согласие на обработку персональных данных</a> для ответа на запрос. <a href="/privacy-policy" target="_blank" rel="noopener noreferrer">Политика обработки данных</a>.</span></label>
       </div>
       <button type="button" className="party-send-brief" disabled={busy || sent} onClick={() => void sendToOrganizer()}>{busy ? "Отправляем…" : sent ? "Запрос отправлен" : "Отправить запрос организатору"}</button>
       <p className="party-modal-status" role="status">{status}</p>

@@ -1,0 +1,17 @@
+[Unit]
+Description=Remove expired Maskarad lead records
+ConditionPathIsDirectory=/opt/maskarad/private/leads
+
+[Service]
+Type=oneshot
+User=root
+Group=root
+WorkingDirectory=/opt/maskarad/app
+Environment=LEAD_STORAGE_DIR=/opt/maskarad/private/leads
+ExecStart=/usr/bin/node /opt/maskarad/app/scripts/server/purge-leads.mjs
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=strict
+ProtectHome=true
+ReadWritePaths=/opt/maskarad/private/leads
+

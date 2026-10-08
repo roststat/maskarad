@@ -1,17 +1,16 @@
 import { NextResponse } from "next/server";
+import { consentVersion } from "../../legal-data";
+import { storeLead } from "./storage";
 
 export const runtime = "nodejs";
 
 type LeadPayload = {
   name?: string;
   phone?: string;
-  occasion?: string;
-  date?: string;
-  age?: string;
-  location?: string;
   message?: string;
   page?: string;
-  leadText?: string;
+  consent?: boolean;
+  consentVersion?: string;
 };
 
 export async function POST(request: Request) {
@@ -23,49 +22,34 @@ export async function POST(request: Request) {
     return NextResponse.json({ ok: false, error: "invalid_json" }, { status: 400 });
   }
 
+  if (!payload || typeof payload !== "object" || Array.isArray(payload)) {
+    return NextResponse.json({ ok: false, error: "invalid_payload" }, { status: 400 });
+  }
+
   const phone = normalizeText(payload.phone);
 
   if (phone.length < 6) {
     return NextResponse.json({ ok: false, error: "phone_required" }, { status: 400 });
   }
 
+  if (payload.consent !== true || payload.consentVersion !== consentVersion) {
+    return NextResponse.json({ ok: false, error: "consent_required" }, { status: 400 });
+  }
+
+  const recordedAt = new Date().toISOString();
   const lead = {
     name: normalizeText(payload.name),
     phone,
-    occasion: normalizeText(payload.occasion),
-    date: normalizeText(payload.date),
-    age: normalizeText(payload.age),
-    location: normalizeText(payload.location),
     message: normalizeText(payload.message),
     page: normalizePath(payload.page),
-    leadText: normalizeText(payload.leadText),
-    createdAt: new Date().toISOString(),
-    source: "maskarad-site"
+    createdAt: recordedAt,
+    consent: { accepted: true as const, version: consentVersion, recordedAt }
   };
-
-  const webhookUrl = process.env.LEAD_WEBHOOK_URL;
-
-  if (!webhookUrl) {
-    return NextResponse.json({ ok: false, error: "lead_webhook_not_configured" }, { status: 503 });
-  }
-
   try {
-    const response = await fetch(webhookUrl, {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json"
-      },
-      body: JSON.stringify(lead),
-      cache: "no-store"
-    });
-
-    if (!response.ok) {
-      return NextResponse.json({ ok: false, error: "lead_webhook_failed" }, { status: 502 });
-    }
-
+    await storeLead(lead);
     return NextResponse.json({ ok: true });
   } catch {
-    return NextResponse.json({ ok: false, error: "lead_webhook_unavailable" }, { status: 502 });
+    return NextResponse.json({ ok: false, error: "lead_storage_unavailable" }, { status: 503 });
   }
 }
 

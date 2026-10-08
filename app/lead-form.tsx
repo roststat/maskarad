@@ -2,9 +2,8 @@
 
 import { FormEvent, useId, useMemo, useState } from "react";
 import { phoneHref } from "./data";
+import { consentVersion } from "./legal-data";
 import { usePartyAssistant } from "./party-assistant-widget";
-
-const whatsappPhone = "79951219467";
 
 type LeadFormProps = {
   label: string;
@@ -16,6 +15,7 @@ export function LeadForm({ label }: LeadFormProps) {
   const formId = useId();
   const [status, setStatus] = useState<LeadStatus>("idle");
   const [leadText, setLeadText] = useState("");
+  const [consent, setConsent] = useState(false);
 
   const fields = useMemo(
     () => ({
@@ -32,6 +32,10 @@ export function LeadForm({ label }: LeadFormProps) {
     const phone = String(data.get("phone") || "").trim();
 
     if (phone.length < 6) {
+      setStatus("error");
+      return;
+    }
+    if (!consent) {
       setStatus("error");
       return;
     }
@@ -58,13 +62,16 @@ export function LeadForm({ label }: LeadFormProps) {
           phone,
           message: "",
           page: window.location.pathname,
-          leadText: nextLeadText
+          leadText: nextLeadText,
+          consent: true,
+          consentVersion
         })
       });
 
       if (response.ok) {
         setStatus("sent");
         form.reset();
+        setConsent(false);
         return;
       }
 
@@ -104,6 +111,10 @@ export function LeadForm({ label }: LeadFormProps) {
           />
         </label>
       </div>
+      <label className="lead-consent">
+        <input type="checkbox" checked={consent} onChange={(event) => { setConsent(event.target.checked); setStatus("idle"); }} required />
+        <span>Даю <a href="/personal-data-consent" target="_blank" rel="noopener noreferrer">согласие на обработку персональных данных</a> для ответа на заявку. <a href="/privacy-policy" target="_blank" rel="noopener noreferrer">Политика обработки данных</a>.</span>
+      </label>
       <div className="lead-form-actions">
         <button type="submit" disabled={status === "sending"}>
           {status === "sending" ? "Отправляем..." : label}
@@ -112,19 +123,16 @@ export function LeadForm({ label }: LeadFormProps) {
       </div>
       {leadText && status !== "sent" && (
         <div className="lead-form-fallback" aria-label="Запасные способы отправки заявки">
-          <a href={`https://wa.me/${whatsappPhone}?text=${encodeURIComponent(leadText)}`} target="_blank" rel="noreferrer">
-            Отправить в WhatsApp
-          </a>
           <button type="button" onClick={copyLead}>
             Скопировать заявку
           </button>
         </div>
       )}
       {status !== "idle" && <p className="lead-form-status" aria-live="polite">
-        {status === "error" && "Добавьте телефон, чтобы театр смог связаться с вами."}
+        {status === "error" && "Укажите телефон и подтвердите согласие на обработку данных."}
         {status === "sending" && "Пробуем отправить заявку через основной канал."}
         {status === "sent" && "Заявка отправлена. Если вопрос срочный, лучше сразу позвонить."}
-        {status === "fallback" && "Основной канал пока не подключен. Можно позвонить, отправить текст в мессенджер или скопировать заявку."}
+        {status === "fallback" && "Не удалось сохранить заявку. Позвоните нам или скопируйте текст для себя."}
         {status === "copied" && "Текст заявки скопирован. Его можно отправить в любой удобный мессенджер."}
       </p>}
     </form>

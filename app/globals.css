@@ -1695,6 +1695,31 @@ main {
   accent-color: var(--wine);
 }
 
+.lead-consent {
+  display: flex !important;
+  align-items: flex-start;
+  gap: 0.6rem !important;
+  color: var(--muted);
+  font-size: 0.82rem !important;
+  font-weight: 500 !important;
+  line-height: 1.45;
+}
+
+.lead-consent input {
+  width: 1.1rem;
+  height: 1.1rem;
+  margin: 0.1rem 0 0;
+  flex: none;
+  accent-color: var(--wine);
+}
+
+.lead-consent a,
+.party-consent a {
+  color: var(--wine);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
 .party-dictate {
   position: absolute;
   right: 0.75rem;
@@ -1762,6 +1787,7 @@ main {
 
 .footer {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   gap: 1rem;
   width: 100%;
@@ -1776,6 +1802,51 @@ main {
 .footer a {
   color: var(--wine);
   font-weight: 800;
+}
+
+.footer-legal {
+  display: grid;
+  gap: 0.45rem;
+  font-size: 0.86rem;
+}
+
+.footer-legal a { font-weight: 600; }
+
+.legal-page {
+  width: min(100% - 2rem, 900px);
+  margin: 2rem auto 5rem;
+  line-height: 1.7;
+}
+
+.legal-page nav { color: var(--muted); font-size: 0.9rem; }
+.legal-page nav a, .legal-page section a, .legal-page > p a { color: var(--wine); text-decoration: underline; }
+.legal-page h1 { margin: 1.4rem 0 1rem; line-height: 1.15; }
+.legal-page h2 { margin: 2rem 0 0.6rem; font-size: clamp(1.2rem, 2vw, 1.55rem); }
+.legal-page p { margin: 0.7rem 0; }
+.legal-draft { padding: 0.9rem 1rem; border: 1px solid #b45309; border-radius: 0.75rem; background: #fffbeb; }
+.legal-updated { color: var(--muted); font-size: 0.9rem; }
+
+.cookie-notice {
+  position: fixed;
+  right: 1rem;
+  bottom: 1rem;
+  z-index: 80;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  width: min(35rem, calc(100% - 2rem));
+  padding: 0.9rem 1rem;
+  border: 1px solid var(--line);
+  border-radius: 1rem;
+  background: #fff;
+  box-shadow: 0 10px 32px rgba(37, 19, 27, 0.16);
+}
+.cookie-notice p { margin: 0; font-size: 0.85rem; line-height: 1.4; }
+.cookie-notice a { color: var(--wine); text-decoration: underline; }
+.cookie-notice button { flex: none; border: 0; border-radius: 999px; padding: 0.7rem 1rem; color: #fff; background: var(--wine); font: inherit; font-weight: 700; cursor: pointer; }
+
+@media (max-width: 520px) {
+  .cookie-notice { bottom: 5.5rem; align-items: flex-start; flex-direction: column; }
 }
 
 .new-year-band,

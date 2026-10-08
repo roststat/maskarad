@@ -5,6 +5,7 @@ import { HeaderNav } from "./header-nav";
 import { BriefEntry, LeadForm } from "./lead-form";
 import { MobileQuickActions } from "./mobile-quick-actions";
 import { PartyAssistantWidget } from "./party-assistant-widget";
+import { CookieNotice } from "./cookie-notice";
 
 export function Header() {
   return (
@@ -39,13 +40,22 @@ export function Header() {
 
 export function Footer() {
   return (
-    <footer className="footer">
-      <div>
-        <strong>Театр праздника «Маскарад»</strong>
-        <p>Спектакли, праздники и программы под ключ в Москве и Московской области.</p>
-      </div>
-      <a href={phoneHref}>{phone}</a>
-    </footer>
+    <>
+      <footer className="footer">
+        <div>
+          <strong>Театр праздника «Маскарад»</strong>
+          <p>Спектакли, праздники и программы под ключ в Москве и Московской области.</p>
+        </div>
+        <nav className="footer-legal" aria-label="Документы сайта">
+          <Link href="/privacy-policy">Политика персональных данных</Link>
+          <Link href="/personal-data-consent">Согласие на обработку данных</Link>
+          <Link href="/cookie-policy">Политика cookies</Link>
+          <Link href="/terms">Условия использования сайта</Link>
+        </nav>
+        <a href={phoneHref}>{phone}</a>
+      </footer>
+      <CookieNotice />
+    </>
   );
 }
 
