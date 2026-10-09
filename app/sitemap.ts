@@ -5,6 +5,7 @@ import { landingPages } from "./landing-data";
 
 const base = "https://maskarad-teatr.ru";
 const defaultUpdatedAt = new Date("2026-10-04");
+const homeUpdatedAt = new Date("2026-10-09");
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const priorityPages = [
@@ -15,7 +16,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   return [
     {
       url: base,
-      lastModified: defaultUpdatedAt,
+      lastModified: homeUpdatedAt,
       changeFrequency: "weekly",
       priority: 1
     },
