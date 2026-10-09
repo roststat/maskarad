@@ -1932,13 +1932,13 @@ main {
 .mini-gallery-heading > span { color: var(--muted); }
 .mini-gallery-heading > a { color: var(--wine); font-weight: 700; white-space: nowrap; }
 .mini-gallery-photos { display: grid; grid-template-columns: repeat(var(--mini-photo-count), minmax(0, 1fr)); gap: .7rem; }
-.mini-gallery-photos a { display: block; min-width: 0; overflow: hidden; border-radius: .85rem; background: var(--paper); }
+.mini-gallery-photos .photo-open-button { display: block; min-width: 0; overflow: hidden; border-radius: .85rem; background: var(--paper); }
 .mini-gallery-photos img { display: block; width: 100%; height: clamp(100px, 12vw, 150px); object-fit: cover; object-position: center 30%; }
 .mini-gallery a:focus-visible { outline: 3px solid var(--wine); outline-offset: 3px; }
 #portfolio-gallery-title { scroll-margin-top: 9rem; }
 @media (max-width: 600px) {
   .mini-gallery-photos { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .5rem; }
-  .mini-gallery-photos a:last-child:nth-child(3) { grid-column: 1 / -1; }
+  .mini-gallery-photos .photo-open-button:last-child:nth-child(3) { grid-column: 1 / -1; }
   .mini-gallery-heading { font-size: .8rem; gap: .5rem; }
 }
 .portfolio-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1.3rem; }

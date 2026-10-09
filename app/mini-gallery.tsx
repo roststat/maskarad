@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import type { CSSProperties } from "react";
 import { createHash } from "node:crypto";
+import { PhotoOpenButton } from "./photo-viewer";
 import { portfolioPhotos, photosForPage } from "./photo-library";
 
 function photoScore(value: string) {
@@ -31,10 +32,10 @@ export function MiniGallery({ path }: { path: string }) {
         <Link href={galleryHref}>Все фотографии <span aria-hidden="true">→</span></Link>
       </div>
       <div className="mini-gallery-photos" style={{ "--mini-photo-count": photos.length } as CSSProperties}>
-        {photos.map(photo => (
-          <Link key={photo.id} href={galleryHref} aria-label={`Посмотреть в галерее: ${photo.alt}`}>
+        {photos.map((photo, index) => (
+          <PhotoOpenButton key={photo.id} photos={photos} index={index}>
             <Image src={photo.src} alt={photo.alt} width={photo.width} height={photo.height} sizes="(max-width: 600px) 45vw, (max-width: 1200px) 23vw, 280px" loading="lazy" />
-          </Link>
+          </PhotoOpenButton>
         ))}
       </div>
     </section>

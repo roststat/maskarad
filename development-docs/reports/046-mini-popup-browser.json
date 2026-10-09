@@ -1,0 +1,42 @@
+{
+  "checks": [
+    {
+      "check": "clickedThirdPhoto",
+      "text": "Фотографии театра\nЗакрыть\n×\n‹\n›\nФото 3 из 4\n\nИгры с цветной лентой и героями\n\nЛистайте стрелками или свайпом",
+      "url": "http://localhost:4310/prazdniki/korporativnyy-novogodniy-prazdnik"
+    },
+    {
+      "check": "nextPhoto",
+      "text": "Фотографии театра\nЗакрыть\n×\n‹\n›\nФото 4 из 4\n\nРебёнок с ярким сказочным персонажем\n\nЛистайте стрелками или свайпом"
+    },
+    {
+      "check": "gestureWrap",
+      "text": "Фотографии театра\nЗакрыть\n×\n‹\n›\nФото 1 из 4\n\nАктёр с реквизитом для шоу\n\nЛистайте стрелками или свайпом"
+    },
+    {
+      "check": "closeRestore",
+      "state": {
+        "closed": true,
+        "focus": "Открыть фото: Игры с цветной лентой и героями",
+        "scrollY": 580,
+        "url": "http://localhost:4310/prazdniki/korporativnyy-novogodniy-prazdnik"
+      },
+      "initialScroll": 580
+    },
+    {
+      "check": "mobileThirdPhoto",
+      "text": "Фотографии театра\nЗакрыть\n×\n‹\n›\nФото 3 из 3\n\nДети участвуют в программе на улице\n\nЛистайте стрелками или свайпом",
+      "url": "http://localhost:4310/uslugi/cirkovye-fokusy"
+    },
+    {
+      "check": "mobileSwipeWrap",
+      "text": "Фотографии театра\nЗакрыть\n×\n‹\n›\nФото 1 из 3\n\nДети участвуют в спектакле\n\nЛистайте стрелками или свайпом"
+    }
+  ],
+  "mobileWidths": [
+    175,
+    175,
+    358
+  ],
+  "documentWidth": 390
+}
