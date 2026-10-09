@@ -12,9 +12,10 @@
     "seo:migration-relevance": "node scripts/migration/check-migration-relevance.mjs",
     "seo:redirect-audit": "node scripts/migration/check-redirect-chains.mjs",
     "seo:image-alt": "node scripts/seo/check-image-alt.mjs",
+    "seo:faq-coverage": "node scripts/seo/check-faq-coverage.mjs",
     "legal:predeploy": "node scripts/legal/check-publish-ready.mjs",
     "leads:check": "node scripts/server/check-lead-storage.mjs",
-    "seo:predeploy": "npm run legal:predeploy && npm run seo:old-url-coverage && npm run seo:redirect-audit && npm run seo:image-alt && npm run lint && npm run build",
+    "seo:predeploy": "npm run legal:predeploy && npm run seo:old-url-coverage && npm run seo:redirect-audit && npm run seo:image-alt && npm run lint && npm run build && npm run seo:faq-coverage",
     "lint": "tsc --noEmit"
   },
   "dependencies": {

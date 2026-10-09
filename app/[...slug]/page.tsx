@@ -13,6 +13,7 @@ import {
   type ContentPagePath
 } from "../content-data";
 import { pages, type CatalogItem, type PagePath } from "../data";
+import { catalogFaq, fiveFaq, hubFaq } from "../faq-data";
 import { landingPages, type LandingPath } from "../landing-data";
 import {
   Breadcrumbs,
@@ -178,6 +179,7 @@ export default async function ContentPage({ params }: Params) {
   const contentPagePath = contentPagePathFromSlug(slug);
   if (contentPagePath) {
     const page: PortalContentPage = contentPages[contentPagePath];
+    const faq = fiveFaq(page.faq, page.sections);
     const breadcrumbs = buildBreadcrumbs(contentPagePath);
     const jsonLd = [
       createWebPageJsonLd({
@@ -196,7 +198,7 @@ export default async function ContentPage({ params }: Params) {
       }),
       createFaqJsonLd({
         path: contentPagePath,
-        items: page.faq
+        items: faq
       }),
       createBreadcrumbJsonLd(breadcrumbs)
     ];
@@ -296,7 +298,7 @@ export default async function ContentPage({ params }: Params) {
             <span className="eyebrow">Вопросы</span>
             <h2>Что уточнить</h2>
             <div>
-              {page.faq.map((item) => (
+              {faq.map((item) => (
                 <article key={item.question}>
                   <h3>{item.question}</h3>
                   <p>{item.answer}</p>
@@ -314,6 +316,7 @@ export default async function ContentPage({ params }: Params) {
   const contentHubPath = contentHubPathFromSlug(slug);
   if (contentHubPath) {
     const page: ContentHub = contentHubs[contentHubPath];
+    const faq = hubFaq[contentHubPath];
     const groups = page.groups ?? [];
     const breadcrumbs = buildBreadcrumbs(contentHubPath);
     const jsonLd = [
@@ -327,6 +330,7 @@ export default async function ContentPage({ params }: Params) {
         title: page.title,
         items: page.items
       }),
+      createFaqJsonLd({ path: contentHubPath, items: faq }),
       createBreadcrumbJsonLd(breadcrumbs)
     ];
 
@@ -370,6 +374,7 @@ export default async function ContentPage({ params }: Params) {
             <CatalogCard item={item} key={item.href} />
           ))}
         </section>
+        <FaqSection items={faq} title="Вопросы о материалах" />
         <CTA label={page.cta} />
       </>
     );
@@ -378,6 +383,7 @@ export default async function ContentPage({ params }: Params) {
   const landingPath = landingPathFromSlug(slug);
   if (landingPath) {
     const page = landingPages[landingPath];
+    const faq = fiveFaq(page.faq, page.sections);
     const breadcrumbs = buildBreadcrumbs(landingPath);
     const jsonLd = [
       createWebPageJsonLd({
@@ -387,7 +393,7 @@ export default async function ContentPage({ params }: Params) {
         image: page.media?.src
       }),
       createBreadcrumbJsonLd(breadcrumbs),
-      createFaqJsonLd({ path: landingPath, items: page.faq }),
+      createFaqJsonLd({ path: landingPath, items: faq }),
       ...(/^(\/prazdniki|\/spektakli|\/uslugi)\//.test(landingPath)
         ? [createServiceJsonLd({ path: landingPath, title: page.title, description: page.description })]
         : [])
@@ -456,7 +462,7 @@ export default async function ContentPage({ params }: Params) {
           <span className="eyebrow">Вопросы</span>
           <h2>Что уточнить перед заказом</h2>
           <div>
-            {page.faq.map((item) => (
+            {faq.map((item) => (
               <article key={item.question}>
                 <h3>{item.question}</h3>
                 <p>{item.answer}</p>
@@ -486,13 +492,15 @@ export default async function ContentPage({ params }: Params) {
 
   const page = pages[path];
   const breadcrumbs = buildBreadcrumbs(path);
+  const faq = catalogFaq[path];
   const jsonLd = [
     createWebPageJsonLd({
       path,
       title: page.title,
       description: page.description
     }),
-    createBreadcrumbJsonLd(breadcrumbs)
+    createBreadcrumbJsonLd(breadcrumbs),
+    ...(faq ? [createFaqJsonLd({ path, items: faq })] : [])
   ];
   const showGallery = path === "/foto-video" || path === "/spektakli";
   const isContactPage = path === "/kontakty";
@@ -521,8 +529,26 @@ export default async function ContentPage({ params }: Params) {
         </section>
       )}
       {showGallery && <GalleryStrip />}
+      {faq && <FaqSection items={faq} title="Что уточнить перед выбором" />}
       <CTA label={page.cta} />
     </>
+  );
+}
+
+function FaqSection({ items, title }: { items: { question: string; answer: string }[]; title: string }) {
+  return (
+    <section className="ny-faq">
+      <span className="eyebrow">Частые вопросы</span>
+      <h2>{title}</h2>
+      <div>
+        {items.map((item) => (
+          <article key={item.question}>
+            <h3>{item.question}</h3>
+            <p>{item.answer}</p>
+          </article>
+        ))}
+      </div>
+    </section>
   );
 }
 

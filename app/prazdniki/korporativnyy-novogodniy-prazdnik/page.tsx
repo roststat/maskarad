@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { CTA, GalleryStrip } from "../../components";
 import { phone, phoneHref } from "../../data";
-import { Breadcrumbs, JsonLd, buildBreadcrumbs, createBreadcrumbJsonLd, createWebPageJsonLd } from "../../seo";
+import { Breadcrumbs, JsonLd, buildBreadcrumbs, createBreadcrumbJsonLd, createFaqJsonLd, createWebPageJsonLd } from "../../seo";
 
 const pagePath = "/prazdniki/korporativnyy-novogodniy-prazdnik";
 const pageTitle = "Новогодние корпоративные праздники для детей сотрудников";
@@ -37,7 +37,8 @@ const faq = [
   ["Можно ли провести елку прямо в офисе?", "Да. Программу можно адаптировать под переговорную, холл, актовый зал, ресторан или арендованную площадку."],
   ["Подходит ли программа для детей разного возраста?", "Да. Обычно делаем сценарий с несколькими уровнями участия, чтобы младшие дети не терялись, а старшим было интересно."],
   ["Можно ли добавить бренд компании?", "Да. Можно аккуратно встроить корпоративную тему, ценности, фирменные цвета, поздравление руководства или брендированные подарки."],
-  ["Это просто аниматоры?", "Нет. Основа программы — театральный сценарий, актерское ведение, режиссура и интерактив, где дети становятся участниками истории."]
+  ["Это просто аниматоры?", "Нет. Основа программы — театральный сценарий, актерское ведение, режиссура и интерактив, где дети становятся участниками истории."],
+  ["Что сообщить для подготовки предложения?", "Укажите возраст и количество детей, дату, площадку, желаемый тайминг и корпоративные ограничения. По этим данным можно собрать подходящий сценарий."]
 ];
 
 export default function CorporateNewYearPage() {
@@ -48,7 +49,8 @@ export default function CorporateNewYearPage() {
       title: pageTitle,
       description: pageDescription
     }),
-    createBreadcrumbJsonLd(breadcrumbs)
+    createBreadcrumbJsonLd(breadcrumbs),
+    createFaqJsonLd({ path: pagePath, items: faq.map(([question, answer]) => ({ question, answer })) })
   ];
 
   return (
