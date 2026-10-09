@@ -93,15 +93,16 @@ export function LeadForm({ label }: LeadFormProps) {
   }
 
   return (
-    <form className="lead-form" onSubmit={submitLead}>
+    <form className="lead-form ym-hide-content" onSubmit={submitLead}>
       <div className="lead-form-grid">
         <label htmlFor={fields.name}>
           Имя
-          <input id={fields.name} name="name" placeholder="Как к вам обращаться" autoComplete="name" />
+          <input className="ym-disable-keys" id={fields.name} name="name" placeholder="Как к вам обращаться" autoComplete="name" />
         </label>
         <label htmlFor={fields.phone}>
           Телефон
           <input
+            className="ym-disable-keys"
             id={fields.phone}
             name="phone"
             placeholder="+7 ..."

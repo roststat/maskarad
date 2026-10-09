@@ -115,7 +115,7 @@ function PartyAssistantDialog({ open, onClose }: { open: boolean; onClose: () =>
   }
 
   if (!open || typeof document === "undefined") return null;
-  return createPortal(<div className="party-modal" role="dialog" aria-modal="true" aria-label="Запрос организатору" onMouseDown={onClose}>
+  return createPortal(<div className="party-modal ym-hide-content" role="dialog" aria-modal="true" aria-label="Запрос организатору" onMouseDown={onClose}>
     <div className="party-modal-card" onMouseDown={(event) => event.stopPropagation()}>
       <button className="party-modal-close" type="button" onClick={onClose} aria-label="Закрыть окно">×</button>
       <span className="eyebrow">Написать организатору</span>
@@ -123,14 +123,14 @@ function PartyAssistantDialog({ open, onClose }: { open: boolean; onClose: () =>
       <p>Напишите или надиктуйте пожелания — мы получим запрос и свяжемся с вами.</p>
       <label className="party-wish-label" htmlFor="party-quick-wish">Ваш запрос</label>
       <div className="party-wish-field">
-        <textarea id="party-quick-wish" ref={textareaRef} value={message} onChange={(event) => { setMessage(event.target.value); setSent(false); setStatus(""); }} placeholder="Например: день рождения для дочки, 6 лет, дома в субботу…" />
+        <textarea className="ym-disable-keys" id="party-quick-wish" ref={textareaRef} value={message} onChange={(event) => { setMessage(event.target.value); setSent(false); setStatus(""); }} placeholder="Например: день рождения для дочки, 6 лет, дома в субботу…" />
         {listening && <span className="party-listening-indicator">Слушаю…</span>}
         <button type="button" className={"party-dictate" + (listening ? " is-listening" : "")} onClick={dictate} aria-label={listening ? "Остановить диктовку" : "Надиктовать текст"} aria-pressed={listening} title={listening ? "Остановить диктовку" : "Надиктовать текст"}><MicIcon /></button>
       </div>
       <p className="party-voice-note">Диктовка запускается по нажатию и может использовать сервис вашего браузера.</p>
       <div className="party-send-form">
         <strong>Куда ответить?</strong>
-        <div className="party-send-fields"><label>Имя<input value={name} onChange={(event) => setName(event.target.value)} placeholder="Как к вам обращаться" autoComplete="name" /></label><label>Телефон<input value={phone} onChange={(event) => { setPhone(event.target.value); setSent(false); }} placeholder="+7 ..." inputMode="tel" autoComplete="tel" /></label></div>
+        <div className="party-send-fields"><label>Имя<input className="ym-disable-keys" value={name} onChange={(event) => setName(event.target.value)} placeholder="Как к вам обращаться" autoComplete="name" /></label><label>Телефон<input className="ym-disable-keys" value={phone} onChange={(event) => { setPhone(event.target.value); setSent(false); }} placeholder="+7 ..." inputMode="tel" autoComplete="tel" /></label></div>
         <label className="party-consent"><input type="checkbox" checked={consent} onChange={(event) => setConsent(event.target.checked)} required /><span>Даю <a href="/personal-data-consent" target="_blank" rel="noopener noreferrer">согласие на обработку персональных данных</a> для ответа на запрос. <a href="/privacy-policy" target="_blank" rel="noopener noreferrer">Политика обработки данных</a>.</span></label>
       </div>
       <button type="button" className="party-send-brief" disabled={busy || sent} onClick={() => void sendToOrganizer()}>{busy ? "Отправляем…" : sent ? "Запрос отправлен" : "Отправить запрос организатору"}</button>
