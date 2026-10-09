@@ -27,3 +27,7 @@
 Публикация и фактические даты sitemap/обновления — отдельный 039-8; слот 009 12 октября пока сохранён, текущее число опубликованных обновлений остаётся 1/37. Для выпуска сверить маркер и публичную страницу; текущий локальный просмотр: `http://localhost:4310/prazdniki/korporativnyy-novogodniy-prazdnik`.
 
 Связанные итоги: [039-1](../development-steps/completed-steps/039-1-corporate-facts-and-brief.md), [039-2](../development-steps/completed-steps/039-2-individual-corporate-offer.md), [039-3](../development-steps/completed-steps/039-3-corporate-page-local.md). Весь шаг [039](../development-steps/new-steps/039-corporate-new-year-conversion.md) не объявлен завершённым. План воронки — [038](038-winter-conversion-funnel.md).
+
+## Публикация после локальной проверки
+
+9 октября 2026 результат опубликован в [044](044-production-release.md). Предыдущие записи выше описывают состояние на момент локальной проверки; текущий публичный статус и календарь — в 044 и current-steps.
