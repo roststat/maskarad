@@ -3,6 +3,7 @@ import { Footer, Header } from "./components";
 import { PartyAssistantProvider } from "./party-assistant-widget";
 import { JsonLd, createOrganizationJsonLd, createWebsiteJsonLd } from "./seo";
 import { YandexMetrica } from "./yandex-metrica";
+import { PhotoViewerProvider } from "./photo-viewer";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -62,7 +63,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
         <noscript><div><img src="https://mc.yandex.ru/watch/113579092" style={{ position: "absolute", left: -9999 }} alt="" /></div></noscript>
         <PartyAssistantProvider>
           <Header />
-          <main>{children}</main>
+          <PhotoViewerProvider><main>{children}</main></PhotoViewerProvider>
           <Footer />
         </PartyAssistantProvider>
       </body>

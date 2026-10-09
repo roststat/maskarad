@@ -1,0 +1,62 @@
+{
+  "checks": [
+    {
+      "check": "nextButton",
+      "text": "Фотографии театра\nЗакрыть\n×\n‹\n›\nФото 2 из 102\n\nСказочные герои театра Маскарад\n\nЛистайте стрелками или свайпом"
+    },
+    {
+      "check": "keyboardRight",
+      "text": "Фотографии театра\nЗакрыть\n×\n‹\n›\nФото 3 из 102\n\nДети и ведущий на интерактивном шоу\n\nЛистайте стрелками или свайпом"
+    },
+    {
+      "check": "horizontalGesture",
+      "text": "Фотографии театра\nЗакрыть\n×\n‹\n›\nФото 4 из 102\n\nБумажное шоу с голубыми лентами\n\nЛистайте стрелками или свайпом"
+    },
+    {
+      "check": "tapPhotoKeepsOpen",
+      "visible": true
+    },
+    {
+      "check": "verticalDoesNotBrowse",
+      "text": "Фотографии театра\nЗакрыть\n×\n‹\n›\nФото 4 из 102\n\nБумажное шоу с голубыми лентами\n\nЛистайте стрелками или свайпом"
+    },
+    {
+      "check": "escapeCloseAndRestore",
+      "state": {
+        "focus": "Открыть фото: Дети участвуют в спектакле",
+        "open": false,
+        "overflow": "",
+        "scrollY": 1216.5,
+        "url": "http://localhost:4310/foto-video"
+      }
+    },
+    {
+      "check": "filterAndWrap",
+      "text": "Фотографии театра\nЗакрыть\n×\n‹\n›\nФото 11 из 11\n\nАктёр с праздничным тортом\n\nЛистайте стрелками или свайпом"
+    },
+    {
+      "check": "backgroundClose",
+      "visible": false
+    },
+    {
+      "check": "focusTrapFinal",
+      "state": {
+        "inside": true,
+        "label": "Следующее фото"
+      }
+    },
+    {
+      "check": "mobileHorizontalGesture",
+      "text": "Фотографии театра\nЗакрыть\n×\n‹\n›\nФото 1 из 18\n\nАктёры в сказочных костюмах у декораций\n\nЛистайте стрелками или свайпом"
+    },
+    {
+      "check": "themedRibbon",
+      "text": "Фотографии театра\nЗакрыть\n×\n‹\n›\nФото 2 из 6\n\nАктёр в синем сказочном костюме\n\nЛистайте стрелками или свайпом"
+    }
+  ],
+  "viewport": [
+    1280,
+    720
+  ],
+  "gestureVerification": "Trusted native drag on desktop and 390px viewport; shared Pointer Events path. Physical touchscreen not tested."
+}

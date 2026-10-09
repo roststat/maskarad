@@ -3,6 +3,7 @@
 import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { PhotoOpenButton } from "./photo-viewer";
 import type { PortfolioPhoto } from "./photo-library";
 
 export function PhotoGallery({ photos }: { photos: PortfolioPhoto[] }) {
@@ -24,11 +25,11 @@ export function PhotoGallery({ photos }: { photos: PortfolioPhoto[] }) {
       </div>
       <p className="portfolio-count" role="status">Показано {Math.min(limit, filtered.length)} из {filtered.length} фотографий</p>
       <div className="portfolio-grid">
-        {filtered.slice(0, limit).map(photo => (
+        {filtered.slice(0, limit).map((photo, index) => (
           <figure key={photo.id}>
-            <a href={photo.src} target="_blank" rel="noopener noreferrer" aria-label={`Открыть фото: ${photo.alt}`}>
+            <PhotoOpenButton photos={filtered} index={index}>
               <Image src={photo.src} alt={photo.alt} width={photo.width} height={photo.height} sizes="(max-width: 600px) calc(100vw - 32px), (max-width: 1000px) 45vw, 360px" loading="lazy" />
-            </a>
+            </PhotoOpenButton>
             <figcaption>{photo.alt}{photo.href && <Link href={photo.href}>Посмотреть программу →</Link>}</figcaption>
           </figure>
         ))}
