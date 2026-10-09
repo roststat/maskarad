@@ -6,6 +6,30 @@ import { landingPages } from "./landing-data";
 const base = "https://maskarad-teatr.ru";
 const defaultUpdatedAt = new Date("2026-10-04");
 const homeUpdatedAt = new Date("2026-10-09");
+// Substantive programme photos and the corporate offer released on 9 October.
+const photoReleasePaths = new Set([
+  "/foto-video",
+  "/prazdniki/korporativnyy-novogodniy-prazdnik",
+  "/prazdniki/maslenitsa",
+  "/spektakli/alisa-v-strane-chudes",
+  "/spektakli/madagaskar",
+  "/spektakli/novogodnyaya-belosnezhka",
+  "/spektakli/peppi-dlinnyy-chulok",
+  "/spektakli/piraty-karibskogo-morya",
+  "/spektakli/piter-pen",
+  "/spektakli/skazka-shreka",
+  "/spektakli/smurfiki",
+  "/spektakli/supergeroi",
+  "/spektakli/vinni-puh",
+  "/spektakli/zolushka",
+  "/uslugi/akvagrim",
+  "/uslugi/detskiy-tort",
+  "/uslugi/oformlenie-sharami",
+  "/uslugi/shou-mylnyh-puzyrey"
+]);
+function pageUpdatedAt(path: string) {
+  return photoReleasePaths.has(path) ? homeUpdatedAt : defaultUpdatedAt;
+}
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const priorityPages = [
@@ -22,19 +46,19 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     ...priorityPages.map((path) => ({
       url: `${base}${path}`,
-      lastModified: defaultUpdatedAt,
+      lastModified: pageUpdatedAt(path),
       changeFrequency: "monthly" as const,
       priority: 0.95
     })),
     ...Object.keys(pages).map((path) => ({
       url: `${base}${path}`,
-      lastModified: defaultUpdatedAt,
+      lastModified: pageUpdatedAt(path),
       changeFrequency: "weekly" as const,
       priority: path === "/kontakty" ? 0.9 : 0.8
     })),
     ...Object.keys(contentHubs).map((path) => ({
       url: `${base}${path}`,
-      lastModified: defaultUpdatedAt,
+      lastModified: pageUpdatedAt(path),
       changeFrequency: "daily" as const,
       priority: 0.78
     })),

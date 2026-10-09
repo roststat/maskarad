@@ -1,0 +1,44 @@
+{
+  "date": "2026-10-09",
+  "status": "verified locally; not published",
+  "source_files": 104,
+  "unique_photos": 102,
+  "exact_duplicate_files": 2,
+  "optimized_total_bytes": 16190094,
+  "corporate_photos": 18,
+  "thematic_pages": 16,
+  "images_http": "102/102 HTTP 200 image/webp",
+  "decode": "102/102 passed",
+  "seo_predeploy": "passed",
+  "final_build": "passed",
+  "seo_prelaunch_local": "12/12",
+  "gallery_browser": {
+    "pagination": [
+      24,
+      48,
+      72,
+      96,
+      102
+    ],
+    "final_figures": 102,
+    "games_filter": 21,
+    "decoration_filter": 11
+  },
+  "desktop": {
+    "width": 1280,
+    "document_width": 1280,
+    "corporate_cta_bottom": 577.99
+  },
+  "mobile": {
+    "width": 390,
+    "corporate_document_width": 390,
+    "gallery_document_width": 390
+  },
+  "thematic_browser": {
+    "path": "/spektakli/smurfiki",
+    "hero_loaded": true,
+    "related_photos": 6
+  },
+  "production_release": false,
+  "sources": "042-photo-sources.json"
+}

@@ -4,6 +4,7 @@ import { usePathname } from "next/navigation";
 import { phoneHref } from "./data";
 
 const actionLabels = [
+  { prefix: "/prazdniki/korporativnyy-novogodniy-prazdnik", label: "Получить предложение" },
   { prefix: "/spektakli", label: "Подобрать спектакль" },
   { prefix: "/uslugi", label: "Собрать программу" },
   { prefix: "/prazdniki", label: "Обсудить праздник" },

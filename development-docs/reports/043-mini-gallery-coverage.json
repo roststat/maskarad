@@ -1,0 +1,1320 @@
+{
+  "pages": 122,
+  "uniqueSets": 122,
+  "duplicateSets": [],
+  "results": [
+    {
+      "path": "/",
+      "count": 4,
+      "photos": [
+        "/images/corporate/stage-performance.webp",
+        "/images/portfolio/photo-042.webp",
+        "/images/portfolio/photo-063.webp",
+        "/images/portfolio/photo-076.webp"
+      ],
+      "immediatelyAfterHero": true
+    },
+    {
+      "path": "/prazdniki/korporativnyy-novogodniy-prazdnik",
+      "count": 4,
+      "photos": [
+        "/images/corporate/show-performer.webp",
+        "/images/corporate/fairytale-group.webp",
+        "/images/corporate/ribbon-game.webp",
+        "/images/corporate/colourful-character.webp"
+      ],
+      "immediatelyAfterHero": true
+    },
+    {
+      "path": "/dlya-detey",
+      "count": 4,
+      "photos": [
+        "/images/corporate/fairytale-group.webp",
+        "/images/portfolio/photo-028.webp",
+        "/images/portfolio/photo-041.webp",
+        "/images/portfolio/photo-005.webp"
+      ],
+      "immediatelyAfterHero": true
+    },
+    {
+      "path": "/dlya-vzroslyh",
+      "count": 4,
+      "photos": [
+        "/images/corporate/fairytale-group.webp",
+        "/images/portfolio/photo-005.webp",
+        "/images/corporate/face-painting.webp",
+        "/images/portfolio/photo-024.webp"
+      ],
+      "immediatelyAfterHero": true
+    },
+    {
+      "path": "/dlya-biznesa",
+      "count": 4,
+      "photos": [
+        "/images/portfolio/photo-004.webp",
+        "/images/portfolio/photo-028.webp",
+        "/images/corporate/show-performer.webp",
+        "/images/portfolio/photo-005.webp"
+      ],
+      "immediatelyAfterHero": true
+    },
+    {
+      "path": "/spektakli/zolushka",
+      "count": 4,
+      "photos": [
+        "/images/portfolio/photo-082.webp",
+        "/images/corporate/fairytale-actors.webp",
+        "/images/portfolio/photo-094.webp",
+        "/images/corporate/children-and-actors.webp"
+      ],
+      "immediatelyAfterHero": true
+    },
+    {
+      "path": "/spektakli/alisa-v-strane-chudes",
+      "count": 4,
+      "photos": [
+        "/images/portfolio/photo-045.webp",
+        "/images/portfolio/photo-101.webp",
+        "/images/portfolio/photo-064.webp",
+        "/images/portfolio/photo-078.webp"
+      ],
+      "immediatelyAfterHero": true
+    },
+    {
+      "path": "/spektakli/peppi-dlinnyy-chulok",
+      "count": 4,
+      "photos": [
+        "/images/portfolio/photo-011.webp",
+        "/images/corporate/balloon-game.webp",
+        "/images/portfolio/photo-013.webp",
+        "/images/corporate/children-playing.webp"
+      ],
+      "immediatelyAfterHero": true
+    },
+    {
+      "path": "/spektakli/piraty-karibskogo-morya",
+      "count": 4,
+      "photos": [
+        "/images/portfolio/photo-087.webp",
+        "/images/portfolio/photo-067.webp",
+        "/images/portfolio/photo-041.webp",
+        "/images/portfolio/photo-063.webp"
+      ],
+      "immediatelyAfterHero": true
+    },
+    {
+      "path": "/spektakli/belosnezhka-i-sem-gnomov",
+      "count": 4,
+      "photos": [
+        "/images/corporate/show-performer.webp",
+        "/images/portfolio/photo-042.webp",
+        "/images/portfolio/photo-095.webp",
+        "/images/corporate/fairytale-group.webp"
+      ],
+      "immediatelyAfterHero": true
+    },
+    {
+      "path": "/spektakli/mary-poppins",
+      "count": 4,
+      "photos": [
+        "/images/portfolio/photo-005.webp",
+        "/images/corporate/fairytale-actors.webp",
+        "/images/corporate/children-and-actors.webp",
+        "/images/corporate/interactive-show.webp"
+      ],
+      "immediatelyAfterHero": true
+    },
+    {
+      "path": "/spektakli/priklyucheniya-sindbada-morehoda",
+      "count": 3,
+      "photos": [
+        "/images/portfolio/photo-092.webp",
+        "/images/corporate/face-painting.webp",
+        "/images/corporate/fairytale-costumes.webp"
+      ],
+      "immediatelyAfterHero": true
+    },
+    {
+      "path": "/spektakli/malysh-i-karlson",
+      "count": 4,
+      "photos": [
+        "/images/corporate/show-performer.webp",
+        "/images/portfolio/photo-011.webp",
+        "/images/corporate/fairytale-group.webp",
+        "/images/portfolio/photo-024.webp"
+      ],
+      "immediatelyAfterHero": true
+    },
+    {
+      "path": "/spektakli/bremenskie-muzykanty",
+      "count": 3,
+      "photos": [
+        "/images/corporate/actor-and-child.webp",
+        "/images/corporate/face-painting.webp",
+        "/images/portfolio/photo-092.webp"
+      ],
+      "immediatelyAfterHero": true
+    },
+    {
+      "path": "/spektakli/novogodnyaya-belosnezhka",
+      "count": 4,
+      "photos": [
+        "/images/portfolio/photo-070.webp",
+        "/images/corporate/children-and-actors.webp",
+        "/images/corporate/children-playing.webp",
+        "/images/corporate/actor-and-child.webp"
+      ],
+      "immediatelyAfterHero": true
+    },
+    {
+      "path": "/spektakli/novogodnie-spektakli",
+      "count": 4,
+      "photos": [
+        "/images/corporate/actor-and-child.webp",
+        "/images/corporate/fairytale-group.webp",
+        "/images/corporate/stage-performance.webp",
+        "/images/corporate/ribbon-game.webp"
+      ],
+      "immediatelyAfterHero": true
+    },
+    {
+      "path": "/prazdniki/detskiy-den-rozhdeniya",
+      "count": 4,
+      "photos": [
+        "/images/portfolio/photo-042.webp",
+        "/images/portfolio/photo-004.webp",
+        "/images/corporate/fairytale-actors.webp",
+        "/images/corporate/stage-performance.webp"
+      ],
+      "immediatelyAfterHero": true
+    },
+    {
+      "path": "/uslugi/akvagrim",
+      "count": 4,
+      "photos": [
+        "/images/portfolio/photo-088.webp",
+        "/images/portfolio/photo-042.webp",
+        "/images/corporate/colourful-character.webp",
+        "/images/corporate/paper-show.webp"
+      ],
+      "immediatelyAfterHero": true
+    },
+    {
+      "path": "/uslugi/shou-mylnyh-puzyrey",
+      "count": 4,
+      "photos": [
+        "/images/portfolio/photo-028.webp",
+        "/images/portfolio/photo-011.webp",
+        "/images/portfolio/photo-024.webp",
+        "/images/portfolio/photo-092.webp"
+      ],
+      "immediatelyAfterHero": true
+    },
+    {
+      "path": "/uslugi/master-klassy",
+      "count": 4,
+      "photos": [
+        "/images/corporate/children-playing.webp",
+        "/images/portfolio/photo-024.webp",
+        "/images/portfolio/photo-095.webp",
+        "/images/corporate/actor-and-child.webp"
+      ],
+      "immediatelyAfterHero": true
+    },
+    {
+      "path": "/uslugi/cirkovye-fokusy",
+      "count": 3,
+      "photos": [
+        "/images/corporate/children-and-actors.webp",
+        "/images/portfolio/photo-073.webp",
+        "/images/portfolio/photo-050.webp"
+      ],
+      "immediatelyAfterHero": true
+    },
+    {
+      "path": "/uslugi/kukolnyy-spektakl",
+      "count": 3,
+      "photos": [
+        "/images/portfolio/photo-041.webp",
+        "/images/portfolio/photo-073.webp",
+        "/images/corporate/fairytale-group.webp"
+      ],
+      "immediatelyAfterHero": true
+    },
+    {
+      "path": "/uslugi/oformlenie-sharami",
+      "count": 4,
+      "photos": [
+        "/images/portfolio/photo-071.webp",
+        "/images/portfolio/photo-069.webp",
+        "/images/portfolio/photo-057.webp",
+        "/images/portfolio/photo-014.webp"
+      ],
+      "immediatelyAfterHero": true
+    },
+    {
+      "path": "/uslugi/foto-video",
+      "count": 4,
+      "photos": [
+        "/images/portfolio/photo-082.webp",
+        "/images/portfolio/photo-073.webp",
+        "/images/corporate/ribbon-game.webp",
+        "/images/portfolio/photo-024.webp"
+      ],
+      "immediatelyAfterHero": true
+    },
+    {
+      "path": "/uslugi/keytering",
+      "count": 3,
+      "photos": [
+        "/images/corporate/paper-show.webp",
+        "/images/portfolio/photo-073.webp",
+        "/images/portfolio/photo-013.webp"
+      ],
+      "immediatelyAfterHero": true
+    },
+    {
+      "path": "/uslugi/spetsialnye-effekty",
+      "count": 4,
+      "photos": [
+        "/images/corporate/balloon-game.webp",
+        "/images/corporate/show-performer.webp",
+        "/images/corporate/fairytale-group.webp",
+        "/images/portfolio/photo-084.webp"
+      ],
+      "immediatelyAfterHero": true
+    },
+    {
+      "path": "/uslugi/attraktsiony",
+      "count": 4,
+      "photos": [
+        "/images/portfolio/photo-041.webp",
+        "/images/portfolio/photo-005.webp",
+        "/images/corporate/fairytale-costumes.webp",
+        "/images/corporate/colourful-character.webp"
+      ],
+      "immediatelyAfterHero": true
+    },
+    {
+      "path": "/prazdniki/detskiy-sad",
+      "count": 3,
+      "photos": [
+        "/images/corporate/fairytale-actors.webp",
+        "/images/portfolio/photo-042.webp",
+        "/images/portfolio/photo-058.webp"
+      ],
+      "immediatelyAfterHero": true
+    },
+    {
+      "path": "/prazdniki/shkolnyy-prazdnik",
+      "count": 4,
+      "photos": [
+        "/images/portfolio/photo-042.webp",
+        "/images/portfolio/photo-083.webp",
+        "/images/portfolio/photo-100.webp",
+        "/images/portfolio/photo-058.webp"
+      ],
+      "immediatelyAfterHero": true
+    },
+    {
+      "path": "/prazdniki/vypusknoy",
+      "count": 3,
+      "photos": [
+        "/images/portfolio/photo-068.webp",
+        "/images/portfolio/photo-058.webp",
+        "/images/portfolio/photo-092.webp"
+      ],
+      "immediatelyAfterHero": true
+    },
+    {
+      "path": "/prazdniki/vypusknoy-v-detskom-sadu",
+      "count": 4,
+      "photos": [
+        "/images/portfolio/photo-042.webp",
+        "/images/portfolio/photo-092.webp",
+        "/images/corporate/show-performer.webp",
+        "/images/portfolio/photo-076.webp"
+      ],
+      "immediatelyAfterHero": true
+    },
+    {
+      "path": "/prazdniki/vypusknoy-v-nachalnoy-shkole",
+      "count": 4,
+      "photos": [
+        "/images/corporate/fairytale-costumes.webp",
+        "/images/portfolio/photo-024.webp",
+        "/images/corporate/theatrical-prop.webp",
+        "/images/portfolio/photo-028.webp"
+      ],
+      "immediatelyAfterHero": true
+    },
+    {
+      "path": "/prazdniki/vypusknoy-v-11-klasse",
+      "count": 4,
+      "photos": [
+        "/images/portfolio/photo-041.webp",
+        "/images/corporate/balloon-game.webp",
+        "/images/portfolio/photo-083.webp",
+        "/images/portfolio/photo-100.webp"
+      ],
+      "immediatelyAfterHero": true
+    },
+    {
+      "path": "/spektakli/vinni-puh",
+      "count": 3,
+      "photos": [
+        "/images/portfolio/photo-084.webp",
+        "/images/corporate/balloon-game.webp",
+        "/images/portfolio/photo-005.webp"
+      ],
+      "immediatelyAfterHero": true
+    },
+    {
+      "path": "/spektakli/madagaskar",
+      "count": 4,
+      "photos": [
+        "/images/portfolio/photo-033.webp",
+        "/images/portfolio/photo-068.webp",
+        "/images/corporate/fairytale-costumes.webp",
+        "/images/corporate/children-and-actors.webp"
+      ],
+      "immediatelyAfterHero": true
+    },
+    {
+      "path": "/spektakli/holodnoe-serdtse",
+      "count": 4,
+      "photos": [
+        "/images/portfolio/photo-050.webp",
+        "/images/portfolio/photo-082.webp",
+        "/images/corporate/fairytale-costumes.webp",
+        "/images/portfolio/photo-042.webp"
+      ],
+      "immediatelyAfterHero": true
+    },
+    {
+      "path": "/podboroki/scenarii-detskih-prazdnikov",
+      "count": 4,
+      "photos": [
+        "/images/portfolio/photo-063.webp",
+        "/images/corporate/children-playing.webp",
+        "/images/portfolio/photo-028.webp",
+        "/images/corporate/paper-show.webp"
+      ],
+      "immediatelyAfterHero": true
+    },
+    {
+      "path": "/prazdniki/maslenitsa",
+      "count": 4,
+      "photos": [
+        "/images/corporate/interactive-show.webp",
+        "/images/portfolio/photo-082.webp",
+        "/images/corporate/face-painting.webp",
+        "/images/corporate/children-playing.webp"
+      ],
+      "immediatelyAfterHero": true
+    },
+    {
+      "path": "/spektakli/alladin-i-zhasmin",
+      "count": 3,
+      "photos": [
+        "/images/corporate/fairytale-group.webp",
+        "/images/portfolio/photo-013.webp",
+        "/images/corporate/children-playing.webp"
+      ],
+      "immediatelyAfterHero": true
+    },
+    {
+      "path": "/spektakli/neznaika-v-tsvetochnom-gorode",
+      "count": 3,
+      "photos": [
+        "/images/portfolio/photo-041.webp",
+        "/images/corporate/balloon-game.webp",
+        "/images/corporate/fairytale-actors.webp"
+      ],
+      "immediatelyAfterHero": true
+    },
+    {
+      "path": "/spektakli/piter-pen",
+      "count": 3,
+      "photos": [
+        "/images/corporate/fairytale-costumes.webp",
+        "/images/portfolio/photo-073.webp",
+        "/images/portfolio/photo-042.webp"
+      ],
+      "immediatelyAfterHero": true
+    },
+    {
+      "path": "/spektakli/zolotoy-klyuchik",
+      "count": 4,
+      "photos": [
+        "/images/corporate/theatrical-prop.webp",
+        "/images/corporate/stage-performance.webp",
+        "/images/portfolio/photo-100.webp",
+        "/images/portfolio/photo-004.webp"
+      ],
+      "immediatelyAfterHero": true
+    },
+    {
+      "path": "/spektakli/kot-leopold",
+      "count": 4,
+      "photos": [
+        "/images/portfolio/photo-028.webp",
+        "/images/corporate/face-painting.webp",
+        "/images/corporate/stage-performance.webp",
+        "/images/portfolio/photo-066.webp"
+      ],
+      "immediatelyAfterHero": true
+    },
+    {
+      "path": "/spektakli/tri-mushketera",
+      "count": 4,
+      "photos": [
+        "/images/corporate/face-painting.webp",
+        "/images/corporate/theatrical-prop.webp",
+        "/images/portfolio/photo-041.webp",
+        "/images/portfolio/photo-066.webp"
+      ],
+      "immediatelyAfterHero": true
+    },
+    {
+      "path": "/spektakli/istoriya-igrushek",
+      "count": 4,
+      "photos": [
+        "/images/portfolio/photo-084.webp",
+        "/images/portfolio/photo-013.webp",
+        "/images/portfolio/photo-063.webp",
+        "/images/corporate/children-playing.webp"
+      ],
+      "immediatelyAfterHero": true
+    },
+    {
+      "path": "/spektakli/lednikovyy-period",
+      "count": 3,
+      "photos": [
+        "/images/portfolio/photo-082.webp",
+        "/images/portfolio/photo-041.webp",
+        "/images/corporate/fairytale-actors.webp"
+      ],
+      "immediatelyAfterHero": true
+    },
+    {
+      "path": "/spektakli/simpsony",
+      "count": 4,
+      "photos": [
+        "/images/corporate/fairytale-actors.webp",
+        "/images/portfolio/photo-058.webp",
+        "/images/portfolio/photo-095.webp",
+        "/images/corporate/restaurant-performance.webp"
+      ],
+      "immediatelyAfterHero": true
+    },
+    {
+      "path": "/spektakli/skazochnyy-balaganchik",
+      "count": 4,
+      "photos": [
+        "/images/corporate/paper-show.webp",
+        "/images/portfolio/photo-092.webp",
+        "/images/corporate/fairytale-actors.webp",
+        "/images/portfolio/photo-024.webp"
+      ],
+      "immediatelyAfterHero": true
+    },
+    {
+      "path": "/spektakli/ivan-da-marya",
+      "count": 4,
+      "photos": [
+        "/images/corporate/fairytale-group.webp",
+        "/images/corporate/ribbon-game.webp",
+        "/images/corporate/interactive-show.webp",
+        "/images/portfolio/photo-005.webp"
+      ],
+      "immediatelyAfterHero": true
+    },
+    {
+      "path": "/spektakli/volshebnaya-feya",
+      "count": 4,
+      "photos": [
+        "/images/portfolio/photo-063.webp",
+        "/images/corporate/actor-and-child.webp",
+        "/images/portfolio/photo-041.webp",
+        "/images/portfolio/photo-042.webp"
+      ],
+      "immediatelyAfterHero": true
+    },
+    {
+      "path": "/spektakli/novogodnyy-ekspress",
+      "count": 4,
+      "photos": [
+        "/images/corporate/paper-show.webp",
+        "/images/portfolio/photo-100.webp",
+        "/images/corporate/children-playing.webp",
+        "/images/corporate/colourful-character.webp"
+      ],
+      "immediatelyAfterHero": true
+    },
+    {
+      "path": "/spektakli/novyy-god-na-snezhnoy-planete",
+      "count": 3,
+      "photos": [
+        "/images/corporate/children-and-actors.webp",
+        "/images/corporate/balloon-game.webp",
+        "/images/portfolio/photo-066.webp"
+      ],
+      "immediatelyAfterHero": true
+    },
+    {
+      "path": "/spektakli/avatar",
+      "count": 3,
+      "photos": [
+        "/images/corporate/fairytale-group.webp",
+        "/images/portfolio/photo-024.webp",
+        "/images/corporate/restaurant-performance.webp"
+      ],
+      "immediatelyAfterHero": true
+    },
+    {
+      "path": "/prazdniki/vypusknoy-v-stile-fashion",
+      "count": 4,
+      "photos": [
+        "/images/corporate/face-painting.webp",
+        "/images/portfolio/photo-004.webp",
+        "/images/corporate/fairytale-group.webp",
+        "/images/portfolio/photo-083.webp"
+      ],
+      "immediatelyAfterHero": true
+    },
+    {
+      "path": "/spektakli/pyatyy-element",
+      "count": 3,
+      "photos": [
+        "/images/portfolio/photo-005.webp",
+        "/images/portfolio/photo-084.webp",
+        "/images/portfolio/photo-041.webp"
+      ],
+      "immediatelyAfterHero": true
+    },
+    {
+      "path": "/spektakli/skazka-shreka",
+      "count": 4,
+      "photos": [
+        "/images/portfolio/photo-076.webp",
+        "/images/portfolio/photo-082.webp",
+        "/images/portfolio/photo-092.webp",
+        "/images/portfolio/photo-100.webp"
+      ],
+      "immediatelyAfterHero": true
+    },
+    {
+      "path": "/spektakli/smurfiki",
+      "count": 4,
+      "photos": [
+        "/images/portfolio/photo-025.webp",
+        "/images/portfolio/photo-050.webp",
+        "/images/corporate/costumed-actors.webp",
+        "/images/portfolio/photo-081.webp"
+      ],
+      "immediatelyAfterHero": true
+    },
+    {
+      "path": "/spektakli/supergeroi",
+      "count": 4,
+      "photos": [
+        "/images/portfolio/photo-052.webp",
+        "/images/portfolio/photo-021.webp",
+        "/images/portfolio/photo-080.webp",
+        "/images/portfolio/photo-048.webp"
+      ],
+      "immediatelyAfterHero": true
+    },
+    {
+      "path": "/spektakli/skazka-elfov",
+      "count": 3,
+      "photos": [
+        "/images/portfolio/photo-073.webp",
+        "/images/corporate/children-playing.webp",
+        "/images/corporate/balloon-game.webp"
+      ],
+      "immediatelyAfterHero": true
+    },
+    {
+      "path": "/spektakli/shkola-volshebnic",
+      "count": 4,
+      "photos": [
+        "/images/corporate/children-and-actors.webp",
+        "/images/portfolio/photo-028.webp",
+        "/images/corporate/stage-performance.webp",
+        "/images/corporate/fairytale-actors.webp"
+      ],
+      "immediatelyAfterHero": true
+    },
+    {
+      "path": "/uslugi/pozdravitelnaya-pesnya",
+      "count": 4,
+      "photos": [
+        "/images/portfolio/photo-084.webp",
+        "/images/portfolio/photo-041.webp",
+        "/images/portfolio/photo-068.webp",
+        "/images/corporate/fairytale-group.webp"
+      ],
+      "immediatelyAfterHero": true
+    },
+    {
+      "path": "/uslugi/detskiy-tort",
+      "count": 4,
+      "photos": [
+        "/images/portfolio/photo-060.webp",
+        "/images/portfolio/photo-074.webp",
+        "/images/portfolio/photo-073.webp",
+        "/images/corporate/show-performer.webp"
+      ],
+      "immediatelyAfterHero": true
+    },
+    {
+      "path": "/uslugi/shou-s-zhivotnymi",
+      "count": 4,
+      "photos": [
+        "/images/portfolio/photo-084.webp",
+        "/images/corporate/balloon-game.webp",
+        "/images/corporate/ribbon-game.webp",
+        "/images/portfolio/photo-066.webp"
+      ],
+      "immediatelyAfterHero": true
+    },
+    {
+      "path": "/prazdniki/detskiy-prazdnik-na-teplohode",
+      "count": 4,
+      "photos": [
+        "/images/portfolio/photo-083.webp",
+        "/images/portfolio/photo-004.webp",
+        "/images/corporate/theatrical-prop.webp",
+        "/images/portfolio/photo-013.webp"
+      ],
+      "immediatelyAfterHero": true
+    },
+    {
+      "path": "/prazdniki/individualnyy-detskiy-prazdnik",
+      "count": 3,
+      "photos": [
+        "/images/corporate/restaurant-performance.webp",
+        "/images/corporate/fairytale-actors.webp",
+        "/images/corporate/children-and-actors.webp"
+      ],
+      "immediatelyAfterHero": true
+    },
+    {
+      "path": "/prazdniki/obrazovatelnyy-detskiy-prazdnik",
+      "count": 4,
+      "photos": [
+        "/images/portfolio/photo-082.webp",
+        "/images/corporate/colourful-character.webp",
+        "/images/corporate/theatrical-prop.webp",
+        "/images/corporate/children-playing.webp"
+      ],
+      "immediatelyAfterHero": true
+    },
+    {
+      "path": "/spektakli",
+      "count": 3,
+      "photos": [
+        "/images/corporate/face-painting.webp",
+        "/images/portfolio/photo-083.webp",
+        "/images/portfolio/photo-066.webp"
+      ],
+      "immediatelyAfterHero": true
+    },
+    {
+      "path": "/uslugi",
+      "count": 4,
+      "photos": [
+        "/images/portfolio/photo-024.webp",
+        "/images/corporate/show-performer.webp",
+        "/images/portfolio/photo-013.webp",
+        "/images/portfolio/photo-076.webp"
+      ],
+      "immediatelyAfterHero": true
+    },
+    {
+      "path": "/prazdniki",
+      "count": 4,
+      "photos": [
+        "/images/corporate/face-painting.webp",
+        "/images/corporate/children-and-actors.webp",
+        "/images/portfolio/photo-041.webp",
+        "/images/portfolio/photo-024.webp"
+      ],
+      "immediatelyAfterHero": true
+    },
+    {
+      "path": "/tseny",
+      "count": 3,
+      "photos": [
+        "/images/portfolio/photo-058.webp",
+        "/images/portfolio/photo-073.webp",
+        "/images/portfolio/photo-013.webp"
+      ],
+      "immediatelyAfterHero": true
+    },
+    {
+      "path": "/otzyvy-pressa",
+      "count": 4,
+      "photos": [
+        "/images/corporate/ribbon-game.webp",
+        "/images/corporate/actor-and-child.webp",
+        "/images/portfolio/photo-082.webp",
+        "/images/corporate/stage-performance.webp"
+      ],
+      "immediatelyAfterHero": true
+    },
+    {
+      "path": "/foto-video",
+      "count": 4,
+      "photos": [
+        "/images/corporate/fairytale-costumes.webp",
+        "/images/corporate/children-playing.webp",
+        "/images/corporate/stage-performance.webp",
+        "/images/portfolio/photo-083.webp"
+      ],
+      "immediatelyAfterHero": true
+    },
+    {
+      "path": "/kontakty",
+      "count": 4,
+      "photos": [
+        "/images/portfolio/photo-083.webp",
+        "/images/portfolio/photo-068.webp",
+        "/images/portfolio/photo-028.webp",
+        "/images/portfolio/photo-050.webp"
+      ],
+      "immediatelyAfterHero": true
+    },
+    {
+      "path": "/o-teatre",
+      "count": 4,
+      "photos": [
+        "/images/portfolio/photo-042.webp",
+        "/images/corporate/restaurant-performance.webp",
+        "/images/portfolio/photo-082.webp",
+        "/images/portfolio/photo-050.webp"
+      ],
+      "immediatelyAfterHero": true
+    },
+    {
+      "path": "/stati",
+      "count": 4,
+      "photos": [
+        "/images/portfolio/photo-028.webp",
+        "/images/portfolio/photo-050.webp",
+        "/images/corporate/actor-and-child.webp",
+        "/images/corporate/show-performer.webp"
+      ],
+      "immediatelyAfterHero": true
+    },
+    {
+      "path": "/kejsy",
+      "count": 4,
+      "photos": [
+        "/images/corporate/stage-performance.webp",
+        "/images/corporate/ribbon-game.webp",
+        "/images/portfolio/photo-042.webp",
+        "/images/portfolio/photo-073.webp"
+      ],
+      "immediatelyAfterHero": true
+    },
+    {
+      "path": "/podboroki",
+      "count": 4,
+      "photos": [
+        "/images/portfolio/photo-058.webp",
+        "/images/portfolio/photo-100.webp",
+        "/images/portfolio/photo-084.webp",
+        "/images/corporate/colourful-character.webp"
+      ],
+      "immediatelyAfterHero": true
+    },
+    {
+      "path": "/podboroki/interaktivnye-spektakli-dlya-detey",
+      "count": 4,
+      "photos": [
+        "/images/corporate/fairytale-actors.webp",
+        "/images/portfolio/photo-076.webp",
+        "/images/corporate/actor-and-child.webp",
+        "/images/portfolio/photo-082.webp"
+      ],
+      "immediatelyAfterHero": true
+    },
+    {
+      "path": "/stati/igrovoy-scenariy-dlya-detskogo-prazdnika",
+      "count": 4,
+      "photos": [
+        "/images/portfolio/photo-028.webp",
+        "/images/corporate/stage-performance.webp",
+        "/images/portfolio/photo-073.webp",
+        "/images/portfolio/photo-013.webp"
+      ],
+      "immediatelyAfterHero": true
+    },
+    {
+      "path": "/stati/prazdnik-po-skazkam-pushkina-dlya-detey",
+      "count": 4,
+      "photos": [
+        "/images/corporate/fairytale-actors.webp",
+        "/images/portfolio/photo-100.webp",
+        "/images/portfolio/photo-011.webp",
+        "/images/corporate/face-painting.webp"
+      ],
+      "immediatelyAfterHero": true
+    },
+    {
+      "path": "/stati/skazki-sheherezady-scenariy-dlya-detey",
+      "count": 4,
+      "photos": [
+        "/images/corporate/children-playing.webp",
+        "/images/portfolio/photo-095.webp",
+        "/images/portfolio/photo-011.webp",
+        "/images/corporate/face-painting.webp"
+      ],
+      "immediatelyAfterHero": true
+    },
+    {
+      "path": "/stati/detskiy-prazdnik-na-hellouin",
+      "count": 3,
+      "photos": [
+        "/images/portfolio/photo-058.webp",
+        "/images/portfolio/photo-004.webp",
+        "/images/portfolio/photo-082.webp"
+      ],
+      "immediatelyAfterHero": true
+    },
+    {
+      "path": "/stati/prazdnik-oseni-dlya-detey",
+      "count": 4,
+      "photos": [
+        "/images/corporate/actor-and-child.webp",
+        "/images/portfolio/photo-004.webp",
+        "/images/corporate/colourful-character.webp",
+        "/images/corporate/balloon-game.webp"
+      ],
+      "immediatelyAfterHero": true
+    },
+    {
+      "path": "/stati/prazdnik-bukvarya-scenariy-dlya-1-klassa",
+      "count": 4,
+      "photos": [
+        "/images/portfolio/photo-066.webp",
+        "/images/corporate/fairytale-actors.webp",
+        "/images/portfolio/photo-092.webp",
+        "/images/portfolio/photo-076.webp"
+      ],
+      "immediatelyAfterHero": true
+    },
+    {
+      "path": "/stati/kak-vybrat-spektakl-na-den-rozhdeniya",
+      "count": 4,
+      "photos": [
+        "/images/portfolio/photo-066.webp",
+        "/images/portfolio/photo-050.webp",
+        "/images/portfolio/photo-011.webp",
+        "/images/corporate/balloon-game.webp"
+      ],
+      "immediatelyAfterHero": true
+    },
+    {
+      "path": "/kejsy/piratskiy-den-rozhdeniya-7-let",
+      "count": 4,
+      "photos": [
+        "/images/corporate/actor-and-child.webp",
+        "/images/portfolio/photo-095.webp",
+        "/images/portfolio/photo-004.webp",
+        "/images/portfolio/photo-066.webp"
+      ],
+      "immediatelyAfterHero": true
+    },
+    {
+      "path": "/podboroki/spektakli-dlya-5-7-let",
+      "count": 4,
+      "photos": [
+        "/images/corporate/paper-show.webp",
+        "/images/portfolio/photo-058.webp",
+        "/images/corporate/colourful-character.webp",
+        "/images/corporate/fairytale-costumes.webp"
+      ],
+      "immediatelyAfterHero": true
+    },
+    {
+      "path": "/podboroki/prazdniki-dlya-detey-3-4-goda",
+      "count": 4,
+      "photos": [
+        "/images/corporate/fairytale-costumes.webp",
+        "/images/portfolio/photo-082.webp",
+        "/images/corporate/face-painting.webp",
+        "/images/corporate/interactive-show.webp"
+      ],
+      "immediatelyAfterHero": true
+    },
+    {
+      "path": "/stati/detskiy-prazdnik-doma-ili-v-restorane",
+      "count": 4,
+      "photos": [
+        "/images/portfolio/photo-100.webp",
+        "/images/corporate/children-playing.webp",
+        "/images/corporate/actor-and-child.webp",
+        "/images/portfolio/photo-092.webp"
+      ],
+      "immediatelyAfterHero": true
+    },
+    {
+      "path": "/kejsy/prazdnik-v-detskom-sadu",
+      "count": 3,
+      "photos": [
+        "/images/corporate/restaurant-performance.webp",
+        "/images/corporate/fairytale-group.webp",
+        "/images/portfolio/photo-073.webp"
+      ],
+      "immediatelyAfterHero": true
+    },
+    {
+      "path": "/stati/korporativnaya-elka-dlya-detey-sotrudnikov",
+      "count": 4,
+      "photos": [
+        "/images/portfolio/photo-042.webp",
+        "/images/corporate/show-performer.webp",
+        "/images/portfolio/photo-063.webp",
+        "/images/portfolio/photo-024.webp"
+      ],
+      "immediatelyAfterHero": true
+    },
+    {
+      "path": "/podboroki/prazdniki-dlya-detey-8-10-let",
+      "count": 3,
+      "photos": [
+        "/images/portfolio/photo-028.webp",
+        "/images/corporate/paper-show.webp",
+        "/images/portfolio/photo-042.webp"
+      ],
+      "immediatelyAfterHero": true
+    },
+    {
+      "path": "/stati/prazdnik-v-shkole-kak-sobrat-programmu",
+      "count": 3,
+      "photos": [
+        "/images/portfolio/photo-028.webp",
+        "/images/corporate/fairytale-costumes.webp",
+        "/images/portfolio/photo-058.webp"
+      ],
+      "immediatelyAfterHero": true
+    },
+    {
+      "path": "/podboroki/idei-dlya-vypusknogo",
+      "count": 4,
+      "photos": [
+        "/images/corporate/children-and-actors.webp",
+        "/images/corporate/restaurant-performance.webp",
+        "/images/portfolio/photo-100.webp",
+        "/images/portfolio/photo-092.webp"
+      ],
+      "immediatelyAfterHero": true
+    },
+    {
+      "path": "/podboroki/novogodnie-programmy-dlya-detey",
+      "count": 3,
+      "photos": [
+        "/images/corporate/fairytale-group.webp",
+        "/images/corporate/colourful-character.webp",
+        "/images/corporate/fairytale-costumes.webp"
+      ],
+      "immediatelyAfterHero": true
+    },
+    {
+      "path": "/stati/animatory-na-dom-kak-vybrat-programmu",
+      "count": 4,
+      "photos": [
+        "/images/portfolio/photo-100.webp",
+        "/images/portfolio/photo-011.webp",
+        "/images/portfolio/photo-095.webp",
+        "/images/portfolio/photo-050.webp"
+      ],
+      "immediatelyAfterHero": true
+    },
+    {
+      "path": "/stati/detskiy-prazdnik-v-restorane",
+      "count": 4,
+      "photos": [
+        "/images/portfolio/photo-011.webp",
+        "/images/portfolio/photo-066.webp",
+        "/images/portfolio/photo-024.webp",
+        "/images/corporate/children-playing.webp"
+      ],
+      "immediatelyAfterHero": true
+    },
+    {
+      "path": "/podboroki/prazdniki-dlya-detey-11-13-let",
+      "count": 4,
+      "photos": [
+        "/images/corporate/theatrical-prop.webp",
+        "/images/corporate/fairytale-costumes.webp",
+        "/images/portfolio/photo-063.webp",
+        "/images/portfolio/photo-013.webp"
+      ],
+      "immediatelyAfterHero": true
+    },
+    {
+      "path": "/podboroki/nedorogoy-detskiy-prazdnik",
+      "count": 4,
+      "photos": [
+        "/images/corporate/fairytale-group.webp",
+        "/images/portfolio/photo-041.webp",
+        "/images/corporate/colourful-character.webp",
+        "/images/corporate/children-and-actors.webp"
+      ],
+      "immediatelyAfterHero": true
+    },
+    {
+      "path": "/stati/detskiy-prazdnik-na-ulitse",
+      "count": 4,
+      "photos": [
+        "/images/portfolio/photo-013.webp",
+        "/images/corporate/interactive-show.webp",
+        "/images/corporate/colourful-character.webp",
+        "/images/corporate/actor-and-child.webp"
+      ],
+      "immediatelyAfterHero": true
+    },
+    {
+      "path": "/stati/kak-rasschitat-byudzhet-detskogo-prazdnika",
+      "count": 4,
+      "photos": [
+        "/images/portfolio/photo-084.webp",
+        "/images/corporate/balloon-game.webp",
+        "/images/portfolio/photo-095.webp",
+        "/images/corporate/children-and-actors.webp"
+      ],
+      "immediatelyAfterHero": true
+    },
+    {
+      "path": "/stati/detskiy-prazdnik-v-torgovom-tsentre",
+      "count": 4,
+      "photos": [
+        "/images/portfolio/photo-076.webp",
+        "/images/portfolio/photo-095.webp",
+        "/images/corporate/colourful-character.webp",
+        "/images/portfolio/photo-092.webp"
+      ],
+      "immediatelyAfterHero": true
+    },
+    {
+      "path": "/stati/prazdnik-dlya-klassa",
+      "count": 4,
+      "photos": [
+        "/images/portfolio/photo-024.webp",
+        "/images/corporate/fairytale-group.webp",
+        "/images/corporate/children-and-actors.webp",
+        "/images/corporate/show-performer.webp"
+      ],
+      "immediatelyAfterHero": true
+    },
+    {
+      "path": "/podboroki/prazdnik-dlya-devochki",
+      "count": 4,
+      "photos": [
+        "/images/corporate/paper-show.webp",
+        "/images/portfolio/photo-083.webp",
+        "/images/portfolio/photo-095.webp",
+        "/images/portfolio/photo-024.webp"
+      ],
+      "immediatelyAfterHero": true
+    },
+    {
+      "path": "/podboroki/prazdnik-dlya-malchika",
+      "count": 4,
+      "photos": [
+        "/images/corporate/paper-show.webp",
+        "/images/portfolio/photo-100.webp",
+        "/images/portfolio/photo-042.webp",
+        "/images/corporate/show-performer.webp"
+      ],
+      "immediatelyAfterHero": true
+    },
+    {
+      "path": "/stati/detskiy-prazdnik-v-parke",
+      "count": 4,
+      "photos": [
+        "/images/portfolio/photo-066.webp",
+        "/images/corporate/ribbon-game.webp",
+        "/images/portfolio/photo-050.webp",
+        "/images/corporate/show-performer.webp"
+      ],
+      "immediatelyAfterHero": true
+    },
+    {
+      "path": "/stati/detskiy-prazdnik-zimoy",
+      "count": 4,
+      "photos": [
+        "/images/portfolio/photo-011.webp",
+        "/images/portfolio/photo-042.webp",
+        "/images/portfolio/photo-082.webp",
+        "/images/portfolio/photo-076.webp"
+      ],
+      "immediatelyAfterHero": true
+    },
+    {
+      "path": "/stati/detskiy-prazdnik-letom",
+      "count": 4,
+      "photos": [
+        "/images/corporate/balloon-game.webp",
+        "/images/corporate/theatrical-prop.webp",
+        "/images/portfolio/photo-076.webp",
+        "/images/corporate/fairytale-group.webp"
+      ],
+      "immediatelyAfterHero": true
+    },
+    {
+      "path": "/podboroki/prazdnik-dlya-10-detey",
+      "count": 3,
+      "photos": [
+        "/images/corporate/theatrical-prop.webp",
+        "/images/portfolio/photo-084.webp",
+        "/images/portfolio/photo-050.webp"
+      ],
+      "immediatelyAfterHero": true
+    },
+    {
+      "path": "/podboroki/prazdnik-dlya-20-detey",
+      "count": 4,
+      "photos": [
+        "/images/portfolio/photo-058.webp",
+        "/images/portfolio/photo-024.webp",
+        "/images/portfolio/photo-068.webp",
+        "/images/corporate/theatrical-prop.webp"
+      ],
+      "immediatelyAfterHero": true
+    },
+    {
+      "path": "/podboroki/prazdnik-s-master-klassom",
+      "count": 3,
+      "photos": [
+        "/images/portfolio/photo-073.webp",
+        "/images/portfolio/photo-042.webp",
+        "/images/portfolio/photo-013.webp"
+      ],
+      "immediatelyAfterHero": true
+    },
+    {
+      "path": "/stati/detskiy-prazdnik-v-lofte",
+      "count": 3,
+      "photos": [
+        "/images/corporate/show-performer.webp",
+        "/images/portfolio/photo-041.webp",
+        "/images/portfolio/photo-063.webp"
+      ],
+      "immediatelyAfterHero": true
+    },
+    {
+      "path": "/stati/detskiy-prazdnik-na-dache",
+      "count": 4,
+      "photos": [
+        "/images/portfolio/photo-083.webp",
+        "/images/portfolio/photo-066.webp",
+        "/images/portfolio/photo-100.webp",
+        "/images/portfolio/photo-076.webp"
+      ],
+      "immediatelyAfterHero": true
+    },
+    {
+      "path": "/stati/programma-dlya-roditeley-i-detey",
+      "count": 4,
+      "photos": [
+        "/images/corporate/ribbon-game.webp",
+        "/images/corporate/colourful-character.webp",
+        "/images/portfolio/photo-058.webp",
+        "/images/portfolio/photo-004.webp"
+      ],
+      "immediatelyAfterHero": true
+    },
+    {
+      "path": "/podboroki/prazdnik-s-akvagrimom",
+      "count": 3,
+      "photos": [
+        "/images/portfolio/photo-050.webp",
+        "/images/portfolio/photo-005.webp",
+        "/images/portfolio/photo-082.webp"
+      ],
+      "immediatelyAfterHero": true
+    },
+    {
+      "path": "/podboroki/prazdnik-s-fokusami",
+      "count": 4,
+      "photos": [
+        "/images/portfolio/photo-042.webp",
+        "/images/portfolio/photo-011.webp",
+        "/images/portfolio/photo-095.webp",
+        "/images/portfolio/photo-041.webp"
+      ],
+      "immediatelyAfterHero": true
+    },
+    {
+      "path": "/stati/animatory-na-vypusknoy",
+      "count": 4,
+      "photos": [
+        "/images/corporate/ribbon-game.webp",
+        "/images/corporate/stage-performance.webp",
+        "/images/corporate/colourful-character.webp",
+        "/images/portfolio/photo-092.webp"
+      ],
+      "immediatelyAfterHero": true
+    },
+    {
+      "path": "/stati/detskiy-prazdnik-v-kafe",
+      "count": 4,
+      "photos": [
+        "/images/portfolio/photo-004.webp",
+        "/images/portfolio/photo-042.webp",
+        "/images/corporate/interactive-show.webp",
+        "/images/portfolio/photo-084.webp"
+      ],
+      "immediatelyAfterHero": true
+    },
+    {
+      "path": "/stati/detskiy-prazdnik-v-detskom-tsentre",
+      "count": 3,
+      "photos": [
+        "/images/portfolio/photo-092.webp",
+        "/images/corporate/children-and-actors.webp",
+        "/images/corporate/fairytale-group.webp"
+      ],
+      "immediatelyAfterHero": true
+    },
+    {
+      "path": "/podboroki/prazdnik-dlya-malyshey-2-3-goda",
+      "count": 4,
+      "photos": [
+        "/images/corporate/fairytale-group.webp",
+        "/images/portfolio/photo-063.webp",
+        "/images/portfolio/photo-076.webp",
+        "/images/corporate/fairytale-actors.webp"
+      ],
+      "immediatelyAfterHero": true
+    },
+    {
+      "path": "/podboroki/prazdnik-so-spektaklem-vmesto-animatorov",
+      "count": 4,
+      "photos": [
+        "/images/portfolio/photo-068.webp",
+        "/images/corporate/ribbon-game.webp",
+        "/images/portfolio/photo-050.webp",
+        "/images/portfolio/photo-005.webp"
+      ],
+      "immediatelyAfterHero": true
+    },
+    {
+      "path": "/stati/semka-filma-s-detmi-na-prazdnike",
+      "count": 4,
+      "photos": [
+        "/images/portfolio/photo-013.webp",
+        "/images/corporate/balloon-game.webp",
+        "/images/portfolio/photo-024.webp",
+        "/images/portfolio/photo-005.webp"
+      ],
+      "immediatelyAfterHero": true
+    }
+  ]
+}

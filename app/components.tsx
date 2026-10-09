@@ -1,6 +1,6 @@
-import Image from "next/image";
 import Link from "next/link";
-import { galleryImages, phone, phoneHref } from "./data";
+import { phone, phoneHref } from "./data";
+import { PhotoRibbon } from "./photo-ribbon";
 import { HeaderNav } from "./header-nav";
 import { BriefEntry, LeadForm } from "./lead-form";
 import { MobileQuickActions } from "./mobile-quick-actions";
@@ -76,15 +76,7 @@ export function CTA({ label = "Оставить заявку" }: { label?: strin
 }
 
 export function GalleryStrip() {
-  return (
-    <div className="gallery-strip">
-      {galleryImages.map((image) => (
-        <figure key={image.src}>
-          <Image src={image.src} alt={image.alt} width={520} height={360} />
-        </figure>
-      ))}
-    </div>
-  );
+  return <PhotoRibbon />;
 }
 
 export function SectionHero({

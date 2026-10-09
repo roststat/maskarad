@@ -1,0 +1,614 @@
+[
+  {
+    "path": "/images/corporate/actor-and-child.webp",
+    "status": 200,
+    "contentType": "image/webp",
+    "bytes": 98164
+  },
+  {
+    "path": "/images/corporate/balloon-game.webp",
+    "status": 200,
+    "contentType": "image/webp",
+    "bytes": 203288
+  },
+  {
+    "path": "/images/corporate/children-and-actors.webp",
+    "status": 200,
+    "contentType": "image/webp",
+    "bytes": 164742
+  },
+  {
+    "path": "/images/corporate/children-playing.webp",
+    "status": 200,
+    "contentType": "image/webp",
+    "bytes": 122368
+  },
+  {
+    "path": "/images/corporate/colourful-character.webp",
+    "status": 200,
+    "contentType": "image/webp",
+    "bytes": 128642
+  },
+  {
+    "path": "/images/corporate/costumed-actors.webp",
+    "status": 200,
+    "contentType": "image/webp",
+    "bytes": 71950
+  },
+  {
+    "path": "/images/corporate/face-painting.webp",
+    "status": 200,
+    "contentType": "image/webp",
+    "bytes": 306554
+  },
+  {
+    "path": "/images/corporate/fairytale-actors.webp",
+    "status": 200,
+    "contentType": "image/webp",
+    "bytes": 282906
+  },
+  {
+    "path": "/images/corporate/fairytale-costumes.webp",
+    "status": 200,
+    "contentType": "image/webp",
+    "bytes": 117988
+  },
+  {
+    "path": "/images/corporate/fairytale-group.webp",
+    "status": 200,
+    "contentType": "image/webp",
+    "bytes": 308396
+  },
+  {
+    "path": "/images/corporate/interactive-show.webp",
+    "status": 200,
+    "contentType": "image/webp",
+    "bytes": 221420
+  },
+  {
+    "path": "/images/corporate/paper-show.webp",
+    "status": 200,
+    "contentType": "image/webp",
+    "bytes": 349350
+  },
+  {
+    "path": "/images/corporate/restaurant-performance.webp",
+    "status": 200,
+    "contentType": "image/webp",
+    "bytes": 53548
+  },
+  {
+    "path": "/images/corporate/ribbon-game.webp",
+    "status": 200,
+    "contentType": "image/webp",
+    "bytes": 410422
+  },
+  {
+    "path": "/images/corporate/show-performer.webp",
+    "status": 200,
+    "contentType": "image/webp",
+    "bytes": 148708
+  },
+  {
+    "path": "/images/corporate/stage-performance.webp",
+    "status": 200,
+    "contentType": "image/webp",
+    "bytes": 108938
+  },
+  {
+    "path": "/images/corporate/superhero-group.webp",
+    "status": 200,
+    "contentType": "image/webp",
+    "bytes": 333082
+  },
+  {
+    "path": "/images/corporate/theatrical-prop.webp",
+    "status": 200,
+    "contentType": "image/webp",
+    "bytes": 290216
+  },
+  {
+    "path": "/images/portfolio/photo-001.webp",
+    "status": 200,
+    "contentType": "image/webp",
+    "bytes": 45632
+  },
+  {
+    "path": "/images/portfolio/photo-002.webp",
+    "status": 200,
+    "contentType": "image/webp",
+    "bytes": 70114
+  },
+  {
+    "path": "/images/portfolio/photo-003.webp",
+    "status": 200,
+    "contentType": "image/webp",
+    "bytes": 61346
+  },
+  {
+    "path": "/images/portfolio/photo-004.webp",
+    "status": 200,
+    "contentType": "image/webp",
+    "bytes": 173212
+  },
+  {
+    "path": "/images/portfolio/photo-005.webp",
+    "status": 200,
+    "contentType": "image/webp",
+    "bytes": 72212
+  },
+  {
+    "path": "/images/portfolio/photo-006.webp",
+    "status": 200,
+    "contentType": "image/webp",
+    "bytes": 37132
+  },
+  {
+    "path": "/images/portfolio/photo-007.webp",
+    "status": 200,
+    "contentType": "image/webp",
+    "bytes": 86666
+  },
+  {
+    "path": "/images/portfolio/photo-008.webp",
+    "status": 200,
+    "contentType": "image/webp",
+    "bytes": 37966
+  },
+  {
+    "path": "/images/portfolio/photo-009.webp",
+    "status": 200,
+    "contentType": "image/webp",
+    "bytes": 112012
+  },
+  {
+    "path": "/images/portfolio/photo-010.webp",
+    "status": 200,
+    "contentType": "image/webp",
+    "bytes": 134244
+  },
+  {
+    "path": "/images/portfolio/photo-011.webp",
+    "status": 200,
+    "contentType": "image/webp",
+    "bytes": 247222
+  },
+  {
+    "path": "/images/portfolio/photo-012.webp",
+    "status": 200,
+    "contentType": "image/webp",
+    "bytes": 76840
+  },
+  {
+    "path": "/images/portfolio/photo-013.webp",
+    "status": 200,
+    "contentType": "image/webp",
+    "bytes": 60316
+  },
+  {
+    "path": "/images/portfolio/photo-014.webp",
+    "status": 200,
+    "contentType": "image/webp",
+    "bytes": 76586
+  },
+  {
+    "path": "/images/portfolio/photo-015.webp",
+    "status": 200,
+    "contentType": "image/webp",
+    "bytes": 102100
+  },
+  {
+    "path": "/images/portfolio/photo-016.webp",
+    "status": 200,
+    "contentType": "image/webp",
+    "bytes": 203020
+  },
+  {
+    "path": "/images/portfolio/photo-017.webp",
+    "status": 200,
+    "contentType": "image/webp",
+    "bytes": 122734
+  },
+  {
+    "path": "/images/portfolio/photo-019.webp",
+    "status": 200,
+    "contentType": "image/webp",
+    "bytes": 24862
+  },
+  {
+    "path": "/images/portfolio/photo-020.webp",
+    "status": 200,
+    "contentType": "image/webp",
+    "bytes": 237250
+  },
+  {
+    "path": "/images/portfolio/photo-021.webp",
+    "status": 200,
+    "contentType": "image/webp",
+    "bytes": 57150
+  },
+  {
+    "path": "/images/portfolio/photo-022.webp",
+    "status": 200,
+    "contentType": "image/webp",
+    "bytes": 156522
+  },
+  {
+    "path": "/images/portfolio/photo-023.webp",
+    "status": 200,
+    "contentType": "image/webp",
+    "bytes": 53090
+  },
+  {
+    "path": "/images/portfolio/photo-024.webp",
+    "status": 200,
+    "contentType": "image/webp",
+    "bytes": 73838
+  },
+  {
+    "path": "/images/portfolio/photo-025.webp",
+    "status": 200,
+    "contentType": "image/webp",
+    "bytes": 162918
+  },
+  {
+    "path": "/images/portfolio/photo-026.webp",
+    "status": 200,
+    "contentType": "image/webp",
+    "bytes": 147730
+  },
+  {
+    "path": "/images/portfolio/photo-028.webp",
+    "status": 200,
+    "contentType": "image/webp",
+    "bytes": 175898
+  },
+  {
+    "path": "/images/portfolio/photo-029.webp",
+    "status": 200,
+    "contentType": "image/webp",
+    "bytes": 91126
+  },
+  {
+    "path": "/images/portfolio/photo-030.webp",
+    "status": 200,
+    "contentType": "image/webp",
+    "bytes": 65374
+  },
+  {
+    "path": "/images/portfolio/photo-031.webp",
+    "status": 200,
+    "contentType": "image/webp",
+    "bytes": 205950
+  },
+  {
+    "path": "/images/portfolio/photo-032.webp",
+    "status": 200,
+    "contentType": "image/webp",
+    "bytes": 54142
+  },
+  {
+    "path": "/images/portfolio/photo-033.webp",
+    "status": 200,
+    "contentType": "image/webp",
+    "bytes": 76820
+  },
+  {
+    "path": "/images/portfolio/photo-034.webp",
+    "status": 200,
+    "contentType": "image/webp",
+    "bytes": 266032
+  },
+  {
+    "path": "/images/portfolio/photo-037.webp",
+    "status": 200,
+    "contentType": "image/webp",
+    "bytes": 301810
+  },
+  {
+    "path": "/images/portfolio/photo-039.webp",
+    "status": 200,
+    "contentType": "image/webp",
+    "bytes": 88966
+  },
+  {
+    "path": "/images/portfolio/photo-041.webp",
+    "status": 200,
+    "contentType": "image/webp",
+    "bytes": 142450
+  },
+  {
+    "path": "/images/portfolio/photo-042.webp",
+    "status": 200,
+    "contentType": "image/webp",
+    "bytes": 149444
+  },
+  {
+    "path": "/images/portfolio/photo-043.webp",
+    "status": 200,
+    "contentType": "image/webp",
+    "bytes": 111312
+  },
+  {
+    "path": "/images/portfolio/photo-044.webp",
+    "status": 200,
+    "contentType": "image/webp",
+    "bytes": 28494
+  },
+  {
+    "path": "/images/portfolio/photo-045.webp",
+    "status": 200,
+    "contentType": "image/webp",
+    "bytes": 225598
+  },
+  {
+    "path": "/images/portfolio/photo-046.webp",
+    "status": 200,
+    "contentType": "image/webp",
+    "bytes": 64886
+  },
+  {
+    "path": "/images/portfolio/photo-048.webp",
+    "status": 200,
+    "contentType": "image/webp",
+    "bytes": 259672
+  },
+  {
+    "path": "/images/portfolio/photo-049.webp",
+    "status": 200,
+    "contentType": "image/webp",
+    "bytes": 99522
+  },
+  {
+    "path": "/images/portfolio/photo-050.webp",
+    "status": 200,
+    "contentType": "image/webp",
+    "bytes": 106532
+  },
+  {
+    "path": "/images/portfolio/photo-052.webp",
+    "status": 200,
+    "contentType": "image/webp",
+    "bytes": 329506
+  },
+  {
+    "path": "/images/portfolio/photo-055.webp",
+    "status": 200,
+    "contentType": "image/webp",
+    "bytes": 169210
+  },
+  {
+    "path": "/images/portfolio/photo-056.webp",
+    "status": 200,
+    "contentType": "image/webp",
+    "bytes": 182898
+  },
+  {
+    "path": "/images/portfolio/photo-057.webp",
+    "status": 200,
+    "contentType": "image/webp",
+    "bytes": 332742
+  },
+  {
+    "path": "/images/portfolio/photo-058.webp",
+    "status": 200,
+    "contentType": "image/webp",
+    "bytes": 84424
+  },
+  {
+    "path": "/images/portfolio/photo-060.webp",
+    "status": 200,
+    "contentType": "image/webp",
+    "bytes": 158448
+  },
+  {
+    "path": "/images/portfolio/photo-062.webp",
+    "status": 200,
+    "contentType": "image/webp",
+    "bytes": 226842
+  },
+  {
+    "path": "/images/portfolio/photo-063.webp",
+    "status": 200,
+    "contentType": "image/webp",
+    "bytes": 216694
+  },
+  {
+    "path": "/images/portfolio/photo-064.webp",
+    "status": 200,
+    "contentType": "image/webp",
+    "bytes": 228000
+  },
+  {
+    "path": "/images/portfolio/photo-066.webp",
+    "status": 200,
+    "contentType": "image/webp",
+    "bytes": 206200
+  },
+  {
+    "path": "/images/portfolio/photo-067.webp",
+    "status": 200,
+    "contentType": "image/webp",
+    "bytes": 135664
+  },
+  {
+    "path": "/images/portfolio/photo-068.webp",
+    "status": 200,
+    "contentType": "image/webp",
+    "bytes": 133538
+  },
+  {
+    "path": "/images/portfolio/photo-069.webp",
+    "status": 200,
+    "contentType": "image/webp",
+    "bytes": 128812
+  },
+  {
+    "path": "/images/portfolio/photo-070.webp",
+    "status": 200,
+    "contentType": "image/webp",
+    "bytes": 43376
+  },
+  {
+    "path": "/images/portfolio/photo-071.webp",
+    "status": 200,
+    "contentType": "image/webp",
+    "bytes": 151348
+  },
+  {
+    "path": "/images/portfolio/photo-072.webp",
+    "status": 200,
+    "contentType": "image/webp",
+    "bytes": 303892
+  },
+  {
+    "path": "/images/portfolio/photo-073.webp",
+    "status": 200,
+    "contentType": "image/webp",
+    "bytes": 200966
+  },
+  {
+    "path": "/images/portfolio/photo-074.webp",
+    "status": 200,
+    "contentType": "image/webp",
+    "bytes": 112280
+  },
+  {
+    "path": "/images/portfolio/photo-075.webp",
+    "status": 200,
+    "contentType": "image/webp",
+    "bytes": 53192
+  },
+  {
+    "path": "/images/portfolio/photo-076.webp",
+    "status": 200,
+    "contentType": "image/webp",
+    "bytes": 304638
+  },
+  {
+    "path": "/images/portfolio/photo-078.webp",
+    "status": 200,
+    "contentType": "image/webp",
+    "bytes": 94620
+  },
+  {
+    "path": "/images/portfolio/photo-079.webp",
+    "status": 200,
+    "contentType": "image/webp",
+    "bytes": 224478
+  },
+  {
+    "path": "/images/portfolio/photo-080.webp",
+    "status": 200,
+    "contentType": "image/webp",
+    "bytes": 284976
+  },
+  {
+    "path": "/images/portfolio/photo-081.webp",
+    "status": 200,
+    "contentType": "image/webp",
+    "bytes": 171944
+  },
+  {
+    "path": "/images/portfolio/photo-082.webp",
+    "status": 200,
+    "contentType": "image/webp",
+    "bytes": 206694
+  },
+  {
+    "path": "/images/portfolio/photo-083.webp",
+    "status": 200,
+    "contentType": "image/webp",
+    "bytes": 267612
+  },
+  {
+    "path": "/images/portfolio/photo-084.webp",
+    "status": 200,
+    "contentType": "image/webp",
+    "bytes": 156494
+  },
+  {
+    "path": "/images/portfolio/photo-085.webp",
+    "status": 200,
+    "contentType": "image/webp",
+    "bytes": 296718
+  },
+  {
+    "path": "/images/portfolio/photo-086.webp",
+    "status": 200,
+    "contentType": "image/webp",
+    "bytes": 64714
+  },
+  {
+    "path": "/images/portfolio/photo-087.webp",
+    "status": 200,
+    "contentType": "image/webp",
+    "bytes": 262974
+  },
+  {
+    "path": "/images/portfolio/photo-088.webp",
+    "status": 200,
+    "contentType": "image/webp",
+    "bytes": 133310
+  },
+  {
+    "path": "/images/portfolio/photo-091.webp",
+    "status": 200,
+    "contentType": "image/webp",
+    "bytes": 211676
+  },
+  {
+    "path": "/images/portfolio/photo-092.webp",
+    "status": 200,
+    "contentType": "image/webp",
+    "bytes": 52806
+  },
+  {
+    "path": "/images/portfolio/photo-093.webp",
+    "status": 200,
+    "contentType": "image/webp",
+    "bytes": 37002
+  },
+  {
+    "path": "/images/portfolio/photo-094.webp",
+    "status": 200,
+    "contentType": "image/webp",
+    "bytes": 220154
+  },
+  {
+    "path": "/images/portfolio/photo-095.webp",
+    "status": 200,
+    "contentType": "image/webp",
+    "bytes": 123576
+  },
+  {
+    "path": "/images/portfolio/photo-098.webp",
+    "status": 200,
+    "contentType": "image/webp",
+    "bytes": 208042
+  },
+  {
+    "path": "/images/portfolio/photo-100.webp",
+    "status": 200,
+    "contentType": "image/webp",
+    "bytes": 328154
+  },
+  {
+    "path": "/images/portfolio/photo-101.webp",
+    "status": 200,
+    "contentType": "image/webp",
+    "bytes": 93476
+  },
+  {
+    "path": "/images/portfolio/photo-103.webp",
+    "status": 200,
+    "contentType": "image/webp",
+    "bytes": 88088
+  },
+  {
+    "path": "/images/portfolio/photo-104.webp",
+    "status": 200,
+    "contentType": "image/webp",
+    "bytes": 92492
+  }
+]

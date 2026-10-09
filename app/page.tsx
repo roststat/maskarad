@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { CTA, GalleryStrip } from "./components";
+import { MiniGallery } from "./mini-gallery";
 import { Breadcrumbs, JsonLd, buildBreadcrumbs, createFaqJsonLd } from "./seo";
 
 export const metadata: Metadata = {
@@ -118,14 +119,18 @@ export default function Home() {
         </div>
         <div className="hero-image">
           <Image
-            src="/images/legacy/interaktiv01.jpg"
-            alt="Иммерсивный спектакль театра Маскарад на детский праздник"
-            width={760}
-            height={560}
-            priority
+            src="/images/corporate/children-and-actors.webp"
+            alt="Дети участвуют в спектакле вместе с актёрами театра Маскарад"
+            width={1600}
+            height={1052}
+            sizes="(max-width: 1000px) calc(100vw - 32px), 580px"
+            loading="eager"
+            fetchPriority="high"
           />
         </div>
       </section>
+
+      <MiniGallery path="/" />
 
       <section className="stats" aria-label="Коротко о театре">
         {stats.map(([value, label]) => (

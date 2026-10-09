@@ -1,0 +1,167 @@
+{
+  "urls": 122,
+  "statuses": {
+    "200": 122
+  },
+  "groups": {
+    "home": 1,
+    "prazdniki": 14,
+    "dlya-detey": 1,
+    "dlya-vzroslyh": 1,
+    "dlya-biznesa": 1,
+    "spektakli": 36,
+    "uslugi": 14,
+    "podboroki": 19,
+    "tseny": 1,
+    "otzyvy-pressa": 1,
+    "foto-video": 1,
+    "kontakty": 1,
+    "o-teatre": 1,
+    "stati": 27,
+    "kejsy": 3
+  },
+  "canonical_issues": [],
+  "h1_issues": [],
+  "noindex": [],
+  "duplicates": {
+    "title": {},
+    "description": {},
+    "h1": {}
+  },
+  "unreachable": [
+    "/dlya-detey",
+    "/dlya-vzroslyh",
+    "/prazdniki/detskiy-prazdnik-na-teplohode",
+    "/prazdniki/individualnyy-detskiy-prazdnik",
+    "/prazdniki/maslenitsa",
+    "/prazdniki/obrazovatelnyy-detskiy-prazdnik",
+    "/prazdniki/vypusknoy-v-11-klasse",
+    "/prazdniki/vypusknoy-v-detskom-sadu",
+    "/prazdniki/vypusknoy-v-nachalnoy-shkole",
+    "/prazdniki/vypusknoy-v-stile-fashion",
+    "/uslugi/detskiy-tort",
+    "/uslugi/pozdravitelnaya-pesnya",
+    "/uslugi/shou-s-zhivotnymi"
+  ],
+  "depth": {
+    "0": 1,
+    "1": 22,
+    "2": 66,
+    "3": 15,
+    "4": 5
+  },
+  "external_sitemap_internal_targets": {
+    "/cookie-policy": [
+      "/",
+      "/dlya-biznesa",
+      "/dlya-detey",
+      "/dlya-vzroslyh"
+    ],
+    "/terms": [
+      "/",
+      "/dlya-biznesa",
+      "/dlya-detey",
+      "/dlya-vzroslyh"
+    ],
+    "/privacy-policy": [
+      "/",
+      "/dlya-biznesa",
+      "/dlya-detey",
+      "/dlya-vzroslyh"
+    ],
+    "/personal-data-consent": [
+      "/",
+      "/dlya-biznesa",
+      "/dlya-detey",
+      "/dlya-vzroslyh"
+    ],
+    "/prazdniki/novogodniy-detskiy-prazdnik": [
+      "/dlya-biznesa",
+      "/dlya-vzroslyh"
+    ]
+  },
+  "main_words": {
+    "min": 245,
+    "median": 390.0,
+    "max": 849
+  },
+  "shortest": [
+    {
+      "path": "/kejsy",
+      "words": 245
+    },
+    {
+      "path": "/kontakty",
+      "words": 256
+    },
+    {
+      "path": "/foto-video",
+      "words": 274
+    },
+    {
+      "path": "/otzyvy-pressa",
+      "words": 277
+    },
+    {
+      "path": "/o-teatre",
+      "words": 279
+    },
+    {
+      "path": "/spektakli/priklyucheniya-sindbada-morehoda",
+      "words": 310
+    },
+    {
+      "path": "/uslugi/akvagrim",
+      "words": 310
+    },
+    {
+      "path": "/uslugi/attraktsiony",
+      "words": 314
+    },
+    {
+      "path": "/spektakli/holodnoe-serdtse",
+      "words": 316
+    },
+    {
+      "path": "/uslugi/oformlenie-sharami",
+      "words": 317
+    }
+  ],
+  "primary_image_reuse": [
+    [
+      "/images/legacy/interaktiv01.jpg",
+      14
+    ],
+    [
+      "/images/legacy/interaktiv01-enhanced.jpg",
+      12
+    ],
+    [
+      "/images/legacy/teatr-zolushka-enhanced.jpg",
+      11
+    ],
+    [
+      "/images/legacy/piraty01-enhanced.jpg",
+      9
+    ],
+    [
+      "/images/legacy/detskiy-sad-teatr-enhanced.jpg",
+      9
+    ],
+    [
+      "/images/legacy/teatr-zolushka.jpg",
+      7
+    ],
+    [
+      "/images/legacy/piraty01.jpg",
+      6
+    ],
+    [
+      "/images/legacy/novogodnie-spektakli-enhanced.jpg",
+      4
+    ]
+  ],
+  "no_primary_media": [],
+  "image_missing_alt": 0,
+  "pages_without_video_or_iframe_in_server_html": 122
+}

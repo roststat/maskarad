@@ -1,0 +1,48 @@
+{
+  "date": "2026-10-09",
+  "url": "https://maskarad-teatr.ru/prazdniki/korporativnyy-novogodniy-prazdnik",
+  "http_fetch": "200 (curl -f завершился успешно)",
+  "sha256": "793e531a1af9a1a6a7432d1c4c5879ca3dce7279201ac30b3a82c4978a5d5153",
+  "h1": [
+    "Елка для детей сотрудников как настоящий спектакль"
+  ],
+  "canonical": [
+    "https://maskarad-teatr.ru/prazdniki/korporativnyy-novogodniy-prazdnik"
+  ],
+  "forms": 1,
+  "videos": 0,
+  "iframes_including_global_services": 0,
+  "ruble_price_in_visible_text": false,
+  "cta_anchor_present": true,
+  "selected_visible_copy": [
+    "Обсудить корпоратив",
+    "Для HR и event-команд",
+    "Как готовится корпоративная елка",
+    "Имя",
+    "Телефон"
+  ],
+  "scope": "Серверный публичный HTML + локальный источник; форма не отправлялась, браузер/кабинеты не проверены",
+  "source_findings": {
+    "lead_form_payload": [
+      "name",
+      "phone",
+      "message",
+      "page",
+      "leadText",
+      "consent",
+      "consentVersion"
+    ],
+    "api_stored_fields": [
+      "name",
+      "phone",
+      "message",
+      "page",
+      "createdAt",
+      "consent"
+    ],
+    "attribution_fields_absent": true,
+    "explicit_reachGoal_in_form_absent": true,
+    "metrica_hit_uses_pathname_without_query": true,
+    "cabinet_auto_goals": "не проверены"
+  }
+}

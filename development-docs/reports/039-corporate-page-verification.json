@@ -1,0 +1,45 @@
+{
+  "date": "2026-10-09",
+  "status": "verified locally; not published",
+  "seo_predeploy": "passed",
+  "seo_prelaunch_local": "12/12",
+  "faq_coverage": "122 URLs, five visible answers each, exact JSON-LD match",
+  "page_h1": 1,
+  "forms": 1,
+  "canonical_preserved": true,
+  "guest_scales": [
+    "up to 100",
+    "up to 250-300",
+    "over 500"
+  ],
+  "budget": "individual, no invented prices",
+  "browser_desktop": {
+    "viewport": 1280,
+    "document_width": 1280,
+    "request_width": 1160
+  },
+  "browser_mobile": {
+    "viewport": 390,
+    "document_width": 390,
+    "request_width": 358
+  },
+  "selection_and_context": "medium selected, corporate context saved in isolated lead record",
+  "synthetic_success_records": 1,
+  "failure_case": "storage directory invalid permissions -> fallback, no new record, restored 0700",
+  "repeat_submit": "button disabled after success; in-flight ref guard added; no server idempotency guarantee",
+  "analytics_unit_contract": "offer category only, missing/throwing ym tolerated",
+  "cabinet_events_verified": false,
+  "ad_attribution_implemented": false,
+  "new_corporate_media_received": false,
+  "production_release": false,
+  "production_data_accessed": false,
+  "screenshot": "039-corporate-preview.jpg",
+  "local_server": "http://localhost:4310",
+  "missing": [
+    "corporate media/cases and rights",
+    "campaign attribution and cabinet event verification",
+    "lead handler and sale-status process",
+    "approved concrete ad budget",
+    "release and public verification"
+  ]
+}

@@ -1,0 +1,172 @@
+{
+  "date": "2026-10-09",
+  "questions": 25,
+  "clusters": 5,
+  "existing_assignments": 20,
+  "existing_unique_urls": 18,
+  "new_candidates": 5,
+  "measured_demand": false,
+  "first_briefs": 5,
+  "existing_brief_dates_match_009": true,
+  "map_assignments": [
+    {
+      "id": "Q01",
+      "cluster": "День рождения: выбор и бюджет",
+      "url": "/stati/kak-rasschitat-byudzhet-detskogo-prazdnika",
+      "candidate": false
+    },
+    {
+      "id": "Q02",
+      "cluster": "День рождения: выбор и бюджет",
+      "url": "/podboroki/prazdnik-so-spektaklem-vmesto-animatorov",
+      "candidate": false
+    },
+    {
+      "id": "Q03",
+      "cluster": "День рождения: выбор и бюджет",
+      "url": "/stati/detskiy-prazdnik-doma-ili-v-restorane",
+      "candidate": false
+    },
+    {
+      "id": "Q04",
+      "cluster": "День рождения: выбор и бюджет",
+      "url": "/podboroki/spektakli-dlya-5-7-let",
+      "candidate": false
+    },
+    {
+      "id": "Q05",
+      "cluster": "День рождения: выбор и бюджет",
+      "url": "/prazdniki/detskiy-den-rozhdeniya",
+      "candidate": false
+    },
+    {
+      "id": "Q06",
+      "cluster": "Новый год: сезон и корпоративные заказчики",
+      "url": "/stati/korporativnaya-elka-dlya-detey-sotrudnikov",
+      "candidate": false
+    },
+    {
+      "id": "Q07",
+      "cluster": "Новый год: сезон и корпоративные заказчики",
+      "url": "/stati/smeta-korporativnoy-elki",
+      "candidate": true
+    },
+    {
+      "id": "Q08",
+      "cluster": "Новый год: сезон и корпоративные заказчики",
+      "url": "/podboroki/novogodnie-programmy-dlya-detey",
+      "candidate": false
+    },
+    {
+      "id": "Q09",
+      "cluster": "Новый год: сезон и корпоративные заказчики",
+      "url": "/prazdniki/korporativnyy-novogodniy-prazdnik",
+      "candidate": false
+    },
+    {
+      "id": "Q10",
+      "cluster": "Новый год: сезон и корпоративные заказчики",
+      "url": "/stati/vyezdnoy-novogodniy-spektakl-ili-elka",
+      "candidate": true
+    },
+    {
+      "id": "Q11",
+      "cluster": "Детский сад: помещение, возраст, выпускной",
+      "url": "/prazdniki/detskiy-sad",
+      "candidate": false
+    },
+    {
+      "id": "Q12",
+      "cluster": "Детский сад: помещение, возраст, выпускной",
+      "url": "/prazdniki/detskiy-sad",
+      "candidate": false
+    },
+    {
+      "id": "Q13",
+      "cluster": "Детский сад: помещение, возраст, выпускной",
+      "url": "/podboroki/prazdniki-dlya-detey-3-4-goda",
+      "candidate": false
+    },
+    {
+      "id": "Q14",
+      "cluster": "Детский сад: помещение, возраст, выпускной",
+      "url": "/prazdniki/vypusknoy-v-detskom-sadu",
+      "candidate": false
+    },
+    {
+      "id": "Q15",
+      "cluster": "Детский сад: помещение, возраст, выпускной",
+      "url": "/stati/chek-list-spektaklya-v-detskom-sadu",
+      "candidate": true
+    },
+    {
+      "id": "Q16",
+      "cluster": "Школа и выпускной: группа, тайминг, согласования",
+      "url": "/stati/prazdnik-v-shkole-kak-sobrat-programmu",
+      "candidate": false
+    },
+    {
+      "id": "Q17",
+      "cluster": "Школа и выпускной: группа, тайминг, согласования",
+      "url": "/prazdniki/vypusknoy-v-nachalnoy-shkole",
+      "candidate": false
+    },
+    {
+      "id": "Q18",
+      "cluster": "Школа и выпускной: группа, тайминг, согласования",
+      "url": "/podboroki/prazdnik-dlya-20-detey",
+      "candidate": false
+    },
+    {
+      "id": "Q19",
+      "cluster": "Школа и выпускной: группа, тайминг, согласования",
+      "url": "/stati/smeta-vypusknogo-kak-sravnit",
+      "candidate": true
+    },
+    {
+      "id": "Q20",
+      "cluster": "Школа и выпускной: группа, тайминг, согласования",
+      "url": "/stati/animatory-na-vypusknoy",
+      "candidate": false
+    },
+    {
+      "id": "Q21",
+      "cluster": "Спектакли: формат, участие, совместимость",
+      "url": "/podboroki/interaktivnye-spektakli-dlya-detey",
+      "candidate": false
+    },
+    {
+      "id": "Q22",
+      "cluster": "Спектакли: формат, участие, совместимость",
+      "url": "/stati/kak-vybrat-spektakl-na-den-rozhdeniya",
+      "candidate": false
+    },
+    {
+      "id": "Q23",
+      "cluster": "Спектакли: формат, участие, совместимость",
+      "url": "/stati/mesto-dlya-vyezdnogo-spektaklya",
+      "candidate": true
+    },
+    {
+      "id": "Q24",
+      "cluster": "Спектакли: формат, участие, совместимость",
+      "url": "/stati/kak-vybrat-spektakl-na-den-rozhdeniya",
+      "candidate": false
+    },
+    {
+      "id": "Q25",
+      "cluster": "Спектакли: формат, участие, совместимость",
+      "url": "/uslugi",
+      "candidate": false
+    }
+  ],
+  "site_changes_published": false,
+  "automation_implemented": false,
+  "method": "URL сверены с аудитом 020/реестром 021; пять исходных текстов просмотрены локально; повторный публичный обход не выполнялся",
+  "local_links_checked": 69,
+  "broken_links": [],
+  "documents_checked": 10,
+  "completed_substeps": 3,
+  "diff_check": "passed",
+  "main_next_substep": "022-1"
+}

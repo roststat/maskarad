@@ -4,6 +4,10 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { CTA, GalleryStrip, SectionHero } from "../components";
 import { BackToShowCatalog } from "../back-to-show-catalog";
+import { MiniGallery } from "../mini-gallery";
+import { PhotoGallery } from "../photo-gallery";
+import { PhotoRibbon } from "../photo-ribbon";
+import { portfolioPhotos, photosForPage } from "../photo-library";
 import {
   contentHubs,
   contentPages,
@@ -225,6 +229,8 @@ export default async function ContentPage({ params }: Params) {
             </figure>
           </header>
 
+          <MiniGallery path={contentPagePath} />
+
           <section className="landing-facts" aria-label="Коротко">
             {page.facts.map((fact) => (
               <article key={fact}>
@@ -339,6 +345,7 @@ export default async function ContentPage({ params }: Params) {
         <JsonLd data={jsonLd} />
         <Breadcrumbs items={breadcrumbs} />
         <SectionHero kicker={page.kicker} title={page.title} description={page.intro} cta={page.cta} />
+        <MiniGallery path={contentHubPath} />
         {groups.length > 0 && (
           <section className="hub-groups" aria-label="Быстрый выбор материалов">
             <div className="listing-heading hub-groups-heading">
@@ -384,6 +391,8 @@ export default async function ContentPage({ params }: Params) {
   if (landingPath) {
     const page = landingPages[landingPath];
     const faq = fiveFaq(page.faq, page.sections);
+    const suppliedPhoto = photosForPage(landingPath)[0];
+    const media = suppliedPhoto ? { ...suppliedPhoto, caption: suppliedPhoto.alt } : page.media;
     const breadcrumbs = buildBreadcrumbs(landingPath);
     const jsonLd = [
       createWebPageJsonLd({
@@ -404,7 +413,7 @@ export default async function ContentPage({ params }: Params) {
         <JsonLd data={jsonLd} />
         <Breadcrumbs items={breadcrumbs} />
         {landingPath.startsWith("/spektakli/") && <BackToShowCatalog />}
-        <section className={page.media ? "section-hero landing-hero landing-hero-media" : "section-hero landing-hero"}>
+        <section className={media ? "section-hero landing-hero landing-hero-media" : "section-hero landing-hero"}>
           <div>
             <span className="eyebrow">{page.kicker}</span>
             <h1>{page.title}</h1>
@@ -418,13 +427,15 @@ export default async function ContentPage({ params }: Params) {
               </Link>
             </div>
           </div>
-          {page.media && (
+          {media && (
             <figure className="landing-media">
-              <Image src={page.media.src} alt={page.media.alt} width={680} height={480} priority />
-              {shouldShowMediaCaption(page.media.caption) && <figcaption>{page.media.caption}</figcaption>}
+              <Image src={media.src} alt={media.alt} width={suppliedPhoto?.width ?? 680} height={suppliedPhoto?.height ?? 480} sizes="(max-width: 1000px) calc(100vw - 32px), 440px" loading="eager" fetchPriority="high" />
+              {shouldShowMediaCaption(media.caption) && <figcaption>{media.caption}</figcaption>}
             </figure>
           )}
         </section>
+
+        <MiniGallery path={landingPath} />
 
         <section className="landing-facts" aria-label="Коротко о программе">
           {page.facts.map((fact) => (
@@ -456,7 +467,7 @@ export default async function ContentPage({ params }: Params) {
           </ul>
         </section>
 
-        <GalleryStrip />
+        <PhotoRibbon path={landingPath} />
 
         <section className="ny-faq">
           <span className="eyebrow">Вопросы</span>
@@ -510,7 +521,9 @@ export default async function ContentPage({ params }: Params) {
       <JsonLd data={jsonLd} />
       <Breadcrumbs items={breadcrumbs} />
       <SectionHero kicker={page.kicker} title={page.title} description={page.description} cta={page.cta} />
+      <MiniGallery path={path} />
       <CatalogRelated page={page} isContactPage={isContactPage} />
+      {path === "/foto-video" ? <PhotoGallery photos={portfolioPhotos} /> : <>
       <section className="listing-heading">
         <span className="eyebrow">{isContactPage ? "Связаться" : "Каталог"}</span>
         <h2>{isContactPage ? "Выберите удобный способ" : "Популярные направления"}</h2>
@@ -522,13 +535,14 @@ export default async function ContentPage({ params }: Params) {
           ))}
         </section>
       )}
+      </>}
       {path === "/tseny" && (
         <section className="note-band" id="discount">
           <h2>Повторный заказ</h2>
           <p>Для семей, которые уже приглашали театр «Маскарад», сохраняем скидку 10%.</p>
         </section>
       )}
-      {showGallery && <GalleryStrip />}
+      {showGallery && path !== "/foto-video" && <GalleryStrip />}
       {faq && <FaqSection items={faq} title="Что уточнить перед выбором" />}
       <CTA label={page.cta} />
     </>
@@ -611,12 +625,13 @@ function CatalogRelated({ page, isContactPage }: { page: (typeof pages)[PagePath
 }
 
 function CatalogCard({ item }: { item: CatalogItem }) {
-  const media = item.href && item.href in landingPages ? landingPages[item.href as LandingPath].media : undefined;
+  const suppliedPhoto = item.href ? photosForPage(item.href)[0] : undefined;
+  const media = suppliedPhoto ?? (item.href && item.href in landingPages ? landingPages[item.href as LandingPath].media : undefined);
   const content = (
     <>
       {media && (
         <span className="listing-card-media">
-          <Image src={media.src} alt={media.alt} width={680} height={360} />
+          <Image src={media.src} alt={media.alt} width={suppliedPhoto?.width ?? 680} height={suppliedPhoto?.height ?? 360} sizes="(max-width: 760px) calc(100vw - 32px), 360px" />
         </span>
       )}
       <span className="listing-mark" />

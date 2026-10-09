@@ -9,3 +9,5 @@ out
 *.tsbuildinfo
 .DS_Store
 old-site-source/
+/videos/*
+!/videos/README.md

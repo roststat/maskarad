@@ -1,0 +1,19 @@
+{
+  "date": "2026-10-09",
+  "documents_checked": 18,
+  "local_links_checked": 92,
+  "broken_links": [],
+  "substeps_by_plan": {
+    "038": 3,
+    "039": 8,
+    "040": 7
+  },
+  "register_urls": 122,
+  "calendar_urls": 37,
+  "corporate_primary_step": "039",
+  "corporate_publication_date_scheduled": "2026-10-12",
+  "corporate_page_status": "verified locally only",
+  "first_ad_direction": "corporate new year",
+  "ads_launched": false,
+  "media_and_budget_unknown": true
+}

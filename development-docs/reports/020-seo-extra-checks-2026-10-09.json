@@ -1,0 +1,51 @@
+[
+  {
+    "path": "/prazdniki/novogodniy-detskiy-prazdnik",
+    "status": 404,
+    "location": null,
+    "robots": "noindex",
+    "xRobotsTag": null
+  },
+  {
+    "path": "/privacy-policy",
+    "status": 200,
+    "location": null,
+    "robots": "noindex, follow",
+    "xRobotsTag": null
+  },
+  {
+    "path": "/personal-data-consent",
+    "status": 200,
+    "location": null,
+    "robots": "noindex, follow",
+    "xRobotsTag": null
+  },
+  {
+    "path": "/cookie-policy",
+    "status": 200,
+    "location": null,
+    "robots": "noindex, follow",
+    "xRobotsTag": null
+  },
+  {
+    "path": "/terms",
+    "status": 200,
+    "location": null,
+    "robots": "noindex, follow",
+    "xRobotsTag": null
+  },
+  {
+    "path": "/robots.txt",
+    "status": 200,
+    "location": null,
+    "xRobotsTag": null,
+    "body": "User-Agent: *\nAllow: /\nDisallow: /api/\n\nHost: https://maskarad-teatr.ru\nSitemap: https://maskarad-teatr.ru/sitemap.xml\n"
+  },
+  {
+    "path": "/seo-audit-missing-page-20261009",
+    "status": 404,
+    "location": null,
+    "robots": "noindex",
+    "xRobotsTag": null
+  }
+]
