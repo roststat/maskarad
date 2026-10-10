@@ -5,7 +5,7 @@ import { createContext, ReactNode, useCallback, useContext, useEffect, useLayout
 import { createPortal } from "react-dom";
 import { consentVersion } from "./legal-data";
 import { usePathname } from "next/navigation";
-import { buildOrganizerMessage, corporateGuestLabel, corporateGuestOptions, corporatePagePath, type CorporateGuestScale } from "./corporate-request-data";
+import { buildOrganizerMessage, corporateGuestLabel, corporateGuestOptions, corporateMessageIntro, corporatePagePath, type CorporateGuestScale } from "./corporate-request-data";
 import { reportLeadEvent } from "./lead-analytics";
 
 type Recognition = {
@@ -79,6 +79,7 @@ function PartyAssistantDialog({ open, onClose, corporate, guests, onGuestsChange
   const [editStatus, setEditStatus] = useState("");
   const [editError, setEditError] = useState(false);
   const [originalMessage, setOriginalMessage] = useState<string | null>(null);
+  const generatedIntroRef = useRef<string | null>(null);
   const editRequestRef = useRef<AbortController | null>(null);
   const textareaRef = useRef<HTMLTextAreaElement>(null);
   const cardRef = useRef<HTMLDivElement>(null);
@@ -140,6 +141,8 @@ function PartyAssistantDialog({ open, onClose, corporate, guests, onGuestsChange
     recognition.interimResults = false;
     recognition.onresult = (event) => {
       setMessage((text) => (text + " " + event.results[0][0].transcript).trim());
+      setOriginalMessage(null);
+      setEditStatus("");
       setStatus("Текст можно поправить перед отправкой.");
     };
     recognition.onerror = () => setStatus("Не удалось распознать речь. Попробуйте ещё раз или напишите текстом.");
@@ -153,7 +156,10 @@ function PartyAssistantDialog({ open, onClose, corporate, guests, onGuestsChange
   async function editText() {
     if (editing || busy || listening) return;
     const original = message;
-    if (!original.trim()) {
+    const source = originalMessage ?? original;
+    const intro = generatedIntroRef.current;
+    const draft = intro && source.startsWith(intro) ? source.slice(intro.length).trim() : source;
+    if (!draft.trim()) {
       setEditError(true);
       setEditStatus("Сначала напишите или наговорите пожелания как получится — можно одним потоком, без структуры. ИИ поможет красиво оформить текст.");
       textareaRef.current?.focus();
@@ -168,13 +174,14 @@ function PartyAssistantDialog({ open, onClose, corporate, guests, onGuestsChange
       const response = await fetch("/api/text-edit", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ text: original }),
-        signal: AbortSignal.any([controller.signal, AbortSignal.timeout(35000)])
+        body: JSON.stringify({ text: draft, ...(corporate ? { context: { event: "corporate_new_year", guests } } : {}) }),
+        signal: AbortSignal.any([controller.signal, AbortSignal.timeout(55000)])
       });
       const result = await response.json() as { ok?: boolean; text?: string };
       if (!response.ok || !result.ok || typeof result.text !== "string" || !result.text.trim()) throw new Error("edit_failed");
       if (editRequestRef.current !== controller) return;
-      setOriginalMessage(original);
+      setOriginalMessage(originalMessage ?? original);
+      generatedIntroRef.current = corporate ? corporateMessageIntro(guests) : null;
       setMessage(result.text);
       setSent(false);
       setStatus("");
@@ -215,7 +222,18 @@ function PartyAssistantDialog({ open, onClose, corporate, guests, onGuestsChange
       <p>Напишите или надиктуйте пожелания — мы получим запрос и свяжемся с вами.</p>
       {corporate && <div className="party-guest-field">
         <label htmlFor="party-guest-count">Количество гостей</label>
-        <select id="party-guest-count" value={guests} disabled={busy || editing} onChange={(event) => { onGuestsChange(event.target.value as CorporateGuestScale); reportLeadEvent("program_select", "corporate_new_year"); }}>
+        <select id="party-guest-count" value={guests} disabled={busy || editing} onChange={(event) => {
+          const next = event.target.value as CorporateGuestScale;
+          const previousIntro = generatedIntroRef.current;
+          if (previousIntro && message.startsWith(previousIntro)) {
+            setMessage(corporateMessageIntro(next) + message.slice(previousIntro.length));
+            generatedIntroRef.current = corporateMessageIntro(next);
+            setEditStatus("Количество гостей в сообщении обновлено. Проверьте пожелания перед отправкой.");
+            setEditError(false);
+          }
+          onGuestsChange(next);
+          reportLeadEvent("program_select", "corporate_new_year");
+        }}>
           {corporateGuestOptions.map(option => <option key={option.id} value={option.id}>{option.label}</option>)}
         </select>
         <span>Общее число гостей, включая взрослых. Число и возраст детей уточним отдельно.</span>
@@ -223,7 +241,11 @@ function PartyAssistantDialog({ open, onClose, corporate, guests, onGuestsChange
       </div>}
       <label className="party-wish-label" htmlFor="party-quick-wish">Ваш запрос</label>
       <div className="party-wish-field">
-        <textarea className="ym-disable-keys" id="party-quick-wish" ref={textareaRef} rows={4} value={message} maxLength={1200} disabled={busy || editing} aria-busy={editing} aria-describedby={[corporate ? "party-guest-hint" : "", editStatus ? "party-edit-status" : ""].filter(Boolean).join(" ") || undefined} onChange={(event) => { setMessage(event.target.value); setOriginalMessage(null); setEditStatus(""); setSent(false); setStatus(""); }} placeholder={corporate ? `Корпоративная ёлка${guests === "custom" ? "" : ` — ${corporateGuestLabel(guests).toLowerCase()}`}. Дата, площадка, число и возраст детей, пожелания…` : "Например: день рождения для дочки, 6 лет, дома в субботу…"} />
+        <textarea className="ym-disable-keys" id="party-quick-wish" ref={textareaRef} rows={4} value={message} maxLength={1200} disabled={busy || editing} aria-busy={editing} aria-describedby={[corporate ? "party-guest-hint" : "", editStatus ? "party-edit-status" : ""].filter(Boolean).join(" ") || undefined} onChange={(event) => {
+          const value = event.target.value;
+          if (generatedIntroRef.current && !value.startsWith(generatedIntroRef.current)) generatedIntroRef.current = null;
+          setMessage(value); setOriginalMessage(null); setEditStatus(""); setSent(false); setStatus("");
+        }} placeholder={corporate ? `Корпоративная ёлка${guests === "custom" ? "" : ` — ${corporateGuestLabel(guests).toLowerCase()}`}. Дата, площадка, число и возраст детей, пожелания…` : "Например: день рождения для дочки, 6 лет, дома в субботу…"} />
         <div className="party-wish-tools" role="group" aria-label="Помощь с текстом">
           {listening && <span className="party-listening-indicator">Слушаю…</span>}
           <button type="button" className="party-ai-edit" disabled={editing || busy || listening} onClick={() => void editText()}><span aria-hidden="true">✦</span>{editing ? "ИИ правит…" : "ИИ правка текста"}</button>
@@ -231,7 +253,11 @@ function PartyAssistantDialog({ open, onClose, corporate, guests, onGuestsChange
         </div>
       </div>
       {editStatus && <p className={"party-edit-status" + (editError ? " is-error" : "")} id="party-edit-status" role={editError ? "alert" : "status"}>{editStatus}</p>}
-      {originalMessage !== null && <button type="button" className="party-edit-undo" disabled={editing || busy} onClick={() => { setMessage(originalMessage); setOriginalMessage(null); setEditError(false); setEditStatus("Исходный текст возвращён."); setSent(false); }}>Вернуть исходный текст</button>}
+      {originalMessage !== null && <button type="button" className="party-edit-undo" disabled={editing || busy} onClick={() => {
+        const intro = corporate ? corporateMessageIntro(guests) : "";
+        generatedIntroRef.current = intro && originalMessage.startsWith(intro) ? intro : null;
+        setMessage(originalMessage); setOriginalMessage(null); setEditError(false); setEditStatus("Исходный текст возвращён."); setSent(false);
+      }}>Вернуть исходный текст</button>}
       <div className="party-send-form">
         <strong>Куда ответить?</strong>
         <div className="party-send-fields"><label>Имя<input className="ym-disable-keys" value={name} onChange={(event) => setName(event.target.value)} placeholder="Как к вам обращаться" autoComplete="name" /></label><label>Телефон<input className="ym-disable-keys" value={phone} onChange={(event) => { setPhone(event.target.value); setSent(false); }} placeholder="+7 ..." inputMode="tel" autoComplete="tel" /></label></div>

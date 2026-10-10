@@ -1,5 +1,11 @@
 export const corporatePagePath = "/prazdniki/korporativnyy-novogodniy-prazdnik";
 
+export function corporateMessageIntro(scale: CorporateGuestScale) {
+  return scale === "custom"
+    ? "Планируем корпоративную ёлку для детей сотрудников."
+    : `Планируем корпоративную ёлку для детей сотрудников: ${corporateGuestLabel(scale).toLowerCase()}, включая взрослых.`;
+}
+
 export const corporateGuestOptions = [
   { id: "custom", label: "Пока не знаю — обсудим" },
   { id: "small", label: "До 100 гостей" },
