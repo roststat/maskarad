@@ -1,0 +1,33 @@
+{
+  "applicationCommit": "8c45ffd01c607e255bf740d7658e4ff7e7289963",
+  "servicePage": "https://maskarad-teatr.ru/uslugi",
+  "input": "нужен день рождения для 12 детей 6 лет в субботу дома хотим спектакль и мастер класс без громкой музыки",
+  "result": "Здравствуйте!\n\nПланируем отметить день рождения дома в ближайшую субботу для 12 детей 6 лет. Хотим пригласить вас с программой: спектакль и мастер-класс.\n\nВажно: без громкой музыки.\n\nСпасибо!",
+  "buttonsBelowText": true,
+  "rowsAttribute": "4",
+  "textClipped": false,
+  "textareaHeight": 274,
+  "undoRestored": true,
+  "corporate": {
+    "buttonsBelowText": true,
+    "guestHint": "Корпоративная ёлка: до 100 гостей. Укажите дату, площадку, число и возраст детей и пожелания к программе.",
+    "guestValue": "small",
+    "rowsAttribute": "4",
+    "technicalNotes": 0,
+    "textareaHeight": 130
+  },
+  "breadcrumbScrollY": 0,
+  "breadcrumbUrl": "https://maskarad-teatr.ru/prazdniki",
+  "desktop": {
+    "buttonsBelowText": true,
+    "height": 130,
+    "overflow": false,
+    "width": 1280
+  },
+  "mobile": {
+    "buttonsBelowText": true,
+    "height": 130,
+    "overflow": false,
+    "width": 390
+  }
+}
