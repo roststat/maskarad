@@ -1,6 +1,6 @@
 :root {
   --header-height: 6.6rem;
-  --breadcrumb-height: 3rem;
+  --breadcrumb-height: 2.35rem;
   --section-space: clamp(4.5rem, 8vw, 7.5rem);
   --section-space-compact: clamp(3rem, 5vw, 5rem);
   --ink: #24131a;
@@ -636,30 +636,27 @@ main {
     border-color 220ms ease;
 }
 
-.breadcrumbs-inner {
-  display: flex;
-  align-items: center;
-  gap: 1.25rem;
-  width: min(1160px, calc(100% - 2rem));
-  height: 100%;
-  margin-inline: auto;
-}
-
 .page-return {
+  position: fixed;
+  top: calc(var(--header-height) + var(--breadcrumb-height) + 0.65rem);
+  left: max(1rem, calc((100vw - 1160px) / 2));
+  z-index: 40;
   display: inline-flex;
-  flex: 0 1 auto;
   align-items: center;
-  gap: 0.45rem;
+  gap: 0.35rem;
   min-width: 0;
-  max-width: 48%;
+  max-width: min(28rem, calc(100vw - 2rem));
   min-height: 44px;
-  border: 0;
-  padding: 0 0.35rem;
+  border: 1px solid rgba(91, 24, 51, 0.08);
+  border-radius: 0.65rem;
+  padding: 0.45rem 0.75rem;
   color: var(--wine);
-  background: transparent;
+  background: rgba(255, 250, 243, 0.7);
+  backdrop-filter: blur(8px);
   font: inherit;
-  font-size: 0.82rem;
-  font-weight: 800;
+  font-size: 0.72rem;
+  font-weight: 650;
+  line-height: 1.3;
   cursor: pointer;
 }
 
@@ -672,33 +669,31 @@ main {
 .page-return span:first-child { flex-shrink: 0; }
 .page-return:hover { color: var(--wine-2); }
 .page-return:focus-visible { outline: 2px solid var(--wine); outline-offset: -2px; border-radius: 0.35rem; }
+body:has(.mega-menu-open) .page-return { visibility: hidden; }
 
 .breadcrumbs ol {
   display: flex;
-  flex: 1;
-  min-width: 0;
   flex-wrap: nowrap;
   gap: 0.45rem;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: center;
+  width: min(1160px, calc(100% - 2rem));
   height: var(--breadcrumb-height);
   margin: 0 auto;
   padding: 0;
-  overflow-x: auto;
-  scrollbar-width: none;
+  overflow: hidden;
   list-style: none;
   color: var(--muted);
   font-size: 0.76rem;
   line-height: 1.45;
   white-space: nowrap;
+  transition:
+    opacity 140ms ease,
+    transform 220ms ease;
 }
-
-.breadcrumbs ol::-webkit-scrollbar { display: none; }
-.breadcrumbs-inner:not(:has(.page-return)) ol { justify-content: center; }
 
 .breadcrumbs li {
   display: flex;
-  flex-shrink: 0;
   gap: 0.45rem;
   align-items: center;
 }
@@ -717,10 +712,16 @@ main {
   font-weight: 750;
 }
 
-@media (max-width: 600px) {
-  .breadcrumbs-inner { gap: 0.7rem; width: calc(100% - 1.25rem); }
-  .page-return { max-width: 56%; font-size: 0.75rem; }
-  .breadcrumbs ol { font-size: 0.7rem; }
+.breadcrumbs-collapsed {
+  height: 0.3rem;
+  border-bottom-color: rgba(91, 24, 51, 0.2);
+  background: rgba(255, 250, 243, 0.82);
+}
+
+.breadcrumbs-collapsed ol {
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(-0.5rem);
 }
 
 .hero {

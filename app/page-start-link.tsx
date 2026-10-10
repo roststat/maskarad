@@ -77,11 +77,13 @@ export function PageStartProvider({ children }: { children: ReactNode }) {
     window.addEventListener("wheel", stop, { once: true, passive: true });
     window.addEventListener("touchstart", stop, { once: true, passive: true });
     window.addEventListener("keydown", stop, { once: true });
+    window.addEventListener("pointerdown", stop, { once: true });
     return () => {
       stop();
       window.removeEventListener("wheel", stop);
       window.removeEventListener("touchstart", stop);
       window.removeEventListener("keydown", stop);
+      window.removeEventListener("pointerdown", stop);
     };
   }, [pathname]);
 
