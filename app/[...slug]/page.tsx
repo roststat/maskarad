@@ -3,7 +3,6 @@ import Image from "next/image";
 import { PageStartLink as Link } from "../page-start-link";
 import { notFound } from "next/navigation";
 import { CTA, GalleryStrip, SectionHero } from "../components";
-import { BackToShowCatalog } from "../back-to-show-catalog";
 import { MiniGallery } from "../mini-gallery";
 import { SectionTransition } from "../section-transition";
 import { PhotoGallery } from "../photo-gallery";
@@ -416,7 +415,6 @@ export default async function ContentPage({ params }: Params) {
       <>
         <JsonLd data={jsonLd} />
         <Breadcrumbs items={breadcrumbs} />
-        {landingPath.startsWith("/spektakli/") && <BackToShowCatalog />}
         <section className={media ? "section-hero landing-hero landing-hero-media" : "section-hero landing-hero"}>
           <div>
             <span className="eyebrow">{page.kicker}</span>
