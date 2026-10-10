@@ -4,4 +4,6 @@
 
 [059-1](../development-steps/completed-steps/059-1-card-return-context.md): код и полный gate. [059-2](../development-steps/completed-steps/059-2-card-return-browser.md): спектакли, услуги, корпоративные карточки, якорь/обновление/история и цепочка с главной проверены на desktop; локальный SEO 12/12.
 
-059-3: публикация и публичный сценарий ожидаются.
+[059-3](../development-steps/completed-steps/059-3-published-card-return.md) завершён: приложение `9e55276` опубликовано, серверный HEAD/маркер совпали, Result=success. Внешний SEO 12/12; публично подтверждены появление «Назад» только из карточки и возврат к исходной позиции без следующей кнопки.
+
+![Разовый возврат из карточки](059-public-one-use-return.png)
