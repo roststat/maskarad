@@ -193,9 +193,9 @@ export default function CorporateNewYearPage() {
           <p>Эти страницы помогут познакомиться с сюжетами. Для корпоративной ёлки состав спектаклей и зон обсудим отдельно.</p>
         </div>
         <div className="ny-grid ny-program-links">
-          <Link href="/spektakli/novogodnyy-ekspress"><strong>Новогодний экспресс</strong><span>Посмотреть программу →</span></Link>
-          <Link href="/spektakli/novyy-god-na-snezhnoy-planete"><strong>Новый год на снежной планете</strong><span>Посмотреть программу →</span></Link>
-          <Link href="/spektakli/novogodnyaya-belosnezhka"><strong>Новогодняя Белоснежка</strong><span>Посмотреть программу →</span></Link>
+          <Link href="/spektakli/novogodnyy-ekspress" returnFromCard><strong>Новогодний экспресс</strong><span>Посмотреть программу →</span></Link>
+          <Link href="/spektakli/novyy-god-na-snezhnoy-planete" returnFromCard><strong>Новый год на снежной планете</strong><span>Посмотреть программу →</span></Link>
+          <Link href="/spektakli/novogodnyaya-belosnezhka" returnFromCard><strong>Новогодняя Белоснежка</strong><span>Посмотреть программу →</span></Link>
         </div>
       </section>
       <SectionTransition path={pagePath} moment="photos" />

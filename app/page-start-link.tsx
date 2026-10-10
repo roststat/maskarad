@@ -5,10 +5,15 @@ import { usePathname, useRouter } from "next/navigation";
 import { createContext, useCallback, useContext, useEffect, useLayoutEffect, useRef, useState, type ComponentProps, type ReactNode } from "react";
 
 type PagePosition = { href: string; label: string; scrollY: number };
-type PageVisit = PagePosition & { back?: PagePosition };
-type PendingNavigation = { pathname: string; back?: PagePosition; restore?: PagePosition; startsPage?: boolean };
-const historyKey = "maskaradPageVisit";
-const PageStartContext = createContext<((href: string, replace?: boolean, startsPage?: boolean) => void) | null>(null);
+type CardSource = PagePosition & { id: string };
+type PageVisit = PagePosition & { back?: CardSource };
+type PendingNavigation = { pathname: string; back?: CardSource; restore?: PagePosition; startsPage?: boolean };
+// Ignore metadata from the former all-links return behavior.
+const historyKey = "maskaradCardVisit";
+const consumedKey = "maskaradConsumedCardReturns";
+const consumedReturns = new Set<string>();
+let consumedLoaded = false;
+const PageStartContext = createContext<((href: string, replace?: boolean, startsPage?: boolean, returnFromCard?: boolean) => void) | null>(null);
 const PageReturnContext = createContext<{ visit: PageVisit | null; returnToSource: () => void } | null>(null);
 
 // Store only our metadata, preserving Next's own history state. No global history-length
@@ -23,11 +28,31 @@ function readPosition(value: unknown): PagePosition | undefined {
   return { href: `${url.pathname}${url.search}${url.hash}`, label: position.label.slice(0, 160), scrollY: Math.max(0, position.scrollY) };
 }
 
-function readVisit(): PageVisit | null {
+function isConsumed(id: string): boolean {
+  if (!consumedLoaded) {
+    consumedLoaded = true;
+    try {
+      const saved: unknown = JSON.parse(window.sessionStorage.getItem(consumedKey) || "[]");
+      if (Array.isArray(saved)) saved.forEach(value => { if (typeof value === "string") consumedReturns.add(value); });
+    } catch { /* Navigation still works when session storage is unavailable. */ }
+  }
+  return consumedReturns.has(id);
+}
+
+function consumeReturn(source: CardSource) {
+  isConsumed(source.id);
+  consumedReturns.add(source.id);
+  try { window.sessionStorage.setItem(consumedKey, JSON.stringify([...consumedReturns])); } catch { /* Keep the in-memory fallback. */ }
+}
+
+function readVisit(includeConsumed = false): PageVisit | null {
   const stored = window.history.state?.[historyKey];
   const position = readPosition(stored);
   if (!position || new URL(position.href, window.location.origin).pathname !== window.location.pathname) return null;
-  return { ...position, back: readPosition(stored.back) };
+  const source = readPosition(stored.back);
+  const id = stored.back?.id;
+  const back = source && typeof id === "string" && (includeConsumed || !isConsumed(id)) ? { ...source, id } : undefined;
+  return { ...position, back };
 }
 
 function saveVisit(visit: PageVisit) {
@@ -55,8 +80,8 @@ export function PageStartProvider({ children }: { children: ReactNode }) {
     const pending = pendingNavigation.current;
     pendingNavigation.current = null;
     const isExpectedPage = pending?.pathname === window.location.pathname;
-    const nextVisit = isExpectedPage && !pending.restore
-      ? { ...pagePosition(), scrollY: 0, back: pending.back }
+    const nextVisit = isExpectedPage
+      ? { ...pagePosition(), scrollY: pending.restore?.scrollY ?? 0, back: pending.restore ? undefined : pending.back }
       : readVisit() || pagePosition();
     saveVisit(nextVisit);
     activeVisit.current = nextVisit;
@@ -90,7 +115,7 @@ export function PageStartProvider({ children }: { children: ReactNode }) {
   useEffect(() => {
     const onPopState = () => {
       const pending = pendingNavigation.current;
-      let currentVisit = readVisit();
+      let currentVisit = readVisit(!!pending?.restore);
       // Native hash links may create a state-less entry while staying on this page.
       // Retain its source instead of treating that anchor as a fresh external visit.
       if (!currentVisit && activeVisit.current && new URL(activeVisit.current.href, window.location.origin).pathname === window.location.pathname) {
@@ -104,6 +129,10 @@ export function PageStartProvider({ children }: { children: ReactNode }) {
         else router.replace(pending.restore.href, { scroll: false });
         return;
       }
+      if (pending?.restore) {
+        currentVisit = { ...pagePosition(), scrollY: pending.restore.scrollY };
+        saveVisit(currentVisit);
+      }
       activeVisit.current = currentVisit;
       setVisit(currentVisit);
     };
@@ -111,21 +140,39 @@ export function PageStartProvider({ children }: { children: ReactNode }) {
     return () => window.removeEventListener("popstate", onPopState);
   }, [router]);
 
-  const prepareNavigation = useCallback((href: string, replace = false, startsPage = true) => {
+  const prepareNavigation = useCallback((href: string, replace = false, startsPage = true, returnFromCard = false) => {
+    const oldSource = (readVisit() || activeVisit.current)?.back;
+    // A new page transition abandons any older return. There is no chain A → B → C.
+    const samePage = new URL(href, window.location.href).pathname === pathname;
+    if (oldSource && (!samePage || startsPage)) consumeReturn(oldSource);
     if (new URL(href, window.location.href).pathname === pathname) {
       pendingNavigation.current = null;
-      if (startsPage) window.scrollTo({ top: 0, left: 0, behavior: "instant" });
+      if (startsPage) {
+        const currentVisit = pagePosition();
+        saveVisit(currentVisit);
+        activeVisit.current = currentVisit;
+        setVisit(currentVisit);
+        window.scrollTo({ top: 0, left: 0, behavior: "instant" });
+      }
     } else {
       const source = pagePosition();
-      const currentVisit = { ...source, back: (readVisit() || activeVisit.current)?.back };
-      saveVisit(currentVisit);
-      pendingNavigation.current = { pathname: new URL(href, window.location.href).pathname, back: replace ? currentVisit.back : source, startsPage };
+      saveVisit(source);
+      pendingNavigation.current = {
+        pathname: new URL(href, window.location.href).pathname,
+        back: returnFromCard && !replace ? { ...source, id: window.crypto.randomUUID() } : undefined,
+        startsPage,
+      };
     }
   }, [pathname]);
 
   const returnToSource = useCallback(() => {
     const source = (readVisit() || activeVisit.current)?.back;
     if (!source) return;
+    consumeReturn(source);
+    const currentVisit = pagePosition();
+    saveVisit(currentVisit);
+    activeVisit.current = currentVisit;
+    setVisit(currentVisit);
     pendingNavigation.current = { pathname: new URL(source.href, window.location.origin).pathname, restore: source };
     router.back();
   }, [router]);
@@ -136,7 +183,7 @@ export function PageStartProvider({ children }: { children: ReactNode }) {
 }
 
 // Only ordinary in-site page navigation resets scroll; hashes and history are untouched.
-export function PageStartLink({ href, children, onNavigate, scroll, replace, ...props }: Omit<ComponentProps<typeof Link>, "href"> & { href: string }) {
+export function PageStartLink({ href, children, onNavigate, scroll, replace, returnFromCard = false, ...props }: Omit<ComponentProps<typeof Link>, "href"> & { href: string; returnFromCard?: boolean }) {
   const prepareNavigation = useContext(PageStartContext);
   const isInternal = href.startsWith("/") && !href.startsWith("//");
   const startsPage = isInternal && !href.includes("#") && scroll !== false;
@@ -144,6 +191,6 @@ export function PageStartLink({ href, children, onNavigate, scroll, replace, ...
   return <Link {...props} href={href} replace={replace} scroll={startsPage ? false : scroll} onNavigate={(event) => {
     let prevented = false;
     onNavigate?.({ preventDefault: () => { prevented = true; event.preventDefault(); } });
-    if (!prevented && isInternal) prepareNavigation?.(href, replace, startsPage);
+    if (!prevented && isInternal) prepareNavigation?.(href, replace, startsPage, returnFromCard);
   }}>{children}</Link>;
 }

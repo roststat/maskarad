@@ -8,14 +8,6 @@ type BreadcrumbItem = {
   label: string;
 };
 
-const catalogLabels: Record<string, string> = {
-  "/": "На главную",
-  "/spektakli": "Вернуться к спектаклям",
-  "/uslugi": "Вернуться к услугам",
-  "/prazdniki": "Вернуться к праздникам",
-  "/stati": "Вернуться к статьям",
-};
-
 export function StickyBreadcrumbs({ items }: { items: BreadcrumbItem[] }) {
   const [isExpanded, setIsExpanded] = useState(true);
   const lastScrollY = useRef(0);
@@ -23,9 +15,6 @@ export function StickyBreadcrumbs({ items }: { items: BreadcrumbItem[] }) {
   const current = items.at(-1);
   const visit = pageReturn?.visit;
   const source = visit && visit.href.split(/[?#]/)[0] === current?.href ? visit.back : undefined;
-  const fallback = items.at(-2);
-  const destination = source || fallback;
-  const returnLabel = destination ? catalogLabels[destination.href.split(/[?#]/)[0]] || `Назад: ${destination.label}` : "";
 
   useEffect(() => {
     document.body.classList.add("has-header-breadcrumbs");
@@ -48,14 +37,9 @@ export function StickyBreadcrumbs({ items }: { items: BreadcrumbItem[] }) {
 
   return (
     <>
-      {destination && (source ?
-        <button className="page-return" type="button" onClick={pageReturn?.returnToSource} title={returnLabel}>
-          <span aria-hidden="true">←</span><span>{returnLabel}</span>
-        </button> :
-        <Link className="page-return" href={destination.href} title={returnLabel}>
-          <span aria-hidden="true">←</span><span>{returnLabel}</span>
-        </Link>
-      )}
+      {source && <button className="page-return" type="button" onClick={pageReturn?.returnToSource} title={`Вернуться: ${source.label}`}>
+        <span aria-hidden="true">←</span><span>Назад</span>
+      </button>}
       <nav
         className={isExpanded ? "breadcrumbs breadcrumbs-expanded" : "breadcrumbs breadcrumbs-collapsed"}
         aria-label="Хлебные крошки"

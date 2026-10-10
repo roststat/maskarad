@@ -153,7 +153,7 @@ export default function Home() {
         </div>
         <div>
           {audienceRoutes.map((route) => (
-            <Link href={route.href} key={route.href}>
+            <Link href={route.href} key={route.href} returnFromCard>
               <strong>{route.label}</strong>
               <span>{route.text}</span>
             </Link>
@@ -239,11 +239,11 @@ function Feature({ title, href, items }: { title: string; href: string; items: {
       <ul>
         {items.map((item) => (
           <li key={item.href}>
-            <Link href={item.href}>{item.label}</Link>
+            <Link href={item.href} returnFromCard>{item.label}</Link>
           </li>
         ))}
       </ul>
-      <Link href={href}>Подробнее</Link>
+      <Link href={href} returnFromCard>Подробнее</Link>
     </article>
   );
 }

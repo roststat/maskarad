@@ -293,7 +293,7 @@ export default async function ContentPage({ params }: Params) {
               <h2>Следующий шаг по задаче</h2>
               <div>
                 {page.nextSteps.map((item) => (
-                  <Link href={item.href} key={item.href}>
+                  <Link href={item.href} key={item.href} returnFromCard>
                     <strong>{item.title}</strong>
                     <span>{item.text}</span>
                   </Link>
@@ -363,7 +363,7 @@ export default async function ContentPage({ params }: Params) {
                   </div>
                   <div className="hub-group-links">
                     {group.links.map((link) => (
-                      <Link href={link.href} key={link.href}>
+                      <Link href={link.href} key={link.href} returnFromCard>
                         <span>{link.tag}</span>
                         {link.label}
                       </Link>
@@ -490,7 +490,7 @@ export default async function ContentPage({ params }: Params) {
           <h2>Полезно посмотреть рядом</h2>
           <div>
             {page.related.map((item) => (
-              <Link href={item.href} key={item.href}>
+              <Link href={item.href} key={item.href} returnFromCard>
                 {item.label}
               </Link>
             ))}
@@ -619,7 +619,7 @@ function CatalogRelated({ page, isContactPage }: { page: (typeof pages)[PagePath
       </div>
       <div>
         {page.related.map((item) => (
-          <Link href={item.href} key={item.href}>
+          <Link href={item.href} key={item.href} returnFromCard>
             <strong>{item.label}</strong>
             <span>{item.text}</span>
           </Link>
@@ -651,7 +651,7 @@ function CatalogCard({ item }: { item: CatalogItem }) {
 
   if (item.href) {
     return (
-      <Link className="listing-card listing-card-link" href={item.href}>
+      <Link className="listing-card listing-card-link" href={item.href} returnFromCard>
         {content}
       </Link>
     );
