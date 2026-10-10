@@ -1,0 +1,213 @@
+[
+  {
+    "overflow": false,
+    "path": "/",
+    "photoHeight": 446,
+    "texts": [
+      "Ваша идея праздника — начало нашей истории",
+      "Здесь дети становятся участниками сказки",
+      "Расскажите о празднике — соберём программу под вас"
+    ],
+    "viewport": 1280
+  },
+  {
+    "overflow": false,
+    "path": "/",
+    "texts": [
+      {
+        "font": "26.52px",
+        "text": "Ваша идея праздника — начало нашей истории",
+        "width": 310
+      },
+      {
+        "font": "26.52px",
+        "text": "Здесь дети становятся участниками сказки",
+        "width": 342
+      },
+      {
+        "font": "24px",
+        "text": "Расскажите о празднике — соберём программу под вас",
+        "width": 358
+      }
+    ],
+    "viewport": 390
+  },
+  {
+    "formAnchors": 1,
+    "mini": 3,
+    "overflow": false,
+    "path": "/spektakli",
+    "texts": [
+      {
+        "font": "26.52px",
+        "text": "Какую сказку сыграем для ваших детей?",
+        "width": 342
+      },
+      {
+        "font": "24px",
+        "text": "Выберите историю — детали праздника обсудим вместе",
+        "width": 358
+      }
+    ],
+    "viewport": 390
+  },
+  {
+    "formAnchors": 1,
+    "mini": 4,
+    "overflow": false,
+    "path": "/uslugi",
+    "texts": [
+      {
+        "font": "26.52px",
+        "text": "Добавим к празднику яркие детали",
+        "width": 310
+      },
+      {
+        "font": "24px",
+        "text": "Обсудим, чем дополнить ваш праздник",
+        "width": 358
+      }
+    ],
+    "viewport": 390
+  },
+  {
+    "formAnchors": 1,
+    "mini": 4,
+    "overflow": false,
+    "path": "/spektakli/zolushka",
+    "texts": [
+      {
+        "font": "26.52px",
+        "text": "У этой истории есть роли для ваших детей",
+        "width": 342
+      },
+      {
+        "font": "24px",
+        "text": "Выберите историю — детали праздника обсудим вместе",
+        "width": 358
+      }
+    ],
+    "viewport": 390
+  },
+  {
+    "formAnchors": 1,
+    "mini": 4,
+    "overflow": false,
+    "path": "/prazdniki/korporativnyy-novogodniy-prazdnik",
+    "texts": [
+      {
+        "font": "26.52px",
+        "text": "Пусть новогодняя сказка оживёт на вашем празднике",
+        "width": 342
+      },
+      {
+        "font": "26.52px",
+        "text": "Сказочные герои, игры и новогоднее настроение",
+        "width": 342
+      },
+      {
+        "font": "26.52px",
+        "text": "Расскажите о вашей ёлке — обсудим программу и состав праздника",
+        "width": 342
+      }
+    ],
+    "viewport": 390
+  },
+  {
+    "formAnchors": 1,
+    "mini": 4,
+    "overflow": false,
+    "path": "/stati/kak-vybrat-spektakl-na-den-rozhdeniya",
+    "texts": [
+      {
+        "font": "26.52px",
+        "text": "От идеи — к программе вашего праздника",
+        "width": 342
+      },
+      {
+        "font": "24px",
+        "text": "Расскажите об имениннике — подберём историю для его праздника",
+        "width": 358
+      }
+    ],
+    "viewport": 390
+  },
+  {
+    "formAnchors": 1,
+    "mini": 4,
+    "overflow": false,
+    "path": "/stati",
+    "texts": [
+      {
+        "font": "26.52px",
+        "text": "От идеи — к программе вашего праздника",
+        "width": 342
+      },
+      {
+        "font": "24px",
+        "text": "Расскажите о празднике — соберём программу под вас",
+        "width": 358
+      }
+    ],
+    "viewport": 390
+  },
+  {
+    "overflow": false,
+    "path": "/spektakli",
+    "texts": [
+      "Какую сказку сыграем для ваших детей?",
+      "Выберите историю — детали праздника обсудим вместе"
+    ],
+    "viewport": 1280
+  },
+  {
+    "overflow": false,
+    "path": "/spektakli/zolushka",
+    "texts": [
+      "У этой истории есть роли для ваших детей",
+      "Выберите историю — детали праздника обсудим вместе"
+    ],
+    "viewport": 1280
+  },
+  {
+    "overflow": false,
+    "path": "/stati/kak-vybrat-spektakl-na-den-rozhdeniya",
+    "texts": [
+      "От идеи — к программе вашего праздника",
+      "Расскажите об имениннике — подберём историю для его праздника"
+    ],
+    "viewport": 1280
+  },
+  {
+    "overflow": false,
+    "path": "/uslugi",
+    "texts": [
+      "Добавим к празднику яркие детали",
+      "Обсудим, чем дополнить ваш праздник"
+    ],
+    "viewport": 1280
+  },
+  {
+    "check": "photoOpen",
+    "text": "Фотографии театра\nЗакрыть\n×\n‹\n›\nФото 1 из 4\n\nШоу мыльных пузырей на улице\n\nЛистайте стрелками или свайпом",
+    "url": "http://localhost:4310/uslugi"
+  },
+  {
+    "check": "photoNext",
+    "text": "Фотографии театра\nЗакрыть\n×\n‹\n›\nФото 2 из 4\n\nДети участвуют в спектакле\n\nЛистайте стрелками или свайпом"
+  },
+  {
+    "check": "photoReturn",
+    "closed": true,
+    "focus": "Открыть фото: Шоу мыльных пузырей на улице",
+    "url": "http://localhost:4310/uslugi"
+  },
+  {
+    "check": "requestAnchorFinal",
+    "formTop": 265,
+    "formVisible": true,
+    "invitationTop": 129,
+    "overflow": false,
+    "url": "http://localhost:4310/spektakli/zolushka#zayavka"
+  }
+]

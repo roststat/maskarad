@@ -1,4 +1,4 @@
-import Link from "next/link";
+import { PageStartLink as Link } from "./page-start-link";
 import { phone, phoneHref } from "./data";
 import { PhotoRibbon } from "./photo-ribbon";
 import { HeaderNav } from "./header-nav";
@@ -6,6 +6,8 @@ import { BriefEntry, LeadForm } from "./lead-form";
 import { MobileQuickActions } from "./mobile-quick-actions";
 import { PartyAssistantWidget } from "./party-assistant-widget";
 import { CookieNotice } from "./cookie-notice";
+import { TheatreSpark, transitionText } from "./section-transition";
+import { PageStartLink } from "./page-start-link";
 
 export function Header() {
   return (
@@ -15,12 +17,12 @@ export function Header() {
           <HeaderNav />
           <div className="brand">
             <PartyAssistantWidget />
-            <Link className="brand-link" href="/" aria-label="Маскарад, на главную">
+            <PageStartLink className="brand-link" href="/" aria-label="Маскарад, на главную">
             <span>
               <strong>Маскарад</strong>
               <small>театр праздника</small>
             </span>
-            </Link>
+            </PageStartLink>
           </div>
           <div className="header-actions">
             <a className="header-phone" href={phoneHref}>
@@ -59,9 +61,10 @@ export function Footer() {
   );
 }
 
-export function CTA({ label = "Оставить заявку" }: { label?: string }) {
+export function CTA({ label = "Оставить заявку", path = "/" }: { label?: string; path?: string }) {
   return (
     <section className="cta-stack" id="zayavka">
+      <div className="request-invitation"><TheatreSpark /><p>{transitionText(path, "request")}</p></div>
       <div className="cta-panel">
         <div>
           <span className="eyebrow">Заявка</span>

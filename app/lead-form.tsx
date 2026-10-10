@@ -157,7 +157,7 @@ export function BriefEntry() {
 
   return (
     <aside className="brief-entry" aria-label="Написать организатору о празднике">
-      <button type="button" onClick={openBrief}>
+      <button type="button" onClick={() => openBrief()}>
         <span className="lead-brief-copy">
           <strong>Написать организатору <span aria-hidden="true">→</span></strong>
           <span>Коротко расскажите о празднике текстом или голосом и отправьте запрос.</span>

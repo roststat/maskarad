@@ -1,0 +1,52 @@
+[
+  {
+    "check": "scrolledServices",
+    "path": "/uslugi",
+    "y": 4210.5
+  },
+  {
+    "check": "menuToShows",
+    "heroTop": 339.4921875,
+    "menuOpen": "false",
+    "path": "/spektakli",
+    "y": 0
+  },
+  {
+    "check": "menuReturnServices",
+    "heroTop": 339.4921875,
+    "menuOpen": "false",
+    "path": "/uslugi",
+    "y": 0
+  },
+  {
+    "check": "sameRouteMenu",
+    "menuOpen": "false",
+    "path": "/uslugi",
+    "y": 0
+  },
+  {
+    "check": "logoHome",
+    "heroTop": 285.78125,
+    "overflow": false,
+    "path": "/",
+    "processPadding": "64px",
+    "spacing": "clamp(4.5rem, 8vw, 7.5rem)",
+    "y": 0
+  },
+  {
+    "check": "mobileMenuToShows",
+    "heroTop": 235.4921875,
+    "overflow": false,
+    "path": "/spektakli",
+    "spacing": "4.25rem",
+    "y": 0
+  },
+  {
+    "check": "mobileMenuReturnServices",
+    "heroTop": 235.4921875,
+    "menuOpen": "false",
+    "overflow": false,
+    "path": "/uslugi",
+    "y": 0
+  }
+]

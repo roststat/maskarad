@@ -1,0 +1,27 @@
+[
+  {
+    "name": "invalid_json",
+    "status": 400,
+    "error": "invalid_json"
+  },
+  {
+    "name": "null_payload",
+    "status": 400,
+    "error": "invalid_payload"
+  },
+  {
+    "name": "empty_text",
+    "status": 400,
+    "error": "text_required"
+  },
+  {
+    "name": "oversize_text",
+    "status": 400,
+    "error": "text_too_long"
+  },
+  {
+    "name": "cross_origin",
+    "status": 403,
+    "error": "invalid_origin"
+  }
+]

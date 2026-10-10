@@ -2,6 +2,8 @@
 
 import { usePathname } from "next/navigation";
 import { phoneHref } from "./data";
+import { corporatePagePath } from "./corporate-request-data";
+import { CorporateRequestButton } from "./corporate-request-button";
 
 const actionLabels = [
   { prefix: "/prazdniki/korporativnyy-novogodniy-prazdnik", label: "Получить предложение" },
@@ -19,7 +21,7 @@ export function MobileQuickActions() {
   return (
     <div className="mobile-quick-actions" aria-label="Быстрые действия">
       <a href={phoneHref}>Позвонить</a>
-      <a href="#zayavka">{label || "Оставить заявку"}</a>
+      {pathname === corporatePagePath ? <CorporateRequestButton className="">Получить предложение</CorporateRequestButton> : <a href="#zayavka">{label || "Оставить заявку"}</a>}
     </div>
   );
 }

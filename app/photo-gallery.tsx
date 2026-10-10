@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import Image from "next/image";
-import Link from "next/link";
+import { PageStartLink as Link } from "./page-start-link";
 import { PhotoOpenButton } from "./photo-viewer";
 import type { PortfolioPhoto } from "./photo-library";
 

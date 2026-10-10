@@ -1,4 +1,4 @@
-import Link from "next/link";
+import { PageStartLink as Link } from "./page-start-link";
 
 export default function NotFound() {
   return (

@@ -1,0 +1,34 @@
+{
+  "mocked": true,
+  "realOpenAiCalls": 0,
+  "checks": [
+    {
+      "check": "proxyHostAndTextOnlyPayload",
+      "passed": true
+    },
+    {
+      "check": "upstreamFailure",
+      "passed": true
+    },
+    {
+      "check": "incompleteOutputRejected",
+      "passed": true
+    },
+    {
+      "check": "oversizeOutputRejected",
+      "passed": true
+    },
+    {
+      "check": "networkFailure",
+      "passed": true
+    },
+    {
+      "check": "unconfiguredConnection",
+      "passed": true
+    },
+    {
+      "check": "perCallerRateLimit",
+      "passed": true
+    }
+  ]
+}

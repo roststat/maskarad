@@ -1,10 +1,11 @@
 import type { Metadata } from "next";
 import Image from "next/image";
-import Link from "next/link";
+import { PageStartLink as Link } from "../page-start-link";
 import { notFound } from "next/navigation";
 import { CTA, GalleryStrip, SectionHero } from "../components";
 import { BackToShowCatalog } from "../back-to-show-catalog";
 import { MiniGallery } from "../mini-gallery";
+import { SectionTransition } from "../section-transition";
 import { PhotoGallery } from "../photo-gallery";
 import { PhotoRibbon } from "../photo-ribbon";
 import { portfolioPhotos, photosForPage } from "../photo-library";
@@ -268,6 +269,8 @@ export default async function ContentPage({ params }: Params) {
             </aside>
           </div>
 
+          <SectionTransition path={contentPagePath} moment="next" />
+
           {page.gallery && (
             <section className="article-gallery">
               <div>
@@ -314,7 +317,7 @@ export default async function ContentPage({ params }: Params) {
           </section>
         </article>
 
-        <CTA label={page.cta} />
+        <CTA label={page.cta} path={contentPagePath} />
       </>
     );
   }
@@ -374,15 +377,16 @@ export default async function ContentPage({ params }: Params) {
         )}
         <section className="listing-heading">
           <span className="eyebrow">Материалы</span>
-          <h2>Страницы для роста трафика</h2>
+          <h2>Идеи и советы для вашего праздника</h2>
         </section>
         <section className="listing">
           {page.items.map((item) => (
             <CatalogCard item={item} key={item.href} />
           ))}
         </section>
+        <SectionTransition path={contentHubPath} moment="next" />
         <FaqSection items={faq} title="Вопросы о материалах" />
-        <CTA label={page.cta} />
+        <CTA label={page.cta} path={contentHubPath} />
       </>
     );
   }
@@ -455,6 +459,8 @@ export default async function ContentPage({ params }: Params) {
           ))}
         </section>
 
+        <SectionTransition path={landingPath} />
+
         <section className="ny-places landing-includes">
           <div>
             <span className="eyebrow">Что входит</span>
@@ -493,7 +499,7 @@ export default async function ContentPage({ params }: Params) {
           </div>
         </section>
 
-        <CTA label={page.cta} />
+        <CTA label={page.cta} path={landingPath} />
       </>
     );
   }
@@ -542,9 +548,10 @@ export default async function ContentPage({ params }: Params) {
           <p>Для семей, которые уже приглашали театр «Маскарад», сохраняем скидку 10%.</p>
         </section>
       )}
+      {!isContactPage && <SectionTransition path={path} photo={path === "/uslugi" || path === "/prazdniki"} />}
       {showGallery && path !== "/foto-video" && <GalleryStrip />}
       {faq && <FaqSection items={faq} title="Что уточнить перед выбором" />}
-      <CTA label={page.cta} />
+      <CTA label={page.cta} path={path} />
     </>
   );
 }

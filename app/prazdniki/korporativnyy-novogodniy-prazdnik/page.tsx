@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
-import Link from "next/link";
+import { PageStartLink as Link } from "../../page-start-link";
 import { MiniGallery } from "../../mini-gallery";
+import { SectionTransition } from "../../section-transition";
 import { CorporatePhoto } from "../../corporate-photo";
 import { CorporateNewYearRequest } from "../../corporate-new-year-request";
+import { CorporateRequestButton } from "../../corporate-request-button";
 import { phone, phoneHref } from "../../data";
 import { Breadcrumbs, JsonLd, buildBreadcrumbs, createBreadcrumbJsonLd, createFaqJsonLd, createWebPageJsonLd } from "../../seo";
 
@@ -68,9 +70,9 @@ export default function CorporateNewYearPage() {
             От камерного события до большого праздника — программу и бюджет согласуем под вашу компанию.
           </p>
           <div className="hero-actions">
-            <a className="button primary" href="#zayavka">
-              Получить предложение под нашу компанию
-            </a>
+            <CorporateRequestButton>
+              Получить предложение под вашу компанию
+            </CorporateRequestButton>
             <a className="button ghost" href={phoneHref}>
               {phone}
             </a>
@@ -155,6 +157,8 @@ export default function CorporateNewYearPage() {
         <CorporatePhoto photo="theatrical-prop" caption="Костюмы и театральные детали" />
       </section>
 
+      <SectionTransition path={pagePath} />
+
       <section className="ny-timeline">
         <span className="eyebrow">Процесс</span>
         <h2>Как готовится корпоративная елка</h2>
@@ -179,7 +183,7 @@ export default function CorporateNewYearPage() {
           <article><h3>Спектакли и зоны</h3><p>Театральная программа, интерактив и выбранные развлечения. Конкретный состав согласуем с вами.</p></article>
           <article><h3>Площадка и дополнения</h3><p>Место проведения, условия подготовки и дополнительные услуги. До согласования уточним, что входит в расчёт и что оплачивается отдельно.</p></article>
         </div>
-        <a className="button primary" href="#zayavka">Запросить индивидуальный расчёт</a>
+        <CorporateRequestButton>Запросить индивидуальный расчёт</CorporateRequestButton>
       </section>
 
       <section className="ny-section" aria-labelledby="ny-programs-title">
@@ -194,6 +198,7 @@ export default function CorporateNewYearPage() {
           <Link href="/spektakli/novogodnyaya-belosnezhka"><strong>Новогодняя Белоснежка</strong><span>Посмотреть программу →</span></Link>
         </div>
       </section>
+      <SectionTransition path={pagePath} moment="photos" />
       <section className="ny-section ny-photo-gallery" aria-labelledby="ny-photo-title">
         <div className="intro">
           <span className="eyebrow">Моменты праздника</span>
@@ -233,13 +238,14 @@ export default function CorporateNewYearPage() {
         </div>
       </section>
 
+      <SectionTransition path={pagePath} moment="request" />
       <section className="ny-final-request">
         <CorporatePhoto photo="actor-and-child" className="ny-final-photo" />
         <div>
         <span className="eyebrow">Начнём с вашей задачи</span>
         <h2>Какая ёлка нужна вашей компании?</h2>
         <p>Выберите масштаб и оставьте контакт. Состав авторской программы и бюджет согласуем индивидуально.</p>
-        <a className="button primary" href="#zayavka">Получить предложение под нашу компанию</a>
+        <CorporateRequestButton>Получить предложение под вашу компанию</CorporateRequestButton>
         </div>
       </section>
     </>

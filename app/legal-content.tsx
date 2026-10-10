@@ -1,4 +1,4 @@
-import Link from "next/link";
+import { PageStartLink as Link } from "./page-start-link";
 import { legalData } from "./legal-data";
 
 export function LegalPage({ title, children }: { title: string; children: React.ReactNode }) {

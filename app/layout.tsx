@@ -4,6 +4,7 @@ import { PartyAssistantProvider } from "./party-assistant-widget";
 import { JsonLd, createOrganizationJsonLd, createWebsiteJsonLd } from "./seo";
 import { YandexMetrica } from "./yandex-metrica";
 import { PhotoViewerProvider } from "./photo-viewer";
+import { PageStartProvider } from "./page-start-link";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -61,11 +62,11 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
         <JsonLd data={[createOrganizationJsonLd(), createWebsiteJsonLd()]} />
         <YandexMetrica />
         <noscript><div><img src="https://mc.yandex.ru/watch/113579092" style={{ position: "absolute", left: -9999 }} alt="" /></div></noscript>
-        <PartyAssistantProvider>
+        <PageStartProvider><PartyAssistantProvider>
           <Header />
           <PhotoViewerProvider><main>{children}</main></PhotoViewerProvider>
           <Footer />
-        </PartyAssistantProvider>
+        </PartyAssistantProvider></PageStartProvider>
       </body>
     </html>
   );

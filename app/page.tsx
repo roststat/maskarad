@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
 import Image from "next/image";
-import Link from "next/link";
+import { PageStartLink as Link } from "./page-start-link";
 import { CTA, GalleryStrip } from "./components";
 import { MiniGallery } from "./mini-gallery";
+import { SectionTransition } from "./section-transition";
 import { Breadcrumbs, JsonLd, buildBreadcrumbs, createFaqJsonLd } from "./seo";
 
 export const metadata: Metadata = {
@@ -175,6 +176,8 @@ export default function Home() {
         ))}
       </section>
 
+      <SectionTransition path="/" photo />
+
       <section className="process">
         <span className="eyebrow">Как заказать</span>
         <h2>Три шага до готового праздника</h2>
@@ -222,6 +225,7 @@ export default function Home() {
         </div>
       </section>
 
+      <SectionTransition path="/" moment="photos" />
       <GalleryStrip />
       <CTA />
     </>

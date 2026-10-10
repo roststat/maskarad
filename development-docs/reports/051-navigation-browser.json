@@ -1,0 +1,90 @@
+[
+  {
+    "check": "desktopCatalogCard",
+    "heading": "Мастер-классы на детский праздник",
+    "heroTop": 345.4609375,
+    "scrollY": 0,
+    "url": "/uslugi/master-klassy"
+  },
+  {
+    "check": "desktopBreadcrumbReturn",
+    "before": {
+      "scrollY": 3612,
+      "url": "/uslugi/master-klassy"
+    },
+    "after": {
+      "heroTop": 339.4921875,
+      "scrollY": 0,
+      "url": "/uslugi"
+    }
+  },
+  {
+    "check": "formAnchorPreserved",
+    "formTop": 159.046875,
+    "scrollY": 5653.5,
+    "url": "/uslugi#zayavka"
+  },
+  {
+    "check": "mobileCatalogCard",
+    "before": {
+      "scrollY": 21886.5,
+      "url": "/spektakli"
+    },
+    "after": {
+      "heroTop": 254.6953125,
+      "overflow": false,
+      "scrollY": 0,
+      "url": "/spektakli/zolushka"
+    }
+  },
+  {
+    "check": "mobileBreadcrumbReturn",
+    "before": {
+      "scrollY": 7462.5,
+      "url": "/spektakli/zolushka"
+    },
+    "after": {
+      "heroTop": 235.4921875,
+      "overflow": false,
+      "scrollY": 0,
+      "url": "/spektakli"
+    }
+  },
+  {
+    "check": "menuRegression",
+    "before": {
+      "scrollY": 13671.5,
+      "url": "/spektakli"
+    },
+    "after": {
+      "heroTop": 339.4921875,
+      "menuExpanded": "false",
+      "scrollY": 0,
+      "url": "/uslugi"
+    }
+  },
+  {
+    "check": "browserBackRestoresPosition",
+    "scrollY": 13671.5,
+    "url": "/spektakli"
+  },
+  {
+    "check": "logoRegression",
+    "heroTop": 285.78125,
+    "scrollY": 0,
+    "url": "/"
+  },
+  {
+    "check": "mobileServicesBreadcrumbSettled",
+    "before": {
+      "scrollY": 6729.5,
+      "url": "/uslugi/master-klassy"
+    },
+    "after": {
+      "heroTop": 235.4921875,
+      "overflow": false,
+      "scrollY": 0,
+      "url": "/uslugi"
+    }
+  }
+]

@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Link from "next/link";
+import { PageStartLink as Link } from "./page-start-link";
 import type { CSSProperties } from "react";
 import { createHash } from "node:crypto";
 import { PhotoOpenButton } from "./photo-viewer";

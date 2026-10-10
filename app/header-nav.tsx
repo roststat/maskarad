@@ -1,6 +1,6 @@
 "use client";
 
-import Link from "next/link";
+import { PageStartLink } from "./page-start-link";
 import { usePathname } from "next/navigation";
 import { useEffect, useRef, useState } from "react";
 
@@ -218,18 +218,18 @@ export function HeaderNav() {
 
             return (
               <section className="mega-menu-group" key={group.href}>
-                <Link className="mega-menu-heading" href={group.href} aria-current={groupIsActive ? "page" : undefined}>
+                <PageStartLink onNavigate={() => setIsOpen(false)} className="mega-menu-heading" href={group.href} aria-current={groupIsActive ? "page" : undefined}>
                   {group.label}
-                </Link>
+                </PageStartLink>
                 <ul>
                   {group.links.map((item) => {
                     const isActive = isActivePath(pathname, item.href);
 
                     return (
                       <li key={item.href}>
-                        <Link href={item.href} aria-current={isActive ? "page" : undefined}>
+                        <PageStartLink onNavigate={() => setIsOpen(false)} href={item.href} aria-current={isActive ? "page" : undefined}>
                           {item.label}
-                        </Link>
+                        </PageStartLink>
                       </li>
                     );
                   })}

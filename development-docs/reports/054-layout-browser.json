@@ -1,0 +1,68 @@
+[
+  {
+    "check": "mobileEmptyFourRows",
+    "height": 130,
+    "length": 0,
+    "lineHeight": "24px",
+    "overflow": false,
+    "paddingBottom": "16px",
+    "paddingTop": "16px",
+    "textClipped": false,
+    "toolbarBelowField": true,
+    "viewport": 390
+  },
+  {
+    "check": "mobileLongGrows",
+    "height": 970,
+    "length": 1133,
+    "lineHeight": "24px",
+    "overflow": false,
+    "paddingBottom": "16px",
+    "paddingTop": "16px",
+    "textClipped": false,
+    "toolbarBelowField": true,
+    "viewport": 390
+  },
+  {
+    "check": "mobileShortShrinks",
+    "height": 130,
+    "length": 35,
+    "lineHeight": "24px",
+    "overflow": false,
+    "paddingBottom": "16px",
+    "paddingTop": "16px",
+    "textClipped": false,
+    "toolbarBelowField": true,
+    "viewport": 390
+  },
+  {
+    "check": "desktopLongGrows",
+    "height": 370,
+    "length": 1133,
+    "lineHeight": "24px",
+    "overflow": false,
+    "paddingBottom": "16px",
+    "paddingTop": "16px",
+    "textClipped": false,
+    "toolbarBelowField": true,
+    "viewport": 1280
+  },
+  {
+    "check": "desktopEmptyShrinksToFourRows",
+    "height": 130,
+    "length": 0,
+    "lineHeight": "24px",
+    "overflow": false,
+    "paddingBottom": "16px",
+    "paddingTop": "16px",
+    "textClipped": false,
+    "toolbarBelowField": true,
+    "viewport": 1280,
+    "rowsAttribute": "4"
+  },
+  {
+    "check": "technicalNotesRemoved",
+    "dictationNoteCount": 0,
+    "aiNoteCount": 0
+  }
+]

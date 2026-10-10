@@ -1,0 +1,155 @@
+[
+  {
+    "check": "desktopHitAreas",
+    "groups": [
+      {
+        "cardWidth": 276.296875,
+        "itemWidth": 103.1875,
+        "paddingHit": "/prazdniki",
+        "point": {
+          "x": 343.6953125,
+          "y": 226.85546875
+        },
+        "section": "Праздники",
+        "sectionHref": "/prazdniki"
+      },
+      {
+        "cardWidth": 276.3046875,
+        "itemWidth": 57.53125,
+        "paddingHit": "/spektakli",
+        "point": {
+          "x": 628,
+          "y": 226.85546875
+        },
+        "section": "Спектакли",
+        "sectionHref": "/spektakli"
+      },
+      {
+        "cardWidth": 276.296875,
+        "itemWidth": 104.09375,
+        "paddingHit": "/uslugi",
+        "point": {
+          "x": 912.296875,
+          "y": 226.85546875
+        },
+        "section": "Услуги",
+        "sectionHref": "/uslugi"
+      },
+      {
+        "cardWidth": 276.3046875,
+        "itemWidth": 36.34375,
+        "paddingHit": "/o-teatre",
+        "point": {
+          "x": 1196.6015625,
+          "y": 226.85546875
+        },
+        "section": "О театре",
+        "sectionHref": "/o-teatre"
+      }
+    ]
+  },
+  {
+    "check": "desktopPaddingNavigation",
+    "menuExpanded": "false",
+    "scrollY": 0,
+    "url": "/prazdniki"
+  },
+  {
+    "check": "desktopItemNavigation",
+    "menuExpanded": "false",
+    "scrollY": 0,
+    "url": "/prazdniki/detskiy-den-rozhdeniya"
+  },
+  {
+    "check": "businessHitAreas",
+    "groups": [
+      {
+        "href": "/dlya-biznesa",
+        "label": "Корпоративные программы",
+        "paddingHit": "/dlya-biznesa"
+      },
+      {
+        "href": "/uslugi",
+        "label": "Event-наполнение",
+        "paddingHit": "/uslugi"
+      },
+      {
+        "href": "/spektakli",
+        "label": "Театральные форматы",
+        "paddingHit": "/spektakli"
+      },
+      {
+        "href": "/o-teatre",
+        "label": "Работа с театром",
+        "paddingHit": "/o-teatre"
+      }
+    ]
+  },
+  {
+    "check": "adultsHitAreas",
+    "groups": [
+      {
+        "href": "/dlya-vzroslyh",
+        "label": "Семейные праздники",
+        "paddingHit": "/dlya-vzroslyh"
+      },
+      {
+        "href": "/uslugi",
+        "label": "Красивое событие",
+        "paddingHit": "/uslugi"
+      },
+      {
+        "href": "/spektakli",
+        "label": "Программа для детей",
+        "paddingHit": "/spektakli"
+      },
+      {
+        "href": "/o-teatre",
+        "label": "О театре",
+        "paddingHit": "/o-teatre"
+      }
+    ]
+  },
+  {
+    "check": "mobileVisibleHitAreas",
+    "groups": [
+      {
+        "href": "/prazdniki",
+        "paddingHit": "/prazdniki",
+        "point": {
+          "x": 354.6015625,
+          "y": 276.39453125
+        }
+      },
+      {
+        "href": "/spektakli",
+        "paddingHit": "/spektakli",
+        "point": {
+          "x": 354.6015625,
+          "y": 461.99609375
+        }
+      },
+      {
+        "href": "/uslugi",
+        "paddingHit": "/uslugi",
+        "point": {
+          "x": 354.6015625,
+          "y": 647.59765625
+        }
+      }
+    ]
+  },
+  {
+    "check": "mobilePaddingNavigation",
+    "menuExpanded": "false",
+    "scrollY": 0,
+    "url": "/prazdniki"
+  },
+  {
+    "check": "mobileItemNavigation",
+    "menuExpanded": "false",
+    "overflow": false,
+    "scrollY": 0,
+    "url": "/prazdniki/detskiy-sad"
+  }
+]

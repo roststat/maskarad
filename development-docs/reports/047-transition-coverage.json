@@ -1,0 +1,1007 @@
+{
+  "date": "2026-10-09",
+  "pages": 122,
+  "covered": 122,
+  "photoTransitionPages": [
+    "/",
+    "/uslugi",
+    "/prazdniki"
+  ],
+  "legal": [
+    {
+      "url": "privacy-policy",
+      "transitions": false
+    },
+    {
+      "url": "personal-data-consent",
+      "transitions": false
+    },
+    {
+      "url": "cookie-policy",
+      "transitions": false
+    },
+    {
+      "url": "terms",
+      "transitions": false
+    }
+  ],
+  "errors": [],
+  "rows": [
+    {
+      "url": "/",
+      "transitions": 2,
+      "invitation": true,
+      "formAnchors": 1,
+      "miniGallery": true,
+      "photoTransition": true
+    },
+    {
+      "url": "/prazdniki/korporativnyy-novogodniy-prazdnik",
+      "transitions": 3,
+      "invitation": false,
+      "formAnchors": 1,
+      "miniGallery": true,
+      "photoTransition": false
+    },
+    {
+      "url": "/dlya-detey",
+      "transitions": 1,
+      "invitation": true,
+      "formAnchors": 1,
+      "miniGallery": true,
+      "photoTransition": false
+    },
+    {
+      "url": "/dlya-vzroslyh",
+      "transitions": 1,
+      "invitation": true,
+      "formAnchors": 1,
+      "miniGallery": true,
+      "photoTransition": false
+    },
+    {
+      "url": "/dlya-biznesa",
+      "transitions": 1,
+      "invitation": true,
+      "formAnchors": 1,
+      "miniGallery": true,
+      "photoTransition": false
+    },
+    {
+      "url": "/spektakli/zolushka",
+      "transitions": 1,
+      "invitation": true,
+      "formAnchors": 1,
+      "miniGallery": true,
+      "photoTransition": false
+    },
+    {
+      "url": "/spektakli/alisa-v-strane-chudes",
+      "transitions": 1,
+      "invitation": true,
+      "formAnchors": 1,
+      "miniGallery": true,
+      "photoTransition": false
+    },
+    {
+      "url": "/spektakli/peppi-dlinnyy-chulok",
+      "transitions": 1,
+      "invitation": true,
+      "formAnchors": 1,
+      "miniGallery": true,
+      "photoTransition": false
+    },
+    {
+      "url": "/spektakli/piraty-karibskogo-morya",
+      "transitions": 1,
+      "invitation": true,
+      "formAnchors": 1,
+      "miniGallery": true,
+      "photoTransition": false
+    },
+    {
+      "url": "/spektakli/belosnezhka-i-sem-gnomov",
+      "transitions": 1,
+      "invitation": true,
+      "formAnchors": 1,
+      "miniGallery": true,
+      "photoTransition": false
+    },
+    {
+      "url": "/spektakli/mary-poppins",
+      "transitions": 1,
+      "invitation": true,
+      "formAnchors": 1,
+      "miniGallery": true,
+      "photoTransition": false
+    },
+    {
+      "url": "/spektakli/priklyucheniya-sindbada-morehoda",
+      "transitions": 1,
+      "invitation": true,
+      "formAnchors": 1,
+      "miniGallery": true,
+      "photoTransition": false
+    },
+    {
+      "url": "/spektakli/malysh-i-karlson",
+      "transitions": 1,
+      "invitation": true,
+      "formAnchors": 1,
+      "miniGallery": true,
+      "photoTransition": false
+    },
+    {
+      "url": "/spektakli/bremenskie-muzykanty",
+      "transitions": 1,
+      "invitation": true,
+      "formAnchors": 1,
+      "miniGallery": true,
+      "photoTransition": false
+    },
+    {
+      "url": "/spektakli/novogodnyaya-belosnezhka",
+      "transitions": 1,
+      "invitation": true,
+      "formAnchors": 1,
+      "miniGallery": true,
+      "photoTransition": false
+    },
+    {
+      "url": "/spektakli/novogodnie-spektakli",
+      "transitions": 1,
+      "invitation": true,
+      "formAnchors": 1,
+      "miniGallery": true,
+      "photoTransition": false
+    },
+    {
+      "url": "/prazdniki/detskiy-den-rozhdeniya",
+      "transitions": 1,
+      "invitation": true,
+      "formAnchors": 1,
+      "miniGallery": true,
+      "photoTransition": false
+    },
+    {
+      "url": "/uslugi/akvagrim",
+      "transitions": 1,
+      "invitation": true,
+      "formAnchors": 1,
+      "miniGallery": true,
+      "photoTransition": false
+    },
+    {
+      "url": "/uslugi/shou-mylnyh-puzyrey",
+      "transitions": 1,
+      "invitation": true,
+      "formAnchors": 1,
+      "miniGallery": true,
+      "photoTransition": false
+    },
+    {
+      "url": "/uslugi/master-klassy",
+      "transitions": 1,
+      "invitation": true,
+      "formAnchors": 1,
+      "miniGallery": true,
+      "photoTransition": false
+    },
+    {
+      "url": "/uslugi/cirkovye-fokusy",
+      "transitions": 1,
+      "invitation": true,
+      "formAnchors": 1,
+      "miniGallery": true,
+      "photoTransition": false
+    },
+    {
+      "url": "/uslugi/kukolnyy-spektakl",
+      "transitions": 1,
+      "invitation": true,
+      "formAnchors": 1,
+      "miniGallery": true,
+      "photoTransition": false
+    },
+    {
+      "url": "/uslugi/oformlenie-sharami",
+      "transitions": 1,
+      "invitation": true,
+      "formAnchors": 1,
+      "miniGallery": true,
+      "photoTransition": false
+    },
+    {
+      "url": "/uslugi/foto-video",
+      "transitions": 1,
+      "invitation": true,
+      "formAnchors": 1,
+      "miniGallery": true,
+      "photoTransition": false
+    },
+    {
+      "url": "/uslugi/keytering",
+      "transitions": 1,
+      "invitation": true,
+      "formAnchors": 1,
+      "miniGallery": true,
+      "photoTransition": false
+    },
+    {
+      "url": "/uslugi/spetsialnye-effekty",
+      "transitions": 1,
+      "invitation": true,
+      "formAnchors": 1,
+      "miniGallery": true,
+      "photoTransition": false
+    },
+    {
+      "url": "/uslugi/attraktsiony",
+      "transitions": 1,
+      "invitation": true,
+      "formAnchors": 1,
+      "miniGallery": true,
+      "photoTransition": false
+    },
+    {
+      "url": "/prazdniki/detskiy-sad",
+      "transitions": 1,
+      "invitation": true,
+      "formAnchors": 1,
+      "miniGallery": true,
+      "photoTransition": false
+    },
+    {
+      "url": "/prazdniki/shkolnyy-prazdnik",
+      "transitions": 1,
+      "invitation": true,
+      "formAnchors": 1,
+      "miniGallery": true,
+      "photoTransition": false
+    },
+    {
+      "url": "/prazdniki/vypusknoy",
+      "transitions": 1,
+      "invitation": true,
+      "formAnchors": 1,
+      "miniGallery": true,
+      "photoTransition": false
+    },
+    {
+      "url": "/prazdniki/vypusknoy-v-detskom-sadu",
+      "transitions": 1,
+      "invitation": true,
+      "formAnchors": 1,
+      "miniGallery": true,
+      "photoTransition": false
+    },
+    {
+      "url": "/prazdniki/vypusknoy-v-nachalnoy-shkole",
+      "transitions": 1,
+      "invitation": true,
+      "formAnchors": 1,
+      "miniGallery": true,
+      "photoTransition": false
+    },
+    {
+      "url": "/prazdniki/vypusknoy-v-11-klasse",
+      "transitions": 1,
+      "invitation": true,
+      "formAnchors": 1,
+      "miniGallery": true,
+      "photoTransition": false
+    },
+    {
+      "url": "/spektakli/vinni-puh",
+      "transitions": 1,
+      "invitation": true,
+      "formAnchors": 1,
+      "miniGallery": true,
+      "photoTransition": false
+    },
+    {
+      "url": "/spektakli/madagaskar",
+      "transitions": 1,
+      "invitation": true,
+      "formAnchors": 1,
+      "miniGallery": true,
+      "photoTransition": false
+    },
+    {
+      "url": "/spektakli/holodnoe-serdtse",
+      "transitions": 1,
+      "invitation": true,
+      "formAnchors": 1,
+      "miniGallery": true,
+      "photoTransition": false
+    },
+    {
+      "url": "/podboroki/scenarii-detskih-prazdnikov",
+      "transitions": 1,
+      "invitation": true,
+      "formAnchors": 1,
+      "miniGallery": true,
+      "photoTransition": false
+    },
+    {
+      "url": "/prazdniki/maslenitsa",
+      "transitions": 1,
+      "invitation": true,
+      "formAnchors": 1,
+      "miniGallery": true,
+      "photoTransition": false
+    },
+    {
+      "url": "/spektakli/alladin-i-zhasmin",
+      "transitions": 1,
+      "invitation": true,
+      "formAnchors": 1,
+      "miniGallery": true,
+      "photoTransition": false
+    },
+    {
+      "url": "/spektakli/neznaika-v-tsvetochnom-gorode",
+      "transitions": 1,
+      "invitation": true,
+      "formAnchors": 1,
+      "miniGallery": true,
+      "photoTransition": false
+    },
+    {
+      "url": "/spektakli/piter-pen",
+      "transitions": 1,
+      "invitation": true,
+      "formAnchors": 1,
+      "miniGallery": true,
+      "photoTransition": false
+    },
+    {
+      "url": "/spektakli/zolotoy-klyuchik",
+      "transitions": 1,
+      "invitation": true,
+      "formAnchors": 1,
+      "miniGallery": true,
+      "photoTransition": false
+    },
+    {
+      "url": "/spektakli/kot-leopold",
+      "transitions": 1,
+      "invitation": true,
+      "formAnchors": 1,
+      "miniGallery": true,
+      "photoTransition": false
+    },
+    {
+      "url": "/spektakli/tri-mushketera",
+      "transitions": 1,
+      "invitation": true,
+      "formAnchors": 1,
+      "miniGallery": true,
+      "photoTransition": false
+    },
+    {
+      "url": "/spektakli/istoriya-igrushek",
+      "transitions": 1,
+      "invitation": true,
+      "formAnchors": 1,
+      "miniGallery": true,
+      "photoTransition": false
+    },
+    {
+      "url": "/spektakli/lednikovyy-period",
+      "transitions": 1,
+      "invitation": true,
+      "formAnchors": 1,
+      "miniGallery": true,
+      "photoTransition": false
+    },
+    {
+      "url": "/spektakli/simpsony",
+      "transitions": 1,
+      "invitation": true,
+      "formAnchors": 1,
+      "miniGallery": true,
+      "photoTransition": false
+    },
+    {
+      "url": "/spektakli/skazochnyy-balaganchik",
+      "transitions": 1,
+      "invitation": true,
+      "formAnchors": 1,
+      "miniGallery": true,
+      "photoTransition": false
+    },
+    {
+      "url": "/spektakli/ivan-da-marya",
+      "transitions": 1,
+      "invitation": true,
+      "formAnchors": 1,
+      "miniGallery": true,
+      "photoTransition": false
+    },
+    {
+      "url": "/spektakli/volshebnaya-feya",
+      "transitions": 1,
+      "invitation": true,
+      "formAnchors": 1,
+      "miniGallery": true,
+      "photoTransition": false
+    },
+    {
+      "url": "/spektakli/novogodnyy-ekspress",
+      "transitions": 1,
+      "invitation": true,
+      "formAnchors": 1,
+      "miniGallery": true,
+      "photoTransition": false
+    },
+    {
+      "url": "/spektakli/novyy-god-na-snezhnoy-planete",
+      "transitions": 1,
+      "invitation": true,
+      "formAnchors": 1,
+      "miniGallery": true,
+      "photoTransition": false
+    },
+    {
+      "url": "/spektakli/avatar",
+      "transitions": 1,
+      "invitation": true,
+      "formAnchors": 1,
+      "miniGallery": true,
+      "photoTransition": false
+    },
+    {
+      "url": "/prazdniki/vypusknoy-v-stile-fashion",
+      "transitions": 1,
+      "invitation": true,
+      "formAnchors": 1,
+      "miniGallery": true,
+      "photoTransition": false
+    },
+    {
+      "url": "/spektakli/pyatyy-element",
+      "transitions": 1,
+      "invitation": true,
+      "formAnchors": 1,
+      "miniGallery": true,
+      "photoTransition": false
+    },
+    {
+      "url": "/spektakli/skazka-shreka",
+      "transitions": 1,
+      "invitation": true,
+      "formAnchors": 1,
+      "miniGallery": true,
+      "photoTransition": false
+    },
+    {
+      "url": "/spektakli/smurfiki",
+      "transitions": 1,
+      "invitation": true,
+      "formAnchors": 1,
+      "miniGallery": true,
+      "photoTransition": false
+    },
+    {
+      "url": "/spektakli/supergeroi",
+      "transitions": 1,
+      "invitation": true,
+      "formAnchors": 1,
+      "miniGallery": true,
+      "photoTransition": false
+    },
+    {
+      "url": "/spektakli/skazka-elfov",
+      "transitions": 1,
+      "invitation": true,
+      "formAnchors": 1,
+      "miniGallery": true,
+      "photoTransition": false
+    },
+    {
+      "url": "/spektakli/shkola-volshebnic",
+      "transitions": 1,
+      "invitation": true,
+      "formAnchors": 1,
+      "miniGallery": true,
+      "photoTransition": false
+    },
+    {
+      "url": "/uslugi/pozdravitelnaya-pesnya",
+      "transitions": 1,
+      "invitation": true,
+      "formAnchors": 1,
+      "miniGallery": true,
+      "photoTransition": false
+    },
+    {
+      "url": "/uslugi/detskiy-tort",
+      "transitions": 1,
+      "invitation": true,
+      "formAnchors": 1,
+      "miniGallery": true,
+      "photoTransition": false
+    },
+    {
+      "url": "/uslugi/shou-s-zhivotnymi",
+      "transitions": 1,
+      "invitation": true,
+      "formAnchors": 1,
+      "miniGallery": true,
+      "photoTransition": false
+    },
+    {
+      "url": "/prazdniki/detskiy-prazdnik-na-teplohode",
+      "transitions": 1,
+      "invitation": true,
+      "formAnchors": 1,
+      "miniGallery": true,
+      "photoTransition": false
+    },
+    {
+      "url": "/prazdniki/individualnyy-detskiy-prazdnik",
+      "transitions": 1,
+      "invitation": true,
+      "formAnchors": 1,
+      "miniGallery": true,
+      "photoTransition": false
+    },
+    {
+      "url": "/prazdniki/obrazovatelnyy-detskiy-prazdnik",
+      "transitions": 1,
+      "invitation": true,
+      "formAnchors": 1,
+      "miniGallery": true,
+      "photoTransition": false
+    },
+    {
+      "url": "/spektakli",
+      "transitions": 1,
+      "invitation": true,
+      "formAnchors": 1,
+      "miniGallery": true,
+      "photoTransition": false
+    },
+    {
+      "url": "/uslugi",
+      "transitions": 1,
+      "invitation": true,
+      "formAnchors": 1,
+      "miniGallery": true,
+      "photoTransition": true
+    },
+    {
+      "url": "/prazdniki",
+      "transitions": 1,
+      "invitation": true,
+      "formAnchors": 1,
+      "miniGallery": true,
+      "photoTransition": true
+    },
+    {
+      "url": "/tseny",
+      "transitions": 1,
+      "invitation": true,
+      "formAnchors": 1,
+      "miniGallery": true,
+      "photoTransition": false
+    },
+    {
+      "url": "/otzyvy-pressa",
+      "transitions": 1,
+      "invitation": true,
+      "formAnchors": 1,
+      "miniGallery": true,
+      "photoTransition": false
+    },
+    {
+      "url": "/foto-video",
+      "transitions": 1,
+      "invitation": true,
+      "formAnchors": 1,
+      "miniGallery": true,
+      "photoTransition": false
+    },
+    {
+      "url": "/kontakty",
+      "transitions": 0,
+      "invitation": true,
+      "formAnchors": 1,
+      "miniGallery": true,
+      "photoTransition": false
+    },
+    {
+      "url": "/o-teatre",
+      "transitions": 1,
+      "invitation": true,
+      "formAnchors": 1,
+      "miniGallery": true,
+      "photoTransition": false
+    },
+    {
+      "url": "/stati",
+      "transitions": 1,
+      "invitation": true,
+      "formAnchors": 1,
+      "miniGallery": true,
+      "photoTransition": false
+    },
+    {
+      "url": "/kejsy",
+      "transitions": 1,
+      "invitation": true,
+      "formAnchors": 1,
+      "miniGallery": true,
+      "photoTransition": false
+    },
+    {
+      "url": "/podboroki",
+      "transitions": 1,
+      "invitation": true,
+      "formAnchors": 1,
+      "miniGallery": true,
+      "photoTransition": false
+    },
+    {
+      "url": "/podboroki/interaktivnye-spektakli-dlya-detey",
+      "transitions": 1,
+      "invitation": true,
+      "formAnchors": 1,
+      "miniGallery": true,
+      "photoTransition": false
+    },
+    {
+      "url": "/stati/igrovoy-scenariy-dlya-detskogo-prazdnika",
+      "transitions": 1,
+      "invitation": true,
+      "formAnchors": 1,
+      "miniGallery": true,
+      "photoTransition": false
+    },
+    {
+      "url": "/stati/prazdnik-po-skazkam-pushkina-dlya-detey",
+      "transitions": 1,
+      "invitation": true,
+      "formAnchors": 1,
+      "miniGallery": true,
+      "photoTransition": false
+    },
+    {
+      "url": "/stati/skazki-sheherezady-scenariy-dlya-detey",
+      "transitions": 1,
+      "invitation": true,
+      "formAnchors": 1,
+      "miniGallery": true,
+      "photoTransition": false
+    },
+    {
+      "url": "/stati/detskiy-prazdnik-na-hellouin",
+      "transitions": 1,
+      "invitation": true,
+      "formAnchors": 1,
+      "miniGallery": true,
+      "photoTransition": false
+    },
+    {
+      "url": "/stati/prazdnik-oseni-dlya-detey",
+      "transitions": 1,
+      "invitation": true,
+      "formAnchors": 1,
+      "miniGallery": true,
+      "photoTransition": false
+    },
+    {
+      "url": "/stati/prazdnik-bukvarya-scenariy-dlya-1-klassa",
+      "transitions": 1,
+      "invitation": true,
+      "formAnchors": 1,
+      "miniGallery": true,
+      "photoTransition": false
+    },
+    {
+      "url": "/stati/kak-vybrat-spektakl-na-den-rozhdeniya",
+      "transitions": 1,
+      "invitation": true,
+      "formAnchors": 1,
+      "miniGallery": true,
+      "photoTransition": false
+    },
+    {
+      "url": "/kejsy/piratskiy-den-rozhdeniya-7-let",
+      "transitions": 1,
+      "invitation": true,
+      "formAnchors": 1,
+      "miniGallery": true,
+      "photoTransition": false
+    },
+    {
+      "url": "/podboroki/spektakli-dlya-5-7-let",
+      "transitions": 1,
+      "invitation": true,
+      "formAnchors": 1,
+      "miniGallery": true,
+      "photoTransition": false
+    },
+    {
+      "url": "/podboroki/prazdniki-dlya-detey-3-4-goda",
+      "transitions": 1,
+      "invitation": true,
+      "formAnchors": 1,
+      "miniGallery": true,
+      "photoTransition": false
+    },
+    {
+      "url": "/stati/detskiy-prazdnik-doma-ili-v-restorane",
+      "transitions": 1,
+      "invitation": true,
+      "formAnchors": 1,
+      "miniGallery": true,
+      "photoTransition": false
+    },
+    {
+      "url": "/kejsy/prazdnik-v-detskom-sadu",
+      "transitions": 1,
+      "invitation": true,
+      "formAnchors": 1,
+      "miniGallery": true,
+      "photoTransition": false
+    },
+    {
+      "url": "/stati/korporativnaya-elka-dlya-detey-sotrudnikov",
+      "transitions": 1,
+      "invitation": true,
+      "formAnchors": 1,
+      "miniGallery": true,
+      "photoTransition": false
+    },
+    {
+      "url": "/podboroki/prazdniki-dlya-detey-8-10-let",
+      "transitions": 1,
+      "invitation": true,
+      "formAnchors": 1,
+      "miniGallery": true,
+      "photoTransition": false
+    },
+    {
+      "url": "/stati/prazdnik-v-shkole-kak-sobrat-programmu",
+      "transitions": 1,
+      "invitation": true,
+      "formAnchors": 1,
+      "miniGallery": true,
+      "photoTransition": false
+    },
+    {
+      "url": "/podboroki/idei-dlya-vypusknogo",
+      "transitions": 1,
+      "invitation": true,
+      "formAnchors": 1,
+      "miniGallery": true,
+      "photoTransition": false
+    },
+    {
+      "url": "/podboroki/novogodnie-programmy-dlya-detey",
+      "transitions": 1,
+      "invitation": true,
+      "formAnchors": 1,
+      "miniGallery": true,
+      "photoTransition": false
+    },
+    {
+      "url": "/stati/animatory-na-dom-kak-vybrat-programmu",
+      "transitions": 1,
+      "invitation": true,
+      "formAnchors": 1,
+      "miniGallery": true,
+      "photoTransition": false
+    },
+    {
+      "url": "/stati/detskiy-prazdnik-v-restorane",
+      "transitions": 1,
+      "invitation": true,
+      "formAnchors": 1,
+      "miniGallery": true,
+      "photoTransition": false
+    },
+    {
+      "url": "/podboroki/prazdniki-dlya-detey-11-13-let",
+      "transitions": 1,
+      "invitation": true,
+      "formAnchors": 1,
+      "miniGallery": true,
+      "photoTransition": false
+    },
+    {
+      "url": "/podboroki/nedorogoy-detskiy-prazdnik",
+      "transitions": 1,
+      "invitation": true,
+      "formAnchors": 1,
+      "miniGallery": true,
+      "photoTransition": false
+    },
+    {
+      "url": "/stati/detskiy-prazdnik-na-ulitse",
+      "transitions": 1,
+      "invitation": true,
+      "formAnchors": 1,
+      "miniGallery": true,
+      "photoTransition": false
+    },
+    {
+      "url": "/stati/kak-rasschitat-byudzhet-detskogo-prazdnika",
+      "transitions": 1,
+      "invitation": true,
+      "formAnchors": 1,
+      "miniGallery": true,
+      "photoTransition": false
+    },
+    {
+      "url": "/stati/detskiy-prazdnik-v-torgovom-tsentre",
+      "transitions": 1,
+      "invitation": true,
+      "formAnchors": 1,
+      "miniGallery": true,
+      "photoTransition": false
+    },
+    {
+      "url": "/stati/prazdnik-dlya-klassa",
+      "transitions": 1,
+      "invitation": true,
+      "formAnchors": 1,
+      "miniGallery": true,
+      "photoTransition": false
+    },
+    {
+      "url": "/podboroki/prazdnik-dlya-devochki",
+      "transitions": 1,
+      "invitation": true,
+      "formAnchors": 1,
+      "miniGallery": true,
+      "photoTransition": false
+    },
+    {
+      "url": "/podboroki/prazdnik-dlya-malchika",
+      "transitions": 1,
+      "invitation": true,
+      "formAnchors": 1,
+      "miniGallery": true,
+      "photoTransition": false
+    },
+    {
+      "url": "/stati/detskiy-prazdnik-v-parke",
+      "transitions": 1,
+      "invitation": true,
+      "formAnchors": 1,
+      "miniGallery": true,
+      "photoTransition": false
+    },
+    {
+      "url": "/stati/detskiy-prazdnik-zimoy",
+      "transitions": 1,
+      "invitation": true,
+      "formAnchors": 1,
+      "miniGallery": true,
+      "photoTransition": false
+    },
+    {
+      "url": "/stati/detskiy-prazdnik-letom",
+      "transitions": 1,
+      "invitation": true,
+      "formAnchors": 1,
+      "miniGallery": true,
+      "photoTransition": false
+    },
+    {
+      "url": "/podboroki/prazdnik-dlya-10-detey",
+      "transitions": 1,
+      "invitation": true,
+      "formAnchors": 1,
+      "miniGallery": true,
+      "photoTransition": false
+    },
+    {
+      "url": "/podboroki/prazdnik-dlya-20-detey",
+      "transitions": 1,
+      "invitation": true,
+      "formAnchors": 1,
+      "miniGallery": true,
+      "photoTransition": false
+    },
+    {
+      "url": "/podboroki/prazdnik-s-master-klassom",
+      "transitions": 1,
+      "invitation": true,
+      "formAnchors": 1,
+      "miniGallery": true,
+      "photoTransition": false
+    },
+    {
+      "url": "/stati/detskiy-prazdnik-v-lofte",
+      "transitions": 1,
+      "invitation": true,
+      "formAnchors": 1,
+      "miniGallery": true,
+      "photoTransition": false
+    },
+    {
+      "url": "/stati/detskiy-prazdnik-na-dache",
+      "transitions": 1,
+      "invitation": true,
+      "formAnchors": 1,
+      "miniGallery": true,
+      "photoTransition": false
+    },
+    {
+      "url": "/stati/programma-dlya-roditeley-i-detey",
+      "transitions": 1,
+      "invitation": true,
+      "formAnchors": 1,
+      "miniGallery": true,
+      "photoTransition": false
+    },
+    {
+      "url": "/podboroki/prazdnik-s-akvagrimom",
+      "transitions": 1,
+      "invitation": true,
+      "formAnchors": 1,
+      "miniGallery": true,
+      "photoTransition": false
+    },
+    {
+      "url": "/podboroki/prazdnik-s-fokusami",
+      "transitions": 1,
+      "invitation": true,
+      "formAnchors": 1,
+      "miniGallery": true,
+      "photoTransition": false
+    },
+    {
+      "url": "/stati/animatory-na-vypusknoy",
+      "transitions": 1,
+      "invitation": true,
+      "formAnchors": 1,
+      "miniGallery": true,
+      "photoTransition": false
+    },
+    {
+      "url": "/stati/detskiy-prazdnik-v-kafe",
+      "transitions": 1,
+      "invitation": true,
+      "formAnchors": 1,
+      "miniGallery": true,
+      "photoTransition": false
+    },
+    {
+      "url": "/stati/detskiy-prazdnik-v-detskom-tsentre",
+      "transitions": 1,
+      "invitation": true,
+      "formAnchors": 1,
+      "miniGallery": true,
+      "photoTransition": false
+    },
+    {
+      "url": "/podboroki/prazdnik-dlya-malyshey-2-3-goda",
+      "transitions": 1,
+      "invitation": true,
+      "formAnchors": 1,
+      "miniGallery": true,
+      "photoTransition": false
+    },
+    {
+      "url": "/podboroki/prazdnik-so-spektaklem-vmesto-animatorov",
+      "transitions": 1,
+      "invitation": true,
+      "formAnchors": 1,
+      "miniGallery": true,
+      "photoTransition": false
+    },
+    {
+      "url": "/stati/semka-filma-s-detmi-na-prazdnike",
+      "transitions": 1,
+      "invitation": true,
+      "formAnchors": 1,
+      "miniGallery": true,
+      "photoTransition": false
+    }
+  ]
+}
