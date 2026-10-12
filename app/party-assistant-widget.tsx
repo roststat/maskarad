@@ -205,7 +205,15 @@ function PartyAssistantDialog({ open, onClose, corporate, guests, onGuestsChange
     setStatus("Отправляем запрос организатору…");
     try {
       const response = await fetch("/api/leads", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ name: name.trim(), phone: phone.trim(), message: requestMessage, page: window.location.pathname, leadText, consent: true, consentVersion }) });
-      if (!response.ok) throw new Error("lead_failed");
+      const result = await response.json().catch(() => ({})) as { stored?: boolean };
+      if (!response.ok) {
+        if (result.stored) {
+          setStatus("Запрос сохранён на сайте, но уведомление организатору не доставлено. Если вопрос срочный, позвоните нам.");
+          if (corporate) reportLeadEvent("lead_error", "corporate_new_year");
+          return;
+        }
+        throw new Error("lead_failed");
+      }
       setSent(true);
       setStatus("Запрос отправлен организатору. Скоро свяжемся с вами.");
       if (corporate) reportLeadEvent("lead_saved", "corporate_new_year");

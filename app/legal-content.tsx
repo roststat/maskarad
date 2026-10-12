@@ -6,7 +6,7 @@ export function LegalPage({ title, children }: { title: string; children: React.
     <nav aria-label="Документы сайта"><Link href="/">Главная</Link><span aria-hidden="true"> / </span>{title}</nav>
     <h1>{title}</h1>
     {!legalData.approvedForPublication && <p className="legal-draft">Проект документа. Размещение хранилища и обязанности оператора проверяются до публикации окончательной версии.</p>}
-    <p className="legal-updated">Дата утверждения: {legalData.effectiveDate}</p>
+    <p className="legal-updated">{legalData.approvedForPublication ? "Дата утверждения" : "Версия документа"}: {legalData.effectiveDate}</p>
     {children}
   </article>;
 }

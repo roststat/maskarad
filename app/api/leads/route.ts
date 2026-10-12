@@ -1,6 +1,7 @@
 import { NextResponse } from "next/server";
 import { consentVersion } from "../../legal-data";
 import { storeLead } from "./storage";
+import { sendLeadToMax } from "./max";
 
 export const runtime = "nodejs";
 
@@ -45,12 +46,25 @@ export async function POST(request: Request) {
     createdAt: recordedAt,
     consent: { accepted: true as const, version: consentVersion, recordedAt }
   };
+  let id: string;
   try {
-    await storeLead(lead);
-    return NextResponse.json({ ok: true });
+    id = await storeLead(lead);
   } catch {
     return NextResponse.json({ ok: false, error: "lead_storage_unavailable" }, { status: 503 });
   }
+
+  const max = await sendLeadToMax({ ...lead, id });
+  if (max.status === "failed") {
+    return NextResponse.json(
+      { ok: false, error: "max_delivery_unavailable", stored: true },
+      { status: 503 }
+    );
+  }
+
+  return NextResponse.json({
+    ok: true,
+    delivery: max.status === "sent" ? "max" : "storage"
+  });
 }
 
 function normalizeText(value: unknown) {

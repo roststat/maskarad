@@ -13,7 +13,7 @@ type LeadFormProps = {
   eventCategory?: "corporate_new_year";
 };
 
-type LeadStatus = "idle" | "error" | "sending" | "sent" | "fallback" | "copied";
+type LeadStatus = "idle" | "error" | "sending" | "sent" | "stored" | "fallback" | "copied";
 
 export function LeadForm({ label, message = "", successText, eventCategory }: LeadFormProps) {
   const formId = useId();
@@ -75,6 +75,7 @@ export function LeadForm({ label, message = "", successText, eventCategory }: Le
         })
       });
 
+      const result = await response.json().catch(() => ({})) as { stored?: boolean };
       if (response.ok) {
         setStatus("sent");
         form.reset();
@@ -83,7 +84,7 @@ export function LeadForm({ label, message = "", successText, eventCategory }: Le
         return;
       }
 
-      setStatus("fallback");
+      setStatus(result.stored ? "stored" : "fallback");
       if (eventCategory) reportLeadEvent("lead_error", eventCategory);
     } catch {
       setStatus("fallback");
@@ -145,6 +146,7 @@ export function LeadForm({ label, message = "", successText, eventCategory }: Le
         {status === "error" && "Укажите телефон и подтвердите согласие на обработку данных."}
         {status === "sending" && "Пробуем отправить заявку через основной канал."}
         {status === "sent" && (successText || "Заявка отправлена. Если вопрос срочный, лучше сразу позвонить.")}
+        {status === "stored" && "Заявка сохранена на сайте, но уведомление организатору не доставлено. Если вопрос срочный, позвоните нам."}
         {status === "fallback" && "Не удалось сохранить заявку. Позвоните нам или скопируйте текст для себя."}
         {status === "copied" && "Текст заявки скопирован. Его можно отправить в любой удобный мессенджер."}
       </p>}

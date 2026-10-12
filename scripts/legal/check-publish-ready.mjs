@@ -5,6 +5,7 @@ const unfinished = [
   ["адрес оператора", /address:\s*"\[/],
   ["email оператора", /email:\s*"\[/],
   ["хранилище заявок", /leadStorage:\s*"\[/],
+  ["канал доставки заявок", /leadDelivery:\s*"\[/],
   ["срок хранения", /retention:\s*"\[/],
   ["дата утверждения", /effectiveDate:\s*"\[/],
   ["версия согласия", /consentVersion\s*=\s*"[^"]*draft/],

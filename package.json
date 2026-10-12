@@ -15,6 +15,9 @@
     "seo:faq-coverage": "node scripts/seo/check-faq-coverage.mjs",
     "legal:predeploy": "node scripts/legal/check-publish-ready.mjs",
     "leads:check": "node scripts/server/check-lead-storage.mjs",
+    "leads:max-discover-chat": "NODE_EXTRA_CA_CERTS=certificates/russian-trusted-root-ca.pem node scripts/server/discover-max-chat.mjs",
+    "leads:max-send-synthetic": "NODE_EXTRA_CA_CERTS=certificates/russian-trusted-root-ca.pem node --no-warnings --experimental-strip-types scripts/server/send-max-synthetic.mjs",
+    "leads:max-test": "node --no-warnings --experimental-strip-types scripts/server/check-max-delivery.mjs",
     "seo:predeploy": "npm run legal:predeploy && npm run seo:old-url-coverage && npm run seo:redirect-audit && npm run seo:image-alt && npm run lint && npm run build && npm run seo:faq-coverage",
     "lint": "tsc --noEmit"
   },
