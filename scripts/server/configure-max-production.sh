@@ -23,7 +23,7 @@ for attempt in 1 2 3; do
       -o ServerAliveInterval=10 \
       -o ServerAliveCountMax=3 \
       avtozabota-test \
-      "cd /opt/maskarad/app && node scripts/server/update-max-env.mjs && pm2 reload maskarad-site && pm2 save --force"; then
+      "cd /opt/maskarad/app && node scripts/server/update-max-env.mjs && NODE_EXTRA_CA_CERTS=/opt/maskarad/app/certificates/russian-trusted-root-ca.pem pm2 reload maskarad-site --update-env && pm2 save --force"; then
     configured=true
     break
   fi
