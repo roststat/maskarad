@@ -19,6 +19,7 @@ import {
 import { pages, type CatalogItem, type PagePath } from "../data";
 import { catalogFaq, fiveFaq, hubFaq } from "../faq-data";
 import { landingPages, type LandingPath } from "../landing-data";
+import { newYearShowPhotos } from "../new-year-show-photos";
 import {
   Breadcrumbs,
   JsonLd,
@@ -394,6 +395,7 @@ export default async function ContentPage({ params }: Params) {
   if (landingPath) {
     const page = landingPages[landingPath];
     const faq = fiveFaq(page.faq, page.sections);
+    const pagePhotos = landingPath === "/spektakli/novogodnie-spektakli" ? newYearShowPhotos : undefined;
     const suppliedPhoto = photosForPage(landingPath)[0];
     const media = suppliedPhoto ? { ...suppliedPhoto, caption: suppliedPhoto.alt } : page.media;
     const breadcrumbs = buildBreadcrumbs(landingPath);
@@ -437,7 +439,7 @@ export default async function ContentPage({ params }: Params) {
           )}
         </section>
 
-        <MiniGallery path={landingPath} />
+        <MiniGallery path={landingPath} photos={pagePhotos} />
 
         <section className="landing-facts" aria-label="Коротко о программе">
           {page.facts.map((fact) => (
@@ -471,7 +473,7 @@ export default async function ContentPage({ params }: Params) {
           </ul>
         </section>
 
-        <PhotoRibbon path={landingPath} />
+        <PhotoRibbon path={landingPath} photos={pagePhotos} />
 
         <section className="ny-faq">
           <span className="eyebrow">Вопросы</span>
