@@ -2,7 +2,7 @@ import Image from "next/image";
 import { PageStartLink as Link } from "./page-start-link";
 import type { CSSProperties } from "react";
 import { createHash } from "node:crypto";
-import { PhotoOpenButton } from "./photo-viewer";
+import { PhotoOpenButton, type GalleryPhoto } from "./photo-viewer";
 import { portfolioPhotos, photosForPage } from "./photo-library";
 
 function photoScore(value: string) {
@@ -22,8 +22,8 @@ export function selectMiniGalleryPhotos(path: string) {
   return [...themed, ...neutral].slice(0, count);
 }
 
-export function MiniGallery({ path }: { path: string }) {
-  const photos = selectMiniGalleryPhotos(path);
+export function MiniGallery({ path, photos: suppliedPhotos }: { path: string; photos?: readonly GalleryPhoto[] }) {
+  const photos = suppliedPhotos ?? selectMiniGalleryPhotos(path);
   const galleryHref = "/foto-video#portfolio-gallery-title";
   return (
     <section className="mini-gallery" aria-label="Фотографии театра">
@@ -33,7 +33,7 @@ export function MiniGallery({ path }: { path: string }) {
       </div>
       <div className="mini-gallery-photos" style={{ "--mini-photo-count": photos.length } as CSSProperties}>
         {photos.map((photo, index) => (
-          <PhotoOpenButton key={photo.id} photos={photos} index={index}>
+          <PhotoOpenButton key={photo.src} photos={photos} index={index}>
             <Image src={photo.src} alt={photo.alt} width={photo.width} height={photo.height} sizes="(max-width: 600px) 45vw, (max-width: 1200px) 23vw, 280px" loading="lazy" />
           </PhotoOpenButton>
         ))}

@@ -1,111 +1,51 @@
 export const corporatePhotos = {
-  "fairytale-actors": {
-    "src": "/images/corporate/fairytale-actors.webp",
-    "width": 1500,
-    "height": 1000,
-    "alt": "Актёры в сказочных костюмах у декораций"
+  "new-year-elsa-reindeer": {
+    src: "/images/corporate/new-year-elsa-reindeer.webp",
+    width: 750,
+    height: 500,
+    alt: "Эльза и северный олень в новогодней декорации"
   },
-  "children-and-actors": {
-    "src": "/images/corporate/children-and-actors.webp",
-    "width": 1600,
-    "height": 1052,
-    "alt": "Дети участвуют в спектакле вместе с актёрами"
+  "new-year-confetti": {
+    src: "/images/corporate/new-year-confetti.webp",
+    width: 800,
+    height: 800,
+    alt: "Дети играют с Олафом и сказочными героями под праздничным конфетти"
   },
-  "interactive-show": {
-    "src": "/images/corporate/interactive-show.webp",
-    "width": 1600,
-    "height": 1066,
-    "alt": "Дети и ведущий на интерактивном шоу"
+  "new-year-olaf-snowball": {
+    src: "/images/corporate/new-year-olaf-snowball.webp",
+    width: 800,
+    height: 800,
+    alt: "Олаф проводит новогоднюю игру с большим снежком"
   },
-  "stage-performance": {
-    "src": "/images/corporate/stage-performance.webp",
-    "width": 1080,
-    "height": 880,
-    "alt": "Участники и актёр на сцене"
+  "new-year-cast": {
+    src: "/images/corporate/new-year-cast.webp",
+    width: 1280,
+    height: 1072,
+    alt: "Команда новогоднего спектакля в костюмах сказочных героев"
   },
-  "ribbon-game": {
-    "src": "/images/corporate/ribbon-game.webp",
-    "width": 1455,
-    "height": 1600,
-    "alt": "Дети и сказочные герои играют с цветной лентой"
+  "new-year-cast-venue": {
+    src: "/images/corporate/new-year-cast-venue.webp",
+    width: 719,
+    height: 1280,
+    alt: "Герои новогодней программы на праздничной площадке"
   },
-  "children-playing": {
-    "src": "/images/corporate/children-playing.webp",
-    "width": 1500,
-    "height": 1048,
-    "alt": "Ребёнок участвует в игре с реквизитом"
+  "corporate-aladdin-camel": {
+    src: "/images/corporate/corporate-aladdin-camel.webp",
+    width: 1024,
+    height: 1280,
+    alt: "Актёры восточной сказочной программы с верблюдом"
   },
-  "face-painting": {
-    "src": "/images/corporate/face-painting.webp",
-    "width": 1600,
-    "height": 1117,
-    "alt": "Художник наносит ребёнку аквагрим"
+  "corporate-alice-group": {
+    src: "/images/corporate/corporate-alice-group.webp",
+    width: 1280,
+    height: 853,
+    alt: "Дети и актёры программы по мотивам Алисы в Стране чудес"
   },
-  "paper-show": {
-    "src": "/images/corporate/paper-show.webp",
-    "width": 1500,
-    "height": 1000,
-    "alt": "Бумажное шоу с голубыми лентами и шарами"
-  },
-  "restaurant-performance": {
-    "src": "/images/corporate/restaurant-performance.webp",
-    "width": 620,
-    "height": 960,
-    "alt": "Актёры выступают на площадке ресторана"
-  },
-  "show-performer": {
-    "src": "/images/corporate/show-performer.webp",
-    "width": 1600,
-    "height": 1066,
-    "alt": "Актёр с реквизитом для интерактивного шоу"
-  },
-  "theatrical-prop": {
-    "src": "/images/corporate/theatrical-prop.webp",
-    "width": 1193,
-    "height": 1492,
-    "alt": "Актёр с театральным реквизитом лошади"
-  },
-  "fairytale-costumes": {
-    "src": "/images/corporate/fairytale-costumes.webp",
-    "width": 973,
-    "height": 667,
-    "alt": "Сказочные персонажи на фоне праздничного оформления"
-  },
-  "fairytale-group": {
-    "src": "/images/corporate/fairytale-group.webp",
-    "width": 1600,
-    "height": 1124,
-    "alt": "Актёры и дети у декораций с воздушными шарами"
-  },
-  "superhero-group": {
-    "src": "/images/corporate/superhero-group.webp",
-    "width": 1500,
-    "height": 1037,
-    "alt": "Дети со сказочными героями в костюмах супергероев"
-  },
-  "balloon-game": {
-    "src": "/images/corporate/balloon-game.webp",
-    "width": 1125,
-    "height": 1500,
-    "alt": "Ребёнок играет с цветными шарами"
-  },
-  "colourful-character": {
-    "src": "/images/corporate/colourful-character.webp",
-    "width": 1080,
-    "height": 794,
-    "alt": "Ребёнок со сказочным персонажем в ярком костюме"
-  },
-  "costumed-actors": {
-    "src": "/images/corporate/costumed-actors.webp",
-    "width": 1280,
-    "height": 853,
-    "alt": "Актёры в синих сказочных костюмах с реквизитом"
-  },
-  "actor-and-child": {
-    "src": "/images/corporate/actor-and-child.webp",
-    "width": 640,
-    "height": 800,
-    "alt": "Актриса в сказочном костюме с ребёнком"
+  "new-year-elsa-reindeer-second": {
+    src: "/images/corporate/new-year-elsa-reindeer-second.webp",
+    width: 750,
+    height: 500,
+    alt: "Эльза рядом с северным оленем в праздничной фотозоне"
   }
 } as const;
 
