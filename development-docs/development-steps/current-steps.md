@@ -4,7 +4,7 @@
 
 ## Текущая работа
 
-14 октября: [071 — убрать общий фотоблок материалов](new-steps/071-remove-generic-photo-block.md) по замечанию владельца. [071-1](completed-steps/071-1-remove-generic-photo-block-2026-10-14.md): «Визуальные опоры страницы» и повторная галерея удалены из шаблона; главное фото сохранено. [071-2](completed-steps/071-2-generic-photo-block-check-2026-10-14.md): браузер и полный SEO gate успешны. Публикация — следующий подшаг.
+14 октября: [071 — убрать общий фотоблок материалов](new-steps/071-remove-generic-photo-block.md) по замечанию владельца завершён. [071-1](completed-steps/071-1-remove-generic-photo-block-2026-10-14.md): «Визуальные опоры страницы» и повторная галерея удалены из шаблона; главное фото сохранено. [071-2](completed-steps/071-2-generic-photo-block-check-2026-10-14.md): браузер и полный SEO gate успешны. [071-3](completed-steps/071-3-generic-photo-block-production-2026-10-14.md): сервер, публичный HTML и браузер проверены. [Итог](../reports/071-remove-generic-photo-block-2026-10-14.md).
 
 14 октября: [070 — замена неподходящего зимнего фото](new-steps/070-replace-winter-photo.md) завершён: [070-1](completed-steps/070-1-winter-photo-references-2026-10-14.md) — новый кадр владельца заменяет старый во всех пяти ссылках, старый файл удалён; [070-2](completed-steps/070-2-winter-photo-visual-seo-2026-10-14.md) — фото целиком в браузере, полный SEO gate успешен; [070-3](completed-steps/070-3-winter-photo-production-2026-10-14.md) — серверные HEAD/маркер `0f6eb4c` и systemd success.
 
