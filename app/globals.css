@@ -2574,7 +2574,6 @@ body:has(.mega-menu-open) .page-return { visibility: hidden; }
 .article-shell,
 .article-hero,
 .article-layout,
-.article-gallery,
 .article-next {
   width: min(1160px, calc(100% - 2rem));
   margin-inline: auto;
@@ -2628,7 +2627,6 @@ body:has(.mega-menu-open) .page-return { visibility: hidden; }
 
 .article-content h2,
 .article-note h2,
-.article-gallery h2,
 .article-next h2 {
   margin: 0;
   font-family: Georgia, serif;
@@ -2668,43 +2666,6 @@ body:has(.mega-menu-open) .page-return { visibility: hidden; }
   color: var(--wine);
   font-weight: 800;
   line-height: 1.35;
-}
-
-.article-gallery {
-  display: grid;
-  gap: 1.2rem;
-  padding: 0 0 4rem;
-}
-
-.article-gallery > div:last-child {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 1rem;
-}
-
-.article-gallery figure {
-  margin: 0;
-}
-
-.article-gallery img {
-  width: 100%;
-  aspect-ratio: 4 / 3;
-  height: auto;
-  border-radius: 1rem;
-  object-fit: cover;
-  box-shadow: var(--shadow);
-}
-
-.article-gallery-uncropped img {
-  aspect-ratio: auto;
-  object-fit: contain;
-}
-
-.article-gallery figcaption {
-  margin-top: 0.65rem;
-  color: var(--muted);
-  font-size: 0.92rem;
-  line-height: 1.5;
 }
 
 .article-next {
@@ -2768,7 +2729,6 @@ main > :where(
     .ny-faq,
     .ny-related,
     .article-layout,
-    .article-gallery,
     .article-next
   ) {
   margin-top: var(--section-space);
@@ -2866,7 +2826,6 @@ main > .breadcrumbs + .ny-hero {
   .content-grid,
   .process ol,
   .gallery-strip,
-  .article-gallery > div:last-child,
   .article-next > div,
   .lead-form-grid,
   .ny-proof,

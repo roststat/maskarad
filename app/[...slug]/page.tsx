@@ -268,23 +268,6 @@ export default async function ContentPage({ params }: Params) {
 
           <SectionTransition path={contentPagePath} moment="next" />
 
-          {page.gallery && (
-            <section className="article-gallery">
-              <div>
-                <span className="eyebrow">Фото</span>
-                <h2>Визуальные опоры страницы</h2>
-              </div>
-              <div>
-                {page.gallery.map((item) => (
-                  <figure key={item.src + item.caption} className={item.src === uncroppedWinterPhoto ? "article-gallery-uncropped" : undefined}>
-                    <Image src={item.src} alt={item.alt} width={item.src === uncroppedWinterPhoto ? 1024 : 520} height={item.src === uncroppedWinterPhoto ? 858 : 360} />
-                    <figcaption>{item.caption}</figcaption>
-                  </figure>
-                ))}
-              </div>
-            </section>
-          )}
-
           {page.nextSteps && (
             <section className="article-next">
               <span className="eyebrow">Что выбрать дальше</span>
