@@ -1,0 +1,140 @@
+{
+  "checked_at_moscow": "2026-10-14",
+  "summary": {
+    "sitemap_count": 123,
+    "bad_status": [],
+    "canonical_errors": [],
+    "h1_errors": [],
+    "noindex": [],
+    "duplicates": {
+      "title": {},
+      "description": {}
+    },
+    "unreachable": [
+      "/dlya-detey",
+      "/dlya-vzroslyh",
+      "/prazdniki/vypusknoy-v-detskom-sadu",
+      "/prazdniki/vypusknoy-v-nachalnoy-shkole",
+      "/prazdniki/vypusknoy-v-11-klasse",
+      "/prazdniki/maslenitsa",
+      "/prazdniki/vypusknoy-v-stile-fashion",
+      "/uslugi/pozdravitelnaya-pesnya",
+      "/uslugi/detskiy-tort",
+      "/uslugi/shou-s-zhivotnymi",
+      "/prazdniki/detskiy-prazdnik-na-teplohode",
+      "/prazdniki/individualnyy-detskiy-prazdnik",
+      "/prazdniki/obrazovatelnyy-detskiy-prazdnik"
+    ],
+    "broken_anchors": [],
+    "og_url_mismatch": [
+      "https://maskarad-teatr.ru/prazdniki/korporativnyy-novogodniy-prazdnik"
+    ],
+    "missing_alt": 0
+  },
+  "reachable_count": 110,
+  "incoming_orphan_pages": {
+    "/dlya-detey": [],
+    "/dlya-vzroslyh": [],
+    "/prazdniki/vypusknoy-v-detskom-sadu": [],
+    "/prazdniki/vypusknoy-v-nachalnoy-shkole": [],
+    "/prazdniki/vypusknoy-v-11-klasse": [],
+    "/prazdniki/maslenitsa": [],
+    "/prazdniki/vypusknoy-v-stile-fashion": [],
+    "/uslugi/pozdravitelnaya-pesnya": [],
+    "/uslugi/detskiy-tort": [],
+    "/uslugi/shou-s-zhivotnymi": [],
+    "/prazdniki/detskiy-prazdnik-na-teplohode": [],
+    "/prazdniki/individualnyy-detskiy-prazdnik": [],
+    "/prazdniki/obrazovatelnyy-detskiy-prazdnik": []
+  },
+  "variants": [
+    {
+      "url": "http://maskarad-teatr.ru/",
+      "status": 301,
+      "location": "https://maskarad-teatr.ru/"
+    },
+    {
+      "url": "http://www.maskarad-teatr.ru/",
+      "status": 301,
+      "location": "https://www.maskarad-teatr.ru/"
+    },
+    {
+      "url": "https://maskarad-teatr.ru/?utm_source=audit",
+      "status": 200,
+      "location": null
+    },
+    {
+      "url": "https://maskarad-teatr.ru/__seo-audit-not-found-20261014",
+      "status": 404,
+      "location": null
+    },
+    {
+      "url": "https://maskarad-teatr.ru/cookie-policy",
+      "status": 200,
+      "location": null
+    },
+    {
+      "url": "https://maskarad-teatr.ru/detskii-prazdnik/__seo-audit-not-found-20261014",
+      "status": 308,
+      "location": "/spektakli"
+    },
+    {
+      "url": "https://maskarad-teatr.ru/markdown/spektakli/zolushka",
+      "status": 200,
+      "location": null
+    },
+    {
+      "url": "https://maskarad-teatr.ru/personal-data-consent",
+      "status": 200,
+      "location": null
+    },
+    {
+      "url": "https://maskarad-teatr.ru/privacy-policy",
+      "status": 200,
+      "location": null
+    },
+    {
+      "url": "https://maskarad-teatr.ru/robots.txt",
+      "status": 200,
+      "location": null
+    },
+    {
+      "url": "https://maskarad-teatr.ru/spektakli/",
+      "status": 308,
+      "location": "/spektakli"
+    },
+    {
+      "url": "https://maskarad-teatr.ru/spektakli/__seo-audit-not-found-20261014",
+      "status": 404,
+      "location": null
+    },
+    {
+      "url": "https://maskarad-teatr.ru/terms",
+      "status": 200,
+      "location": null
+    },
+    {
+      "url": "https://www.maskarad-teatr.ru/",
+      "status": 200,
+      "location": null
+    },
+    {
+      "url": "https://www.maskarad-teatr.ru/spektakli",
+      "status": 200,
+      "location": null
+    }
+  ],
+  "public_release_signs": {
+    "new_year_page_status": 200,
+    "new_year_page_title": "Новогодний детский праздник в Москве | Театр «Маскарад»",
+    "new_year_page_canonical": [
+      "https://maskarad-teatr.ru/prazdniki/novogodniy-detskiy-prazdnik"
+    ],
+    "operator_registry_present": true
+  },
+  "limits": [
+    "No server HEAD/BUILD_ID check",
+    "No search console or field performance data",
+    "No private data read"
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "checked_at_moscow": "2026-10-14",
+  "documents_checked": 16,
+  "local_links_checked": 154,
+  "broken_local_links": [],
+  "unique_candidate_ids": 20,
+  "preserved_Q_IDs": [
+    "Q07",
+    "Q10",
+    "Q15",
+    "Q19",
+    "Q23"
+  ],
+  "068_substeps": 4,
+  "register_unique_urls": 123,
+  "registry_equals_local_sitemap": true,
+  "existing_reinforcement_urls_verified": [
+    "/foto-video",
+    "/kejsy",
+    "/o-teatre",
+    "/otzyvy-pressa",
+    "/podboroki/novogodnie-programmy-dlya-detey",
+    "/prazdniki/detskiy-den-rozhdeniya",
+    "/prazdniki/detskiy-sad",
+    "/prazdniki/korporativnyy-novogodniy-prazdnik",
+    "/prazdniki/novogodniy-detskiy-prazdnik",
+    "/prazdniki/shkolnyy-prazdnik",
+    "/prazdniki/vypusknoy",
+    "/spektakli/novogodnie-spektakli",
+    "/stati/korporativnaya-elka-dlya-detey-sotrudnikov",
+    "/tseny"
+  ],
+  "009_unchanged": true,
+  "public_reachable_count": 110,
+  "local_reachable_count": 123,
+  "limits": [
+    "No measured demand",
+    "Model scenarios are fictional examples",
+    "No publication"
+  ]
+}
