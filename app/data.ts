@@ -1,5 +1,6 @@
 export const phone = "+7 995 121-94-67";
-export const phoneHref = "tel:+79951219467";
+export const phoneE164 = "+79951219467";
+export const phoneHref = `tel:${phoneE164}`;
 
 export const navItems = [
   { href: "/", label: "Главная" },

@@ -13,7 +13,8 @@ export function LegalPage({ title, children }: { title: string; children: React.
 
 export function OperatorDetails() {
   return <>
-    <p>Оператор персональных данных: {legalData.operator}, ИНН {legalData.inn}.</p>
-    <p>Адрес для обращений: {legalData.address}. Email: {legalData.email}. Телефон: +7 995 121-94-67.</p>
+    <p>Оператор персональных данных: {legalData.operator}.</p>
+    <p>Регистрационный номер записи в реестре операторов персональных данных Роскомнадзора: {legalData.registryNumber}. Основание внесения: {legalData.registryBasis}.</p>
+    <p>Адрес для обращений: {legalData.address}. Email: {legalData.email}. Телефон: {legalData.phone}.</p>
   </>;
 }

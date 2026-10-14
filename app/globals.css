@@ -1944,6 +1944,17 @@ body:has(.mega-menu-open) .page-return { visibility: hidden; }
 
 .footer-legal a { font-weight: 600; }
 
+.footer .footer-operator {
+  margin: 0.85rem 0 0;
+  font-size: 0.86rem;
+}
+
+.footer .footer-registry {
+  max-width: 34rem;
+  margin: 0.2rem 0 0;
+  font-size: 0.8rem;
+}
+
 .legal-page {
   width: min(100% - 2rem, 900px);
   margin: 2rem auto 5rem;

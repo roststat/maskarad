@@ -2,8 +2,12 @@ import { readFileSync } from "node:fs";
 
 const source = readFileSync(new URL("../../app/legal-data.ts", import.meta.url), "utf8");
 const unfinished = [
+  ["оператор", /operator:\s*"\[/],
+  ["регистрационный номер оператора", /registryNumber:\s*"\[/],
+  ["основание внесения в реестр", /registryBasis:\s*"\[/],
   ["адрес оператора", /address:\s*"\[/],
   ["email оператора", /email:\s*"\[/],
+  ["телефон оператора", /phone:\s*"\[/],
   ["хранилище заявок", /leadStorage:\s*"\[/],
   ["канал доставки заявок", /leadDelivery:\s*"\[/],
   ["срок хранения", /retention:\s*"\[/],

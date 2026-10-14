@@ -8,6 +8,7 @@ import { PartyAssistantWidget } from "./party-assistant-widget";
 import { CookieNotice } from "./cookie-notice";
 import { TheatreSpark, transitionText } from "./section-transition";
 import { PageStartLink } from "./page-start-link";
+import { legalData } from "./legal-data";
 
 export function Header() {
   return (
@@ -47,6 +48,8 @@ export function Footer() {
         <div>
           <strong>Театр праздника «Маскарад»</strong>
           <p>Спектакли, праздники и программы под ключ в Москве и Московской области.</p>
+          <p className="footer-operator">Оператор персональных данных: {legalData.operator}.</p>
+          <p className="footer-registry">Запись в реестре Роскомнадзора № {legalData.registryNumber}; {legalData.registryBasis}.</p>
         </div>
         <nav className="footer-legal" aria-label="Документы сайта">
           <Link href="/privacy-policy">Политика персональных данных</Link>

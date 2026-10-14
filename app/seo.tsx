@@ -1,5 +1,5 @@
 import { contentHubs, contentPages, type ContentHubPath, type ContentPagePath } from "./content-data";
-import { pages, type PagePath } from "./data";
+import { pages, phoneE164, type PagePath } from "./data";
 import { landingPages, type LandingPath } from "./landing-data";
 import { StickyBreadcrumbs } from "./sticky-breadcrumbs";
 
@@ -96,11 +96,11 @@ export function createOrganizationJsonLd() {
     "@id": `${siteUrl}#organization`,
     name: siteName,
     url: siteUrl,
-    telephone: "+79951219467",
+    telephone: phoneE164,
     areaServed: ["Москва", "Московская область"],
     contactPoint: {
       "@type": "ContactPoint",
-      telephone: "+79951219467",
+      telephone: phoneE164,
       contactType: "customer service",
       availableLanguage: "Russian"
     }
@@ -151,7 +151,7 @@ export function createWebPageJsonLd({
       "@id": `${siteUrl}#organization`,
       name: siteName,
       url: siteUrl,
-      telephone: "+79951219467",
+      telephone: phoneE164,
       areaServed: ["Москва", "Московская область"]
     },
     ...(image
@@ -201,7 +201,7 @@ export function createArticleJsonLd({
       "@id": `${siteUrl}#organization`,
       name: siteName,
       url: siteUrl,
-      telephone: "+79951219467"
+      telephone: phoneE164
     }
   };
 }
