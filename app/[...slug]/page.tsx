@@ -218,11 +218,6 @@ export default async function ContentPage({ params }: Params) {
               <span className="eyebrow">{page.kicker}</span>
               <h1>{page.title}</h1>
               <p>{page.intro}</p>
-              <div className="article-meta">
-                <span>Опубликовано: {formatDate(page.publishedAt)}</span>
-                <span>Обновлено: {formatDate(page.updatedAt)}</span>
-              </div>
-              <ContentDisclosure kind={page.kind} />
             </div>
             <figure className="landing-media">
               <Image src={page.image.src} alt={page.image.alt} width={680} height={480} priority />
@@ -576,39 +571,6 @@ function FaqSection({ items, title }: { items: { question: string; answer: strin
       </div>
     </section>
   );
-}
-
-function ContentDisclosure({ kind }: { kind: PortalContentPage["kind"] }) {
-  const disclosure =
-    kind === "case"
-      ? {
-          label: "Редакционный кейс",
-          text: "Материал показывает возможную структуру праздника и не выдается за подтвержденный отчет без отдельной отметки."
-        }
-      : kind === "collection"
-        ? {
-            label: "Подборка",
-            text: "Редакционный материал для выбора формата: сценарии, услуги и площадки нужно уточнять под дату, возраст и группу."
-          }
-        : {
-            label: "Гайд",
-            text: "Редакционный материал на основе структуры услуг и опыта выездного театра; финальные условия уточняются перед заявкой."
-          };
-
-  return (
-    <div className="content-disclosure">
-      <strong>{disclosure.label}</strong>
-      <span>{disclosure.text}</span>
-    </div>
-  );
-}
-
-function formatDate(value: string) {
-  return new Intl.DateTimeFormat("ru-RU", {
-    day: "numeric",
-    month: "long",
-    year: "numeric"
-  }).format(new Date(`${value}T00:00:00`));
 }
 
 function shouldShowMediaCaption(caption: string) {

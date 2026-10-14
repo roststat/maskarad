@@ -2601,43 +2601,6 @@ body:has(.mega-menu-open) .page-return { visibility: hidden; }
   line-height: 1.78;
 }
 
-.article-meta {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.55rem;
-  margin-top: 1.2rem;
-  color: var(--muted);
-  font-size: 0.92rem;
-}
-
-.article-meta span {
-  border: 1px solid var(--line);
-  border-radius: 999px;
-  padding: 0.45rem 0.75rem;
-  background: rgba(255, 255, 255, 0.72);
-}
-
-.content-disclosure {
-  display: grid;
-  gap: 0.25rem;
-  max-width: 44rem;
-  margin-top: 0.95rem;
-  padding: 0.85rem 1rem;
-  border: 1px solid rgba(91, 24, 51, 0.12);
-  border-radius: 0.85rem;
-  background: rgba(255, 255, 255, 0.72);
-  color: var(--muted);
-  font-size: 0.9rem;
-  line-height: 1.45;
-}
-
-.content-disclosure strong {
-  color: var(--wine);
-  font-size: 0.78rem;
-  letter-spacing: 0;
-  text-transform: uppercase;
-}
-
 .article-layout {
   display: grid;
   grid-template-columns: minmax(0, 1fr) 18rem;
