@@ -395,7 +395,12 @@ export default async function ContentPage({ params }: Params) {
   if (landingPath) {
     const page = landingPages[landingPath];
     const faq = fiveFaq(page.faq, page.sections);
-    const pagePhotos = landingPath === "/spektakli/novogodnie-spektakli" ? newYearShowPhotos : undefined;
+    const pagePhotos =
+      landingPath === "/spektakli/novogodnie-spektakli" || landingPath === "/prazdniki/novogodniy-detskiy-prazdnik"
+        ? newYearShowPhotos
+        : undefined;
+    const miniGalleryPhotos =
+      landingPath === "/prazdniki/novogodniy-detskiy-prazdnik" ? newYearShowPhotos.slice(0, 4) : pagePhotos;
     const suppliedPhoto = photosForPage(landingPath)[0];
     const media = suppliedPhoto ? { ...suppliedPhoto, caption: suppliedPhoto.alt } : page.media;
     const breadcrumbs = buildBreadcrumbs(landingPath);
@@ -439,7 +444,7 @@ export default async function ContentPage({ params }: Params) {
           )}
         </section>
 
-        <MiniGallery path={landingPath} photos={pagePhotos} />
+        <MiniGallery path={landingPath} photos={miniGalleryPhotos} />
 
         <section className="landing-facts" aria-label="Коротко о программе">
           {page.facts.map((fact) => (

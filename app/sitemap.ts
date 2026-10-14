@@ -6,10 +6,12 @@ import { landingPages } from "./landing-data";
 const base = "https://maskarad-teatr.ru";
 const defaultUpdatedAt = new Date("2026-10-04");
 const homeUpdatedAt = new Date("2026-10-09");
+const newYearChildrensPartyUpdatedAt = new Date("2026-10-14");
 // Substantive programme photos and the corporate offer released on 9 October.
 const photoReleasePaths = new Set([
   "/foto-video",
   "/prazdniki/korporativnyy-novogodniy-prazdnik",
+  "/prazdniki/novogodniy-detskiy-prazdnik",
   "/prazdniki/maslenitsa",
   "/spektakli/alisa-v-strane-chudes",
   "/spektakli/madagaskar",
@@ -28,6 +30,7 @@ const photoReleasePaths = new Set([
   "/uslugi/shou-mylnyh-puzyrey"
 ]);
 function pageUpdatedAt(path: string) {
+  if (path === "/prazdniki/novogodniy-detskiy-prazdnik") return newYearChildrensPartyUpdatedAt;
   return photoReleasePaths.has(path) ? homeUpdatedAt : defaultUpdatedAt;
 }
 
