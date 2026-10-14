@@ -3,7 +3,7 @@ import { PageStartLink as Link } from "../../page-start-link";
 import { MiniGallery } from "../../mini-gallery";
 import { SectionTransition } from "../../section-transition";
 import { CorporatePhoto } from "../../corporate-photo";
-import { corporatePhotos } from "../../corporate-photos";
+import { newYearShowPhotos } from "../../new-year-show-photos";
 import { CorporateNewYearRequest } from "../../corporate-new-year-request";
 import { CorporateRequestButton } from "../../corporate-request-button";
 import { phone, phoneHref } from "../../data";
@@ -23,13 +23,13 @@ export const metadata: Metadata = {
 };
 
 const formats = [
-  { title: "Интерактивный спектакль с Дедом Морозом и Снегурочкой", photo: "new-year-cast", caption: "Команда новогоднего спектакля" },
-  { title: "Сценарий под возраст детей и формат компании", photo: "new-year-confetti", caption: "Дети участвуют в новогодней игре" },
-  { title: "Мастер-классы: роспись игрушек, открытки, творческие станции", photo: "new-year-olaf-snowball", caption: "Игровая зона с Олафом" },
-  { title: "Тематические шоу, фото, видео, оформление и сладкий стол", photo: "new-year-elsa-reindeer", caption: "Новогодняя фотозона со сказочными героями" }
+  { title: "Интерактивный спектакль с Дедом Морозом и Снегурочкой", photo: "new-year-cast-and-children", caption: "Команда новогоднего спектакля с детьми" },
+  { title: "Сценарий под возраст детей и формат компании", photo: "new-year-round-dance", caption: "Дети участвуют в новогоднем хороводе" },
+  { title: "Мастер-классы: роспись игрушек, открытки, творческие станции", photo: "ded-moroz-bunny-game", caption: "Новогодняя игра с Дедом Морозом" },
+  { title: "Тематические шоу, фото, видео, оформление и сладкий стол", photo: "snegurochka-and-reindeer", caption: "Новогодняя фотозона со Снегурочкой" }
 ] as const;
 
-const newYearPhotos = Object.values(corporatePhotos);
+const secondSectionPhotos = newYearShowPhotos.slice(0, 4);
 
 const places = ["офис", "ресторан", "лофт", "ДК", "школа", "детский центр", "банкетный зал", "загородная площадка"];
 
@@ -82,7 +82,7 @@ export default function CorporateNewYearPage() {
           </div>
         </div>
         <div className="ny-hero-visual">
-          <CorporatePhoto photo="corporate-alice-group" eager className="ny-hero-photo" caption="Дети и герои театральной программы" />
+          <CorporatePhoto photo="new-year-main-celebration" eager className="ny-hero-photo" caption="Корпоративная новогодняя ёлка с Дедом Морозом, Снегурочкой и сказочными героями" />
           <aside className="ny-card" aria-label="Что входит">
           <p>Один праздник — индивидуальный состав. Обсудим задачу компании, площадку и участие детей.</p>
           <ul>
@@ -95,25 +95,25 @@ export default function CorporateNewYearPage() {
         </div>
       </section>
 
-      <MiniGallery path={pagePath} photos={newYearPhotos} />
+      <MiniGallery path={pagePath} photos={secondSectionPhotos} />
 
       <CorporateNewYearRequest />
 
       <section className="ny-proof">
         <article>
-          <CorporatePhoto photo="new-year-confetti" sizes="(max-width: 760px) calc(100vw - 32px), 360px" />
+          <CorporatePhoto photo="new-year-round-dance" sizes="(max-width: 760px) calc(100vw - 32px), 360px" />
           <span>01</span>
           <h2>Не набор конкурсов</h2>
           <p>У праздника есть сюжет, роли, переходы и финал. Дети не просто ждут подарки, а проходят историю вместе с героями.</p>
         </article>
         <article>
-          <CorporatePhoto photo="new-year-cast-venue" sizes="(max-width: 760px) calc(100vw - 32px), 360px" />
+          <CorporatePhoto photo="olaf-ded-moroz-confetti" sizes="(max-width: 760px) calc(100vw - 32px), 360px" />
           <span>02</span>
           <h2>Под конкретную площадку</h2>
           <p>Учитываем входы, звук, гардероб, подарки, фотозону, поток гостей и ограничения офисного или ресторанного пространства.</p>
         </article>
         <article>
-          <CorporatePhoto photo="new-year-cast" sizes="(max-width: 760px) calc(100vw - 32px), 360px" />
+          <CorporatePhoto photo="ded-moroz-snegurochka-children" sizes="(max-width: 760px) calc(100vw - 32px), 360px" />
           <span>03</span>
           <h2>С режиссурой</h2>
           <p>Программу собирает команда театра: актерская подача, темп, внимание к детям и мягкое управление группой.</p>
@@ -152,12 +152,12 @@ export default function CorporateNewYearPage() {
             ))}
           </ul>
         </div>
-        <CorporatePhoto photo="new-year-cast-venue" caption="Новогодние герои на площадке заказчика" />
+        <CorporatePhoto photo="ded-moroz-snegurochka-children" caption="Новогодние герои на площадке заказчика" />
       </section>
 
       <section className="ny-section ny-photo-pair" aria-label="Театральные детали и реквизит">
-        <CorporatePhoto photo="new-year-confetti" caption="Новогодняя игра с детьми и конфетти" />
-        <CorporatePhoto photo="new-year-olaf-snowball" caption="Олаф и реквизит для зимней игры" />
+        <CorporatePhoto photo="olaf-ded-moroz-confetti" caption="Новогодняя встреча с детьми и конфетти" />
+        <CorporatePhoto photo="ded-moroz-bunny-game" caption="Дед Мороз и сказочный Заяц проводят игру" />
       </section>
 
       <SectionTransition path={pagePath} />
@@ -210,14 +210,13 @@ export default function CorporateNewYearPage() {
           <Link className="button ghost" href="/foto-video">Посмотреть все фотографии театра</Link>
         </div>
         <div className="ny-photo-gallery-grid">
-          <CorporatePhoto photo="new-year-elsa-reindeer" caption="Эльза и Свен в новогодней декорации" />
-          <CorporatePhoto photo="new-year-confetti" caption="Новогодняя игра с детьми и конфетти" />
-          <CorporatePhoto photo="new-year-olaf-snowball" caption="Олаф проводит зимнюю игру" />
-          <CorporatePhoto photo="new-year-cast" caption="Команда новогоднего спектакля" />
-          <CorporatePhoto photo="new-year-cast-venue" caption="Герои программы на праздничной площадке" />
-          <CorporatePhoto photo="corporate-aladdin-camel" caption="Актёры восточной сказочной программы" />
-          <CorporatePhoto photo="corporate-alice-group" caption="Дети и герои программы по мотивам Алисы" />
-          <CorporatePhoto photo="new-year-elsa-reindeer-second" caption="Эльза и Свен в праздничной фотозоне" />
+          <CorporatePhoto photo="new-year-cast-and-children" caption="Команда новогоднего спектакля с детьми" />
+          <CorporatePhoto photo="new-year-round-dance" caption="Новогодний хоровод с детьми" />
+          <CorporatePhoto photo="snegurochka-and-reindeer" caption="Снегурочка и сказочный северный олень" />
+          <CorporatePhoto photo="olaf-ded-moroz-confetti" caption="Олаф и Дед Мороз встречают детей" />
+          <CorporatePhoto photo="ded-moroz-snegurochka-children" caption="Дед Мороз и Снегурочка с детьми" />
+          <CorporatePhoto photo="ded-moroz-bunny-game" caption="Новогодняя игра с Дедом Морозом" />
+          <CorporatePhoto photo="frozen-cast" caption="Герои зимней сказки" />
         </div>
       </section>
 
@@ -245,7 +244,7 @@ export default function CorporateNewYearPage() {
 
       <SectionTransition path={pagePath} moment="request" />
       <section className="ny-final-request">
-        <CorporatePhoto photo="new-year-cast-venue" className="ny-final-photo" />
+        <CorporatePhoto photo="frozen-cast" className="ny-final-photo" />
         <div>
         <span className="eyebrow">Начнём с вашей задачи</span>
         <h2>Какая ёлка нужна вашей компании?</h2>
