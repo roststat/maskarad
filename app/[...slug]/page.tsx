@@ -36,6 +36,8 @@ type Params = {
   params: Promise<{ slug: string[] }>;
 };
 
+const uncroppedWinterPhoto = "/images/winter/ded-moroz-snegurochka-stage.webp";
+
 function createSocialMetadata({
   path,
   title,
@@ -219,8 +221,8 @@ export default async function ContentPage({ params }: Params) {
               <h1>{page.title}</h1>
               <p>{page.intro}</p>
             </div>
-            <figure className="landing-media">
-              <Image src={page.image.src} alt={page.image.alt} width={680} height={480} priority />
+            <figure className={page.image.src === uncroppedWinterPhoto ? "landing-media landing-media--uncropped" : "landing-media"}>
+              <Image src={page.image.src} alt={page.image.alt} width={page.image.src === uncroppedWinterPhoto ? 1024 : 680} height={page.image.src === uncroppedWinterPhoto ? 858 : 480} priority />
               <figcaption>{page.image.caption}</figcaption>
             </figure>
           </header>
@@ -274,8 +276,8 @@ export default async function ContentPage({ params }: Params) {
               </div>
               <div>
                 {page.gallery.map((item) => (
-                  <figure key={item.src + item.caption}>
-                    <Image src={item.src} alt={item.alt} width={520} height={360} />
+                  <figure key={item.src + item.caption} className={item.src === uncroppedWinterPhoto ? "article-gallery-uncropped" : undefined}>
+                    <Image src={item.src} alt={item.alt} width={item.src === uncroppedWinterPhoto ? 1024 : 520} height={item.src === uncroppedWinterPhoto ? 858 : 360} />
                     <figcaption>{item.caption}</figcaption>
                   </figure>
                 ))}

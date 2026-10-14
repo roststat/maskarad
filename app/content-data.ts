@@ -1319,8 +1319,8 @@ export const contentPages = {
         caption: "Кукольный формат хорошо подходит для младших и средних групп."
       },
       {
-        src: "/images/legacy/novogodnie-spektakli.jpg",
-        alt: "Новогодняя программа для детского сада",
+        src: "/images/winter/ded-moroz-snegurochka-stage.webp",
+        alt: "Дед Мороз и Снегурочка на сцене новогоднего праздника",
         caption: "Садовые праздники часто требуют сезонного сценария и понятного финала."
       }
     ],
@@ -1709,9 +1709,9 @@ export const contentPages = {
     publishedAt: "2026-10-04",
     updatedAt: "2026-10-14",
     image: {
-      src: "/images/legacy/novogodnie-spektakli.jpg",
-      alt: "Новогодний спектакль для детей",
-      caption: "Новогодние программы лучше работают, когда спектакль, герои и финал связаны одной историей."
+      src: "/images/winter/ded-moroz-snegurochka-stage.webp",
+      alt: "Дед Мороз и Снегурочка на сцене новогоднего праздника",
+      caption: "Дед Мороз и Снегурочка в зимней театральной декорации."
     },
     facts: ["три новогодних сюжета", "для разного возраста", "состав под задачу"],
     sections: [
@@ -1734,9 +1734,9 @@ export const contentPages = {
     },
     gallery: [
       {
-        src: "/images/legacy/novogodnie-spektakli.jpg",
-        alt: "Новогодний спектакль для детской елки",
-        caption: "Спектакль дает празднику сюжет и удерживает внимание группы."
+        src: "/images/winter/ded-moroz-snegurochka-stage.webp",
+        alt: "Дед Мороз и Снегурочка на сцене новогоднего праздника",
+        caption: "Зимние герои могут стать частью общего финала праздника."
       },
       {
         src: "/images/legacy/novogodnyaya-belosnezhka.jpg",
@@ -2732,8 +2732,8 @@ export const contentPages = {
     publishedAt: "2026-10-04",
     updatedAt: "2026-10-04",
     image: {
-      src: "/images/legacy/novogodnie-spektakli.jpg",
-      alt: "Зимний детский праздник с новогодним спектаклем",
+      src: "/images/winter/ded-moroz-snegurochka-stage.webp",
+      alt: "Дед Мороз и Снегурочка на сцене зимнего детского праздника",
       caption: "Зимой особенно важны помещение, короткий монтаж, понятный тайминг и запасной сценарий."
     },
     facts: ["зимний сезон", "помещение и дорога", "новогодние форматы"],
@@ -2757,9 +2757,9 @@ export const contentPages = {
     },
     gallery: [
       {
-        src: "/images/legacy/novogodnie-spektakli.jpg",
-        alt: "Новогодний спектакль для детей зимой",
-        caption: "Новогодний спектакль закрывает самый частый зимний сценарий."
+        src: "/images/winter/ded-moroz-snegurochka-stage.webp",
+        alt: "Дед Мороз и Снегурочка на сцене зимнего детского праздника",
+        caption: "Зимний сценический формат помогает собрать праздник в цельную историю."
       },
       {
         src: "/images/legacy/novogodnyaya-belosnezhka.jpg",

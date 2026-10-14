@@ -2497,6 +2497,11 @@ body:has(.mega-menu-open) .page-return { visibility: hidden; }
   box-shadow: var(--shadow);
 }
 
+.landing-media--uncropped img {
+  aspect-ratio: auto;
+  object-fit: contain;
+}
+
 .landing-media figcaption {
   margin-top: 0.75rem;
   color: var(--muted);
@@ -2688,6 +2693,11 @@ body:has(.mega-menu-open) .page-return { visibility: hidden; }
   border-radius: 1rem;
   object-fit: cover;
   box-shadow: var(--shadow);
+}
+
+.article-gallery-uncropped img {
+  aspect-ratio: auto;
+  object-fit: contain;
 }
 
 .article-gallery figcaption {
