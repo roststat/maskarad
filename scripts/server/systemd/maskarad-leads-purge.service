@@ -13,5 +13,5 @@ NoNewPrivileges=true
 PrivateTmp=true
 ProtectSystem=strict
 ProtectHome=true
-ReadWritePaths=/opt/maskarad/private/leads
+ReadWritePaths=/opt/maskarad/private/leads /opt/maskarad/private/analytics
 
