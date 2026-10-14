@@ -1,5 +1,5 @@
-import { scryptSync, timingSafeEqual } from "node:crypto";
 import { listLeads } from "../../api/leads/storage";
+import { ownerAuthorized } from "../owner-auth";
 
 export const runtime = "nodejs";
 
@@ -12,7 +12,7 @@ const privateHeaders = {
 };
 
 export async function GET(request: Request) {
-  if (!authorized(request.headers.get("authorization"))) {
+  if (!ownerAuthorized(request.headers.get("authorization"))) {
     return new Response("Для просмотра заявок нужен доступ владельца.", {
       status: 401,
       headers: { ...privateHeaders, "WWW-Authenticate": 'Basic realm="Maskarad leads", charset="UTF-8"' }
@@ -31,21 +31,6 @@ export async function GET(request: Request) {
   } catch {
     return new Response("Хранилище заявок недоступно.", { status: 503, headers: privateHeaders });
   }
-}
-
-function authorized(header: string | null) {
-  const configured = process.env.LEAD_ADMIN_PASSWORD_HASH;
-  if (!configured || !header?.startsWith("Basic ") || header.length > 512) return false;
-  const [salt, expectedHex] = configured.split(":");
-  if (!/^[a-f0-9]{32}$/.test(salt || "") || !/^[a-f0-9]{128}$/.test(expectedHex || "")) return false;
-  let credentials: string;
-  try { credentials = Buffer.from(header.slice(6), "base64").toString("utf8"); }
-  catch { return false; }
-  const separator = credentials.indexOf(":");
-  if (separator < 0 || credentials.slice(0, separator) !== "owner") return false;
-  const actual = scryptSync(credentials.slice(separator + 1), salt, 64);
-  const expected = Buffer.from(expectedHex, "hex");
-  return timingSafeEqual(actual, expected);
 }
 
 function escapeHtml(value: string) {

@@ -80,15 +80,15 @@ export function LeadForm({ label, message = "", successText, eventCategory }: Le
         setStatus("sent");
         form.reset();
         setConsent(false);
-        if (eventCategory) reportLeadEvent("lead_saved", eventCategory);
+        reportLeadEvent("lead_saved", eventCategory);
         return;
       }
 
       setStatus(result.stored ? "stored" : "fallback");
-      if (eventCategory) reportLeadEvent("lead_error", eventCategory);
+      reportLeadEvent("lead_error", eventCategory);
     } catch {
       setStatus("fallback");
-      if (eventCategory) reportLeadEvent("lead_error", eventCategory);
+      reportLeadEvent("lead_error", eventCategory);
     } finally {
       submitting.current = false;
     }

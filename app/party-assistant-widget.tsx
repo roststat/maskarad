@@ -7,6 +7,7 @@ import { consentVersion } from "./legal-data";
 import { usePathname } from "next/navigation";
 import { buildOrganizerMessage, corporateGuestLabel, corporateGuestOptions, corporateMessageIntro, corporatePagePath, type CorporateGuestScale } from "./corporate-request-data";
 import { reportLeadEvent } from "./lead-analytics";
+import { trackFirstPartyEvent } from "./first-party-analytics";
 
 type Recognition = {
   lang: string;
@@ -33,6 +34,7 @@ export function PartyAssistantProvider({ children }: { children: ReactNode }) {
     setCorporate(options?.corporate ?? pathname === corporatePagePath);
     if (options?.guests) setGuests(options.guests);
     setOpen(true);
+    trackFirstPartyEvent("lead_open", options?.corporate || pathname === corporatePagePath ? { offer: "corporate_new_year" } : {});
   }, [pathname]);
   const close = useCallback(() => setOpen(false), []);
   return <PartyAssistantContext.Provider value={show}>{children}<PartyAssistantDialog open={open} onClose={close} corporate={corporate} guests={guests} onGuestsChange={setGuests} /></PartyAssistantContext.Provider>;
@@ -209,15 +211,15 @@ function PartyAssistantDialog({ open, onClose, corporate, guests, onGuestsChange
       if (!response.ok) {
         if (result.stored) {
           setStatus("Запрос сохранён на сайте, но уведомление организатору не доставлено. Если вопрос срочный, позвоните нам.");
-          if (corporate) reportLeadEvent("lead_error", "corporate_new_year");
+          reportLeadEvent("lead_error", corporate ? "corporate_new_year" : undefined);
           return;
         }
         throw new Error("lead_failed");
       }
       setSent(true);
       setStatus("Запрос отправлен организатору. Скоро свяжемся с вами.");
-      if (corporate) reportLeadEvent("lead_saved", "corporate_new_year");
-    } catch { setStatus("Не удалось отправить запрос. Попробуйте ещё раз или позвоните нам."); if (corporate) reportLeadEvent("lead_error", "corporate_new_year"); }
+      reportLeadEvent("lead_saved", corporate ? "corporate_new_year" : undefined);
+    } catch { setStatus("Не удалось отправить запрос. Попробуйте ещё раз или позвоните нам."); reportLeadEvent("lead_error", corporate ? "corporate_new_year" : undefined); }
     finally { setBusy(false); }
   }
 

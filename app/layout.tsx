@@ -5,6 +5,7 @@ import { JsonLd, createOrganizationJsonLd, createWebsiteJsonLd } from "./seo";
 import { YandexMetrica } from "./yandex-metrica";
 import { PhotoViewerProvider } from "./photo-viewer";
 import { PageStartProvider } from "./page-start-link";
+import { FirstPartyAnalytics } from "./first-party-analytics";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -61,6 +62,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
       <body>
         <JsonLd data={[createOrganizationJsonLd(), createWebsiteJsonLd()]} />
         <YandexMetrica />
+        <FirstPartyAnalytics />
         <noscript><div><img src="https://mc.yandex.ru/watch/113579092" style={{ position: "absolute", left: -9999 }} alt="" /></div></noscript>
         <PageStartProvider><PartyAssistantProvider>
           <Header />
