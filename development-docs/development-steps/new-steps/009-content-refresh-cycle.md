@@ -37,7 +37,7 @@
 | 1 | 2026-10-09 | `/` |
 | 2 | 2026-10-12 | `/prazdniki/korporativnyy-novogodniy-prazdnik` |
 | 3 | 2026-10-13 | `/spektakli/novogodnie-spektakli` |
-| 4 | 2026-10-15 | `/podboroki/novogodnie-programmy-dlya-detey` |
+| 4 | 2026-10-15 (проверка результата, содержательная редакция подготовлена 14.10) | `/podboroki/novogodnie-programmy-dlya-detey` |
 | 5 | 2026-10-16 | `/spektakli/novogodnyy-ekspress` |
 | 6 | 2026-10-19 | `/spektakli/novyy-god-na-snezhnoy-planete` |
 | 7 | 2026-10-20 | `/spektakli/novogodnyaya-belosnezhka` |

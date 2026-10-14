@@ -87,7 +87,7 @@ export function LeadForm({ label, message = "", successText, eventCategory }: Le
       }
 
       setStatus(result.stored ? "stored" : "fallback");
-      reportLeadEvent("lead_error", eventCategory);
+      reportLeadEvent(result.stored ? "lead_stored" : "lead_error", eventCategory);
     } catch {
       setStatus("fallback");
       reportLeadEvent("lead_error", eventCategory);

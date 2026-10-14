@@ -771,7 +771,7 @@ body:has(.mega-menu-open) .page-return { visibility: hidden; }
   width: 1.35rem;
   height: 1.15rem;
   flex: 0 0 1.35rem;
-  background: url("/images/legacy/maskarad-mask-transparent.png") center / contain no-repeat;
+  background: url("/images/legacy/maskarad-mask-96.webp") center / contain no-repeat;
 }
 
 .hero-actions {

@@ -3,7 +3,7 @@
 import { usePathname } from "next/navigation";
 import { useEffect, useRef } from "react";
 
-type GoalEvent = "lead_open" | "lead_saved" | "lead_error" | "program_select" | "contact_click";
+type GoalEvent = "lead_open" | "lead_saved" | "lead_stored" | "lead_error" | "program_select" | "contact_click";
 type GoalDetail = { event: GoalEvent; offer?: "corporate_new_year"; target?: "phone" | "email" | "messenger" };
 type Attribution = { source: string; utmSource?: string; utmMedium?: string; utmCampaign?: string };
 

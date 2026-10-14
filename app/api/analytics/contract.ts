@@ -1,4 +1,4 @@
-export const analyticsEvents = ["page_view", "active_time", "lead_open", "lead_saved", "lead_error", "program_select", "contact_click"] as const;
+export const analyticsEvents = ["page_view", "active_time", "lead_open", "lead_saved", "lead_stored", "lead_error", "program_select", "contact_click"] as const;
 export type AnalyticsEventName = typeof analyticsEvents[number];
 export type AnalyticsInput = {
   event: AnalyticsEventName;

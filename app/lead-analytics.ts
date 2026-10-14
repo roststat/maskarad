@@ -3,7 +3,7 @@
 import { trackFirstPartyEvent } from "./first-party-analytics";
 
 export function reportLeadEvent(
-  event: "lead_saved" | "lead_error" | "program_select",
+  event: "lead_saved" | "lead_stored" | "lead_error" | "program_select",
   category?: "corporate_new_year",
 ) {
   trackFirstPartyEvent(event, category ? { offer: category } : {});

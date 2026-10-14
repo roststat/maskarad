@@ -34,7 +34,7 @@ export function MiniGallery({ path, photos: suppliedPhotos }: { path: string; ph
       <div className="mini-gallery-photos" style={{ "--mini-photo-count": photos.length } as CSSProperties}>
         {photos.map((photo, index) => (
           <PhotoOpenButton key={photo.src} photos={photos} index={index}>
-            <Image src={photo.src} alt={photo.alt} width={photo.width} height={photo.height} sizes="(max-width: 600px) 45vw, (max-width: 1200px) 23vw, 280px" loading="lazy" />
+            <Image src={photo.src} alt={photo.alt} width={photo.width} height={photo.height} sizes={photos.length === 3 && index === 2 ? "(max-width: 600px) calc(100vw - 32px), (max-width: 1200px) 23vw, 280px" : "(max-width: 600px) 45vw, (max-width: 1200px) 23vw, 280px"} quality={65} loading="lazy" />
           </PhotoOpenButton>
         ))}
       </div>

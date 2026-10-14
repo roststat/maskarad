@@ -217,7 +217,7 @@ function PartyAssistantDialog({ open, onClose, corporate, guests, onGuestsChange
       if (!response.ok) {
         if (result.stored) {
           setStatus("Запрос сохранён на сайте, но уведомление организатору не доставлено. Если вопрос срочный, позвоните нам.");
-          reportLeadEvent("lead_error", corporate ? "corporate_new_year" : undefined);
+          reportLeadEvent("lead_stored", corporate ? "corporate_new_year" : undefined);
           return;
         }
         throw new Error("lead_failed");
