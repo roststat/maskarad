@@ -8,6 +8,7 @@ import { usePathname } from "next/navigation";
 import { buildOrganizerMessage, corporateGuestLabel, corporateGuestOptions, corporateMessageIntro, corporatePagePath, type CorporateGuestScale } from "./corporate-request-data";
 import { reportLeadEvent } from "./lead-analytics";
 import { trackFirstPartyEvent } from "./first-party-analytics";
+import { LeadSuccessContent } from "./lead-success-dialog";
 
 type Recognition = {
   lang: string;
@@ -86,6 +87,7 @@ function PartyAssistantDialog({ open, onClose, corporate, guests, onGuestsChange
   const textareaRef = useRef<HTMLTextAreaElement>(null);
   const cardRef = useRef<HTMLDivElement>(null);
   const recognitionRef = useRef<Recognition | null>(null);
+  const successActionRef = useRef<HTMLButtonElement>(null);
 
   useLayoutEffect(() => {
     const textarea = textareaRef.current;
@@ -133,6 +135,10 @@ function PartyAssistantDialog({ open, onClose, corporate, guests, onGuestsChange
   }, [open, onClose]);
 
   useEffect(() => { setSent(false); setStatus(""); }, [corporate, guests]);
+
+  useEffect(() => {
+    if (sent) successActionRef.current?.focus();
+  }, [sent]);
 
   function dictate() {
     if (listening) { recognitionRef.current?.stop(); return; }
@@ -218,12 +224,22 @@ function PartyAssistantDialog({ open, onClose, corporate, guests, onGuestsChange
       }
       setSent(true);
       setStatus("Запрос отправлен организатору. Скоро свяжемся с вами.");
+      setMessage("");
+      setName("");
+      setPhone("");
+      setConsent(false);
       reportLeadEvent("lead_saved", corporate ? "corporate_new_year" : undefined);
     } catch { setStatus("Не удалось отправить запрос. Попробуйте ещё раз или позвоните нам."); reportLeadEvent("lead_error", corporate ? "corporate_new_year" : undefined); }
     finally { setBusy(false); }
   }
 
   if (!open || typeof document === "undefined") return null;
+  if (sent) return createPortal(<div className="party-modal lead-success-dialog ym-hide-content" role="dialog" aria-modal="true" aria-label="Запрос отправлен" onMouseDown={onClose}>
+    <div className="party-modal-card lead-success-card" ref={cardRef} onMouseDown={(event) => event.stopPropagation()}>
+      <button className="party-modal-close" type="button" onClick={onClose} aria-label="Закрыть окно">×</button>
+      <LeadSuccessContent message={status || "Мы получили ваш запрос и скоро свяжемся с вами."} onClose={onClose} actionRef={successActionRef} />
+    </div>
+  </div>, document.body);
   return createPortal(<div className="party-modal ym-hide-content" role="dialog" aria-modal="true" aria-label="Запрос организатору" onMouseDown={onClose}>
     <div className="party-modal-card" ref={cardRef} onMouseDown={(event) => event.stopPropagation()}>
       <button className="party-modal-close" type="button" onClick={onClose} aria-label="Закрыть окно">×</button>

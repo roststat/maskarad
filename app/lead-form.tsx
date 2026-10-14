@@ -5,6 +5,7 @@ import { phoneHref } from "./data";
 import { consentVersion } from "./legal-data";
 import { usePartyAssistant } from "./party-assistant-widget";
 import { reportLeadEvent } from "./lead-analytics";
+import { LeadSuccessDialog } from "./lead-success-dialog";
 
 type LeadFormProps = {
   label: string;
@@ -79,6 +80,7 @@ export function LeadForm({ label, message = "", successText, eventCategory }: Le
       if (response.ok) {
         setStatus("sent");
         form.reset();
+        setLeadText("");
         setConsent(false);
         reportLeadEvent("lead_saved", eventCategory);
         return;
@@ -105,8 +107,10 @@ export function LeadForm({ label, message = "", successText, eventCategory }: Le
     }
   }
 
-  return (
-    <form className="lead-form ym-hide-content" onSubmit={submitLead} onChange={() => { if (status === "sent") setStatus("idle"); }}>
+  const successMessage = successText || "Мы получили вашу заявку и скоро свяжемся с вами. Если вопрос срочный, позвоните нам.";
+
+  return (<>
+    <form className="lead-form ym-hide-content" onSubmit={submitLead}>
       <div className="lead-form-grid">
         <label htmlFor={fields.name}>
           Имя
@@ -145,13 +149,13 @@ export function LeadForm({ label, message = "", successText, eventCategory }: Le
       {status !== "idle" && <p className="lead-form-status" aria-live="polite">
         {status === "error" && "Укажите телефон и подтвердите согласие на обработку данных."}
         {status === "sending" && "Пробуем отправить заявку через основной канал."}
-        {status === "sent" && (successText || "Заявка отправлена. Если вопрос срочный, лучше сразу позвонить.")}
         {status === "stored" && "Заявка сохранена на сайте, но уведомление организатору не доставлено. Если вопрос срочный, позвоните нам."}
         {status === "fallback" && "Не удалось сохранить заявку. Позвоните нам или скопируйте текст для себя."}
         {status === "copied" && "Текст заявки скопирован. Его можно отправить в любой удобный мессенджер."}
       </p>}
     </form>
-  );
+    <LeadSuccessDialog open={status === "sent"} message={successMessage} onClose={() => setStatus("idle")} />
+  </>);
 }
 
 export function BriefEntry() {
