@@ -1,0 +1,23 @@
+{
+  "date": "2026-10-15",
+  "commit": "36360ad",
+  "server_head_and_marker": "36360ad",
+  "deploy_result": "success",
+  "page_http": 200,
+  "sitemap_urls": 124,
+  "portrait_in_image_sitemap": true,
+  "robots": "index, follow, max-video-preview:-1, max-image-preview:large, max-snippet:-1",
+  "canonical": "https://maskarad-teatr.ru/o-teatre/anastasiya-emelyanova",
+  "schema_types": [
+    "BreadcrumbList",
+    "FAQPage",
+    "Organization",
+    "Person",
+    "ProfilePage",
+    "WebSite"
+  ],
+  "iframe_count": 5,
+  "googlebot_response": "200, no noindex",
+  "manual_recrawl_requested": false,
+  "manual_recrawl_limitation": "Browser tool stopped on prohibited current URL; no search-console request sent."
+}
