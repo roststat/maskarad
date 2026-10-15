@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   title,
   description,
   alternates: { canonical: path },
-  robots: { index: true, follow: true },
+  robots: { index: true, follow: true, "max-image-preview": "large", "max-snippet": -1, "max-video-preview": -1 },
   keywords: ["Анастасия Емельянова", "Анастасия Валерьевна Емельянова", "Анастасия Емельянова режиссёр", "художественный руководитель театра Маскарад"],
   openGraph: { type: "profile", firstName: "Анастасия", lastName: "Емельянова", title, description, url: path, locale: "ru_RU", siteName: "Театр «Маскарад»", images: [{ url: portrait, width: 640, height: 640, alt: "Анастасия Емельянова, режиссёр и художественный руководитель театра «Маскарад»" }] },
   twitter: { card: "summary_large_image", title, description, images: [portrait] }

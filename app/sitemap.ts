@@ -42,7 +42,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
   ];
 
   return [
-    { url: `${base}/o-teatre/anastasiya-emelyanova`, lastModified: new Date("2026-10-15"), changeFrequency: "monthly", priority: 0.8 },
+    {
+      url: `${base}/o-teatre/anastasiya-emelyanova`,
+      lastModified: new Date("2026-10-15"),
+      changeFrequency: "monthly",
+      priority: 0.8,
+      images: [`${base}/images/team/anastasiya-emelyanova.jpg`]
+    },
     {
       url: base,
       lastModified: homeUpdatedAt,
