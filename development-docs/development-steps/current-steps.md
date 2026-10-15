@@ -4,7 +4,7 @@
 
 ## Текущая работа
 
-15 октября: [072 — фотографии владельца для зимней подборки](new-steps/072-owner-winter-photo-selection.md). [072-1](completed-steps/072-1-owner-winter-photo-selection-2026-10-15.md): отобраны четыре кадра из переданной папки; [072-2](completed-steps/072-2-owner-winter-gallery-visual-2026-10-15.md): основное фото сохранено, мини-галерея на широком и мобильном экране без обрезки. SEO-проверка и публикация — следующие подшаги.
+15 октября: [072 — фотографии владельца для зимней подборки](new-steps/072-owner-winter-photo-selection.md) завершён. [072-1](completed-steps/072-1-owner-winter-photo-selection-2026-10-15.md): отобраны четыре кадра из переданной папки; [072-2](completed-steps/072-2-owner-winter-gallery-visual-2026-10-15.md): основное фото сохранено, мини-галерея на широком и мобильном экране без обрезки; [072-3](completed-steps/072-3-owner-winter-gallery-production-2026-10-15.md): выпуск и публичный браузер проверены. [Итог](../reports/072-owner-winter-photos-2026-10-15.md).
 
 14 октября: [071 — убрать общий фотоблок материалов](new-steps/071-remove-generic-photo-block.md) по замечанию владельца завершён. [071-1](completed-steps/071-1-remove-generic-photo-block-2026-10-14.md): «Визуальные опоры страницы» и повторная галерея удалены из шаблона; главное фото сохранено. [071-2](completed-steps/071-2-generic-photo-block-check-2026-10-14.md): браузер и полный SEO gate успешны. [071-3](completed-steps/071-3-generic-photo-block-production-2026-10-14.md): сервер, публичный HTML и браузер проверены. [Итог](../reports/071-remove-generic-photo-block-2026-10-14.md).
 
