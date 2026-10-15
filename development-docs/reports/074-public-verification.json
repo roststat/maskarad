@@ -1,0 +1,27 @@
+{
+  "date": "2026-10-15",
+  "application_commit": "dab38df",
+  "public_page": "https://maskarad-teatr.ru/o-teatre/anastasiya-emelyanova",
+  "http": 200,
+  "sitemap_urls": 124,
+  "iframe_count": 5,
+  "schema_types": [
+    "BreadcrumbList",
+    "FAQPage",
+    "Organization",
+    "Person",
+    "ProfilePage",
+    "WebSite"
+  ],
+  "portrait_matches": true,
+  "server_head_and_marker": "dab38df",
+  "deploy_result": "success",
+  "browser_widths": [
+    1280,
+    390
+  ],
+  "playback_confirmed": [
+    "Гроза. Променад-Островский",
+    "О любви"
+  ]
+}
