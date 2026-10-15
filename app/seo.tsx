@@ -24,6 +24,7 @@ const sectionLabels: Record<string, string> = {
 };
 
 const customPageLabels: Record<string, string> = {
+  "/o-teatre/anastasiya-emelyanova": "Анастасия Емельянова",
   "/prazdniki/korporativnyy-novogodniy-prazdnik": "Корпоративный новогодний праздник"
 };
 
@@ -97,6 +98,7 @@ export function createOrganizationJsonLd() {
     name: siteName,
     url: siteUrl,
     telephone: phoneE164,
+    founder: { "@id": "https://maskarad-teatr.ru/o-teatre/anastasiya-emelyanova#person", "@type": "Person", name: "Анастасия Валерьевна Емельянова", url: "https://maskarad-teatr.ru/o-teatre/anastasiya-emelyanova" },
     areaServed: ["Москва", "Московская область"],
     contactPoint: {
       "@type": "ContactPoint",

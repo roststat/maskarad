@@ -30,6 +30,7 @@ const photoReleasePaths = new Set([
   "/uslugi/shou-mylnyh-puzyrey"
 ]);
 function pageUpdatedAt(path: string) {
+  if (path === "/o-teatre") return new Date("2026-10-15");
   if (path === "/prazdniki/novogodniy-detskiy-prazdnik") return newYearChildrensPartyUpdatedAt;
   return photoReleasePaths.has(path) ? homeUpdatedAt : defaultUpdatedAt;
 }
@@ -41,6 +42,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   ];
 
   return [
+    { url: `${base}/o-teatre/anastasiya-emelyanova`, lastModified: new Date("2026-10-15"), changeFrequency: "monthly", priority: 0.8 },
     {
       url: base,
       lastModified: homeUpdatedAt,

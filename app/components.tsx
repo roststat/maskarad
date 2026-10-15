@@ -48,6 +48,7 @@ export function Footer() {
         <div>
           <strong>Театр праздника «Маскарад»</strong>
           <p>Спектакли, праздники и программы под ключ в Москве и Московской области.</p>
+          <p><Link href="/o-teatre/anastasiya-emelyanova">Анастасия Емельянова — художественный руководитель</Link></p>
           <p className="footer-operator">Оператор персональных данных: {legalData.operator}.</p>
           <p className="footer-registry">Запись в реестре Роскомнадзора № {legalData.registryNumber}; {legalData.registryBasis}.</p>
         </div>
