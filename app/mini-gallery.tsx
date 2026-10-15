@@ -25,11 +25,12 @@ export function selectMiniGalleryPhotos(path: string) {
 export function MiniGallery({ path, photos: suppliedPhotos }: { path: string; photos?: readonly GalleryPhoto[] }) {
   const photos = suppliedPhotos ?? selectMiniGalleryPhotos(path);
   const galleryHref = "/foto-video#portfolio-gallery-title";
+  const isWinterCollection = path === "/podboroki/novogodnie-programmy-dlya-detey";
   return (
-    <section className="mini-gallery" aria-label="Фотографии театра">
+    <section className={isWinterCollection ? "mini-gallery mini-gallery--winter" : "mini-gallery"} aria-label="Фотографии театра">
       <div className="mini-gallery-heading">
-        <span>Моменты наших праздников</span>
-        <Link href={galleryHref}>Все фотографии <span aria-hidden="true">→</span></Link>
+        <span>{isWinterCollection ? "Фото новогодних праздников" : "Моменты наших праздников"}</span>
+        {!isWinterCollection && <Link href={galleryHref}>Все фотографии <span aria-hidden="true">→</span></Link>}
       </div>
       <div className="mini-gallery-photos" style={{ "--mini-photo-count": photos.length } as CSSProperties}>
         {photos.map((photo, index) => (

@@ -20,6 +20,7 @@ import { pages, type CatalogItem, type PagePath } from "../data";
 import { catalogFaq, fiveFaq, hubFaq } from "../faq-data";
 import { landingPages, type LandingPath } from "../landing-data";
 import { newYearShowPhotos } from "../new-year-show-photos";
+import { winterGalleryPhotos } from "../winter-gallery-photos";
 import {
   Breadcrumbs,
   JsonLd,
@@ -227,7 +228,7 @@ export default async function ContentPage({ params }: Params) {
             </figure>
           </header>
 
-          <MiniGallery path={contentPagePath} />
+          <MiniGallery path={contentPagePath} photos={contentPagePath === "/podboroki/novogodnie-programmy-dlya-detey" ? winterGalleryPhotos : undefined} />
 
           <section className="landing-facts" aria-label="Коротко">
             {page.facts.map((fact) => (
