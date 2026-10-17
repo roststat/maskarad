@@ -1,0 +1,19 @@
+{
+  "release": "567154943ca11d4ca02eefc921c437a89f31e79a",
+  "checks": {
+    "/karta-sayta": {
+      "status": 200,
+      "links": 129,
+      "unique": 129,
+      "canonical": true
+    },
+    "/sitemap.xml": {
+      "status": 200,
+      "urls": 125
+    },
+    "/": {
+      "status": 200,
+      "footerLink": true
+    }
+  }
+}
