@@ -11,6 +11,8 @@ function decode(value) {
 }
 
 for (const url of urls) {
+  // Utility navigation page has no editorial FAQ or FAQPage markup.
+  if (url === "/karta-sayta") continue;
   const file = path.join(root, ".next/server/app", url === "/" ? "index.html" : `${url.slice(1)}.html`);
   if (!fs.existsSync(file)) {
     errors.push(`${url}: нет prerendered HTML`);
@@ -47,7 +49,7 @@ for (const url of urls) {
   }
 }
 
-console.log(`FAQ audit: ${urls.length} URL из sitemap`);
+console.log(`FAQ audit: ${urls.filter(url => url !== "/karta-sayta").length} содержательных URL; служебная карта проверяется отдельно`);
 if (errors.length) {
   console.error(errors.join("\n"));
   process.exitCode = 1;

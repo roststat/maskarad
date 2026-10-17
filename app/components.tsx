@@ -52,7 +52,8 @@ export function Footer() {
           <p className="footer-operator">Оператор персональных данных: {legalData.operator}.</p>
           <p className="footer-registry">Запись в реестре Роскомнадзора № {legalData.registryNumber}; {legalData.registryBasis}.</p>
         </div>
-        <nav className="footer-legal" aria-label="Документы сайта">
+        <nav className="footer-legal" aria-label="Карта сайта и документы">
+          <Link href="/karta-sayta">Карта сайта</Link>
           <Link href="/privacy-policy">Политика персональных данных</Link>
           <Link href="/personal-data-consent">Согласие на обработку данных</Link>
           <Link href="/cookie-policy">Политика cookies</Link>

@@ -24,11 +24,12 @@ const sectionLabels: Record<string, string> = {
 };
 
 const customPageLabels: Record<string, string> = {
+  "/karta-sayta": "Карта сайта",
   "/o-teatre/anastasiya-emelyanova": "Анастасия Емельянова",
   "/prazdniki/korporativnyy-novogodniy-prazdnik": "Корпоративный новогодний праздник"
 };
 
-function getPageTitle(path: string) {
+export function getPageTitle(path: string) {
   if (path in customPageLabels) return customPageLabels[path];
   if (path in contentPages) return contentPages[path as ContentPagePath].title;
   if (path in contentHubs) return contentHubs[path as ContentHubPath].title;

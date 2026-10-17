@@ -1,0 +1,14 @@
+.map { width: min(1160px, calc(100% - 2rem)); margin: 0 auto; padding-bottom: var(--section-space); }
+.intro { padding: clamp(2rem, 5vw, 4rem) 0 2rem; max-width: 48rem; }
+.intro h1 { font-family: Georgia, serif; font-size: clamp(2.6rem, 6vw, 4.5rem); font-weight: 500; margin: 1rem 0; }
+.intro p { color: var(--muted); line-height: 1.8; }
+.contents { display: flex; flex-wrap: wrap; gap: .7rem 1.5rem; padding: 1.4rem 0; border-block: 1px solid var(--line); }
+.grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 2.5rem 4rem; padding-top: 2.5rem; align-items: start; }
+.section { min-width: 0; scroll-margin-top: calc(var(--header-height) + var(--breadcrumb-height) + 2rem); }
+.section h2 { font-family: Georgia, serif; font-size: 1.8rem; font-weight: 500; margin: 0 0 1rem; }
+.section ul { list-style: none; padding: 0; margin: 0; }
+.section li + li { margin-top: .4rem; }
+.map a { color: var(--wine); text-decoration: underline; text-underline-offset: .2em; overflow-wrap: anywhere; }
+.section a { display: inline-block; line-height: 1.5; padding-block: .35rem; }
+.map a:focus-visible { outline: 2px solid var(--wine); outline-offset: 4px; }
+@media (max-width: 700px) { .grid { grid-template-columns: minmax(0, 1fr); gap: 2rem; } }

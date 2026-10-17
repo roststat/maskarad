@@ -42,6 +42,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   ];
 
   return [
+    { url: `${base}/karta-sayta`, lastModified: new Date("2026-10-17"), changeFrequency: "weekly", priority: 0.3 },
     {
       url: `${base}/o-teatre/anastasiya-emelyanova`,
       lastModified: new Date("2026-10-15"),
