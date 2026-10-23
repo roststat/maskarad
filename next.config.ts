@@ -310,7 +310,7 @@ const nextConfig: NextConfig = {
       { source: "/scenarii/skazka-sheherezada.html", destination: "/stati/skazki-sheherezady-scenariy-dlya-detey", permanent: true },
       { source: "/scenarii/skazki-pushkina.html", destination: "/stati/prazdnik-po-skazkam-pushkina-dlya-detey", permanent: true },
       { source: "/scenarii/:path*", destination: "/stati", permanent: true },
-      { source: "/karta.html", destination: "/", permanent: true }
+      { source: "/karta.html", destination: "/karta-sayta", permanent: true }
     ];
   }
 };

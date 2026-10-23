@@ -38,6 +38,7 @@ for (const relativePath of routeSources) {
   for (const match of source.matchAll(/^\s*"(\/[^"#]+)":\s*\{/gm)) knownPaths.add(match[1]);
 }
 knownPaths.add("/prazdniki/korporativnyy-novogodniy-prazdnik");
+knownPaths.add("/karta-sayta");
 
 function firstMatchingRule(pathname) {
   return redirects.find(({ regex }) => regex.test(pathname));
