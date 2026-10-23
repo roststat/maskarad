@@ -1,0 +1,71 @@
+{
+  "checkedOn": "2026-10-23",
+  "reportHeaderDate": "2026-10-16",
+  "reportCaveat": "Некоторые строки сканирования датированы 17 октября, позже даты в шапке. Проверка URL выполнена отдельно 23 октября.",
+  "indexedTotal": 167,
+  "excludedTotal": 157,
+  "categories": [
+    {
+      "name": "redirect",
+      "count": 55,
+      "observed": "Все 55 примеров относятся к старым адресам или HTTP-вариантам."
+    },
+    {
+      "name": "alternate_canonical",
+      "count": 29,
+      "observed": "Все 29 примеров — HTTPS www-версии действующих страниц. Живые ответы 200, canonical на HTTPS без www."
+    },
+    {
+      "name": "duplicate_without_user_canonical",
+      "count": 11,
+      "observed": "Все 11 — старые HTML-адреса, последние сканирования май–август 2026. Сейчас все перенаправляются на страницы с 200."
+    },
+    {
+      "name": "noindex",
+      "count": 4,
+      "urls": [
+        "https://www.maskarad-teatr.ru/personal-data-consent",
+        "https://maskarad-teatr.ru/terms",
+        "https://maskarad-teatr.ru/cookie-policy",
+        "https://maskarad-teatr.ru/privacy-policy"
+      ],
+      "observed": "Четыре юридических документа; живые ответы подтверждают noindex, follow."
+    },
+    {
+      "name": "not_found",
+      "count": 1,
+      "url": "http://maskarad-teatr.ru/karta.html",
+      "observed": "Сканирование 26 мая 2026. Сейчас HTTP 301 -> HTTPS 308 -> главная 200."
+    },
+    {
+      "name": "crawled_not_indexed",
+      "count": 57,
+      "observed": "55 старых адресов и две действующие страницы. Обе действующие страницы отдельно проверены инструментом URL и уже проиндексированы."
+    }
+  ],
+  "urlInspections": [
+    {
+      "url": "https://maskarad-teatr.ru/spektakli/skazka-elfov",
+      "status": "URL есть в индексе Google",
+      "pageIndexing": "Эта страница проиндексирована"
+    },
+    {
+      "url": "https://maskarad-teatr.ru/uslugi/detskiy-tort",
+      "status": "URL есть в индексе Google",
+      "pageIndexing": "Эта страница проиндексирована"
+    }
+  ],
+  "sitemap": {
+    "url": "https://maskarad-teatr.ru/sitemap.xml",
+    "submitted": "2026-10-14",
+    "lastRead": "2026-10-19",
+    "status": "Успешно",
+    "discoveredPages": 125
+  },
+  "limitations": [
+    "Списки примеров прочитаны в Chrome целиком; не гарантируется полнота самого списка Google за пределами показанных примеров.",
+    "Живые проверки: все 125 URL sitemap, все 29 canonical-вариантов, все 11 дублей, четыре noindex, старый 404 и 43 других старых адреса. Всего 213 уникальных HTTP-проверок.",
+    "Нахождение всех 125 URL в индексе не проверялось; 200 и canonical не равны индексации."
+  ],
+  "changes": "Настройки Search Console, сайт и сервер не менялись; запросы переиндексации и проверки исправления не отправлялись."
+}

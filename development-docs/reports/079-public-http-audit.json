@@ -1,0 +1,5586 @@
+{
+  "date": "2026-10-23",
+  "gsc_report_updated": "2026-10-16",
+  "gsc_counts": {
+    "indexed": 167,
+    "redirect": 55,
+    "canonical": 29,
+    "duplicate": 11,
+    "noindex": 4,
+    "not_found": 1,
+    "crawled_not_indexed": 57
+  },
+  "groups": {
+    "sitemap": [
+      "https://maskarad-teatr.ru/karta-sayta",
+      "https://maskarad-teatr.ru/o-teatre/anastasiya-emelyanova",
+      "https://maskarad-teatr.ru",
+      "https://maskarad-teatr.ru/prazdniki/korporativnyy-novogodniy-prazdnik",
+      "https://maskarad-teatr.ru/dlya-detey",
+      "https://maskarad-teatr.ru/dlya-vzroslyh",
+      "https://maskarad-teatr.ru/dlya-biznesa",
+      "https://maskarad-teatr.ru/spektakli/zolushka",
+      "https://maskarad-teatr.ru/spektakli/alisa-v-strane-chudes",
+      "https://maskarad-teatr.ru/spektakli/peppi-dlinnyy-chulok",
+      "https://maskarad-teatr.ru/spektakli/piraty-karibskogo-morya",
+      "https://maskarad-teatr.ru/spektakli/belosnezhka-i-sem-gnomov",
+      "https://maskarad-teatr.ru/spektakli/mary-poppins",
+      "https://maskarad-teatr.ru/spektakli/priklyucheniya-sindbada-morehoda",
+      "https://maskarad-teatr.ru/spektakli/malysh-i-karlson",
+      "https://maskarad-teatr.ru/spektakli/bremenskie-muzykanty",
+      "https://maskarad-teatr.ru/spektakli/novogodnyaya-belosnezhka",
+      "https://maskarad-teatr.ru/spektakli/novogodnie-spektakli",
+      "https://maskarad-teatr.ru/prazdniki/novogodniy-detskiy-prazdnik",
+      "https://maskarad-teatr.ru/prazdniki/detskiy-den-rozhdeniya",
+      "https://maskarad-teatr.ru/uslugi/akvagrim",
+      "https://maskarad-teatr.ru/uslugi/shou-mylnyh-puzyrey",
+      "https://maskarad-teatr.ru/uslugi/master-klassy",
+      "https://maskarad-teatr.ru/uslugi/cirkovye-fokusy",
+      "https://maskarad-teatr.ru/uslugi/kukolnyy-spektakl",
+      "https://maskarad-teatr.ru/uslugi/oformlenie-sharami",
+      "https://maskarad-teatr.ru/uslugi/foto-video",
+      "https://maskarad-teatr.ru/uslugi/keytering",
+      "https://maskarad-teatr.ru/uslugi/spetsialnye-effekty",
+      "https://maskarad-teatr.ru/uslugi/attraktsiony",
+      "https://maskarad-teatr.ru/prazdniki/detskiy-sad",
+      "https://maskarad-teatr.ru/prazdniki/shkolnyy-prazdnik",
+      "https://maskarad-teatr.ru/prazdniki/vypusknoy",
+      "https://maskarad-teatr.ru/prazdniki/vypusknoy-v-detskom-sadu",
+      "https://maskarad-teatr.ru/prazdniki/vypusknoy-v-nachalnoy-shkole",
+      "https://maskarad-teatr.ru/prazdniki/vypusknoy-v-11-klasse",
+      "https://maskarad-teatr.ru/spektakli/vinni-puh",
+      "https://maskarad-teatr.ru/spektakli/madagaskar",
+      "https://maskarad-teatr.ru/spektakli/holodnoe-serdtse",
+      "https://maskarad-teatr.ru/podboroki/scenarii-detskih-prazdnikov",
+      "https://maskarad-teatr.ru/prazdniki/maslenitsa",
+      "https://maskarad-teatr.ru/spektakli/alladin-i-zhasmin",
+      "https://maskarad-teatr.ru/spektakli/neznaika-v-tsvetochnom-gorode",
+      "https://maskarad-teatr.ru/spektakli/piter-pen",
+      "https://maskarad-teatr.ru/spektakli/zolotoy-klyuchik",
+      "https://maskarad-teatr.ru/spektakli/kot-leopold",
+      "https://maskarad-teatr.ru/spektakli/tri-mushketera",
+      "https://maskarad-teatr.ru/spektakli/istoriya-igrushek",
+      "https://maskarad-teatr.ru/spektakli/lednikovyy-period",
+      "https://maskarad-teatr.ru/spektakli/simpsony",
+      "https://maskarad-teatr.ru/spektakli/skazochnyy-balaganchik",
+      "https://maskarad-teatr.ru/spektakli/ivan-da-marya",
+      "https://maskarad-teatr.ru/spektakli/volshebnaya-feya",
+      "https://maskarad-teatr.ru/spektakli/novogodnyy-ekspress",
+      "https://maskarad-teatr.ru/spektakli/novyy-god-na-snezhnoy-planete",
+      "https://maskarad-teatr.ru/spektakli/avatar",
+      "https://maskarad-teatr.ru/prazdniki/vypusknoy-v-stile-fashion",
+      "https://maskarad-teatr.ru/spektakli/pyatyy-element",
+      "https://maskarad-teatr.ru/spektakli/skazka-shreka",
+      "https://maskarad-teatr.ru/spektakli/smurfiki",
+      "https://maskarad-teatr.ru/spektakli/supergeroi",
+      "https://maskarad-teatr.ru/spektakli/skazka-elfov",
+      "https://maskarad-teatr.ru/spektakli/shkola-volshebnic",
+      "https://maskarad-teatr.ru/uslugi/pozdravitelnaya-pesnya",
+      "https://maskarad-teatr.ru/uslugi/detskiy-tort",
+      "https://maskarad-teatr.ru/uslugi/shou-s-zhivotnymi",
+      "https://maskarad-teatr.ru/prazdniki/detskiy-prazdnik-na-teplohode",
+      "https://maskarad-teatr.ru/prazdniki/individualnyy-detskiy-prazdnik",
+      "https://maskarad-teatr.ru/prazdniki/obrazovatelnyy-detskiy-prazdnik",
+      "https://maskarad-teatr.ru/spektakli",
+      "https://maskarad-teatr.ru/uslugi",
+      "https://maskarad-teatr.ru/prazdniki",
+      "https://maskarad-teatr.ru/tseny",
+      "https://maskarad-teatr.ru/otzyvy-pressa",
+      "https://maskarad-teatr.ru/foto-video",
+      "https://maskarad-teatr.ru/kontakty",
+      "https://maskarad-teatr.ru/o-teatre",
+      "https://maskarad-teatr.ru/stati",
+      "https://maskarad-teatr.ru/kejsy",
+      "https://maskarad-teatr.ru/podboroki",
+      "https://maskarad-teatr.ru/podboroki/interaktivnye-spektakli-dlya-detey",
+      "https://maskarad-teatr.ru/stati/igrovoy-scenariy-dlya-detskogo-prazdnika",
+      "https://maskarad-teatr.ru/stati/prazdnik-po-skazkam-pushkina-dlya-detey",
+      "https://maskarad-teatr.ru/stati/skazki-sheherezady-scenariy-dlya-detey",
+      "https://maskarad-teatr.ru/stati/detskiy-prazdnik-na-hellouin",
+      "https://maskarad-teatr.ru/stati/prazdnik-oseni-dlya-detey",
+      "https://maskarad-teatr.ru/stati/prazdnik-bukvarya-scenariy-dlya-1-klassa",
+      "https://maskarad-teatr.ru/stati/kak-vybrat-spektakl-na-den-rozhdeniya",
+      "https://maskarad-teatr.ru/kejsy/piratskiy-den-rozhdeniya-7-let",
+      "https://maskarad-teatr.ru/podboroki/spektakli-dlya-5-7-let",
+      "https://maskarad-teatr.ru/podboroki/prazdniki-dlya-detey-3-4-goda",
+      "https://maskarad-teatr.ru/stati/detskiy-prazdnik-doma-ili-v-restorane",
+      "https://maskarad-teatr.ru/kejsy/prazdnik-v-detskom-sadu",
+      "https://maskarad-teatr.ru/stati/korporativnaya-elka-dlya-detey-sotrudnikov",
+      "https://maskarad-teatr.ru/podboroki/prazdniki-dlya-detey-8-10-let",
+      "https://maskarad-teatr.ru/stati/prazdnik-v-shkole-kak-sobrat-programmu",
+      "https://maskarad-teatr.ru/podboroki/idei-dlya-vypusknogo",
+      "https://maskarad-teatr.ru/podboroki/novogodnie-programmy-dlya-detey",
+      "https://maskarad-teatr.ru/stati/animatory-na-dom-kak-vybrat-programmu",
+      "https://maskarad-teatr.ru/stati/detskiy-prazdnik-v-restorane",
+      "https://maskarad-teatr.ru/podboroki/prazdniki-dlya-detey-11-13-let",
+      "https://maskarad-teatr.ru/podboroki/nedorogoy-detskiy-prazdnik",
+      "https://maskarad-teatr.ru/stati/detskiy-prazdnik-na-ulitse",
+      "https://maskarad-teatr.ru/stati/kak-rasschitat-byudzhet-detskogo-prazdnika",
+      "https://maskarad-teatr.ru/stati/detskiy-prazdnik-v-torgovom-tsentre",
+      "https://maskarad-teatr.ru/stati/prazdnik-dlya-klassa",
+      "https://maskarad-teatr.ru/podboroki/prazdnik-dlya-devochki",
+      "https://maskarad-teatr.ru/podboroki/prazdnik-dlya-malchika",
+      "https://maskarad-teatr.ru/stati/detskiy-prazdnik-v-parke",
+      "https://maskarad-teatr.ru/stati/detskiy-prazdnik-zimoy",
+      "https://maskarad-teatr.ru/stati/detskiy-prazdnik-letom",
+      "https://maskarad-teatr.ru/podboroki/prazdnik-dlya-10-detey",
+      "https://maskarad-teatr.ru/podboroki/prazdnik-dlya-20-detey",
+      "https://maskarad-teatr.ru/podboroki/prazdnik-s-master-klassom",
+      "https://maskarad-teatr.ru/stati/detskiy-prazdnik-v-lofte",
+      "https://maskarad-teatr.ru/stati/detskiy-prazdnik-na-dache",
+      "https://maskarad-teatr.ru/stati/programma-dlya-roditeley-i-detey",
+      "https://maskarad-teatr.ru/podboroki/prazdnik-s-akvagrimom",
+      "https://maskarad-teatr.ru/podboroki/prazdnik-s-fokusami",
+      "https://maskarad-teatr.ru/stati/animatory-na-vypusknoy",
+      "https://maskarad-teatr.ru/stati/detskiy-prazdnik-v-kafe",
+      "https://maskarad-teatr.ru/stati/detskiy-prazdnik-v-detskom-tsentre",
+      "https://maskarad-teatr.ru/podboroki/prazdnik-dlya-malyshey-2-3-goda",
+      "https://maskarad-teatr.ru/podboroki/prazdnik-so-spektaklem-vmesto-animatorov",
+      "https://maskarad-teatr.ru/stati/semka-filma-s-detmi-na-prazdnike"
+    ],
+    "canonical_www": [
+      "https://www.maskarad-teatr.ru/uslugi/master-klassy",
+      "https://www.maskarad-teatr.ru/prazdniki/vypusknoy",
+      "https://www.maskarad-teatr.ru/prazdniki/individualnyy-detskiy-prazdnik",
+      "https://www.maskarad-teatr.ru/prazdniki/korporativnyy-novogodniy-prazdnik",
+      "https://www.maskarad-teatr.ru/kontakty",
+      "https://www.maskarad-teatr.ru/spektakli/novogodnie-spektakli",
+      "https://www.maskarad-teatr.ru/uslugi/pozdravitelnaya-pesnya",
+      "https://www.maskarad-teatr.ru/spektakli/piraty-karibskogo-morya",
+      "https://www.maskarad-teatr.ru/prazdniki/maslenitsa",
+      "https://www.maskarad-teatr.ru/uslugi/akvagrim",
+      "https://www.maskarad-teatr.ru/stati/prazdnik-dlya-klassa",
+      "https://www.maskarad-teatr.ru/podboroki/idei-dlya-vypusknogo",
+      "https://www.maskarad-teatr.ru/podboroki/interaktivnye-spektakli-dlya-detey",
+      "https://www.maskarad-teatr.ru/spektakli/zolotoy-klyuchik",
+      "https://www.maskarad-teatr.ru/spektakli/volshebnaya-feya",
+      "https://www.maskarad-teatr.ru/spektakli/holodnoe-serdtse",
+      "https://www.maskarad-teatr.ru/spektakli/tri-mushketera",
+      "https://www.maskarad-teatr.ru/spektakli/pyatyy-element",
+      "https://www.maskarad-teatr.ru/spektakli/smurfiki",
+      "https://www.maskarad-teatr.ru/spektakli/avatar",
+      "https://www.maskarad-teatr.ru/spektakli/vinni-puh",
+      "https://www.maskarad-teatr.ru/tseny",
+      "https://www.maskarad-teatr.ru/spektakli/priklyucheniya-sindbada-morehoda",
+      "https://www.maskarad-teatr.ru/spektakli/belosnezhka-i-sem-gnomov",
+      "https://www.maskarad-teatr.ru/spektakli/ivan-da-marya",
+      "https://www.maskarad-teatr.ru/spektakli/istoriya-igrushek",
+      "https://www.maskarad-teatr.ru/spektakli/novyy-god-na-snezhnoy-planete",
+      "https://www.maskarad-teatr.ru/o-teatre",
+      "https://www.maskarad-teatr.ru/"
+    ],
+    "duplicates": [
+      "http://www.maskarad-teatr.ru/detskii-prazdnik/vozrastnie-spektakli.html",
+      "https://maskarad-teatr.ru/maskarad/klienty.html",
+      "https://www.maskarad-teatr.ru/detskii-prazdnik/winx.html",
+      "https://www.maskarad-teatr.ru/detskii-prazdnik/balaganchik.html",
+      "https://www.maskarad-teatr.ru/detskii-prazdnik/mary-poppins.html",
+      "https://www.maskarad-teatr.ru/detskii-prazdnik/vinni-puh.html",
+      "http://maskarad-teatr.ru/detskie-uslugi/master-klassy.html",
+      "http://maskarad-teatr.ru/detskie-uslugi/attraktsiony.html",
+      "http://maskarad-teatr.ru/detskii-prazdnik/bremenskie-muzykanty.html",
+      "http://maskarad-teatr.ru/detskie-uslugi/dressirovanye-zhivotnye.html",
+      "http://www.maskarad-teatr.ru/detskii-prazdnik/sinbad-morehod.html"
+    ],
+    "noindex": [
+      "https://www.maskarad-teatr.ru/personal-data-consent",
+      "https://maskarad-teatr.ru/terms",
+      "https://maskarad-teatr.ru/cookie-policy",
+      "https://maskarad-teatr.ru/privacy-policy"
+    ],
+    "old404": [
+      "http://maskarad-teatr.ru/karta.html"
+    ],
+    "legacy_samples": [
+      "https://www.maskarad-teatr.ru/detskii-prazdnik/alisa.html",
+      "https://www.maskarad-teatr.ru/detskie-uslugi/master-klassy.html",
+      "https://maskarad-teatr.ru/detskii-prazdnik/avatar.html",
+      "http://maskarad-teatr.ru/detskie-uslugi/index.html",
+      "https://maskarad-teatr.ru/detskie-uslugi/kukolnyy-spektakl.html",
+      "https://maskarad-teatr.ru/detskie-uslugi/akvagrim.html",
+      "https://maskarad-teatr.ru/maskarad/rabota.html",
+      "https://www.maskarad-teatr.ru/foto/galereya/art/m/1050/p/131",
+      "https://maskarad-teatr.ru/detskie-prazdniki/detskii-sad-prazdnik.html",
+      "https://maskarad-teatr.ru/scenarii/rozhdestvo.html",
+      "https://maskarad-teatr.ru/scenarii/novogodnyaya-elka.html",
+      "https://maskarad-teatr.ru/detskii-prazdnik/novogodnii-piter-pen.html",
+      "https://maskarad-teatr.ru/detskii-prazdnik/polyarnyi-ekspress.html",
+      "https://www.maskarad-teatr.ru/scenarii/detskii-prazdnik-polyana-igr.html",
+      "https://www.maskarad-teatr.ru/scenarii/detskii-prazdnik-tsaritsy-oseni.html",
+      "https://www.maskarad-teatr.ru/scenarii/skazka-sheherezada.html",
+      "https://www.maskarad-teatr.ru/scenarii/halloween.html",
+      "https://maskarad-teatr.ru/scenarii/detskii-novogodnii-prazdnik.html",
+      "https://maskarad-teatr.ru/scenarii/den-uchitelya.html",
+      "https://www.maskarad-teatr.ru/foto/galereya/art/m/1050/p/34/",
+      "https://www.maskarad-teatr.ru/foto/galereya/art/m/1050/p/88/",
+      "https://www.maskarad-teatr.ru/foto/galereya/art/m/1050/p/38/",
+      "https://www.maskarad-teatr.ru/foto/galereya/art/m/1050/p/79/",
+      "https://www.maskarad-teatr.ru/foto/galereya/art/m/1050/p/20/",
+      "https://www.maskarad-teatr.ru/foto/galereya/art/m/1050/p/19/",
+      "https://www.maskarad-teatr.ru/foto/galereya/art/m/1050/p/106/",
+      "https://www.maskarad-teatr.ru/foto/galereya/art/m/1050/p/153/",
+      "https://www.maskarad-teatr.ru/foto/galereya/art/m/1050/p/171/",
+      "https://www.maskarad-teatr.ru/foto/galereya/art/m/1050/p/41/",
+      "https://www.maskarad-teatr.ru/foto/galereya/art/m/1050/p/205/",
+      "https://www.maskarad-teatr.ru/foto/galereya/art/m/1050/p/169/",
+      "https://www.maskarad-teatr.ru/foto/galereya/art/m/1050/p/14/",
+      "https://www.maskarad-teatr.ru/foto/galereya/art/m/1050/p/43/",
+      "https://www.maskarad-teatr.ru/foto/galereya/art/m/1050/p/132/",
+      "https://www.maskarad-teatr.ru/foto/galereya/art/m/1050/p/160/",
+      "https://www.maskarad-teatr.ru/foto/galereya/art/m/1050/p/40/",
+      "https://www.maskarad-teatr.ru/foto/galereya/art/m/1050/p/112/",
+      "https://www.maskarad-teatr.ru/foto/galereya/art/m/1050/p/76/",
+      "https://www.maskarad-teatr.ru/foto/galereya/art/m/1050/p/15/",
+      "https://www.maskarad-teatr.ru/foto/galereya/art/m/1050/p/74/",
+      "https://www.maskarad-teatr.ru/foto/galereya/art/m/1050/p/21/",
+      "https://www.maskarad-teatr.ru/foto/galereya/art/m/1050/p/111/",
+      "https://www.maskarad-teatr.ru/foto/galereya/art/m/1050/p/84/"
+    ]
+  },
+  "results": [
+    {
+      "url": "https://maskarad-teatr.ru/karta-sayta",
+      "hops": [
+        {
+          "url": "https://maskarad-teatr.ru/karta-sayta",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "final": "https://maskarad-teatr.ru/karta-sayta",
+      "status": 200,
+      "canonical": [
+        "https://maskarad-teatr.ru/karta-sayta"
+      ],
+      "robots": [],
+      "xRobots": null,
+      "title": [
+        "Карта сайта | Театр «Маскарад»"
+      ],
+      "h1": [
+        "Карта сайта"
+      ]
+    },
+    {
+      "url": "https://maskarad-teatr.ru/o-teatre/anastasiya-emelyanova",
+      "hops": [
+        {
+          "url": "https://maskarad-teatr.ru/o-teatre/anastasiya-emelyanova",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "final": "https://maskarad-teatr.ru/o-teatre/anastasiya-emelyanova",
+      "status": 200,
+      "canonical": [
+        "https://maskarad-teatr.ru/o-teatre/anastasiya-emelyanova"
+      ],
+      "robots": [
+        "index, follow, max-video-preview:-1, max-image-preview:large, max-snippet:-1"
+      ],
+      "xRobots": null,
+      "title": [
+        "Анастасия Емельянова — режиссёр и художественный руководитель | Театр «Маскарад»"
+      ],
+      "h1": [
+        "Анастасия <br/>Емельянова"
+      ]
+    },
+    {
+      "url": "https://maskarad-teatr.ru",
+      "hops": [
+        {
+          "url": "https://maskarad-teatr.ru",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "final": "https://maskarad-teatr.ru",
+      "status": 200,
+      "canonical": [
+        "https://maskarad-teatr.ru"
+      ],
+      "robots": [],
+      "xRobots": null,
+      "title": [
+        "Театр праздника «Маскарад» в Москве"
+      ],
+      "h1": [
+        "Спектакль, где ребенок становится частью сказки"
+      ]
+    },
+    {
+      "url": "https://maskarad-teatr.ru/prazdniki/korporativnyy-novogodniy-prazdnik",
+      "hops": [
+        {
+          "url": "https://maskarad-teatr.ru/prazdniki/korporativnyy-novogodniy-prazdnik",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "final": "https://maskarad-teatr.ru/prazdniki/korporativnyy-novogodniy-prazdnik",
+      "status": 200,
+      "canonical": [
+        "https://maskarad-teatr.ru/prazdniki/korporativnyy-novogodniy-prazdnik"
+      ],
+      "robots": [],
+      "xRobots": null,
+      "title": [
+        "Корпоративная ёлка для детей сотрудников в Москве | Театр «Маскарад»"
+      ],
+      "h1": [
+        "Корпоративная ёлка для детей сотрудников"
+      ]
+    },
+    {
+      "url": "https://maskarad-teatr.ru/dlya-detey",
+      "hops": [
+        {
+          "url": "https://maskarad-teatr.ru/dlya-detey",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "final": "https://maskarad-teatr.ru/dlya-detey",
+      "status": 200,
+      "canonical": [
+        "https://maskarad-teatr.ru/dlya-detey"
+      ],
+      "robots": [],
+      "xRobots": null,
+      "title": [
+        "Праздники и спектакли для детей | Театр «Маскарад»"
+      ],
+      "h1": [
+        "Праздники и спектакли для детей"
+      ]
+    },
+    {
+      "url": "https://maskarad-teatr.ru/dlya-vzroslyh",
+      "hops": [
+        {
+          "url": "https://maskarad-teatr.ru/dlya-vzroslyh",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "final": "https://maskarad-teatr.ru/dlya-vzroslyh",
+      "status": 200,
+      "canonical": [
+        "https://maskarad-teatr.ru/dlya-vzroslyh"
+      ],
+      "robots": [],
+      "xRobots": null,
+      "title": [
+        "Праздники для взрослых и семейные события | Театр «Маскарад»"
+      ],
+      "h1": [
+        "Праздники для взрослых и семейные события"
+      ]
+    },
+    {
+      "url": "https://maskarad-teatr.ru/dlya-biznesa",
+      "hops": [
+        {
+          "url": "https://maskarad-teatr.ru/dlya-biznesa",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "final": "https://maskarad-teatr.ru/dlya-biznesa",
+      "status": 200,
+      "canonical": [
+        "https://maskarad-teatr.ru/dlya-biznesa"
+      ],
+      "robots": [],
+      "xRobots": null,
+      "title": [
+        "Детские праздники для бизнеса и компаний | Театр «Маскарад»"
+      ],
+      "h1": [
+        "Детские праздники для бизнеса и компаний"
+      ]
+    },
+    {
+      "url": "https://maskarad-teatr.ru/spektakli/zolushka",
+      "hops": [
+        {
+          "url": "https://maskarad-teatr.ru/spektakli/zolushka",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "final": "https://maskarad-teatr.ru/spektakli/zolushka",
+      "status": 200,
+      "canonical": [
+        "https://maskarad-teatr.ru/spektakli/zolushka"
+      ],
+      "robots": [],
+      "xRobots": null,
+      "title": [
+        "Спектакль «Золушка» на детский праздник | Театр «Маскарад»"
+      ],
+      "h1": [
+        "Спектакль «Золушка» на детский праздник"
+      ]
+    },
+    {
+      "url": "https://maskarad-teatr.ru/spektakli/alisa-v-strane-chudes",
+      "hops": [
+        {
+          "url": "https://maskarad-teatr.ru/spektakli/alisa-v-strane-chudes",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "final": "https://maskarad-teatr.ru/spektakli/alisa-v-strane-chudes",
+      "status": 200,
+      "canonical": [
+        "https://maskarad-teatr.ru/spektakli/alisa-v-strane-chudes"
+      ],
+      "robots": [],
+      "xRobots": null,
+      "title": [
+        "Спектакль «Алиса в стране чудес» | Театр «Маскарад»"
+      ],
+      "h1": [
+        "Спектакль «Алиса в стране чудес»"
+      ]
+    },
+    {
+      "url": "https://maskarad-teatr.ru/spektakli/peppi-dlinnyy-chulok",
+      "hops": [
+        {
+          "url": "https://maskarad-teatr.ru/spektakli/peppi-dlinnyy-chulok",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "final": "https://maskarad-teatr.ru/spektakli/peppi-dlinnyy-chulok",
+      "status": 200,
+      "canonical": [
+        "https://maskarad-teatr.ru/spektakli/peppi-dlinnyy-chulok"
+      ],
+      "robots": [],
+      "xRobots": null,
+      "title": [
+        "Спектакль «Пеппи Длинный Чулок» на детский праздник | Театр «Маскарад»"
+      ],
+      "h1": [
+        "Спектакль «Пеппи Длинный Чулок» на детский праздник"
+      ]
+    },
+    {
+      "url": "https://maskarad-teatr.ru/spektakli/piraty-karibskogo-morya",
+      "hops": [
+        {
+          "url": "https://maskarad-teatr.ru/spektakli/piraty-karibskogo-morya",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "final": "https://maskarad-teatr.ru/spektakli/piraty-karibskogo-morya",
+      "status": 200,
+      "canonical": [
+        "https://maskarad-teatr.ru/spektakli/piraty-karibskogo-morya"
+      ],
+      "robots": [],
+      "xRobots": null,
+      "title": [
+        "Спектакль «Пираты карибского моря» для детей | Театр «Маскарад»"
+      ],
+      "h1": [
+        "Спектакль «Пираты карибского моря» для детей"
+      ]
+    },
+    {
+      "url": "https://maskarad-teatr.ru/spektakli/belosnezhka-i-sem-gnomov",
+      "hops": [
+        {
+          "url": "https://maskarad-teatr.ru/spektakli/belosnezhka-i-sem-gnomov",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "final": "https://maskarad-teatr.ru/spektakli/belosnezhka-i-sem-gnomov",
+      "status": 200,
+      "canonical": [
+        "https://maskarad-teatr.ru/spektakli/belosnezhka-i-sem-gnomov"
+      ],
+      "robots": [],
+      "xRobots": null,
+      "title": [
+        "Спектакль «Белоснежка и семь гномов» | Театр «Маскарад»"
+      ],
+      "h1": [
+        "Спектакль «Белоснежка и семь гномов»"
+      ]
+    },
+    {
+      "url": "https://maskarad-teatr.ru/spektakli/mary-poppins",
+      "hops": [
+        {
+          "url": "https://maskarad-teatr.ru/spektakli/mary-poppins",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "final": "https://maskarad-teatr.ru/spektakli/mary-poppins",
+      "status": 200,
+      "canonical": [
+        "https://maskarad-teatr.ru/spektakli/mary-poppins"
+      ],
+      "robots": [],
+      "xRobots": null,
+      "title": [
+        "Спектакль «Мэри Поппинс» на детский праздник | Театр «Маскарад»"
+      ],
+      "h1": [
+        "Спектакль «Мэри Поппинс» на детский праздник"
+      ]
+    },
+    {
+      "url": "https://maskarad-teatr.ru/spektakli/priklyucheniya-sindbada-morehoda",
+      "hops": [
+        {
+          "url": "https://maskarad-teatr.ru/spektakli/priklyucheniya-sindbada-morehoda",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "final": "https://maskarad-teatr.ru/spektakli/priklyucheniya-sindbada-morehoda",
+      "status": 200,
+      "canonical": [
+        "https://maskarad-teatr.ru/spektakli/priklyucheniya-sindbada-morehoda"
+      ],
+      "robots": [],
+      "xRobots": null,
+      "title": [
+        "Спектакль «Приключения Синдбада-Морехода» | Театр «Маскарад»"
+      ],
+      "h1": [
+        "Спектакль «Приключения Синдбада-Морехода»"
+      ]
+    },
+    {
+      "url": "https://maskarad-teatr.ru/spektakli/malysh-i-karlson",
+      "hops": [
+        {
+          "url": "https://maskarad-teatr.ru/spektakli/malysh-i-karlson",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "final": "https://maskarad-teatr.ru/spektakli/malysh-i-karlson",
+      "status": 200,
+      "canonical": [
+        "https://maskarad-teatr.ru/spektakli/malysh-i-karlson"
+      ],
+      "robots": [],
+      "xRobots": null,
+      "title": [
+        "Спектакль «Малыш и Карлсон» на детский праздник | Театр «Маскарад»"
+      ],
+      "h1": [
+        "Спектакль «Малыш и Карлсон» на детский праздник"
+      ]
+    },
+    {
+      "url": "https://maskarad-teatr.ru/spektakli/bremenskie-muzykanty",
+      "hops": [
+        {
+          "url": "https://maskarad-teatr.ru/spektakli/bremenskie-muzykanty",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "final": "https://maskarad-teatr.ru/spektakli/bremenskie-muzykanty",
+      "status": 200,
+      "canonical": [
+        "https://maskarad-teatr.ru/spektakli/bremenskie-muzykanty"
+      ],
+      "robots": [],
+      "xRobots": null,
+      "title": [
+        "Спектакль «Бременские музыканты» на детский праздник | Театр «Маскарад»"
+      ],
+      "h1": [
+        "Спектакль «Бременские музыканты» на детский праздник"
+      ]
+    },
+    {
+      "url": "https://maskarad-teatr.ru/spektakli/novogodnyaya-belosnezhka",
+      "hops": [
+        {
+          "url": "https://maskarad-teatr.ru/spektakli/novogodnyaya-belosnezhka",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "final": "https://maskarad-teatr.ru/spektakli/novogodnyaya-belosnezhka",
+      "status": 200,
+      "canonical": [
+        "https://maskarad-teatr.ru/spektakli/novogodnyaya-belosnezhka"
+      ],
+      "robots": [],
+      "xRobots": null,
+      "title": [
+        "Новогодний спектакль «Белоснежка» | Театр «Маскарад»"
+      ],
+      "h1": [
+        "Новогодний спектакль «Белоснежка»"
+      ]
+    },
+    {
+      "url": "https://maskarad-teatr.ru/spektakli/novogodnie-spektakli",
+      "hops": [
+        {
+          "url": "https://maskarad-teatr.ru/spektakli/novogodnie-spektakli",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "final": "https://maskarad-teatr.ru/spektakli/novogodnie-spektakli",
+      "status": 200,
+      "canonical": [
+        "https://maskarad-teatr.ru/spektakli/novogodnie-spektakli"
+      ],
+      "robots": [],
+      "xRobots": null,
+      "title": [
+        "Новогодние спектакли и елки для детей | Театр «Маскарад»"
+      ],
+      "h1": [
+        "Новогодние спектакли и елки для детей"
+      ]
+    },
+    {
+      "url": "https://maskarad-teatr.ru/prazdniki/novogodniy-detskiy-prazdnik",
+      "hops": [
+        {
+          "url": "https://maskarad-teatr.ru/prazdniki/novogodniy-detskiy-prazdnik",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "final": "https://maskarad-teatr.ru/prazdniki/novogodniy-detskiy-prazdnik",
+      "status": 200,
+      "canonical": [
+        "https://maskarad-teatr.ru/prazdniki/novogodniy-detskiy-prazdnik"
+      ],
+      "robots": [],
+      "xRobots": null,
+      "title": [
+        "Новогодний детский праздник в Москве | Театр «Маскарад»"
+      ],
+      "h1": [
+        "Новогодний детский праздник в Москве"
+      ]
+    },
+    {
+      "url": "https://maskarad-teatr.ru/prazdniki/detskiy-den-rozhdeniya",
+      "hops": [
+        {
+          "url": "https://maskarad-teatr.ru/prazdniki/detskiy-den-rozhdeniya",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "final": "https://maskarad-teatr.ru/prazdniki/detskiy-den-rozhdeniya",
+      "status": 200,
+      "canonical": [
+        "https://maskarad-teatr.ru/prazdniki/detskiy-den-rozhdeniya"
+      ],
+      "robots": [],
+      "xRobots": null,
+      "title": [
+        "Детский день рождения с выездным театром | Театр «Маскарад»"
+      ],
+      "h1": [
+        "Детский день рождения с выездным театром"
+      ]
+    },
+    {
+      "url": "https://maskarad-teatr.ru/uslugi/akvagrim",
+      "hops": [
+        {
+          "url": "https://maskarad-teatr.ru/uslugi/akvagrim",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "final": "https://maskarad-teatr.ru/uslugi/akvagrim",
+      "status": 200,
+      "canonical": [
+        "https://maskarad-teatr.ru/uslugi/akvagrim"
+      ],
+      "robots": [],
+      "xRobots": null,
+      "title": [
+        "Аквагрим на детский праздник | Театр «Маскарад»"
+      ],
+      "h1": [
+        "Аквагрим на детский праздник"
+      ]
+    },
+    {
+      "url": "https://maskarad-teatr.ru/uslugi/shou-mylnyh-puzyrey",
+      "hops": [
+        {
+          "url": "https://maskarad-teatr.ru/uslugi/shou-mylnyh-puzyrey",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "final": "https://maskarad-teatr.ru/uslugi/shou-mylnyh-puzyrey",
+      "status": 200,
+      "canonical": [
+        "https://maskarad-teatr.ru/uslugi/shou-mylnyh-puzyrey"
+      ],
+      "robots": [],
+      "xRobots": null,
+      "title": [
+        "Шоу мыльных пузырей на детский праздник | Театр «Маскарад»"
+      ],
+      "h1": [
+        "Шоу мыльных пузырей на детский праздник"
+      ]
+    },
+    {
+      "url": "https://maskarad-teatr.ru/uslugi/master-klassy",
+      "hops": [
+        {
+          "url": "https://maskarad-teatr.ru/uslugi/master-klassy",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "final": "https://maskarad-teatr.ru/uslugi/master-klassy",
+      "status": 200,
+      "canonical": [
+        "https://maskarad-teatr.ru/uslugi/master-klassy"
+      ],
+      "robots": [],
+      "xRobots": null,
+      "title": [
+        "Мастер-классы на детский праздник | Театр «Маскарад»"
+      ],
+      "h1": [
+        "Мастер-классы на детский праздник"
+      ]
+    },
+    {
+      "url": "https://maskarad-teatr.ru/uslugi/cirkovye-fokusy",
+      "hops": [
+        {
+          "url": "https://maskarad-teatr.ru/uslugi/cirkovye-fokusy",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "final": "https://maskarad-teatr.ru/uslugi/cirkovye-fokusy",
+      "status": 200,
+      "canonical": [
+        "https://maskarad-teatr.ru/uslugi/cirkovye-fokusy"
+      ],
+      "robots": [],
+      "xRobots": null,
+      "title": [
+        "Цирковые фокусы на детский праздник | Театр «Маскарад»"
+      ],
+      "h1": [
+        "Цирковые фокусы на детский праздник"
+      ]
+    },
+    {
+      "url": "https://maskarad-teatr.ru/uslugi/kukolnyy-spektakl",
+      "hops": [
+        {
+          "url": "https://maskarad-teatr.ru/uslugi/kukolnyy-spektakl",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "final": "https://maskarad-teatr.ru/uslugi/kukolnyy-spektakl",
+      "status": 200,
+      "canonical": [
+        "https://maskarad-teatr.ru/uslugi/kukolnyy-spektakl"
+      ],
+      "robots": [],
+      "xRobots": null,
+      "title": [
+        "Кукольный спектакль на детский праздник | Театр «Маскарад»"
+      ],
+      "h1": [
+        "Кукольный спектакль на детский праздник"
+      ]
+    },
+    {
+      "url": "https://maskarad-teatr.ru/uslugi/oformlenie-sharami",
+      "hops": [
+        {
+          "url": "https://maskarad-teatr.ru/uslugi/oformlenie-sharami",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "final": "https://maskarad-teatr.ru/uslugi/oformlenie-sharami",
+      "status": 200,
+      "canonical": [
+        "https://maskarad-teatr.ru/uslugi/oformlenie-sharami"
+      ],
+      "robots": [],
+      "xRobots": null,
+      "title": [
+        "Оформление шарами детского праздника | Театр «Маскарад»"
+      ],
+      "h1": [
+        "Оформление шарами детского праздника"
+      ]
+    },
+    {
+      "url": "https://maskarad-teatr.ru/uslugi/foto-video",
+      "hops": [
+        {
+          "url": "https://maskarad-teatr.ru/uslugi/foto-video",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "final": "https://maskarad-teatr.ru/uslugi/foto-video",
+      "status": 200,
+      "canonical": [
+        "https://maskarad-teatr.ru/uslugi/foto-video"
+      ],
+      "robots": [],
+      "xRobots": null,
+      "title": [
+        "Фото- и видеосъемка детского праздника | Театр «Маскарад»"
+      ],
+      "h1": [
+        "Фото- и видеосъемка детского праздника"
+      ]
+    },
+    {
+      "url": "https://maskarad-teatr.ru/uslugi/keytering",
+      "hops": [
+        {
+          "url": "https://maskarad-teatr.ru/uslugi/keytering",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "final": "https://maskarad-teatr.ru/uslugi/keytering",
+      "status": 200,
+      "canonical": [
+        "https://maskarad-teatr.ru/uslugi/keytering"
+      ],
+      "robots": [],
+      "xRobots": null,
+      "title": [
+        "Кейтеринг на детский праздник | Театр «Маскарад»"
+      ],
+      "h1": [
+        "Кейтеринг на детский праздник"
+      ]
+    },
+    {
+      "url": "https://maskarad-teatr.ru/uslugi/spetsialnye-effekty",
+      "hops": [
+        {
+          "url": "https://maskarad-teatr.ru/uslugi/spetsialnye-effekty",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "final": "https://maskarad-teatr.ru/uslugi/spetsialnye-effekty",
+      "status": 200,
+      "canonical": [
+        "https://maskarad-teatr.ru/uslugi/spetsialnye-effekty"
+      ],
+      "robots": [],
+      "xRobots": null,
+      "title": [
+        "Специальные эффекты для детского праздника | Театр «Маскарад»"
+      ],
+      "h1": [
+        "Специальные эффекты для детского праздника"
+      ]
+    },
+    {
+      "url": "https://maskarad-teatr.ru/uslugi/attraktsiony",
+      "hops": [
+        {
+          "url": "https://maskarad-teatr.ru/uslugi/attraktsiony",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "final": "https://maskarad-teatr.ru/uslugi/attraktsiony",
+      "status": 200,
+      "canonical": [
+        "https://maskarad-teatr.ru/uslugi/attraktsiony"
+      ],
+      "robots": [],
+      "xRobots": null,
+      "title": [
+        "Аттракционы на детский праздник | Театр «Маскарад»"
+      ],
+      "h1": [
+        "Аттракционы на детский праздник"
+      ]
+    },
+    {
+      "url": "https://maskarad-teatr.ru/prazdniki/detskiy-sad",
+      "hops": [
+        {
+          "url": "https://maskarad-teatr.ru/prazdniki/detskiy-sad",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "final": "https://maskarad-teatr.ru/prazdniki/detskiy-sad",
+      "status": 200,
+      "canonical": [
+        "https://maskarad-teatr.ru/prazdniki/detskiy-sad"
+      ],
+      "robots": [],
+      "xRobots": null,
+      "title": [
+        "Праздник в детском саду с выездным театром | Театр «Маскарад»"
+      ],
+      "h1": [
+        "Праздник в детском саду с выездным театром"
+      ]
+    },
+    {
+      "url": "https://maskarad-teatr.ru/prazdniki/shkolnyy-prazdnik",
+      "hops": [
+        {
+          "url": "https://maskarad-teatr.ru/prazdniki/shkolnyy-prazdnik",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "final": "https://maskarad-teatr.ru/prazdniki/shkolnyy-prazdnik",
+      "status": 200,
+      "canonical": [
+        "https://maskarad-teatr.ru/prazdniki/shkolnyy-prazdnik"
+      ],
+      "robots": [],
+      "xRobots": null,
+      "title": [
+        "Праздник в школе: спектакль и программа для детей | Театр «Маскарад»"
+      ],
+      "h1": [
+        "Праздник в школе: спектакль и программа для детей"
+      ]
+    },
+    {
+      "url": "https://maskarad-teatr.ru/prazdniki/vypusknoy",
+      "hops": [
+        {
+          "url": "https://maskarad-teatr.ru/prazdniki/vypusknoy",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "final": "https://maskarad-teatr.ru/prazdniki/vypusknoy",
+      "status": 200,
+      "canonical": [
+        "https://maskarad-teatr.ru/prazdniki/vypusknoy"
+      ],
+      "robots": [],
+      "xRobots": null,
+      "title": [
+        "Выпускной праздник для детского сада и школы | Театр «Маскарад»"
+      ],
+      "h1": [
+        "Выпускной праздник для детского сада и школы"
+      ]
+    },
+    {
+      "url": "https://maskarad-teatr.ru/prazdniki/vypusknoy-v-detskom-sadu",
+      "hops": [
+        {
+          "url": "https://maskarad-teatr.ru/prazdniki/vypusknoy-v-detskom-sadu",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "final": "https://maskarad-teatr.ru/prazdniki/vypusknoy-v-detskom-sadu",
+      "status": 200,
+      "canonical": [
+        "https://maskarad-teatr.ru/prazdniki/vypusknoy-v-detskom-sadu"
+      ],
+      "robots": [],
+      "xRobots": null,
+      "title": [
+        "Выпускной праздник в детском саду | Театр «Маскарад»"
+      ],
+      "h1": [
+        "Выпускной праздник в детском саду"
+      ]
+    },
+    {
+      "url": "https://maskarad-teatr.ru/prazdniki/vypusknoy-v-nachalnoy-shkole",
+      "hops": [
+        {
+          "url": "https://maskarad-teatr.ru/prazdniki/vypusknoy-v-nachalnoy-shkole",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "final": "https://maskarad-teatr.ru/prazdniki/vypusknoy-v-nachalnoy-shkole",
+      "status": 200,
+      "canonical": [
+        "https://maskarad-teatr.ru/prazdniki/vypusknoy-v-nachalnoy-shkole"
+      ],
+      "robots": [],
+      "xRobots": null,
+      "title": [
+        "Выпускной в начальной школе | Театр «Маскарад»"
+      ],
+      "h1": [
+        "Выпускной в начальной школе"
+      ]
+    },
+    {
+      "url": "https://maskarad-teatr.ru/prazdniki/vypusknoy-v-11-klasse",
+      "hops": [
+        {
+          "url": "https://maskarad-teatr.ru/prazdniki/vypusknoy-v-11-klasse",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "final": "https://maskarad-teatr.ru/prazdniki/vypusknoy-v-11-klasse",
+      "status": 200,
+      "canonical": [
+        "https://maskarad-teatr.ru/prazdniki/vypusknoy-v-11-klasse"
+      ],
+      "robots": [],
+      "xRobots": null,
+      "title": [
+        "Выпускной праздник для 11 класса | Театр «Маскарад»"
+      ],
+      "h1": [
+        "Выпускной праздник для 11 класса"
+      ]
+    },
+    {
+      "url": "https://maskarad-teatr.ru/spektakli/vinni-puh",
+      "hops": [
+        {
+          "url": "https://maskarad-teatr.ru/spektakli/vinni-puh",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "final": "https://maskarad-teatr.ru/spektakli/vinni-puh",
+      "status": 200,
+      "canonical": [
+        "https://maskarad-teatr.ru/spektakli/vinni-puh"
+      ],
+      "robots": [],
+      "xRobots": null,
+      "title": [
+        "Спектакль «Винни Пух» на детский праздник | Театр «Маскарад»"
+      ],
+      "h1": [
+        "Спектакль «Винни Пух» на детский праздник"
+      ]
+    },
+    {
+      "url": "https://maskarad-teatr.ru/spektakli/madagaskar",
+      "hops": [
+        {
+          "url": "https://maskarad-teatr.ru/spektakli/madagaskar",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "final": "https://maskarad-teatr.ru/spektakli/madagaskar",
+      "status": 200,
+      "canonical": [
+        "https://maskarad-teatr.ru/spektakli/madagaskar"
+      ],
+      "robots": [],
+      "xRobots": null,
+      "title": [
+        "Спектакль «Мадагаскар» на детский праздник | Театр «Маскарад»"
+      ],
+      "h1": [
+        "Спектакль «Мадагаскар» на детский праздник"
+      ]
+    },
+    {
+      "url": "https://maskarad-teatr.ru/spektakli/holodnoe-serdtse",
+      "hops": [
+        {
+          "url": "https://maskarad-teatr.ru/spektakli/holodnoe-serdtse",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "final": "https://maskarad-teatr.ru/spektakli/holodnoe-serdtse",
+      "status": 200,
+      "canonical": [
+        "https://maskarad-teatr.ru/spektakli/holodnoe-serdtse"
+      ],
+      "robots": [],
+      "xRobots": null,
+      "title": [
+        "Спектакль «Холодное сердце» на детский праздник | Театр «Маскарад»"
+      ],
+      "h1": [
+        "Спектакль «Холодное сердце» на детский праздник"
+      ]
+    },
+    {
+      "url": "https://maskarad-teatr.ru/podboroki/scenarii-detskih-prazdnikov",
+      "hops": [
+        {
+          "url": "https://maskarad-teatr.ru/podboroki/scenarii-detskih-prazdnikov",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "final": "https://maskarad-teatr.ru/podboroki/scenarii-detskih-prazdnikov",
+      "status": 200,
+      "canonical": [
+        "https://maskarad-teatr.ru/podboroki/scenarii-detskih-prazdnikov"
+      ],
+      "robots": [],
+      "xRobots": null,
+      "title": [
+        "Сценарии детских праздников | Театр «Маскарад»"
+      ],
+      "h1": [
+        "Сценарии детских праздников"
+      ]
+    },
+    {
+      "url": "https://maskarad-teatr.ru/prazdniki/maslenitsa",
+      "hops": [
+        {
+          "url": "https://maskarad-teatr.ru/prazdniki/maslenitsa",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "final": "https://maskarad-teatr.ru/prazdniki/maslenitsa",
+      "status": 200,
+      "canonical": [
+        "https://maskarad-teatr.ru/prazdniki/maslenitsa"
+      ],
+      "robots": [],
+      "xRobots": null,
+      "title": [
+        "Праздник Масленицы для детей | Театр «Маскарад»"
+      ],
+      "h1": [
+        "Праздник Масленицы для детей"
+      ]
+    },
+    {
+      "url": "https://maskarad-teatr.ru/spektakli/alladin-i-zhasmin",
+      "hops": [
+        {
+          "url": "https://maskarad-teatr.ru/spektakli/alladin-i-zhasmin",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "final": "https://maskarad-teatr.ru/spektakli/alladin-i-zhasmin",
+      "status": 200,
+      "canonical": [
+        "https://maskarad-teatr.ru/spektakli/alladin-i-zhasmin"
+      ],
+      "robots": [],
+      "xRobots": null,
+      "title": [
+        "Спектакль «Аладдин и Жасмин» на детский праздник | Театр «Маскарад»"
+      ],
+      "h1": [
+        "Спектакль «Аладдин и Жасмин» на детский праздник"
+      ]
+    },
+    {
+      "url": "https://maskarad-teatr.ru/spektakli/neznaika-v-tsvetochnom-gorode",
+      "hops": [
+        {
+          "url": "https://maskarad-teatr.ru/spektakli/neznaika-v-tsvetochnom-gorode",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "final": "https://maskarad-teatr.ru/spektakli/neznaika-v-tsvetochnom-gorode",
+      "status": 200,
+      "canonical": [
+        "https://maskarad-teatr.ru/spektakli/neznaika-v-tsvetochnom-gorode"
+      ],
+      "robots": [],
+      "xRobots": null,
+      "title": [
+        "Спектакль «Незнайка в Цветочном городе» для детей | Театр «Маскарад»"
+      ],
+      "h1": [
+        "Спектакль «Незнайка в Цветочном городе» для детей"
+      ]
+    },
+    {
+      "url": "https://maskarad-teatr.ru/spektakli/piter-pen",
+      "hops": [
+        {
+          "url": "https://maskarad-teatr.ru/spektakli/piter-pen",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "final": "https://maskarad-teatr.ru/spektakli/piter-pen",
+      "status": 200,
+      "canonical": [
+        "https://maskarad-teatr.ru/spektakli/piter-pen"
+      ],
+      "robots": [],
+      "xRobots": null,
+      "title": [
+        "Спектакль «Питер Пен» на детский праздник | Театр «Маскарад»"
+      ],
+      "h1": [
+        "Спектакль «Питер Пен» на детский праздник"
+      ]
+    },
+    {
+      "url": "https://maskarad-teatr.ru/spektakli/zolotoy-klyuchik",
+      "hops": [
+        {
+          "url": "https://maskarad-teatr.ru/spektakli/zolotoy-klyuchik",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "final": "https://maskarad-teatr.ru/spektakli/zolotoy-klyuchik",
+      "status": 200,
+      "canonical": [
+        "https://maskarad-teatr.ru/spektakli/zolotoy-klyuchik"
+      ],
+      "robots": [],
+      "xRobots": null,
+      "title": [
+        "Спектакль «Золотой ключик» на детский праздник | Театр «Маскарад»"
+      ],
+      "h1": [
+        "Спектакль «Золотой ключик» на детский праздник"
+      ]
+    },
+    {
+      "url": "https://maskarad-teatr.ru/spektakli/kot-leopold",
+      "hops": [
+        {
+          "url": "https://maskarad-teatr.ru/spektakli/kot-leopold",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "final": "https://maskarad-teatr.ru/spektakli/kot-leopold",
+      "status": 200,
+      "canonical": [
+        "https://maskarad-teatr.ru/spektakli/kot-leopold"
+      ],
+      "robots": [],
+      "xRobots": null,
+      "title": [
+        "Спектакль «Кот Леопольд» на детский праздник | Театр «Маскарад»"
+      ],
+      "h1": [
+        "Спектакль «Кот Леопольд» на детский праздник"
+      ]
+    },
+    {
+      "url": "https://maskarad-teatr.ru/spektakli/tri-mushketera",
+      "hops": [
+        {
+          "url": "https://maskarad-teatr.ru/spektakli/tri-mushketera",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "final": "https://maskarad-teatr.ru/spektakli/tri-mushketera",
+      "status": 200,
+      "canonical": [
+        "https://maskarad-teatr.ru/spektakli/tri-mushketera"
+      ],
+      "robots": [],
+      "xRobots": null,
+      "title": [
+        "Спектакль «Три мушкетёра» на детский праздник | Театр «Маскарад»"
+      ],
+      "h1": [
+        "Спектакль «Три мушкетёра» на детский праздник"
+      ]
+    },
+    {
+      "url": "https://maskarad-teatr.ru/spektakli/istoriya-igrushek",
+      "hops": [
+        {
+          "url": "https://maskarad-teatr.ru/spektakli/istoriya-igrushek",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "final": "https://maskarad-teatr.ru/spektakli/istoriya-igrushek",
+      "status": 200,
+      "canonical": [
+        "https://maskarad-teatr.ru/spektakli/istoriya-igrushek"
+      ],
+      "robots": [],
+      "xRobots": null,
+      "title": [
+        "Спектакль «История игрушек» на детский праздник | Театр «Маскарад»"
+      ],
+      "h1": [
+        "Спектакль «История игрушек» на детский праздник"
+      ]
+    },
+    {
+      "url": "https://maskarad-teatr.ru/spektakli/lednikovyy-period",
+      "hops": [
+        {
+          "url": "https://maskarad-teatr.ru/spektakli/lednikovyy-period",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "final": "https://maskarad-teatr.ru/spektakli/lednikovyy-period",
+      "status": 200,
+      "canonical": [
+        "https://maskarad-teatr.ru/spektakli/lednikovyy-period"
+      ],
+      "robots": [],
+      "xRobots": null,
+      "title": [
+        "Спектакль «Ледниковый период» на детский праздник | Театр «Маскарад»"
+      ],
+      "h1": [
+        "Спектакль «Ледниковый период» на детский праздник"
+      ]
+    },
+    {
+      "url": "https://maskarad-teatr.ru/spektakli/simpsony",
+      "hops": [
+        {
+          "url": "https://maskarad-teatr.ru/spektakli/simpsony",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "final": "https://maskarad-teatr.ru/spektakli/simpsony",
+      "status": 200,
+      "canonical": [
+        "https://maskarad-teatr.ru/spektakli/simpsony"
+      ],
+      "robots": [],
+      "xRobots": null,
+      "title": [
+        "Спектакль «Симпсоны» на детский праздник | Театр «Маскарад»"
+      ],
+      "h1": [
+        "Спектакль «Симпсоны» на детский праздник"
+      ]
+    },
+    {
+      "url": "https://maskarad-teatr.ru/spektakli/skazochnyy-balaganchik",
+      "hops": [
+        {
+          "url": "https://maskarad-teatr.ru/spektakli/skazochnyy-balaganchik",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "final": "https://maskarad-teatr.ru/spektakli/skazochnyy-balaganchik",
+      "status": 200,
+      "canonical": [
+        "https://maskarad-teatr.ru/spektakli/skazochnyy-balaganchik"
+      ],
+      "robots": [],
+      "xRobots": null,
+      "title": [
+        "Спектакль «Сказочный балаганчик» на детский праздник | Театр «Маскарад»"
+      ],
+      "h1": [
+        "Спектакль «Сказочный балаганчик» на детский праздник"
+      ]
+    },
+    {
+      "url": "https://maskarad-teatr.ru/spektakli/ivan-da-marya",
+      "hops": [
+        {
+          "url": "https://maskarad-teatr.ru/spektakli/ivan-da-marya",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "final": "https://maskarad-teatr.ru/spektakli/ivan-da-marya",
+      "status": 200,
+      "canonical": [
+        "https://maskarad-teatr.ru/spektakli/ivan-da-marya"
+      ],
+      "robots": [],
+      "xRobots": null,
+      "title": [
+        "Спектакль «Иван да Марья» на детский праздник | Театр «Маскарад»"
+      ],
+      "h1": [
+        "Спектакль «Иван да Марья» на детский праздник"
+      ]
+    },
+    {
+      "url": "https://maskarad-teatr.ru/spektakli/volshebnaya-feya",
+      "hops": [
+        {
+          "url": "https://maskarad-teatr.ru/spektakli/volshebnaya-feya",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "final": "https://maskarad-teatr.ru/spektakli/volshebnaya-feya",
+      "status": 200,
+      "canonical": [
+        "https://maskarad-teatr.ru/spektakli/volshebnaya-feya"
+      ],
+      "robots": [],
+      "xRobots": null,
+      "title": [
+        "Программа «Волшебная фея» на день рождения | Театр «Маскарад»"
+      ],
+      "h1": [
+        "Программа «Волшебная фея» на день рождения"
+      ]
+    },
+    {
+      "url": "https://maskarad-teatr.ru/spektakli/novogodnyy-ekspress",
+      "hops": [
+        {
+          "url": "https://maskarad-teatr.ru/spektakli/novogodnyy-ekspress",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "final": "https://maskarad-teatr.ru/spektakli/novogodnyy-ekspress",
+      "status": 200,
+      "canonical": [
+        "https://maskarad-teatr.ru/spektakli/novogodnyy-ekspress"
+      ],
+      "robots": [],
+      "xRobots": null,
+      "title": [
+        "Спектакль «Новогодний экспресс» для детей | Театр «Маскарад»"
+      ],
+      "h1": [
+        "Спектакль «Новогодний экспресс» для детей"
+      ]
+    },
+    {
+      "url": "https://maskarad-teatr.ru/spektakli/novyy-god-na-snezhnoy-planete",
+      "hops": [
+        {
+          "url": "https://maskarad-teatr.ru/spektakli/novyy-god-na-snezhnoy-planete",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "final": "https://maskarad-teatr.ru/spektakli/novyy-god-na-snezhnoy-planete",
+      "status": 200,
+      "canonical": [
+        "https://maskarad-teatr.ru/spektakli/novyy-god-na-snezhnoy-planete"
+      ],
+      "robots": [],
+      "xRobots": null,
+      "title": [
+        "Спектакль «Новый год на снежной планете» | Театр «Маскарад»"
+      ],
+      "h1": [
+        "Спектакль «Новый год на снежной планете»"
+      ]
+    },
+    {
+      "url": "https://maskarad-teatr.ru/spektakli/avatar",
+      "hops": [
+        {
+          "url": "https://maskarad-teatr.ru/spektakli/avatar",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "final": "https://maskarad-teatr.ru/spektakli/avatar",
+      "status": 200,
+      "canonical": [
+        "https://maskarad-teatr.ru/spektakli/avatar"
+      ],
+      "robots": [],
+      "xRobots": null,
+      "title": [
+        "Программа «Аватар» на детский праздник | Театр «Маскарад»"
+      ],
+      "h1": [
+        "Программа «Аватар» на детский праздник"
+      ]
+    },
+    {
+      "url": "https://maskarad-teatr.ru/prazdniki/vypusknoy-v-stile-fashion",
+      "hops": [
+        {
+          "url": "https://maskarad-teatr.ru/prazdniki/vypusknoy-v-stile-fashion",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "final": "https://maskarad-teatr.ru/prazdniki/vypusknoy-v-stile-fashion",
+      "status": 200,
+      "canonical": [
+        "https://maskarad-teatr.ru/prazdniki/vypusknoy-v-stile-fashion"
+      ],
+      "robots": [],
+      "xRobots": null,
+      "title": [
+        "Выпускной в стиле Fashion для детей и подростков | Театр «Маскарад»"
+      ],
+      "h1": [
+        "Выпускной в стиле Fashion для детей и подростков"
+      ]
+    },
+    {
+      "url": "https://maskarad-teatr.ru/spektakli/pyatyy-element",
+      "hops": [
+        {
+          "url": "https://maskarad-teatr.ru/spektakli/pyatyy-element",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "final": "https://maskarad-teatr.ru/spektakli/pyatyy-element",
+      "status": 200,
+      "canonical": [
+        "https://maskarad-teatr.ru/spektakli/pyatyy-element"
+      ],
+      "robots": [],
+      "xRobots": null,
+      "title": [
+        "Спектакль «Пятый элемент» для детского праздника | Театр «Маскарад»"
+      ],
+      "h1": [
+        "Спектакль «Пятый элемент» для детского праздника"
+      ]
+    },
+    {
+      "url": "https://maskarad-teatr.ru/spektakli/skazka-shreka",
+      "hops": [
+        {
+          "url": "https://maskarad-teatr.ru/spektakli/skazka-shreka",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "final": "https://maskarad-teatr.ru/spektakli/skazka-shreka",
+      "status": 200,
+      "canonical": [
+        "https://maskarad-teatr.ru/spektakli/skazka-shreka"
+      ],
+      "robots": [],
+      "xRobots": null,
+      "title": [
+        "Спектакль «Сказка Шрека» на детский праздник | Театр «Маскарад»"
+      ],
+      "h1": [
+        "Спектакль «Сказка Шрека» на детский праздник"
+      ]
+    },
+    {
+      "url": "https://maskarad-teatr.ru/spektakli/smurfiki",
+      "hops": [
+        {
+          "url": "https://maskarad-teatr.ru/spektakli/smurfiki",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "final": "https://maskarad-teatr.ru/spektakli/smurfiki",
+      "status": 200,
+      "canonical": [
+        "https://maskarad-teatr.ru/spektakli/smurfiki"
+      ],
+      "robots": [],
+      "xRobots": null,
+      "title": [
+        "Программа «Смурфики» на детский праздник | Театр «Маскарад»"
+      ],
+      "h1": [
+        "Программа «Смурфики» на детский праздник"
+      ]
+    },
+    {
+      "url": "https://maskarad-teatr.ru/spektakli/supergeroi",
+      "hops": [
+        {
+          "url": "https://maskarad-teatr.ru/spektakli/supergeroi",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "final": "https://maskarad-teatr.ru/spektakli/supergeroi",
+      "status": 200,
+      "canonical": [
+        "https://maskarad-teatr.ru/spektakli/supergeroi"
+      ],
+      "robots": [],
+      "xRobots": null,
+      "title": [
+        "Программа «Супергерои» на детский праздник | Театр «Маскарад»"
+      ],
+      "h1": [
+        "Программа «Супергерои» на детский праздник"
+      ]
+    },
+    {
+      "url": "https://maskarad-teatr.ru/spektakli/skazka-elfov",
+      "hops": [
+        {
+          "url": "https://maskarad-teatr.ru/spektakli/skazka-elfov",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "final": "https://maskarad-teatr.ru/spektakli/skazka-elfov",
+      "status": 200,
+      "canonical": [
+        "https://maskarad-teatr.ru/spektakli/skazka-elfov"
+      ],
+      "robots": [],
+      "xRobots": null,
+      "title": [
+        "Спектакль «Сказка эльфов» для детей | Театр «Маскарад»"
+      ],
+      "h1": [
+        "Спектакль «Сказка эльфов» для детей"
+      ]
+    },
+    {
+      "url": "https://maskarad-teatr.ru/spektakli/shkola-volshebnic",
+      "hops": [
+        {
+          "url": "https://maskarad-teatr.ru/spektakli/shkola-volshebnic",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "final": "https://maskarad-teatr.ru/spektakli/shkola-volshebnic",
+      "status": 200,
+      "canonical": [
+        "https://maskarad-teatr.ru/spektakli/shkola-volshebnic"
+      ],
+      "robots": [],
+      "xRobots": null,
+      "title": [
+        "Программа «Школа волшебниц» на детский праздник | Театр «Маскарад»"
+      ],
+      "h1": [
+        "Программа «Школа волшебниц» на детский праздник"
+      ]
+    },
+    {
+      "url": "https://maskarad-teatr.ru/uslugi/pozdravitelnaya-pesnya",
+      "hops": [
+        {
+          "url": "https://maskarad-teatr.ru/uslugi/pozdravitelnaya-pesnya",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "final": "https://maskarad-teatr.ru/uslugi/pozdravitelnaya-pesnya",
+      "status": 200,
+      "canonical": [
+        "https://maskarad-teatr.ru/uslugi/pozdravitelnaya-pesnya"
+      ],
+      "robots": [],
+      "xRobots": null,
+      "title": [
+        "Поздравительная песня на детский праздник | Театр «Маскарад»"
+      ],
+      "h1": [
+        "Поздравительная песня на детский праздник"
+      ]
+    },
+    {
+      "url": "https://maskarad-teatr.ru/uslugi/detskiy-tort",
+      "hops": [
+        {
+          "url": "https://maskarad-teatr.ru/uslugi/detskiy-tort",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "final": "https://maskarad-teatr.ru/uslugi/detskiy-tort",
+      "status": 200,
+      "canonical": [
+        "https://maskarad-teatr.ru/uslugi/detskiy-tort"
+      ],
+      "robots": [],
+      "xRobots": null,
+      "title": [
+        "Детский торт на день рождения и праздник | Театр «Маскарад»"
+      ],
+      "h1": [
+        "Детский торт на день рождения и праздник"
+      ]
+    },
+    {
+      "url": "https://maskarad-teatr.ru/uslugi/shou-s-zhivotnymi",
+      "hops": [
+        {
+          "url": "https://maskarad-teatr.ru/uslugi/shou-s-zhivotnymi",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "final": "https://maskarad-teatr.ru/uslugi/shou-s-zhivotnymi",
+      "status": 200,
+      "canonical": [
+        "https://maskarad-teatr.ru/uslugi/shou-s-zhivotnymi"
+      ],
+      "robots": [],
+      "xRobots": null,
+      "title": [
+        "Шоу с животными на детский праздник | Театр «Маскарад»"
+      ],
+      "h1": [
+        "Шоу с животными на детский праздник"
+      ]
+    },
+    {
+      "url": "https://maskarad-teatr.ru/prazdniki/detskiy-prazdnik-na-teplohode",
+      "hops": [
+        {
+          "url": "https://maskarad-teatr.ru/prazdniki/detskiy-prazdnik-na-teplohode",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "final": "https://maskarad-teatr.ru/prazdniki/detskiy-prazdnik-na-teplohode",
+      "status": 200,
+      "canonical": [
+        "https://maskarad-teatr.ru/prazdniki/detskiy-prazdnik-na-teplohode"
+      ],
+      "robots": [],
+      "xRobots": null,
+      "title": [
+        "Детский праздник на теплоходе: как подготовить формат | Театр «Маскарад»"
+      ],
+      "h1": [
+        "Детский праздник на теплоходе: как подготовить формат"
+      ]
+    },
+    {
+      "url": "https://maskarad-teatr.ru/prazdniki/individualnyy-detskiy-prazdnik",
+      "hops": [
+        {
+          "url": "https://maskarad-teatr.ru/prazdniki/individualnyy-detskiy-prazdnik",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "final": "https://maskarad-teatr.ru/prazdniki/individualnyy-detskiy-prazdnik",
+      "status": 200,
+      "canonical": [
+        "https://maskarad-teatr.ru/prazdniki/individualnyy-detskiy-prazdnik"
+      ],
+      "robots": [],
+      "xRobots": null,
+      "title": [
+        "Индивидуальный детский праздник: программа под ребенка | Театр «Маскарад»"
+      ],
+      "h1": [
+        "Индивидуальный детский праздник: программа под ребенка"
+      ]
+    },
+    {
+      "url": "https://maskarad-teatr.ru/prazdniki/obrazovatelnyy-detskiy-prazdnik",
+      "hops": [
+        {
+          "url": "https://maskarad-teatr.ru/prazdniki/obrazovatelnyy-detskiy-prazdnik",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "final": "https://maskarad-teatr.ru/prazdniki/obrazovatelnyy-detskiy-prazdnik",
+      "status": 200,
+      "canonical": [
+        "https://maskarad-teatr.ru/prazdniki/obrazovatelnyy-detskiy-prazdnik"
+      ],
+      "robots": [],
+      "xRobots": null,
+      "title": [
+        "Образовательный праздник для детей | Театр «Маскарад»"
+      ],
+      "h1": [
+        "Образовательный праздник для детей"
+      ]
+    },
+    {
+      "url": "https://maskarad-teatr.ru/spektakli",
+      "hops": [
+        {
+          "url": "https://maskarad-teatr.ru/spektakli",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "final": "https://maskarad-teatr.ru/spektakli",
+      "status": 200,
+      "canonical": [
+        "https://maskarad-teatr.ru/spektakli"
+      ],
+      "robots": [],
+      "xRobots": null,
+      "title": [
+        "Интерактивные спектакли | Театр «Маскарад»"
+      ],
+      "h1": [
+        "Интерактивные спектакли"
+      ]
+    },
+    {
+      "url": "https://maskarad-teatr.ru/uslugi",
+      "hops": [
+        {
+          "url": "https://maskarad-teatr.ru/uslugi",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "final": "https://maskarad-teatr.ru/uslugi",
+      "status": 200,
+      "canonical": [
+        "https://maskarad-teatr.ru/uslugi"
+      ],
+      "robots": [],
+      "xRobots": null,
+      "title": [
+        "Услуги для детского праздника | Театр «Маскарад»"
+      ],
+      "h1": [
+        "Услуги для детского праздника"
+      ]
+    },
+    {
+      "url": "https://maskarad-teatr.ru/prazdniki",
+      "hops": [
+        {
+          "url": "https://maskarad-teatr.ru/prazdniki",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "final": "https://maskarad-teatr.ru/prazdniki",
+      "status": 200,
+      "canonical": [
+        "https://maskarad-teatr.ru/prazdniki"
+      ],
+      "robots": [],
+      "xRobots": null,
+      "title": [
+        "Детские праздники | Театр «Маскарад»"
+      ],
+      "h1": [
+        "Детские праздники"
+      ]
+    },
+    {
+      "url": "https://maskarad-teatr.ru/tseny",
+      "hops": [
+        {
+          "url": "https://maskarad-teatr.ru/tseny",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "final": "https://maskarad-teatr.ru/tseny",
+      "status": 200,
+      "canonical": [
+        "https://maskarad-teatr.ru/tseny"
+      ],
+      "robots": [],
+      "xRobots": null,
+      "title": [
+        "Цены и форматы | Театр «Маскарад»"
+      ],
+      "h1": [
+        "Цены и форматы"
+      ]
+    },
+    {
+      "url": "https://maskarad-teatr.ru/otzyvy-pressa",
+      "hops": [
+        {
+          "url": "https://maskarad-teatr.ru/otzyvy-pressa",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "final": "https://maskarad-teatr.ru/otzyvy-pressa",
+      "status": 200,
+      "canonical": [
+        "https://maskarad-teatr.ru/otzyvy-pressa"
+      ],
+      "robots": [],
+      "xRobots": null,
+      "title": [
+        "Отзывы и пресса | Театр «Маскарад»"
+      ],
+      "h1": [
+        "Отзывы и пресса"
+      ]
+    },
+    {
+      "url": "https://maskarad-teatr.ru/foto-video",
+      "hops": [
+        {
+          "url": "https://maskarad-teatr.ru/foto-video",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "final": "https://maskarad-teatr.ru/foto-video",
+      "status": 200,
+      "canonical": [
+        "https://maskarad-teatr.ru/foto-video"
+      ],
+      "robots": [],
+      "xRobots": null,
+      "title": [
+        "Фото и видео | Театр «Маскарад»"
+      ],
+      "h1": [
+        "Фото и видео"
+      ]
+    },
+    {
+      "url": "https://maskarad-teatr.ru/kontakty",
+      "hops": [
+        {
+          "url": "https://maskarad-teatr.ru/kontakty",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "final": "https://maskarad-teatr.ru/kontakty",
+      "status": 200,
+      "canonical": [
+        "https://maskarad-teatr.ru/kontakty"
+      ],
+      "robots": [],
+      "xRobots": null,
+      "title": [
+        "Контакты и заявка | Театр «Маскарад»"
+      ],
+      "h1": [
+        "Контакты и заявка"
+      ]
+    },
+    {
+      "url": "https://maskarad-teatr.ru/o-teatre",
+      "hops": [
+        {
+          "url": "https://maskarad-teatr.ru/o-teatre",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "final": "https://maskarad-teatr.ru/o-teatre",
+      "status": 200,
+      "canonical": [
+        "https://maskarad-teatr.ru/o-teatre"
+      ],
+      "robots": [],
+      "xRobots": null,
+      "title": [
+        "О театре «Маскарад» | Театр «Маскарад»"
+      ],
+      "h1": [
+        "О театре «Маскарад»"
+      ]
+    },
+    {
+      "url": "https://maskarad-teatr.ru/stati",
+      "hops": [
+        {
+          "url": "https://maskarad-teatr.ru/stati",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "final": "https://maskarad-teatr.ru/stati",
+      "status": 200,
+      "canonical": [
+        "https://maskarad-teatr.ru/stati"
+      ],
+      "robots": [],
+      "xRobots": null,
+      "title": [
+        "Идеи и кейсы для детских праздников | Театр «Маскарад»"
+      ],
+      "h1": [
+        "Идеи и кейсы для детских праздников"
+      ]
+    },
+    {
+      "url": "https://maskarad-teatr.ru/kejsy",
+      "hops": [
+        {
+          "url": "https://maskarad-teatr.ru/kejsy",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "final": "https://maskarad-teatr.ru/kejsy",
+      "status": 200,
+      "canonical": [
+        "https://maskarad-teatr.ru/kejsy"
+      ],
+      "robots": [],
+      "xRobots": null,
+      "title": [
+        "Кейсы проведенных праздников | Театр «Маскарад»"
+      ],
+      "h1": [
+        "Кейсы проведенных праздников"
+      ]
+    },
+    {
+      "url": "https://maskarad-teatr.ru/podboroki",
+      "hops": [
+        {
+          "url": "https://maskarad-teatr.ru/podboroki",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "final": "https://maskarad-teatr.ru/podboroki",
+      "status": 200,
+      "canonical": [
+        "https://maskarad-teatr.ru/podboroki"
+      ],
+      "robots": [],
+      "xRobots": null,
+      "title": [
+        "Подборки программ для праздников | Театр «Маскарад»"
+      ],
+      "h1": [
+        "Подборки программ для праздников"
+      ]
+    },
+    {
+      "url": "https://maskarad-teatr.ru/podboroki/interaktivnye-spektakli-dlya-detey",
+      "hops": [
+        {
+          "url": "https://maskarad-teatr.ru/podboroki/interaktivnye-spektakli-dlya-detey",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "final": "https://maskarad-teatr.ru/podboroki/interaktivnye-spektakli-dlya-detey",
+      "status": 200,
+      "canonical": [
+        "https://maskarad-teatr.ru/podboroki/interaktivnye-spektakli-dlya-detey"
+      ],
+      "robots": [],
+      "xRobots": null,
+      "title": [
+        "Интерактивные спектакли для детей: как выбрать формат | Театр «Маскарад»"
+      ],
+      "h1": [
+        "Интерактивные спектакли для детей: как выбрать формат"
+      ]
+    },
+    {
+      "url": "https://maskarad-teatr.ru/stati/igrovoy-scenariy-dlya-detskogo-prazdnika",
+      "hops": [
+        {
+          "url": "https://maskarad-teatr.ru/stati/igrovoy-scenariy-dlya-detskogo-prazdnika",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "final": "https://maskarad-teatr.ru/stati/igrovoy-scenariy-dlya-detskogo-prazdnika",
+      "status": 200,
+      "canonical": [
+        "https://maskarad-teatr.ru/stati/igrovoy-scenariy-dlya-detskogo-prazdnika"
+      ],
+      "robots": [],
+      "xRobots": null,
+      "title": [
+        "Игровой сценарий для детского праздника: герои, задания и финал | Театр «Маскарад»"
+      ],
+      "h1": [
+        "Игровой сценарий для детского праздника: герои, задания и финал"
+      ]
+    },
+    {
+      "url": "https://maskarad-teatr.ru/stati/prazdnik-po-skazkam-pushkina-dlya-detey",
+      "hops": [
+        {
+          "url": "https://maskarad-teatr.ru/stati/prazdnik-po-skazkam-pushkina-dlya-detey",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "final": "https://maskarad-teatr.ru/stati/prazdnik-po-skazkam-pushkina-dlya-detey",
+      "status": 200,
+      "canonical": [
+        "https://maskarad-teatr.ru/stati/prazdnik-po-skazkam-pushkina-dlya-detey"
+      ],
+      "robots": [],
+      "xRobots": null,
+      "title": [
+        "Праздник по сказкам Пушкина для детей: как собрать сценарий | Театр «Маскарад»"
+      ],
+      "h1": [
+        "Праздник по сказкам Пушкина для детей: как собрать сценарий"
+      ]
+    },
+    {
+      "url": "https://maskarad-teatr.ru/stati/skazki-sheherezady-scenariy-dlya-detey",
+      "hops": [
+        {
+          "url": "https://maskarad-teatr.ru/stati/skazki-sheherezady-scenariy-dlya-detey",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "final": "https://maskarad-teatr.ru/stati/skazki-sheherezady-scenariy-dlya-detey",
+      "status": 200,
+      "canonical": [
+        "https://maskarad-teatr.ru/stati/skazki-sheherezady-scenariy-dlya-detey"
+      ],
+      "robots": [],
+      "xRobots": null,
+      "title": [
+        "Сказки Шехерезады: сценарий праздника для детей | Театр «Маскарад»"
+      ],
+      "h1": [
+        "Сказки Шехерезады: сценарий праздника для детей"
+      ]
+    },
+    {
+      "url": "https://maskarad-teatr.ru/stati/detskiy-prazdnik-na-hellouin",
+      "hops": [
+        {
+          "url": "https://maskarad-teatr.ru/stati/detskiy-prazdnik-na-hellouin",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "final": "https://maskarad-teatr.ru/stati/detskiy-prazdnik-na-hellouin",
+      "status": 200,
+      "canonical": [
+        "https://maskarad-teatr.ru/stati/detskiy-prazdnik-na-hellouin"
+      ],
+      "robots": [],
+      "xRobots": null,
+      "title": [
+        "Детский праздник на Хэллоуин: как собрать сценарий | Театр «Маскарад»"
+      ],
+      "h1": [
+        "Детский праздник на Хэллоуин: как собрать сценарий"
+      ]
+    },
+    {
+      "url": "https://maskarad-teatr.ru/stati/prazdnik-oseni-dlya-detey",
+      "hops": [
+        {
+          "url": "https://maskarad-teatr.ru/stati/prazdnik-oseni-dlya-detey",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "final": "https://maskarad-teatr.ru/stati/prazdnik-oseni-dlya-detey",
+      "status": 200,
+      "canonical": [
+        "https://maskarad-teatr.ru/stati/prazdnik-oseni-dlya-detey"
+      ],
+      "robots": [],
+      "xRobots": null,
+      "title": [
+        "Праздник осени для детей: сценарий для сада и школы | Театр «Маскарад»"
+      ],
+      "h1": [
+        "Праздник осени для детей: сценарий для сада и школы"
+      ]
+    },
+    {
+      "url": "https://maskarad-teatr.ru/stati/prazdnik-bukvarya-scenariy-dlya-1-klassa",
+      "hops": [
+        {
+          "url": "https://maskarad-teatr.ru/stati/prazdnik-bukvarya-scenariy-dlya-1-klassa",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "final": "https://maskarad-teatr.ru/stati/prazdnik-bukvarya-scenariy-dlya-1-klassa",
+      "status": 200,
+      "canonical": [
+        "https://maskarad-teatr.ru/stati/prazdnik-bukvarya-scenariy-dlya-1-klassa"
+      ],
+      "robots": [],
+      "xRobots": null,
+      "title": [
+        "Праздник Букваря: сценарий для 1 класса | Театр «Маскарад»"
+      ],
+      "h1": [
+        "Праздник Букваря: сценарий для 1 класса"
+      ]
+    },
+    {
+      "url": "https://maskarad-teatr.ru/stati/kak-vybrat-spektakl-na-den-rozhdeniya",
+      "hops": [
+        {
+          "url": "https://maskarad-teatr.ru/stati/kak-vybrat-spektakl-na-den-rozhdeniya",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "final": "https://maskarad-teatr.ru/stati/kak-vybrat-spektakl-na-den-rozhdeniya",
+      "status": 200,
+      "canonical": [
+        "https://maskarad-teatr.ru/stati/kak-vybrat-spektakl-na-den-rozhdeniya"
+      ],
+      "robots": [],
+      "xRobots": null,
+      "title": [
+        "Как выбрать спектакль на день рождения ребенка | Театр «Маскарад»"
+      ],
+      "h1": [
+        "Как выбрать спектакль на день рождения ребенка"
+      ]
+    },
+    {
+      "url": "https://maskarad-teatr.ru/kejsy/piratskiy-den-rozhdeniya-7-let",
+      "hops": [
+        {
+          "url": "https://maskarad-teatr.ru/kejsy/piratskiy-den-rozhdeniya-7-let",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "final": "https://maskarad-teatr.ru/kejsy/piratskiy-den-rozhdeniya-7-let",
+      "status": 200,
+      "canonical": [
+        "https://maskarad-teatr.ru/kejsy/piratskiy-den-rozhdeniya-7-let"
+      ],
+      "robots": [],
+      "xRobots": null,
+      "title": [
+        "Пиратский день рождения на 7 лет | Театр «Маскарад»"
+      ],
+      "h1": [
+        "Пиратский день рождения на 7 лет"
+      ]
+    },
+    {
+      "url": "https://maskarad-teatr.ru/podboroki/spektakli-dlya-5-7-let",
+      "hops": [
+        {
+          "url": "https://maskarad-teatr.ru/podboroki/spektakli-dlya-5-7-let",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "final": "https://maskarad-teatr.ru/podboroki/spektakli-dlya-5-7-let",
+      "status": 200,
+      "canonical": [
+        "https://maskarad-teatr.ru/podboroki/spektakli-dlya-5-7-let"
+      ],
+      "robots": [],
+      "xRobots": null,
+      "title": [
+        "Спектакли для детей 5-7 лет | Театр «Маскарад»"
+      ],
+      "h1": [
+        "Спектакли для детей 5-7 лет"
+      ]
+    },
+    {
+      "url": "https://maskarad-teatr.ru/podboroki/prazdniki-dlya-detey-3-4-goda",
+      "hops": [
+        {
+          "url": "https://maskarad-teatr.ru/podboroki/prazdniki-dlya-detey-3-4-goda",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "final": "https://maskarad-teatr.ru/podboroki/prazdniki-dlya-detey-3-4-goda",
+      "status": 200,
+      "canonical": [
+        "https://maskarad-teatr.ru/podboroki/prazdniki-dlya-detey-3-4-goda"
+      ],
+      "robots": [],
+      "xRobots": null,
+      "title": [
+        "Праздники для детей 3-4 лет | Театр «Маскарад»"
+      ],
+      "h1": [
+        "Праздники для детей 3-4 лет"
+      ]
+    },
+    {
+      "url": "https://maskarad-teatr.ru/stati/detskiy-prazdnik-doma-ili-v-restorane",
+      "hops": [
+        {
+          "url": "https://maskarad-teatr.ru/stati/detskiy-prazdnik-doma-ili-v-restorane",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "final": "https://maskarad-teatr.ru/stati/detskiy-prazdnik-doma-ili-v-restorane",
+      "status": 200,
+      "canonical": [
+        "https://maskarad-teatr.ru/stati/detskiy-prazdnik-doma-ili-v-restorane"
+      ],
+      "robots": [],
+      "xRobots": null,
+      "title": [
+        "Детский праздник дома или в ресторане | Театр «Маскарад»"
+      ],
+      "h1": [
+        "Детский праздник дома или в ресторане"
+      ]
+    },
+    {
+      "url": "https://maskarad-teatr.ru/kejsy/prazdnik-v-detskom-sadu",
+      "hops": [
+        {
+          "url": "https://maskarad-teatr.ru/kejsy/prazdnik-v-detskom-sadu",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "final": "https://maskarad-teatr.ru/kejsy/prazdnik-v-detskom-sadu",
+      "status": 200,
+      "canonical": [
+        "https://maskarad-teatr.ru/kejsy/prazdnik-v-detskom-sadu"
+      ],
+      "robots": [],
+      "xRobots": null,
+      "title": [
+        "Праздник в детском саду | Театр «Маскарад»"
+      ],
+      "h1": [
+        "Праздник в детском саду"
+      ]
+    },
+    {
+      "url": "https://maskarad-teatr.ru/stati/korporativnaya-elka-dlya-detey-sotrudnikov",
+      "hops": [
+        {
+          "url": "https://maskarad-teatr.ru/stati/korporativnaya-elka-dlya-detey-sotrudnikov",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "final": "https://maskarad-teatr.ru/stati/korporativnaya-elka-dlya-detey-sotrudnikov",
+      "status": 200,
+      "canonical": [
+        "https://maskarad-teatr.ru/stati/korporativnaya-elka-dlya-detey-sotrudnikov"
+      ],
+      "robots": [],
+      "xRobots": null,
+      "title": [
+        "Корпоративная елка для детей сотрудников | Театр «Маскарад»"
+      ],
+      "h1": [
+        "Корпоративная елка для детей сотрудников"
+      ]
+    },
+    {
+      "url": "https://maskarad-teatr.ru/podboroki/prazdniki-dlya-detey-8-10-let",
+      "hops": [
+        {
+          "url": "https://maskarad-teatr.ru/podboroki/prazdniki-dlya-detey-8-10-let",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "final": "https://maskarad-teatr.ru/podboroki/prazdniki-dlya-detey-8-10-let",
+      "status": 200,
+      "canonical": [
+        "https://maskarad-teatr.ru/podboroki/prazdniki-dlya-detey-8-10-let"
+      ],
+      "robots": [],
+      "xRobots": null,
+      "title": [
+        "Праздники для детей 8-10 лет | Театр «Маскарад»"
+      ],
+      "h1": [
+        "Праздники для детей 8-10 лет"
+      ]
+    },
+    {
+      "url": "https://maskarad-teatr.ru/stati/prazdnik-v-shkole-kak-sobrat-programmu",
+      "hops": [
+        {
+          "url": "https://maskarad-teatr.ru/stati/prazdnik-v-shkole-kak-sobrat-programmu",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "final": "https://maskarad-teatr.ru/stati/prazdnik-v-shkole-kak-sobrat-programmu",
+      "status": 200,
+      "canonical": [
+        "https://maskarad-teatr.ru/stati/prazdnik-v-shkole-kak-sobrat-programmu"
+      ],
+      "robots": [],
+      "xRobots": null,
+      "title": [
+        "Праздник в школе: как собрать программу | Театр «Маскарад»"
+      ],
+      "h1": [
+        "Праздник в школе: как собрать программу"
+      ]
+    },
+    {
+      "url": "https://maskarad-teatr.ru/podboroki/idei-dlya-vypusknogo",
+      "hops": [
+        {
+          "url": "https://maskarad-teatr.ru/podboroki/idei-dlya-vypusknogo",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "final": "https://maskarad-teatr.ru/podboroki/idei-dlya-vypusknogo",
+      "status": 200,
+      "canonical": [
+        "https://maskarad-teatr.ru/podboroki/idei-dlya-vypusknogo"
+      ],
+      "robots": [],
+      "xRobots": null,
+      "title": [
+        "Идеи для выпускного в детском саду и школе | Театр «Маскарад»"
+      ],
+      "h1": [
+        "Идеи для выпускного в детском саду и школе"
+      ]
+    },
+    {
+      "url": "https://maskarad-teatr.ru/podboroki/novogodnie-programmy-dlya-detey",
+      "hops": [
+        {
+          "url": "https://maskarad-teatr.ru/podboroki/novogodnie-programmy-dlya-detey",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "final": "https://maskarad-teatr.ru/podboroki/novogodnie-programmy-dlya-detey",
+      "status": 200,
+      "canonical": [
+        "https://maskarad-teatr.ru/podboroki/novogodnie-programmy-dlya-detey"
+      ],
+      "robots": [],
+      "xRobots": null,
+      "title": [
+        "Новогодние программы для детей | Театр «Маскарад»"
+      ],
+      "h1": [
+        "Новогодние программы для детей"
+      ]
+    },
+    {
+      "url": "https://maskarad-teatr.ru/stati/animatory-na-dom-kak-vybrat-programmu",
+      "hops": [
+        {
+          "url": "https://maskarad-teatr.ru/stati/animatory-na-dom-kak-vybrat-programmu",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "final": "https://maskarad-teatr.ru/stati/animatory-na-dom-kak-vybrat-programmu",
+      "status": 200,
+      "canonical": [
+        "https://maskarad-teatr.ru/stati/animatory-na-dom-kak-vybrat-programmu"
+      ],
+      "robots": [],
+      "xRobots": null,
+      "title": [
+        "Аниматоры на дом: как выбрать программу | Театр «Маскарад»"
+      ],
+      "h1": [
+        "Аниматоры на дом: как выбрать программу"
+      ]
+    },
+    {
+      "url": "https://maskarad-teatr.ru/stati/detskiy-prazdnik-v-restorane",
+      "hops": [
+        {
+          "url": "https://maskarad-teatr.ru/stati/detskiy-prazdnik-v-restorane",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "final": "https://maskarad-teatr.ru/stati/detskiy-prazdnik-v-restorane",
+      "status": 200,
+      "canonical": [
+        "https://maskarad-teatr.ru/stati/detskiy-prazdnik-v-restorane"
+      ],
+      "robots": [],
+      "xRobots": null,
+      "title": [
+        "Детский праздник в ресторане | Театр «Маскарад»"
+      ],
+      "h1": [
+        "Детский праздник в ресторане"
+      ]
+    },
+    {
+      "url": "https://maskarad-teatr.ru/podboroki/prazdniki-dlya-detey-11-13-let",
+      "hops": [
+        {
+          "url": "https://maskarad-teatr.ru/podboroki/prazdniki-dlya-detey-11-13-let",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "final": "https://maskarad-teatr.ru/podboroki/prazdniki-dlya-detey-11-13-let",
+      "status": 200,
+      "canonical": [
+        "https://maskarad-teatr.ru/podboroki/prazdniki-dlya-detey-11-13-let"
+      ],
+      "robots": [],
+      "xRobots": null,
+      "title": [
+        "Праздники для детей 11-13 лет | Театр «Маскарад»"
+      ],
+      "h1": [
+        "Праздники для детей 11-13 лет"
+      ]
+    },
+    {
+      "url": "https://maskarad-teatr.ru/podboroki/nedorogoy-detskiy-prazdnik",
+      "hops": [
+        {
+          "url": "https://maskarad-teatr.ru/podboroki/nedorogoy-detskiy-prazdnik",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "final": "https://maskarad-teatr.ru/podboroki/nedorogoy-detskiy-prazdnik",
+      "status": 200,
+      "canonical": [
+        "https://maskarad-teatr.ru/podboroki/nedorogoy-detskiy-prazdnik"
+      ],
+      "robots": [],
+      "xRobots": null,
+      "title": [
+        "Недорогой детский праздник без потери впечатления | Театр «Маскарад»"
+      ],
+      "h1": [
+        "Недорогой детский праздник без потери впечатления"
+      ]
+    },
+    {
+      "url": "https://maskarad-teatr.ru/stati/detskiy-prazdnik-na-ulitse",
+      "hops": [
+        {
+          "url": "https://maskarad-teatr.ru/stati/detskiy-prazdnik-na-ulitse",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "final": "https://maskarad-teatr.ru/stati/detskiy-prazdnik-na-ulitse",
+      "status": 200,
+      "canonical": [
+        "https://maskarad-teatr.ru/stati/detskiy-prazdnik-na-ulitse"
+      ],
+      "robots": [],
+      "xRobots": null,
+      "title": [
+        "Детский праздник на улице | Театр «Маскарад»"
+      ],
+      "h1": [
+        "Детский праздник на улице"
+      ]
+    },
+    {
+      "url": "https://maskarad-teatr.ru/stati/kak-rasschitat-byudzhet-detskogo-prazdnika",
+      "hops": [
+        {
+          "url": "https://maskarad-teatr.ru/stati/kak-rasschitat-byudzhet-detskogo-prazdnika",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "final": "https://maskarad-teatr.ru/stati/kak-rasschitat-byudzhet-detskogo-prazdnika",
+      "status": 200,
+      "canonical": [
+        "https://maskarad-teatr.ru/stati/kak-rasschitat-byudzhet-detskogo-prazdnika"
+      ],
+      "robots": [],
+      "xRobots": null,
+      "title": [
+        "Как рассчитать бюджет детского праздника | Театр «Маскарад»"
+      ],
+      "h1": [
+        "Как рассчитать бюджет детского праздника"
+      ]
+    },
+    {
+      "url": "https://maskarad-teatr.ru/stati/detskiy-prazdnik-v-torgovom-tsentre",
+      "hops": [
+        {
+          "url": "https://maskarad-teatr.ru/stati/detskiy-prazdnik-v-torgovom-tsentre",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "final": "https://maskarad-teatr.ru/stati/detskiy-prazdnik-v-torgovom-tsentre",
+      "status": 200,
+      "canonical": [
+        "https://maskarad-teatr.ru/stati/detskiy-prazdnik-v-torgovom-tsentre"
+      ],
+      "robots": [],
+      "xRobots": null,
+      "title": [
+        "Детский праздник в торговом центре | Театр «Маскарад»"
+      ],
+      "h1": [
+        "Детский праздник в торговом центре"
+      ]
+    },
+    {
+      "url": "https://maskarad-teatr.ru/stati/prazdnik-dlya-klassa",
+      "hops": [
+        {
+          "url": "https://maskarad-teatr.ru/stati/prazdnik-dlya-klassa",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "final": "https://maskarad-teatr.ru/stati/prazdnik-dlya-klassa",
+      "status": 200,
+      "canonical": [
+        "https://maskarad-teatr.ru/stati/prazdnik-dlya-klassa"
+      ],
+      "robots": [],
+      "xRobots": null,
+      "title": [
+        "Праздник для класса | Театр «Маскарад»"
+      ],
+      "h1": [
+        "Праздник для класса"
+      ]
+    },
+    {
+      "url": "https://maskarad-teatr.ru/podboroki/prazdnik-dlya-devochki",
+      "hops": [
+        {
+          "url": "https://maskarad-teatr.ru/podboroki/prazdnik-dlya-devochki",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "final": "https://maskarad-teatr.ru/podboroki/prazdnik-dlya-devochki",
+      "status": 200,
+      "canonical": [
+        "https://maskarad-teatr.ru/podboroki/prazdnik-dlya-devochki"
+      ],
+      "robots": [],
+      "xRobots": null,
+      "title": [
+        "Праздник для девочки | Театр «Маскарад»"
+      ],
+      "h1": [
+        "Праздник для девочки"
+      ]
+    },
+    {
+      "url": "https://maskarad-teatr.ru/podboroki/prazdnik-dlya-malchika",
+      "hops": [
+        {
+          "url": "https://maskarad-teatr.ru/podboroki/prazdnik-dlya-malchika",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "final": "https://maskarad-teatr.ru/podboroki/prazdnik-dlya-malchika",
+      "status": 200,
+      "canonical": [
+        "https://maskarad-teatr.ru/podboroki/prazdnik-dlya-malchika"
+      ],
+      "robots": [],
+      "xRobots": null,
+      "title": [
+        "Праздник для мальчика | Театр «Маскарад»"
+      ],
+      "h1": [
+        "Праздник для мальчика"
+      ]
+    },
+    {
+      "url": "https://maskarad-teatr.ru/stati/detskiy-prazdnik-v-parke",
+      "hops": [
+        {
+          "url": "https://maskarad-teatr.ru/stati/detskiy-prazdnik-v-parke",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "final": "https://maskarad-teatr.ru/stati/detskiy-prazdnik-v-parke",
+      "status": 200,
+      "canonical": [
+        "https://maskarad-teatr.ru/stati/detskiy-prazdnik-v-parke"
+      ],
+      "robots": [],
+      "xRobots": null,
+      "title": [
+        "Детский праздник в парке | Театр «Маскарад»"
+      ],
+      "h1": [
+        "Детский праздник в парке"
+      ]
+    },
+    {
+      "url": "https://maskarad-teatr.ru/stati/detskiy-prazdnik-zimoy",
+      "hops": [
+        {
+          "url": "https://maskarad-teatr.ru/stati/detskiy-prazdnik-zimoy",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "final": "https://maskarad-teatr.ru/stati/detskiy-prazdnik-zimoy",
+      "status": 200,
+      "canonical": [
+        "https://maskarad-teatr.ru/stati/detskiy-prazdnik-zimoy"
+      ],
+      "robots": [],
+      "xRobots": null,
+      "title": [
+        "Детский праздник зимой: как выбрать формат | Театр «Маскарад»"
+      ],
+      "h1": [
+        "Детский праздник зимой: как выбрать формат"
+      ]
+    },
+    {
+      "url": "https://maskarad-teatr.ru/stati/detskiy-prazdnik-letom",
+      "hops": [
+        {
+          "url": "https://maskarad-teatr.ru/stati/detskiy-prazdnik-letom",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "final": "https://maskarad-teatr.ru/stati/detskiy-prazdnik-letom",
+      "status": 200,
+      "canonical": [
+        "https://maskarad-teatr.ru/stati/detskiy-prazdnik-letom"
+      ],
+      "robots": [],
+      "xRobots": null,
+      "title": [
+        "Детский праздник летом: улица, парк или площадка | Театр «Маскарад»"
+      ],
+      "h1": [
+        "Детский праздник летом: улица, парк или площадка"
+      ]
+    },
+    {
+      "url": "https://maskarad-teatr.ru/podboroki/prazdnik-dlya-10-detey",
+      "hops": [
+        {
+          "url": "https://maskarad-teatr.ru/podboroki/prazdnik-dlya-10-detey",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "final": "https://maskarad-teatr.ru/podboroki/prazdnik-dlya-10-detey",
+      "status": 200,
+      "canonical": [
+        "https://maskarad-teatr.ru/podboroki/prazdnik-dlya-10-detey"
+      ],
+      "robots": [],
+      "xRobots": null,
+      "title": [
+        "Праздник для 10 детей: камерный формат | Театр «Маскарад»"
+      ],
+      "h1": [
+        "Праздник для 10 детей: камерный формат"
+      ]
+    },
+    {
+      "url": "https://maskarad-teatr.ru/podboroki/prazdnik-dlya-20-detey",
+      "hops": [
+        {
+          "url": "https://maskarad-teatr.ru/podboroki/prazdnik-dlya-20-detey",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "final": "https://maskarad-teatr.ru/podboroki/prazdnik-dlya-20-detey",
+      "status": 200,
+      "canonical": [
+        "https://maskarad-teatr.ru/podboroki/prazdnik-dlya-20-detey"
+      ],
+      "robots": [],
+      "xRobots": null,
+      "title": [
+        "Праздник для 20 детей: как удержать группу | Театр «Маскарад»"
+      ],
+      "h1": [
+        "Праздник для 20 детей: как удержать группу"
+      ]
+    },
+    {
+      "url": "https://maskarad-teatr.ru/podboroki/prazdnik-s-master-klassom",
+      "hops": [
+        {
+          "url": "https://maskarad-teatr.ru/podboroki/prazdnik-s-master-klassom",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "final": "https://maskarad-teatr.ru/podboroki/prazdnik-s-master-klassom",
+      "status": 200,
+      "canonical": [
+        "https://maskarad-teatr.ru/podboroki/prazdnik-s-master-klassom"
+      ],
+      "robots": [],
+      "xRobots": null,
+      "title": [
+        "Детский праздник с мастер-классом | Театр «Маскарад»"
+      ],
+      "h1": [
+        "Детский праздник с мастер-классом"
+      ]
+    },
+    {
+      "url": "https://maskarad-teatr.ru/stati/detskiy-prazdnik-v-lofte",
+      "hops": [
+        {
+          "url": "https://maskarad-teatr.ru/stati/detskiy-prazdnik-v-lofte",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "final": "https://maskarad-teatr.ru/stati/detskiy-prazdnik-v-lofte",
+      "status": 200,
+      "canonical": [
+        "https://maskarad-teatr.ru/stati/detskiy-prazdnik-v-lofte"
+      ],
+      "robots": [],
+      "xRobots": null,
+      "title": [
+        "Детский праздник в лофте: как выбрать площадку | Театр «Маскарад»"
+      ],
+      "h1": [
+        "Детский праздник в лофте: как выбрать площадку"
+      ]
+    },
+    {
+      "url": "https://maskarad-teatr.ru/stati/detskiy-prazdnik-na-dache",
+      "hops": [
+        {
+          "url": "https://maskarad-teatr.ru/stati/detskiy-prazdnik-na-dache",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "final": "https://maskarad-teatr.ru/stati/detskiy-prazdnik-na-dache",
+      "status": 200,
+      "canonical": [
+        "https://maskarad-teatr.ru/stati/detskiy-prazdnik-na-dache"
+      ],
+      "robots": [],
+      "xRobots": null,
+      "title": [
+        "Детский праздник на даче: сценарий и площадка | Театр «Маскарад»"
+      ],
+      "h1": [
+        "Детский праздник на даче: сценарий и площадка"
+      ]
+    },
+    {
+      "url": "https://maskarad-teatr.ru/stati/programma-dlya-roditeley-i-detey",
+      "hops": [
+        {
+          "url": "https://maskarad-teatr.ru/stati/programma-dlya-roditeley-i-detey",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "final": "https://maskarad-teatr.ru/stati/programma-dlya-roditeley-i-detey",
+      "status": 200,
+      "canonical": [
+        "https://maskarad-teatr.ru/stati/programma-dlya-roditeley-i-detey"
+      ],
+      "robots": [],
+      "xRobots": null,
+      "title": [
+        "Программа для родителей и детей на празднике | Театр «Маскарад»"
+      ],
+      "h1": [
+        "Программа для родителей и детей на празднике"
+      ]
+    },
+    {
+      "url": "https://maskarad-teatr.ru/podboroki/prazdnik-s-akvagrimom",
+      "hops": [
+        {
+          "url": "https://maskarad-teatr.ru/podboroki/prazdnik-s-akvagrimom",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "final": "https://maskarad-teatr.ru/podboroki/prazdnik-s-akvagrimom",
+      "status": 200,
+      "canonical": [
+        "https://maskarad-teatr.ru/podboroki/prazdnik-s-akvagrimom"
+      ],
+      "robots": [],
+      "xRobots": null,
+      "title": [
+        "Детский праздник с аквагримом | Театр «Маскарад»"
+      ],
+      "h1": [
+        "Детский праздник с аквагримом"
+      ]
+    },
+    {
+      "url": "https://maskarad-teatr.ru/podboroki/prazdnik-s-fokusami",
+      "hops": [
+        {
+          "url": "https://maskarad-teatr.ru/podboroki/prazdnik-s-fokusami",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "final": "https://maskarad-teatr.ru/podboroki/prazdnik-s-fokusami",
+      "status": 200,
+      "canonical": [
+        "https://maskarad-teatr.ru/podboroki/prazdnik-s-fokusami"
+      ],
+      "robots": [],
+      "xRobots": null,
+      "title": [
+        "Детский праздник с фокусами | Театр «Маскарад»"
+      ],
+      "h1": [
+        "Детский праздник с фокусами"
+      ]
+    },
+    {
+      "url": "https://maskarad-teatr.ru/stati/animatory-na-vypusknoy",
+      "hops": [
+        {
+          "url": "https://maskarad-teatr.ru/stati/animatory-na-vypusknoy",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "final": "https://maskarad-teatr.ru/stati/animatory-na-vypusknoy",
+      "status": 200,
+      "canonical": [
+        "https://maskarad-teatr.ru/stati/animatory-na-vypusknoy"
+      ],
+      "robots": [],
+      "xRobots": null,
+      "title": [
+        "Аниматоры на выпускной: как выбрать программу | Театр «Маскарад»"
+      ],
+      "h1": [
+        "Аниматоры на выпускной: как выбрать программу"
+      ]
+    },
+    {
+      "url": "https://maskarad-teatr.ru/stati/detskiy-prazdnik-v-kafe",
+      "hops": [
+        {
+          "url": "https://maskarad-teatr.ru/stati/detskiy-prazdnik-v-kafe",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "final": "https://maskarad-teatr.ru/stati/detskiy-prazdnik-v-kafe",
+      "status": 200,
+      "canonical": [
+        "https://maskarad-teatr.ru/stati/detskiy-prazdnik-v-kafe"
+      ],
+      "robots": [],
+      "xRobots": null,
+      "title": [
+        "Детский праздник в кафе: программа и тайминг | Театр «Маскарад»"
+      ],
+      "h1": [
+        "Детский праздник в кафе: программа и тайминг"
+      ]
+    },
+    {
+      "url": "https://maskarad-teatr.ru/stati/detskiy-prazdnik-v-detskom-tsentre",
+      "hops": [
+        {
+          "url": "https://maskarad-teatr.ru/stati/detskiy-prazdnik-v-detskom-tsentre",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "final": "https://maskarad-teatr.ru/stati/detskiy-prazdnik-v-detskom-tsentre",
+      "status": 200,
+      "canonical": [
+        "https://maskarad-teatr.ru/stati/detskiy-prazdnik-v-detskom-tsentre"
+      ],
+      "robots": [],
+      "xRobots": null,
+      "title": [
+        "Детский праздник в детском центре | Театр «Маскарад»"
+      ],
+      "h1": [
+        "Детский праздник в детском центре"
+      ]
+    },
+    {
+      "url": "https://maskarad-teatr.ru/podboroki/prazdnik-dlya-malyshey-2-3-goda",
+      "hops": [
+        {
+          "url": "https://maskarad-teatr.ru/podboroki/prazdnik-dlya-malyshey-2-3-goda",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "final": "https://maskarad-teatr.ru/podboroki/prazdnik-dlya-malyshey-2-3-goda",
+      "status": 200,
+      "canonical": [
+        "https://maskarad-teatr.ru/podboroki/prazdnik-dlya-malyshey-2-3-goda"
+      ],
+      "robots": [],
+      "xRobots": null,
+      "title": [
+        "Праздник для малышей 2-3 года | Театр «Маскарад»"
+      ],
+      "h1": [
+        "Праздник для малышей 2-3 года"
+      ]
+    },
+    {
+      "url": "https://maskarad-teatr.ru/podboroki/prazdnik-so-spektaklem-vmesto-animatorov",
+      "hops": [
+        {
+          "url": "https://maskarad-teatr.ru/podboroki/prazdnik-so-spektaklem-vmesto-animatorov",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "final": "https://maskarad-teatr.ru/podboroki/prazdnik-so-spektaklem-vmesto-animatorov",
+      "status": 200,
+      "canonical": [
+        "https://maskarad-teatr.ru/podboroki/prazdnik-so-spektaklem-vmesto-animatorov"
+      ],
+      "robots": [],
+      "xRobots": null,
+      "title": [
+        "Праздник со спектаклем вместо обычных аниматоров | Театр «Маскарад»"
+      ],
+      "h1": [
+        "Праздник со спектаклем вместо обычных аниматоров"
+      ]
+    },
+    {
+      "url": "https://maskarad-teatr.ru/stati/semka-filma-s-detmi-na-prazdnike",
+      "hops": [
+        {
+          "url": "https://maskarad-teatr.ru/stati/semka-filma-s-detmi-na-prazdnike",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "final": "https://maskarad-teatr.ru/stati/semka-filma-s-detmi-na-prazdnike",
+      "status": 200,
+      "canonical": [
+        "https://maskarad-teatr.ru/stati/semka-filma-s-detmi-na-prazdnike"
+      ],
+      "robots": [],
+      "xRobots": null,
+      "title": [
+        "Съемка фильма с детьми на празднике: как организовать безопасно | Театр «Маскарад»"
+      ],
+      "h1": [
+        "Съемка фильма с детьми на празднике: как организовать безопасно"
+      ]
+    },
+    {
+      "url": "https://www.maskarad-teatr.ru/uslugi/master-klassy",
+      "hops": [
+        {
+          "url": "https://www.maskarad-teatr.ru/uslugi/master-klassy",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "final": "https://www.maskarad-teatr.ru/uslugi/master-klassy",
+      "status": 200,
+      "canonical": [
+        "https://maskarad-teatr.ru/uslugi/master-klassy"
+      ],
+      "robots": [],
+      "xRobots": null,
+      "title": [
+        "Мастер-классы на детский праздник | Театр «Маскарад»"
+      ],
+      "h1": [
+        "Мастер-классы на детский праздник"
+      ]
+    },
+    {
+      "url": "https://www.maskarad-teatr.ru/prazdniki/vypusknoy",
+      "hops": [
+        {
+          "url": "https://www.maskarad-teatr.ru/prazdniki/vypusknoy",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "final": "https://www.maskarad-teatr.ru/prazdniki/vypusknoy",
+      "status": 200,
+      "canonical": [
+        "https://maskarad-teatr.ru/prazdniki/vypusknoy"
+      ],
+      "robots": [],
+      "xRobots": null,
+      "title": [
+        "Выпускной праздник для детского сада и школы | Театр «Маскарад»"
+      ],
+      "h1": [
+        "Выпускной праздник для детского сада и школы"
+      ]
+    },
+    {
+      "url": "https://www.maskarad-teatr.ru/prazdniki/individualnyy-detskiy-prazdnik",
+      "hops": [
+        {
+          "url": "https://www.maskarad-teatr.ru/prazdniki/individualnyy-detskiy-prazdnik",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "final": "https://www.maskarad-teatr.ru/prazdniki/individualnyy-detskiy-prazdnik",
+      "status": 200,
+      "canonical": [
+        "https://maskarad-teatr.ru/prazdniki/individualnyy-detskiy-prazdnik"
+      ],
+      "robots": [],
+      "xRobots": null,
+      "title": [
+        "Индивидуальный детский праздник: программа под ребенка | Театр «Маскарад»"
+      ],
+      "h1": [
+        "Индивидуальный детский праздник: программа под ребенка"
+      ]
+    },
+    {
+      "url": "https://www.maskarad-teatr.ru/prazdniki/korporativnyy-novogodniy-prazdnik",
+      "hops": [
+        {
+          "url": "https://www.maskarad-teatr.ru/prazdniki/korporativnyy-novogodniy-prazdnik",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "final": "https://www.maskarad-teatr.ru/prazdniki/korporativnyy-novogodniy-prazdnik",
+      "status": 200,
+      "canonical": [
+        "https://maskarad-teatr.ru/prazdniki/korporativnyy-novogodniy-prazdnik"
+      ],
+      "robots": [],
+      "xRobots": null,
+      "title": [
+        "Корпоративная ёлка для детей сотрудников в Москве | Театр «Маскарад»"
+      ],
+      "h1": [
+        "Корпоративная ёлка для детей сотрудников"
+      ]
+    },
+    {
+      "url": "https://www.maskarad-teatr.ru/kontakty",
+      "hops": [
+        {
+          "url": "https://www.maskarad-teatr.ru/kontakty",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "final": "https://www.maskarad-teatr.ru/kontakty",
+      "status": 200,
+      "canonical": [
+        "https://maskarad-teatr.ru/kontakty"
+      ],
+      "robots": [],
+      "xRobots": null,
+      "title": [
+        "Контакты и заявка | Театр «Маскарад»"
+      ],
+      "h1": [
+        "Контакты и заявка"
+      ]
+    },
+    {
+      "url": "https://www.maskarad-teatr.ru/spektakli/novogodnie-spektakli",
+      "hops": [
+        {
+          "url": "https://www.maskarad-teatr.ru/spektakli/novogodnie-spektakli",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "final": "https://www.maskarad-teatr.ru/spektakli/novogodnie-spektakli",
+      "status": 200,
+      "canonical": [
+        "https://maskarad-teatr.ru/spektakli/novogodnie-spektakli"
+      ],
+      "robots": [],
+      "xRobots": null,
+      "title": [
+        "Новогодние спектакли и елки для детей | Театр «Маскарад»"
+      ],
+      "h1": [
+        "Новогодние спектакли и елки для детей"
+      ]
+    },
+    {
+      "url": "https://www.maskarad-teatr.ru/uslugi/pozdravitelnaya-pesnya",
+      "hops": [
+        {
+          "url": "https://www.maskarad-teatr.ru/uslugi/pozdravitelnaya-pesnya",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "final": "https://www.maskarad-teatr.ru/uslugi/pozdravitelnaya-pesnya",
+      "status": 200,
+      "canonical": [
+        "https://maskarad-teatr.ru/uslugi/pozdravitelnaya-pesnya"
+      ],
+      "robots": [],
+      "xRobots": null,
+      "title": [
+        "Поздравительная песня на детский праздник | Театр «Маскарад»"
+      ],
+      "h1": [
+        "Поздравительная песня на детский праздник"
+      ]
+    },
+    {
+      "url": "https://www.maskarad-teatr.ru/spektakli/piraty-karibskogo-morya",
+      "hops": [
+        {
+          "url": "https://www.maskarad-teatr.ru/spektakli/piraty-karibskogo-morya",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "final": "https://www.maskarad-teatr.ru/spektakli/piraty-karibskogo-morya",
+      "status": 200,
+      "canonical": [
+        "https://maskarad-teatr.ru/spektakli/piraty-karibskogo-morya"
+      ],
+      "robots": [],
+      "xRobots": null,
+      "title": [
+        "Спектакль «Пираты карибского моря» для детей | Театр «Маскарад»"
+      ],
+      "h1": [
+        "Спектакль «Пираты карибского моря» для детей"
+      ]
+    },
+    {
+      "url": "https://www.maskarad-teatr.ru/prazdniki/maslenitsa",
+      "hops": [
+        {
+          "url": "https://www.maskarad-teatr.ru/prazdniki/maslenitsa",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "final": "https://www.maskarad-teatr.ru/prazdniki/maslenitsa",
+      "status": 200,
+      "canonical": [
+        "https://maskarad-teatr.ru/prazdniki/maslenitsa"
+      ],
+      "robots": [],
+      "xRobots": null,
+      "title": [
+        "Праздник Масленицы для детей | Театр «Маскарад»"
+      ],
+      "h1": [
+        "Праздник Масленицы для детей"
+      ]
+    },
+    {
+      "url": "https://www.maskarad-teatr.ru/uslugi/akvagrim",
+      "hops": [
+        {
+          "url": "https://www.maskarad-teatr.ru/uslugi/akvagrim",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "final": "https://www.maskarad-teatr.ru/uslugi/akvagrim",
+      "status": 200,
+      "canonical": [
+        "https://maskarad-teatr.ru/uslugi/akvagrim"
+      ],
+      "robots": [],
+      "xRobots": null,
+      "title": [
+        "Аквагрим на детский праздник | Театр «Маскарад»"
+      ],
+      "h1": [
+        "Аквагрим на детский праздник"
+      ]
+    },
+    {
+      "url": "https://www.maskarad-teatr.ru/stati/prazdnik-dlya-klassa",
+      "hops": [
+        {
+          "url": "https://www.maskarad-teatr.ru/stati/prazdnik-dlya-klassa",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "final": "https://www.maskarad-teatr.ru/stati/prazdnik-dlya-klassa",
+      "status": 200,
+      "canonical": [
+        "https://maskarad-teatr.ru/stati/prazdnik-dlya-klassa"
+      ],
+      "robots": [],
+      "xRobots": null,
+      "title": [
+        "Праздник для класса | Театр «Маскарад»"
+      ],
+      "h1": [
+        "Праздник для класса"
+      ]
+    },
+    {
+      "url": "https://www.maskarad-teatr.ru/podboroki/idei-dlya-vypusknogo",
+      "hops": [
+        {
+          "url": "https://www.maskarad-teatr.ru/podboroki/idei-dlya-vypusknogo",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "final": "https://www.maskarad-teatr.ru/podboroki/idei-dlya-vypusknogo",
+      "status": 200,
+      "canonical": [
+        "https://maskarad-teatr.ru/podboroki/idei-dlya-vypusknogo"
+      ],
+      "robots": [],
+      "xRobots": null,
+      "title": [
+        "Идеи для выпускного в детском саду и школе | Театр «Маскарад»"
+      ],
+      "h1": [
+        "Идеи для выпускного в детском саду и школе"
+      ]
+    },
+    {
+      "url": "https://www.maskarad-teatr.ru/podboroki/interaktivnye-spektakli-dlya-detey",
+      "hops": [
+        {
+          "url": "https://www.maskarad-teatr.ru/podboroki/interaktivnye-spektakli-dlya-detey",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "final": "https://www.maskarad-teatr.ru/podboroki/interaktivnye-spektakli-dlya-detey",
+      "status": 200,
+      "canonical": [
+        "https://maskarad-teatr.ru/podboroki/interaktivnye-spektakli-dlya-detey"
+      ],
+      "robots": [],
+      "xRobots": null,
+      "title": [
+        "Интерактивные спектакли для детей: как выбрать формат | Театр «Маскарад»"
+      ],
+      "h1": [
+        "Интерактивные спектакли для детей: как выбрать формат"
+      ]
+    },
+    {
+      "url": "https://www.maskarad-teatr.ru/spektakli/zolotoy-klyuchik",
+      "hops": [
+        {
+          "url": "https://www.maskarad-teatr.ru/spektakli/zolotoy-klyuchik",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "final": "https://www.maskarad-teatr.ru/spektakli/zolotoy-klyuchik",
+      "status": 200,
+      "canonical": [
+        "https://maskarad-teatr.ru/spektakli/zolotoy-klyuchik"
+      ],
+      "robots": [],
+      "xRobots": null,
+      "title": [
+        "Спектакль «Золотой ключик» на детский праздник | Театр «Маскарад»"
+      ],
+      "h1": [
+        "Спектакль «Золотой ключик» на детский праздник"
+      ]
+    },
+    {
+      "url": "https://www.maskarad-teatr.ru/spektakli/volshebnaya-feya",
+      "hops": [
+        {
+          "url": "https://www.maskarad-teatr.ru/spektakli/volshebnaya-feya",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "final": "https://www.maskarad-teatr.ru/spektakli/volshebnaya-feya",
+      "status": 200,
+      "canonical": [
+        "https://maskarad-teatr.ru/spektakli/volshebnaya-feya"
+      ],
+      "robots": [],
+      "xRobots": null,
+      "title": [
+        "Программа «Волшебная фея» на день рождения | Театр «Маскарад»"
+      ],
+      "h1": [
+        "Программа «Волшебная фея» на день рождения"
+      ]
+    },
+    {
+      "url": "https://www.maskarad-teatr.ru/spektakli/holodnoe-serdtse",
+      "hops": [
+        {
+          "url": "https://www.maskarad-teatr.ru/spektakli/holodnoe-serdtse",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "final": "https://www.maskarad-teatr.ru/spektakli/holodnoe-serdtse",
+      "status": 200,
+      "canonical": [
+        "https://maskarad-teatr.ru/spektakli/holodnoe-serdtse"
+      ],
+      "robots": [],
+      "xRobots": null,
+      "title": [
+        "Спектакль «Холодное сердце» на детский праздник | Театр «Маскарад»"
+      ],
+      "h1": [
+        "Спектакль «Холодное сердце» на детский праздник"
+      ]
+    },
+    {
+      "url": "https://www.maskarad-teatr.ru/spektakli/tri-mushketera",
+      "hops": [
+        {
+          "url": "https://www.maskarad-teatr.ru/spektakli/tri-mushketera",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "final": "https://www.maskarad-teatr.ru/spektakli/tri-mushketera",
+      "status": 200,
+      "canonical": [
+        "https://maskarad-teatr.ru/spektakli/tri-mushketera"
+      ],
+      "robots": [],
+      "xRobots": null,
+      "title": [
+        "Спектакль «Три мушкетёра» на детский праздник | Театр «Маскарад»"
+      ],
+      "h1": [
+        "Спектакль «Три мушкетёра» на детский праздник"
+      ]
+    },
+    {
+      "url": "https://www.maskarad-teatr.ru/spektakli/pyatyy-element",
+      "hops": [
+        {
+          "url": "https://www.maskarad-teatr.ru/spektakli/pyatyy-element",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "final": "https://www.maskarad-teatr.ru/spektakli/pyatyy-element",
+      "status": 200,
+      "canonical": [
+        "https://maskarad-teatr.ru/spektakli/pyatyy-element"
+      ],
+      "robots": [],
+      "xRobots": null,
+      "title": [
+        "Спектакль «Пятый элемент» для детского праздника | Театр «Маскарад»"
+      ],
+      "h1": [
+        "Спектакль «Пятый элемент» для детского праздника"
+      ]
+    },
+    {
+      "url": "https://www.maskarad-teatr.ru/spektakli/smurfiki",
+      "hops": [
+        {
+          "url": "https://www.maskarad-teatr.ru/spektakli/smurfiki",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "final": "https://www.maskarad-teatr.ru/spektakli/smurfiki",
+      "status": 200,
+      "canonical": [
+        "https://maskarad-teatr.ru/spektakli/smurfiki"
+      ],
+      "robots": [],
+      "xRobots": null,
+      "title": [
+        "Программа «Смурфики» на детский праздник | Театр «Маскарад»"
+      ],
+      "h1": [
+        "Программа «Смурфики» на детский праздник"
+      ]
+    },
+    {
+      "url": "https://www.maskarad-teatr.ru/spektakli/avatar",
+      "hops": [
+        {
+          "url": "https://www.maskarad-teatr.ru/spektakli/avatar",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "final": "https://www.maskarad-teatr.ru/spektakli/avatar",
+      "status": 200,
+      "canonical": [
+        "https://maskarad-teatr.ru/spektakli/avatar"
+      ],
+      "robots": [],
+      "xRobots": null,
+      "title": [
+        "Программа «Аватар» на детский праздник | Театр «Маскарад»"
+      ],
+      "h1": [
+        "Программа «Аватар» на детский праздник"
+      ]
+    },
+    {
+      "url": "https://www.maskarad-teatr.ru/spektakli/vinni-puh",
+      "hops": [
+        {
+          "url": "https://www.maskarad-teatr.ru/spektakli/vinni-puh",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "final": "https://www.maskarad-teatr.ru/spektakli/vinni-puh",
+      "status": 200,
+      "canonical": [
+        "https://maskarad-teatr.ru/spektakli/vinni-puh"
+      ],
+      "robots": [],
+      "xRobots": null,
+      "title": [
+        "Спектакль «Винни Пух» на детский праздник | Театр «Маскарад»"
+      ],
+      "h1": [
+        "Спектакль «Винни Пух» на детский праздник"
+      ]
+    },
+    {
+      "url": "https://www.maskarad-teatr.ru/tseny",
+      "hops": [
+        {
+          "url": "https://www.maskarad-teatr.ru/tseny",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "final": "https://www.maskarad-teatr.ru/tseny",
+      "status": 200,
+      "canonical": [
+        "https://maskarad-teatr.ru/tseny"
+      ],
+      "robots": [],
+      "xRobots": null,
+      "title": [
+        "Цены и форматы | Театр «Маскарад»"
+      ],
+      "h1": [
+        "Цены и форматы"
+      ]
+    },
+    {
+      "url": "https://www.maskarad-teatr.ru/spektakli/priklyucheniya-sindbada-morehoda",
+      "hops": [
+        {
+          "url": "https://www.maskarad-teatr.ru/spektakli/priklyucheniya-sindbada-morehoda",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "final": "https://www.maskarad-teatr.ru/spektakli/priklyucheniya-sindbada-morehoda",
+      "status": 200,
+      "canonical": [
+        "https://maskarad-teatr.ru/spektakli/priklyucheniya-sindbada-morehoda"
+      ],
+      "robots": [],
+      "xRobots": null,
+      "title": [
+        "Спектакль «Приключения Синдбада-Морехода» | Театр «Маскарад»"
+      ],
+      "h1": [
+        "Спектакль «Приключения Синдбада-Морехода»"
+      ]
+    },
+    {
+      "url": "https://www.maskarad-teatr.ru/spektakli/belosnezhka-i-sem-gnomov",
+      "hops": [
+        {
+          "url": "https://www.maskarad-teatr.ru/spektakli/belosnezhka-i-sem-gnomov",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "final": "https://www.maskarad-teatr.ru/spektakli/belosnezhka-i-sem-gnomov",
+      "status": 200,
+      "canonical": [
+        "https://maskarad-teatr.ru/spektakli/belosnezhka-i-sem-gnomov"
+      ],
+      "robots": [],
+      "xRobots": null,
+      "title": [
+        "Спектакль «Белоснежка и семь гномов» | Театр «Маскарад»"
+      ],
+      "h1": [
+        "Спектакль «Белоснежка и семь гномов»"
+      ]
+    },
+    {
+      "url": "https://www.maskarad-teatr.ru/spektakli/ivan-da-marya",
+      "hops": [
+        {
+          "url": "https://www.maskarad-teatr.ru/spektakli/ivan-da-marya",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "final": "https://www.maskarad-teatr.ru/spektakli/ivan-da-marya",
+      "status": 200,
+      "canonical": [
+        "https://maskarad-teatr.ru/spektakli/ivan-da-marya"
+      ],
+      "robots": [],
+      "xRobots": null,
+      "title": [
+        "Спектакль «Иван да Марья» на детский праздник | Театр «Маскарад»"
+      ],
+      "h1": [
+        "Спектакль «Иван да Марья» на детский праздник"
+      ]
+    },
+    {
+      "url": "https://www.maskarad-teatr.ru/spektakli/istoriya-igrushek",
+      "hops": [
+        {
+          "url": "https://www.maskarad-teatr.ru/spektakli/istoriya-igrushek",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "final": "https://www.maskarad-teatr.ru/spektakli/istoriya-igrushek",
+      "status": 200,
+      "canonical": [
+        "https://maskarad-teatr.ru/spektakli/istoriya-igrushek"
+      ],
+      "robots": [],
+      "xRobots": null,
+      "title": [
+        "Спектакль «История игрушек» на детский праздник | Театр «Маскарад»"
+      ],
+      "h1": [
+        "Спектакль «История игрушек» на детский праздник"
+      ]
+    },
+    {
+      "url": "https://www.maskarad-teatr.ru/spektakli/novyy-god-na-snezhnoy-planete",
+      "hops": [
+        {
+          "url": "https://www.maskarad-teatr.ru/spektakli/novyy-god-na-snezhnoy-planete",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "final": "https://www.maskarad-teatr.ru/spektakli/novyy-god-na-snezhnoy-planete",
+      "status": 200,
+      "canonical": [
+        "https://maskarad-teatr.ru/spektakli/novyy-god-na-snezhnoy-planete"
+      ],
+      "robots": [],
+      "xRobots": null,
+      "title": [
+        "Спектакль «Новый год на снежной планете» | Театр «Маскарад»"
+      ],
+      "h1": [
+        "Спектакль «Новый год на снежной планете»"
+      ]
+    },
+    {
+      "url": "https://www.maskarad-teatr.ru/o-teatre",
+      "hops": [
+        {
+          "url": "https://www.maskarad-teatr.ru/o-teatre",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "final": "https://www.maskarad-teatr.ru/o-teatre",
+      "status": 200,
+      "canonical": [
+        "https://maskarad-teatr.ru/o-teatre"
+      ],
+      "robots": [],
+      "xRobots": null,
+      "title": [
+        "О театре «Маскарад» | Театр «Маскарад»"
+      ],
+      "h1": [
+        "О театре «Маскарад»"
+      ]
+    },
+    {
+      "url": "https://www.maskarad-teatr.ru/",
+      "hops": [
+        {
+          "url": "https://www.maskarad-teatr.ru/",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "final": "https://www.maskarad-teatr.ru/",
+      "status": 200,
+      "canonical": [
+        "https://maskarad-teatr.ru"
+      ],
+      "robots": [],
+      "xRobots": null,
+      "title": [
+        "Театр праздника «Маскарад» в Москве"
+      ],
+      "h1": [
+        "Спектакль, где ребенок становится частью сказки"
+      ]
+    },
+    {
+      "url": "http://www.maskarad-teatr.ru/detskii-prazdnik/vozrastnie-spektakli.html",
+      "hops": [
+        {
+          "url": "http://www.maskarad-teatr.ru/detskii-prazdnik/vozrastnie-spektakli.html",
+          "status": 301,
+          "location": "https://www.maskarad-teatr.ru/detskii-prazdnik/vozrastnie-spektakli.html"
+        },
+        {
+          "url": "https://www.maskarad-teatr.ru/detskii-prazdnik/vozrastnie-spektakli.html",
+          "status": 308,
+          "location": "/podboroki/interaktivnye-spektakli-dlya-detey"
+        },
+        {
+          "url": "https://www.maskarad-teatr.ru/podboroki/interaktivnye-spektakli-dlya-detey",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "final": "https://www.maskarad-teatr.ru/podboroki/interaktivnye-spektakli-dlya-detey",
+      "status": 200,
+      "canonical": [
+        "https://maskarad-teatr.ru/podboroki/interaktivnye-spektakli-dlya-detey"
+      ],
+      "robots": [],
+      "xRobots": null,
+      "title": [
+        "Интерактивные спектакли для детей: как выбрать формат | Театр «Маскарад»"
+      ],
+      "h1": [
+        "Интерактивные спектакли для детей: как выбрать формат"
+      ]
+    },
+    {
+      "url": "https://maskarad-teatr.ru/maskarad/klienty.html",
+      "hops": [
+        {
+          "url": "https://maskarad-teatr.ru/maskarad/klienty.html",
+          "status": 308,
+          "location": "/otzyvy-pressa"
+        },
+        {
+          "url": "https://maskarad-teatr.ru/otzyvy-pressa",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "final": "https://maskarad-teatr.ru/otzyvy-pressa",
+      "status": 200,
+      "canonical": [
+        "https://maskarad-teatr.ru/otzyvy-pressa"
+      ],
+      "robots": [],
+      "xRobots": null,
+      "title": [
+        "Отзывы и пресса | Театр «Маскарад»"
+      ],
+      "h1": [
+        "Отзывы и пресса"
+      ]
+    },
+    {
+      "url": "https://www.maskarad-teatr.ru/detskii-prazdnik/winx.html",
+      "hops": [
+        {
+          "url": "https://www.maskarad-teatr.ru/detskii-prazdnik/winx.html",
+          "status": 308,
+          "location": "/spektakli/shkola-volshebnic"
+        },
+        {
+          "url": "https://www.maskarad-teatr.ru/spektakli/shkola-volshebnic",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "final": "https://www.maskarad-teatr.ru/spektakli/shkola-volshebnic",
+      "status": 200,
+      "canonical": [
+        "https://maskarad-teatr.ru/spektakli/shkola-volshebnic"
+      ],
+      "robots": [],
+      "xRobots": null,
+      "title": [
+        "Программа «Школа волшебниц» на детский праздник | Театр «Маскарад»"
+      ],
+      "h1": [
+        "Программа «Школа волшебниц» на детский праздник"
+      ]
+    },
+    {
+      "url": "https://www.maskarad-teatr.ru/detskii-prazdnik/balaganchik.html",
+      "hops": [
+        {
+          "url": "https://www.maskarad-teatr.ru/detskii-prazdnik/balaganchik.html",
+          "status": 308,
+          "location": "/spektakli/skazochnyy-balaganchik"
+        },
+        {
+          "url": "https://www.maskarad-teatr.ru/spektakli/skazochnyy-balaganchik",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "final": "https://www.maskarad-teatr.ru/spektakli/skazochnyy-balaganchik",
+      "status": 200,
+      "canonical": [
+        "https://maskarad-teatr.ru/spektakli/skazochnyy-balaganchik"
+      ],
+      "robots": [],
+      "xRobots": null,
+      "title": [
+        "Спектакль «Сказочный балаганчик» на детский праздник | Театр «Маскарад»"
+      ],
+      "h1": [
+        "Спектакль «Сказочный балаганчик» на детский праздник"
+      ]
+    },
+    {
+      "url": "https://www.maskarad-teatr.ru/detskii-prazdnik/mary-poppins.html",
+      "hops": [
+        {
+          "url": "https://www.maskarad-teatr.ru/detskii-prazdnik/mary-poppins.html",
+          "status": 308,
+          "location": "/spektakli/mary-poppins"
+        },
+        {
+          "url": "https://www.maskarad-teatr.ru/spektakli/mary-poppins",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "final": "https://www.maskarad-teatr.ru/spektakli/mary-poppins",
+      "status": 200,
+      "canonical": [
+        "https://maskarad-teatr.ru/spektakli/mary-poppins"
+      ],
+      "robots": [],
+      "xRobots": null,
+      "title": [
+        "Спектакль «Мэри Поппинс» на детский праздник | Театр «Маскарад»"
+      ],
+      "h1": [
+        "Спектакль «Мэри Поппинс» на детский праздник"
+      ]
+    },
+    {
+      "url": "https://www.maskarad-teatr.ru/detskii-prazdnik/vinni-puh.html",
+      "hops": [
+        {
+          "url": "https://www.maskarad-teatr.ru/detskii-prazdnik/vinni-puh.html",
+          "status": 308,
+          "location": "/spektakli/vinni-puh"
+        },
+        {
+          "url": "https://www.maskarad-teatr.ru/spektakli/vinni-puh",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "final": "https://www.maskarad-teatr.ru/spektakli/vinni-puh",
+      "status": 200,
+      "canonical": [
+        "https://maskarad-teatr.ru/spektakli/vinni-puh"
+      ],
+      "robots": [],
+      "xRobots": null,
+      "title": [
+        "Спектакль «Винни Пух» на детский праздник | Театр «Маскарад»"
+      ],
+      "h1": [
+        "Спектакль «Винни Пух» на детский праздник"
+      ]
+    },
+    {
+      "url": "http://maskarad-teatr.ru/detskie-uslugi/master-klassy.html",
+      "hops": [
+        {
+          "url": "http://maskarad-teatr.ru/detskie-uslugi/master-klassy.html",
+          "status": 301,
+          "location": "https://maskarad-teatr.ru/detskie-uslugi/master-klassy.html"
+        },
+        {
+          "url": "https://maskarad-teatr.ru/detskie-uslugi/master-klassy.html",
+          "status": 308,
+          "location": "/uslugi/master-klassy"
+        },
+        {
+          "url": "https://maskarad-teatr.ru/uslugi/master-klassy",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "final": "https://maskarad-teatr.ru/uslugi/master-klassy",
+      "status": 200,
+      "canonical": [
+        "https://maskarad-teatr.ru/uslugi/master-klassy"
+      ],
+      "robots": [],
+      "xRobots": null,
+      "title": [
+        "Мастер-классы на детский праздник | Театр «Маскарад»"
+      ],
+      "h1": [
+        "Мастер-классы на детский праздник"
+      ]
+    },
+    {
+      "url": "http://maskarad-teatr.ru/detskie-uslugi/attraktsiony.html",
+      "hops": [
+        {
+          "url": "http://maskarad-teatr.ru/detskie-uslugi/attraktsiony.html",
+          "status": 301,
+          "location": "https://maskarad-teatr.ru/detskie-uslugi/attraktsiony.html"
+        },
+        {
+          "url": "https://maskarad-teatr.ru/detskie-uslugi/attraktsiony.html",
+          "status": 308,
+          "location": "/uslugi/attraktsiony"
+        },
+        {
+          "url": "https://maskarad-teatr.ru/uslugi/attraktsiony",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "final": "https://maskarad-teatr.ru/uslugi/attraktsiony",
+      "status": 200,
+      "canonical": [
+        "https://maskarad-teatr.ru/uslugi/attraktsiony"
+      ],
+      "robots": [],
+      "xRobots": null,
+      "title": [
+        "Аттракционы на детский праздник | Театр «Маскарад»"
+      ],
+      "h1": [
+        "Аттракционы на детский праздник"
+      ]
+    },
+    {
+      "url": "http://maskarad-teatr.ru/detskii-prazdnik/bremenskie-muzykanty.html",
+      "hops": [
+        {
+          "url": "http://maskarad-teatr.ru/detskii-prazdnik/bremenskie-muzykanty.html",
+          "status": 301,
+          "location": "https://maskarad-teatr.ru/detskii-prazdnik/bremenskie-muzykanty.html"
+        },
+        {
+          "url": "https://maskarad-teatr.ru/detskii-prazdnik/bremenskie-muzykanty.html",
+          "status": 308,
+          "location": "/spektakli/bremenskie-muzykanty"
+        },
+        {
+          "url": "https://maskarad-teatr.ru/spektakli/bremenskie-muzykanty",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "final": "https://maskarad-teatr.ru/spektakli/bremenskie-muzykanty",
+      "status": 200,
+      "canonical": [
+        "https://maskarad-teatr.ru/spektakli/bremenskie-muzykanty"
+      ],
+      "robots": [],
+      "xRobots": null,
+      "title": [
+        "Спектакль «Бременские музыканты» на детский праздник | Театр «Маскарад»"
+      ],
+      "h1": [
+        "Спектакль «Бременские музыканты» на детский праздник"
+      ]
+    },
+    {
+      "url": "http://maskarad-teatr.ru/detskie-uslugi/dressirovanye-zhivotnye.html",
+      "hops": [
+        {
+          "url": "http://maskarad-teatr.ru/detskie-uslugi/dressirovanye-zhivotnye.html",
+          "status": 301,
+          "location": "https://maskarad-teatr.ru/detskie-uslugi/dressirovanye-zhivotnye.html"
+        },
+        {
+          "url": "https://maskarad-teatr.ru/detskie-uslugi/dressirovanye-zhivotnye.html",
+          "status": 308,
+          "location": "/uslugi/shou-s-zhivotnymi"
+        },
+        {
+          "url": "https://maskarad-teatr.ru/uslugi/shou-s-zhivotnymi",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "final": "https://maskarad-teatr.ru/uslugi/shou-s-zhivotnymi",
+      "status": 200,
+      "canonical": [
+        "https://maskarad-teatr.ru/uslugi/shou-s-zhivotnymi"
+      ],
+      "robots": [],
+      "xRobots": null,
+      "title": [
+        "Шоу с животными на детский праздник | Театр «Маскарад»"
+      ],
+      "h1": [
+        "Шоу с животными на детский праздник"
+      ]
+    },
+    {
+      "url": "http://www.maskarad-teatr.ru/detskii-prazdnik/sinbad-morehod.html",
+      "hops": [
+        {
+          "url": "http://www.maskarad-teatr.ru/detskii-prazdnik/sinbad-morehod.html",
+          "status": 301,
+          "location": "https://www.maskarad-teatr.ru/detskii-prazdnik/sinbad-morehod.html"
+        },
+        {
+          "url": "https://www.maskarad-teatr.ru/detskii-prazdnik/sinbad-morehod.html",
+          "status": 308,
+          "location": "/spektakli/priklyucheniya-sindbada-morehoda"
+        },
+        {
+          "url": "https://www.maskarad-teatr.ru/spektakli/priklyucheniya-sindbada-morehoda",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "final": "https://www.maskarad-teatr.ru/spektakli/priklyucheniya-sindbada-morehoda",
+      "status": 200,
+      "canonical": [
+        "https://maskarad-teatr.ru/spektakli/priklyucheniya-sindbada-morehoda"
+      ],
+      "robots": [],
+      "xRobots": null,
+      "title": [
+        "Спектакль «Приключения Синдбада-Морехода» | Театр «Маскарад»"
+      ],
+      "h1": [
+        "Спектакль «Приключения Синдбада-Морехода»"
+      ]
+    },
+    {
+      "url": "https://www.maskarad-teatr.ru/personal-data-consent",
+      "hops": [
+        {
+          "url": "https://www.maskarad-teatr.ru/personal-data-consent",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "final": "https://www.maskarad-teatr.ru/personal-data-consent",
+      "status": 200,
+      "canonical": [
+        "https://maskarad-teatr.ru/personal-data-consent"
+      ],
+      "robots": [
+        "noindex, follow"
+      ],
+      "xRobots": null,
+      "title": [
+        "Согласие на обработку персональных данных | Театр «Маскарад»"
+      ],
+      "h1": [
+        "Согласие на обработку персональных данных"
+      ]
+    },
+    {
+      "url": "https://maskarad-teatr.ru/terms",
+      "hops": [
+        {
+          "url": "https://maskarad-teatr.ru/terms",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "final": "https://maskarad-teatr.ru/terms",
+      "status": 200,
+      "canonical": [
+        "https://maskarad-teatr.ru/terms"
+      ],
+      "robots": [
+        "noindex, follow"
+      ],
+      "xRobots": null,
+      "title": [
+        "Условия использования сайта | Театр «Маскарад»"
+      ],
+      "h1": [
+        "Условия использования сайта"
+      ]
+    },
+    {
+      "url": "https://maskarad-teatr.ru/cookie-policy",
+      "hops": [
+        {
+          "url": "https://maskarad-teatr.ru/cookie-policy",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "final": "https://maskarad-teatr.ru/cookie-policy",
+      "status": 200,
+      "canonical": [
+        "https://maskarad-teatr.ru/cookie-policy"
+      ],
+      "robots": [
+        "noindex, follow"
+      ],
+      "xRobots": null,
+      "title": [
+        "Политика cookies | Театр «Маскарад»"
+      ],
+      "h1": [
+        "Политика cookies и хранения в браузере"
+      ]
+    },
+    {
+      "url": "https://maskarad-teatr.ru/privacy-policy",
+      "hops": [
+        {
+          "url": "https://maskarad-teatr.ru/privacy-policy",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "final": "https://maskarad-teatr.ru/privacy-policy",
+      "status": 200,
+      "canonical": [
+        "https://maskarad-teatr.ru/privacy-policy"
+      ],
+      "robots": [
+        "noindex, follow"
+      ],
+      "xRobots": null,
+      "title": [
+        "Политика обработки персональных данных | Театр «Маскарад»"
+      ],
+      "h1": [
+        "Политика обработки персональных данных"
+      ]
+    },
+    {
+      "url": "http://maskarad-teatr.ru/karta.html",
+      "hops": [
+        {
+          "url": "http://maskarad-teatr.ru/karta.html",
+          "status": 301,
+          "location": "https://maskarad-teatr.ru/karta.html"
+        },
+        {
+          "url": "https://maskarad-teatr.ru/karta.html",
+          "status": 308,
+          "location": "/"
+        },
+        {
+          "url": "https://maskarad-teatr.ru/",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "final": "https://maskarad-teatr.ru/",
+      "status": 200,
+      "canonical": [
+        "https://maskarad-teatr.ru"
+      ],
+      "robots": [],
+      "xRobots": null,
+      "title": [
+        "Театр праздника «Маскарад» в Москве"
+      ],
+      "h1": [
+        "Спектакль, где ребенок становится частью сказки"
+      ]
+    },
+    {
+      "url": "https://www.maskarad-teatr.ru/detskii-prazdnik/alisa.html",
+      "hops": [
+        {
+          "url": "https://www.maskarad-teatr.ru/detskii-prazdnik/alisa.html",
+          "status": 308,
+          "location": "/spektakli/alisa-v-strane-chudes"
+        },
+        {
+          "url": "https://www.maskarad-teatr.ru/spektakli/alisa-v-strane-chudes",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "final": "https://www.maskarad-teatr.ru/spektakli/alisa-v-strane-chudes",
+      "status": 200,
+      "canonical": [
+        "https://maskarad-teatr.ru/spektakli/alisa-v-strane-chudes"
+      ],
+      "robots": [],
+      "xRobots": null,
+      "title": [
+        "Спектакль «Алиса в стране чудес» | Театр «Маскарад»"
+      ],
+      "h1": [
+        "Спектакль «Алиса в стране чудес»"
+      ]
+    },
+    {
+      "url": "https://www.maskarad-teatr.ru/detskie-uslugi/master-klassy.html",
+      "hops": [
+        {
+          "url": "https://www.maskarad-teatr.ru/detskie-uslugi/master-klassy.html",
+          "status": 308,
+          "location": "/uslugi/master-klassy"
+        },
+        {
+          "url": "https://www.maskarad-teatr.ru/uslugi/master-klassy",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "final": "https://www.maskarad-teatr.ru/uslugi/master-klassy",
+      "status": 200,
+      "canonical": [
+        "https://maskarad-teatr.ru/uslugi/master-klassy"
+      ],
+      "robots": [],
+      "xRobots": null,
+      "title": [
+        "Мастер-классы на детский праздник | Театр «Маскарад»"
+      ],
+      "h1": [
+        "Мастер-классы на детский праздник"
+      ]
+    },
+    {
+      "url": "https://maskarad-teatr.ru/detskii-prazdnik/avatar.html",
+      "hops": [
+        {
+          "url": "https://maskarad-teatr.ru/detskii-prazdnik/avatar.html",
+          "status": 308,
+          "location": "/spektakli/avatar"
+        },
+        {
+          "url": "https://maskarad-teatr.ru/spektakli/avatar",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "final": "https://maskarad-teatr.ru/spektakli/avatar",
+      "status": 200,
+      "canonical": [
+        "https://maskarad-teatr.ru/spektakli/avatar"
+      ],
+      "robots": [],
+      "xRobots": null,
+      "title": [
+        "Программа «Аватар» на детский праздник | Театр «Маскарад»"
+      ],
+      "h1": [
+        "Программа «Аватар» на детский праздник"
+      ]
+    },
+    {
+      "url": "http://maskarad-teatr.ru/detskie-uslugi/index.html",
+      "hops": [
+        {
+          "url": "http://maskarad-teatr.ru/detskie-uslugi/index.html",
+          "status": 301,
+          "location": "https://maskarad-teatr.ru/detskie-uslugi/index.html"
+        },
+        {
+          "url": "https://maskarad-teatr.ru/detskie-uslugi/index.html",
+          "status": 308,
+          "location": "/uslugi"
+        },
+        {
+          "url": "https://maskarad-teatr.ru/uslugi",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "final": "https://maskarad-teatr.ru/uslugi",
+      "status": 200,
+      "canonical": [
+        "https://maskarad-teatr.ru/uslugi"
+      ],
+      "robots": [],
+      "xRobots": null,
+      "title": [
+        "Услуги для детского праздника | Театр «Маскарад»"
+      ],
+      "h1": [
+        "Услуги для детского праздника"
+      ]
+    },
+    {
+      "url": "https://maskarad-teatr.ru/detskie-uslugi/kukolnyy-spektakl.html",
+      "hops": [
+        {
+          "url": "https://maskarad-teatr.ru/detskie-uslugi/kukolnyy-spektakl.html",
+          "status": 308,
+          "location": "/uslugi/kukolnyy-spektakl"
+        },
+        {
+          "url": "https://maskarad-teatr.ru/uslugi/kukolnyy-spektakl",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "final": "https://maskarad-teatr.ru/uslugi/kukolnyy-spektakl",
+      "status": 200,
+      "canonical": [
+        "https://maskarad-teatr.ru/uslugi/kukolnyy-spektakl"
+      ],
+      "robots": [],
+      "xRobots": null,
+      "title": [
+        "Кукольный спектакль на детский праздник | Театр «Маскарад»"
+      ],
+      "h1": [
+        "Кукольный спектакль на детский праздник"
+      ]
+    },
+    {
+      "url": "https://maskarad-teatr.ru/detskie-uslugi/akvagrim.html",
+      "hops": [
+        {
+          "url": "https://maskarad-teatr.ru/detskie-uslugi/akvagrim.html",
+          "status": 308,
+          "location": "/uslugi/akvagrim"
+        },
+        {
+          "url": "https://maskarad-teatr.ru/uslugi/akvagrim",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "final": "https://maskarad-teatr.ru/uslugi/akvagrim",
+      "status": 200,
+      "canonical": [
+        "https://maskarad-teatr.ru/uslugi/akvagrim"
+      ],
+      "robots": [],
+      "xRobots": null,
+      "title": [
+        "Аквагрим на детский праздник | Театр «Маскарад»"
+      ],
+      "h1": [
+        "Аквагрим на детский праздник"
+      ]
+    },
+    {
+      "url": "https://maskarad-teatr.ru/maskarad/rabota.html",
+      "hops": [
+        {
+          "url": "https://maskarad-teatr.ru/maskarad/rabota.html",
+          "status": 308,
+          "location": "/kontakty"
+        },
+        {
+          "url": "https://maskarad-teatr.ru/kontakty",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "final": "https://maskarad-teatr.ru/kontakty",
+      "status": 200,
+      "canonical": [
+        "https://maskarad-teatr.ru/kontakty"
+      ],
+      "robots": [],
+      "xRobots": null,
+      "title": [
+        "Контакты и заявка | Театр «Маскарад»"
+      ],
+      "h1": [
+        "Контакты и заявка"
+      ]
+    },
+    {
+      "url": "https://www.maskarad-teatr.ru/foto/galereya/art/m/1050/p/131",
+      "hops": [
+        {
+          "url": "https://www.maskarad-teatr.ru/foto/galereya/art/m/1050/p/131",
+          "status": 308,
+          "location": "/foto-video"
+        },
+        {
+          "url": "https://www.maskarad-teatr.ru/foto-video",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "final": "https://www.maskarad-teatr.ru/foto-video",
+      "status": 200,
+      "canonical": [
+        "https://maskarad-teatr.ru/foto-video"
+      ],
+      "robots": [],
+      "xRobots": null,
+      "title": [
+        "Фото и видео | Театр «Маскарад»"
+      ],
+      "h1": [
+        "Фото и видео"
+      ]
+    },
+    {
+      "url": "https://maskarad-teatr.ru/detskie-prazdniki/detskii-sad-prazdnik.html",
+      "hops": [
+        {
+          "url": "https://maskarad-teatr.ru/detskie-prazdniki/detskii-sad-prazdnik.html",
+          "status": 308,
+          "location": "/prazdniki/detskiy-sad"
+        },
+        {
+          "url": "https://maskarad-teatr.ru/prazdniki/detskiy-sad",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "final": "https://maskarad-teatr.ru/prazdniki/detskiy-sad",
+      "status": 200,
+      "canonical": [
+        "https://maskarad-teatr.ru/prazdniki/detskiy-sad"
+      ],
+      "robots": [],
+      "xRobots": null,
+      "title": [
+        "Праздник в детском саду с выездным театром | Театр «Маскарад»"
+      ],
+      "h1": [
+        "Праздник в детском саду с выездным театром"
+      ]
+    },
+    {
+      "url": "https://maskarad-teatr.ru/scenarii/rozhdestvo.html",
+      "hops": [
+        {
+          "url": "https://maskarad-teatr.ru/scenarii/rozhdestvo.html",
+          "status": 308,
+          "location": "/podboroki/novogodnie-programmy-dlya-detey"
+        },
+        {
+          "url": "https://maskarad-teatr.ru/podboroki/novogodnie-programmy-dlya-detey",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "final": "https://maskarad-teatr.ru/podboroki/novogodnie-programmy-dlya-detey",
+      "status": 200,
+      "canonical": [
+        "https://maskarad-teatr.ru/podboroki/novogodnie-programmy-dlya-detey"
+      ],
+      "robots": [],
+      "xRobots": null,
+      "title": [
+        "Новогодние программы для детей | Театр «Маскарад»"
+      ],
+      "h1": [
+        "Новогодние программы для детей"
+      ]
+    },
+    {
+      "url": "https://maskarad-teatr.ru/scenarii/novogodnyaya-elka.html",
+      "hops": [
+        {
+          "url": "https://maskarad-teatr.ru/scenarii/novogodnyaya-elka.html",
+          "status": 308,
+          "location": "/podboroki/novogodnie-programmy-dlya-detey"
+        },
+        {
+          "url": "https://maskarad-teatr.ru/podboroki/novogodnie-programmy-dlya-detey",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "final": "https://maskarad-teatr.ru/podboroki/novogodnie-programmy-dlya-detey",
+      "status": 200,
+      "canonical": [
+        "https://maskarad-teatr.ru/podboroki/novogodnie-programmy-dlya-detey"
+      ],
+      "robots": [],
+      "xRobots": null,
+      "title": [
+        "Новогодние программы для детей | Театр «Маскарад»"
+      ],
+      "h1": [
+        "Новогодние программы для детей"
+      ]
+    },
+    {
+      "url": "https://maskarad-teatr.ru/detskii-prazdnik/novogodnii-piter-pen.html",
+      "hops": [
+        {
+          "url": "https://maskarad-teatr.ru/detskii-prazdnik/novogodnii-piter-pen.html",
+          "status": 308,
+          "location": "/spektakli/novogodnie-spektakli"
+        },
+        {
+          "url": "https://maskarad-teatr.ru/spektakli/novogodnie-spektakli",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "final": "https://maskarad-teatr.ru/spektakli/novogodnie-spektakli",
+      "status": 200,
+      "canonical": [
+        "https://maskarad-teatr.ru/spektakli/novogodnie-spektakli"
+      ],
+      "robots": [],
+      "xRobots": null,
+      "title": [
+        "Новогодние спектакли и елки для детей | Театр «Маскарад»"
+      ],
+      "h1": [
+        "Новогодние спектакли и елки для детей"
+      ]
+    },
+    {
+      "url": "https://maskarad-teatr.ru/detskii-prazdnik/polyarnyi-ekspress.html",
+      "hops": [
+        {
+          "url": "https://maskarad-teatr.ru/detskii-prazdnik/polyarnyi-ekspress.html",
+          "status": 308,
+          "location": "/spektakli/novogodnyy-ekspress"
+        },
+        {
+          "url": "https://maskarad-teatr.ru/spektakli/novogodnyy-ekspress",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "final": "https://maskarad-teatr.ru/spektakli/novogodnyy-ekspress",
+      "status": 200,
+      "canonical": [
+        "https://maskarad-teatr.ru/spektakli/novogodnyy-ekspress"
+      ],
+      "robots": [],
+      "xRobots": null,
+      "title": [
+        "Спектакль «Новогодний экспресс» для детей | Театр «Маскарад»"
+      ],
+      "h1": [
+        "Спектакль «Новогодний экспресс» для детей"
+      ]
+    },
+    {
+      "url": "https://www.maskarad-teatr.ru/scenarii/detskii-prazdnik-polyana-igr.html",
+      "hops": [
+        {
+          "url": "https://www.maskarad-teatr.ru/scenarii/detskii-prazdnik-polyana-igr.html",
+          "status": 308,
+          "location": "/stati/igrovoy-scenariy-dlya-detskogo-prazdnika"
+        },
+        {
+          "url": "https://www.maskarad-teatr.ru/stati/igrovoy-scenariy-dlya-detskogo-prazdnika",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "final": "https://www.maskarad-teatr.ru/stati/igrovoy-scenariy-dlya-detskogo-prazdnika",
+      "status": 200,
+      "canonical": [
+        "https://maskarad-teatr.ru/stati/igrovoy-scenariy-dlya-detskogo-prazdnika"
+      ],
+      "robots": [],
+      "xRobots": null,
+      "title": [
+        "Игровой сценарий для детского праздника: герои, задания и финал | Театр «Маскарад»"
+      ],
+      "h1": [
+        "Игровой сценарий для детского праздника: герои, задания и финал"
+      ]
+    },
+    {
+      "url": "https://www.maskarad-teatr.ru/scenarii/detskii-prazdnik-tsaritsy-oseni.html",
+      "hops": [
+        {
+          "url": "https://www.maskarad-teatr.ru/scenarii/detskii-prazdnik-tsaritsy-oseni.html",
+          "status": 308,
+          "location": "/stati/prazdnik-oseni-dlya-detey"
+        },
+        {
+          "url": "https://www.maskarad-teatr.ru/stati/prazdnik-oseni-dlya-detey",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "final": "https://www.maskarad-teatr.ru/stati/prazdnik-oseni-dlya-detey",
+      "status": 200,
+      "canonical": [
+        "https://maskarad-teatr.ru/stati/prazdnik-oseni-dlya-detey"
+      ],
+      "robots": [],
+      "xRobots": null,
+      "title": [
+        "Праздник осени для детей: сценарий для сада и школы | Театр «Маскарад»"
+      ],
+      "h1": [
+        "Праздник осени для детей: сценарий для сада и школы"
+      ]
+    },
+    {
+      "url": "https://www.maskarad-teatr.ru/scenarii/skazka-sheherezada.html",
+      "hops": [
+        {
+          "url": "https://www.maskarad-teatr.ru/scenarii/skazka-sheherezada.html",
+          "status": 308,
+          "location": "/stati/skazki-sheherezady-scenariy-dlya-detey"
+        },
+        {
+          "url": "https://www.maskarad-teatr.ru/stati/skazki-sheherezady-scenariy-dlya-detey",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "final": "https://www.maskarad-teatr.ru/stati/skazki-sheherezady-scenariy-dlya-detey",
+      "status": 200,
+      "canonical": [
+        "https://maskarad-teatr.ru/stati/skazki-sheherezady-scenariy-dlya-detey"
+      ],
+      "robots": [],
+      "xRobots": null,
+      "title": [
+        "Сказки Шехерезады: сценарий праздника для детей | Театр «Маскарад»"
+      ],
+      "h1": [
+        "Сказки Шехерезады: сценарий праздника для детей"
+      ]
+    },
+    {
+      "url": "https://www.maskarad-teatr.ru/scenarii/halloween.html",
+      "hops": [
+        {
+          "url": "https://www.maskarad-teatr.ru/scenarii/halloween.html",
+          "status": 308,
+          "location": "/stati/detskiy-prazdnik-na-hellouin"
+        },
+        {
+          "url": "https://www.maskarad-teatr.ru/stati/detskiy-prazdnik-na-hellouin",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "final": "https://www.maskarad-teatr.ru/stati/detskiy-prazdnik-na-hellouin",
+      "status": 200,
+      "canonical": [
+        "https://maskarad-teatr.ru/stati/detskiy-prazdnik-na-hellouin"
+      ],
+      "robots": [],
+      "xRobots": null,
+      "title": [
+        "Детский праздник на Хэллоуин: как собрать сценарий | Театр «Маскарад»"
+      ],
+      "h1": [
+        "Детский праздник на Хэллоуин: как собрать сценарий"
+      ]
+    },
+    {
+      "url": "https://maskarad-teatr.ru/scenarii/detskii-novogodnii-prazdnik.html",
+      "hops": [
+        {
+          "url": "https://maskarad-teatr.ru/scenarii/detskii-novogodnii-prazdnik.html",
+          "status": 308,
+          "location": "/podboroki/novogodnie-programmy-dlya-detey"
+        },
+        {
+          "url": "https://maskarad-teatr.ru/podboroki/novogodnie-programmy-dlya-detey",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "final": "https://maskarad-teatr.ru/podboroki/novogodnie-programmy-dlya-detey",
+      "status": 200,
+      "canonical": [
+        "https://maskarad-teatr.ru/podboroki/novogodnie-programmy-dlya-detey"
+      ],
+      "robots": [],
+      "xRobots": null,
+      "title": [
+        "Новогодние программы для детей | Театр «Маскарад»"
+      ],
+      "h1": [
+        "Новогодние программы для детей"
+      ]
+    },
+    {
+      "url": "https://maskarad-teatr.ru/scenarii/den-uchitelya.html",
+      "hops": [
+        {
+          "url": "https://maskarad-teatr.ru/scenarii/den-uchitelya.html",
+          "status": 308,
+          "location": "/stati/prazdnik-v-shkole-kak-sobrat-programmu"
+        },
+        {
+          "url": "https://maskarad-teatr.ru/stati/prazdnik-v-shkole-kak-sobrat-programmu",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "final": "https://maskarad-teatr.ru/stati/prazdnik-v-shkole-kak-sobrat-programmu",
+      "status": 200,
+      "canonical": [
+        "https://maskarad-teatr.ru/stati/prazdnik-v-shkole-kak-sobrat-programmu"
+      ],
+      "robots": [],
+      "xRobots": null,
+      "title": [
+        "Праздник в школе: как собрать программу | Театр «Маскарад»"
+      ],
+      "h1": [
+        "Праздник в школе: как собрать программу"
+      ]
+    },
+    {
+      "url": "https://www.maskarad-teatr.ru/foto/galereya/art/m/1050/p/34/",
+      "hops": [
+        {
+          "url": "https://www.maskarad-teatr.ru/foto/galereya/art/m/1050/p/34/",
+          "status": 308,
+          "location": "/foto/galereya/art/m/1050/p/34"
+        },
+        {
+          "url": "https://www.maskarad-teatr.ru/foto/galereya/art/m/1050/p/34",
+          "status": 308,
+          "location": "/foto-video"
+        },
+        {
+          "url": "https://www.maskarad-teatr.ru/foto-video",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "final": "https://www.maskarad-teatr.ru/foto-video",
+      "status": 200,
+      "canonical": [
+        "https://maskarad-teatr.ru/foto-video"
+      ],
+      "robots": [],
+      "xRobots": null,
+      "title": [
+        "Фото и видео | Театр «Маскарад»"
+      ],
+      "h1": [
+        "Фото и видео"
+      ]
+    },
+    {
+      "url": "https://www.maskarad-teatr.ru/foto/galereya/art/m/1050/p/88/",
+      "hops": [
+        {
+          "url": "https://www.maskarad-teatr.ru/foto/galereya/art/m/1050/p/88/",
+          "status": 308,
+          "location": "/foto/galereya/art/m/1050/p/88"
+        },
+        {
+          "url": "https://www.maskarad-teatr.ru/foto/galereya/art/m/1050/p/88",
+          "status": 308,
+          "location": "/foto-video"
+        },
+        {
+          "url": "https://www.maskarad-teatr.ru/foto-video",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "final": "https://www.maskarad-teatr.ru/foto-video",
+      "status": 200,
+      "canonical": [
+        "https://maskarad-teatr.ru/foto-video"
+      ],
+      "robots": [],
+      "xRobots": null,
+      "title": [
+        "Фото и видео | Театр «Маскарад»"
+      ],
+      "h1": [
+        "Фото и видео"
+      ]
+    },
+    {
+      "url": "https://www.maskarad-teatr.ru/foto/galereya/art/m/1050/p/38/",
+      "hops": [
+        {
+          "url": "https://www.maskarad-teatr.ru/foto/galereya/art/m/1050/p/38/",
+          "status": 308,
+          "location": "/foto/galereya/art/m/1050/p/38"
+        },
+        {
+          "url": "https://www.maskarad-teatr.ru/foto/galereya/art/m/1050/p/38",
+          "status": 308,
+          "location": "/foto-video"
+        },
+        {
+          "url": "https://www.maskarad-teatr.ru/foto-video",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "final": "https://www.maskarad-teatr.ru/foto-video",
+      "status": 200,
+      "canonical": [
+        "https://maskarad-teatr.ru/foto-video"
+      ],
+      "robots": [],
+      "xRobots": null,
+      "title": [
+        "Фото и видео | Театр «Маскарад»"
+      ],
+      "h1": [
+        "Фото и видео"
+      ]
+    },
+    {
+      "url": "https://www.maskarad-teatr.ru/foto/galereya/art/m/1050/p/79/",
+      "hops": [
+        {
+          "url": "https://www.maskarad-teatr.ru/foto/galereya/art/m/1050/p/79/",
+          "status": 308,
+          "location": "/foto/galereya/art/m/1050/p/79"
+        },
+        {
+          "url": "https://www.maskarad-teatr.ru/foto/galereya/art/m/1050/p/79",
+          "status": 308,
+          "location": "/foto-video"
+        },
+        {
+          "url": "https://www.maskarad-teatr.ru/foto-video",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "final": "https://www.maskarad-teatr.ru/foto-video",
+      "status": 200,
+      "canonical": [
+        "https://maskarad-teatr.ru/foto-video"
+      ],
+      "robots": [],
+      "xRobots": null,
+      "title": [
+        "Фото и видео | Театр «Маскарад»"
+      ],
+      "h1": [
+        "Фото и видео"
+      ]
+    },
+    {
+      "url": "https://www.maskarad-teatr.ru/foto/galereya/art/m/1050/p/20/",
+      "hops": [
+        {
+          "url": "https://www.maskarad-teatr.ru/foto/galereya/art/m/1050/p/20/",
+          "status": 308,
+          "location": "/foto/galereya/art/m/1050/p/20"
+        },
+        {
+          "url": "https://www.maskarad-teatr.ru/foto/galereya/art/m/1050/p/20",
+          "status": 308,
+          "location": "/foto-video"
+        },
+        {
+          "url": "https://www.maskarad-teatr.ru/foto-video",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "final": "https://www.maskarad-teatr.ru/foto-video",
+      "status": 200,
+      "canonical": [
+        "https://maskarad-teatr.ru/foto-video"
+      ],
+      "robots": [],
+      "xRobots": null,
+      "title": [
+        "Фото и видео | Театр «Маскарад»"
+      ],
+      "h1": [
+        "Фото и видео"
+      ]
+    },
+    {
+      "url": "https://www.maskarad-teatr.ru/foto/galereya/art/m/1050/p/19/",
+      "hops": [
+        {
+          "url": "https://www.maskarad-teatr.ru/foto/galereya/art/m/1050/p/19/",
+          "status": 308,
+          "location": "/foto/galereya/art/m/1050/p/19"
+        },
+        {
+          "url": "https://www.maskarad-teatr.ru/foto/galereya/art/m/1050/p/19",
+          "status": 308,
+          "location": "/foto-video"
+        },
+        {
+          "url": "https://www.maskarad-teatr.ru/foto-video",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "final": "https://www.maskarad-teatr.ru/foto-video",
+      "status": 200,
+      "canonical": [
+        "https://maskarad-teatr.ru/foto-video"
+      ],
+      "robots": [],
+      "xRobots": null,
+      "title": [
+        "Фото и видео | Театр «Маскарад»"
+      ],
+      "h1": [
+        "Фото и видео"
+      ]
+    },
+    {
+      "url": "https://www.maskarad-teatr.ru/foto/galereya/art/m/1050/p/106/",
+      "hops": [
+        {
+          "url": "https://www.maskarad-teatr.ru/foto/galereya/art/m/1050/p/106/",
+          "status": 308,
+          "location": "/foto/galereya/art/m/1050/p/106"
+        },
+        {
+          "url": "https://www.maskarad-teatr.ru/foto/galereya/art/m/1050/p/106",
+          "status": 308,
+          "location": "/foto-video"
+        },
+        {
+          "url": "https://www.maskarad-teatr.ru/foto-video",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "final": "https://www.maskarad-teatr.ru/foto-video",
+      "status": 200,
+      "canonical": [
+        "https://maskarad-teatr.ru/foto-video"
+      ],
+      "robots": [],
+      "xRobots": null,
+      "title": [
+        "Фото и видео | Театр «Маскарад»"
+      ],
+      "h1": [
+        "Фото и видео"
+      ]
+    },
+    {
+      "url": "https://www.maskarad-teatr.ru/foto/galereya/art/m/1050/p/153/",
+      "hops": [
+        {
+          "url": "https://www.maskarad-teatr.ru/foto/galereya/art/m/1050/p/153/",
+          "status": 308,
+          "location": "/foto/galereya/art/m/1050/p/153"
+        },
+        {
+          "url": "https://www.maskarad-teatr.ru/foto/galereya/art/m/1050/p/153",
+          "status": 308,
+          "location": "/foto-video"
+        },
+        {
+          "url": "https://www.maskarad-teatr.ru/foto-video",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "final": "https://www.maskarad-teatr.ru/foto-video",
+      "status": 200,
+      "canonical": [
+        "https://maskarad-teatr.ru/foto-video"
+      ],
+      "robots": [],
+      "xRobots": null,
+      "title": [
+        "Фото и видео | Театр «Маскарад»"
+      ],
+      "h1": [
+        "Фото и видео"
+      ]
+    },
+    {
+      "url": "https://www.maskarad-teatr.ru/foto/galereya/art/m/1050/p/171/",
+      "hops": [
+        {
+          "url": "https://www.maskarad-teatr.ru/foto/galereya/art/m/1050/p/171/",
+          "status": 308,
+          "location": "/foto/galereya/art/m/1050/p/171"
+        },
+        {
+          "url": "https://www.maskarad-teatr.ru/foto/galereya/art/m/1050/p/171",
+          "status": 308,
+          "location": "/foto-video"
+        },
+        {
+          "url": "https://www.maskarad-teatr.ru/foto-video",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "final": "https://www.maskarad-teatr.ru/foto-video",
+      "status": 200,
+      "canonical": [
+        "https://maskarad-teatr.ru/foto-video"
+      ],
+      "robots": [],
+      "xRobots": null,
+      "title": [
+        "Фото и видео | Театр «Маскарад»"
+      ],
+      "h1": [
+        "Фото и видео"
+      ]
+    },
+    {
+      "url": "https://www.maskarad-teatr.ru/foto/galereya/art/m/1050/p/41/",
+      "hops": [
+        {
+          "url": "https://www.maskarad-teatr.ru/foto/galereya/art/m/1050/p/41/",
+          "status": 308,
+          "location": "/foto/galereya/art/m/1050/p/41"
+        },
+        {
+          "url": "https://www.maskarad-teatr.ru/foto/galereya/art/m/1050/p/41",
+          "status": 308,
+          "location": "/foto-video"
+        },
+        {
+          "url": "https://www.maskarad-teatr.ru/foto-video",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "final": "https://www.maskarad-teatr.ru/foto-video",
+      "status": 200,
+      "canonical": [
+        "https://maskarad-teatr.ru/foto-video"
+      ],
+      "robots": [],
+      "xRobots": null,
+      "title": [
+        "Фото и видео | Театр «Маскарад»"
+      ],
+      "h1": [
+        "Фото и видео"
+      ]
+    },
+    {
+      "url": "https://www.maskarad-teatr.ru/foto/galereya/art/m/1050/p/205/",
+      "hops": [
+        {
+          "url": "https://www.maskarad-teatr.ru/foto/galereya/art/m/1050/p/205/",
+          "status": 308,
+          "location": "/foto/galereya/art/m/1050/p/205"
+        },
+        {
+          "url": "https://www.maskarad-teatr.ru/foto/galereya/art/m/1050/p/205",
+          "status": 308,
+          "location": "/foto-video"
+        },
+        {
+          "url": "https://www.maskarad-teatr.ru/foto-video",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "final": "https://www.maskarad-teatr.ru/foto-video",
+      "status": 200,
+      "canonical": [
+        "https://maskarad-teatr.ru/foto-video"
+      ],
+      "robots": [],
+      "xRobots": null,
+      "title": [
+        "Фото и видео | Театр «Маскарад»"
+      ],
+      "h1": [
+        "Фото и видео"
+      ]
+    },
+    {
+      "url": "https://www.maskarad-teatr.ru/foto/galereya/art/m/1050/p/169/",
+      "hops": [
+        {
+          "url": "https://www.maskarad-teatr.ru/foto/galereya/art/m/1050/p/169/",
+          "status": 308,
+          "location": "/foto/galereya/art/m/1050/p/169"
+        },
+        {
+          "url": "https://www.maskarad-teatr.ru/foto/galereya/art/m/1050/p/169",
+          "status": 308,
+          "location": "/foto-video"
+        },
+        {
+          "url": "https://www.maskarad-teatr.ru/foto-video",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "final": "https://www.maskarad-teatr.ru/foto-video",
+      "status": 200,
+      "canonical": [
+        "https://maskarad-teatr.ru/foto-video"
+      ],
+      "robots": [],
+      "xRobots": null,
+      "title": [
+        "Фото и видео | Театр «Маскарад»"
+      ],
+      "h1": [
+        "Фото и видео"
+      ]
+    },
+    {
+      "url": "https://www.maskarad-teatr.ru/foto/galereya/art/m/1050/p/14/",
+      "hops": [
+        {
+          "url": "https://www.maskarad-teatr.ru/foto/galereya/art/m/1050/p/14/",
+          "status": 308,
+          "location": "/foto/galereya/art/m/1050/p/14"
+        },
+        {
+          "url": "https://www.maskarad-teatr.ru/foto/galereya/art/m/1050/p/14",
+          "status": 308,
+          "location": "/foto-video"
+        },
+        {
+          "url": "https://www.maskarad-teatr.ru/foto-video",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "final": "https://www.maskarad-teatr.ru/foto-video",
+      "status": 200,
+      "canonical": [
+        "https://maskarad-teatr.ru/foto-video"
+      ],
+      "robots": [],
+      "xRobots": null,
+      "title": [
+        "Фото и видео | Театр «Маскарад»"
+      ],
+      "h1": [
+        "Фото и видео"
+      ]
+    },
+    {
+      "url": "https://www.maskarad-teatr.ru/foto/galereya/art/m/1050/p/43/",
+      "hops": [
+        {
+          "url": "https://www.maskarad-teatr.ru/foto/galereya/art/m/1050/p/43/",
+          "status": 308,
+          "location": "/foto/galereya/art/m/1050/p/43"
+        },
+        {
+          "url": "https://www.maskarad-teatr.ru/foto/galereya/art/m/1050/p/43",
+          "status": 308,
+          "location": "/foto-video"
+        },
+        {
+          "url": "https://www.maskarad-teatr.ru/foto-video",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "final": "https://www.maskarad-teatr.ru/foto-video",
+      "status": 200,
+      "canonical": [
+        "https://maskarad-teatr.ru/foto-video"
+      ],
+      "robots": [],
+      "xRobots": null,
+      "title": [
+        "Фото и видео | Театр «Маскарад»"
+      ],
+      "h1": [
+        "Фото и видео"
+      ]
+    },
+    {
+      "url": "https://www.maskarad-teatr.ru/foto/galereya/art/m/1050/p/132/",
+      "hops": [
+        {
+          "url": "https://www.maskarad-teatr.ru/foto/galereya/art/m/1050/p/132/",
+          "status": 308,
+          "location": "/foto/galereya/art/m/1050/p/132"
+        },
+        {
+          "url": "https://www.maskarad-teatr.ru/foto/galereya/art/m/1050/p/132",
+          "status": 308,
+          "location": "/foto-video"
+        },
+        {
+          "url": "https://www.maskarad-teatr.ru/foto-video",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "final": "https://www.maskarad-teatr.ru/foto-video",
+      "status": 200,
+      "canonical": [
+        "https://maskarad-teatr.ru/foto-video"
+      ],
+      "robots": [],
+      "xRobots": null,
+      "title": [
+        "Фото и видео | Театр «Маскарад»"
+      ],
+      "h1": [
+        "Фото и видео"
+      ]
+    },
+    {
+      "url": "https://www.maskarad-teatr.ru/foto/galereya/art/m/1050/p/160/",
+      "hops": [
+        {
+          "url": "https://www.maskarad-teatr.ru/foto/galereya/art/m/1050/p/160/",
+          "status": 308,
+          "location": "/foto/galereya/art/m/1050/p/160"
+        },
+        {
+          "url": "https://www.maskarad-teatr.ru/foto/galereya/art/m/1050/p/160",
+          "status": 308,
+          "location": "/foto-video"
+        },
+        {
+          "url": "https://www.maskarad-teatr.ru/foto-video",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "final": "https://www.maskarad-teatr.ru/foto-video",
+      "status": 200,
+      "canonical": [
+        "https://maskarad-teatr.ru/foto-video"
+      ],
+      "robots": [],
+      "xRobots": null,
+      "title": [
+        "Фото и видео | Театр «Маскарад»"
+      ],
+      "h1": [
+        "Фото и видео"
+      ]
+    },
+    {
+      "url": "https://www.maskarad-teatr.ru/foto/galereya/art/m/1050/p/40/",
+      "hops": [
+        {
+          "url": "https://www.maskarad-teatr.ru/foto/galereya/art/m/1050/p/40/",
+          "status": 308,
+          "location": "/foto/galereya/art/m/1050/p/40"
+        },
+        {
+          "url": "https://www.maskarad-teatr.ru/foto/galereya/art/m/1050/p/40",
+          "status": 308,
+          "location": "/foto-video"
+        },
+        {
+          "url": "https://www.maskarad-teatr.ru/foto-video",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "final": "https://www.maskarad-teatr.ru/foto-video",
+      "status": 200,
+      "canonical": [
+        "https://maskarad-teatr.ru/foto-video"
+      ],
+      "robots": [],
+      "xRobots": null,
+      "title": [
+        "Фото и видео | Театр «Маскарад»"
+      ],
+      "h1": [
+        "Фото и видео"
+      ]
+    },
+    {
+      "url": "https://www.maskarad-teatr.ru/foto/galereya/art/m/1050/p/112/",
+      "hops": [
+        {
+          "url": "https://www.maskarad-teatr.ru/foto/galereya/art/m/1050/p/112/",
+          "status": 308,
+          "location": "/foto/galereya/art/m/1050/p/112"
+        },
+        {
+          "url": "https://www.maskarad-teatr.ru/foto/galereya/art/m/1050/p/112",
+          "status": 308,
+          "location": "/foto-video"
+        },
+        {
+          "url": "https://www.maskarad-teatr.ru/foto-video",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "final": "https://www.maskarad-teatr.ru/foto-video",
+      "status": 200,
+      "canonical": [
+        "https://maskarad-teatr.ru/foto-video"
+      ],
+      "robots": [],
+      "xRobots": null,
+      "title": [
+        "Фото и видео | Театр «Маскарад»"
+      ],
+      "h1": [
+        "Фото и видео"
+      ]
+    },
+    {
+      "url": "https://www.maskarad-teatr.ru/foto/galereya/art/m/1050/p/76/",
+      "hops": [
+        {
+          "url": "https://www.maskarad-teatr.ru/foto/galereya/art/m/1050/p/76/",
+          "status": 308,
+          "location": "/foto/galereya/art/m/1050/p/76"
+        },
+        {
+          "url": "https://www.maskarad-teatr.ru/foto/galereya/art/m/1050/p/76",
+          "status": 308,
+          "location": "/foto-video"
+        },
+        {
+          "url": "https://www.maskarad-teatr.ru/foto-video",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "final": "https://www.maskarad-teatr.ru/foto-video",
+      "status": 200,
+      "canonical": [
+        "https://maskarad-teatr.ru/foto-video"
+      ],
+      "robots": [],
+      "xRobots": null,
+      "title": [
+        "Фото и видео | Театр «Маскарад»"
+      ],
+      "h1": [
+        "Фото и видео"
+      ]
+    },
+    {
+      "url": "https://www.maskarad-teatr.ru/foto/galereya/art/m/1050/p/15/",
+      "hops": [
+        {
+          "url": "https://www.maskarad-teatr.ru/foto/galereya/art/m/1050/p/15/",
+          "status": 308,
+          "location": "/foto/galereya/art/m/1050/p/15"
+        },
+        {
+          "url": "https://www.maskarad-teatr.ru/foto/galereya/art/m/1050/p/15",
+          "status": 308,
+          "location": "/foto-video"
+        },
+        {
+          "url": "https://www.maskarad-teatr.ru/foto-video",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "final": "https://www.maskarad-teatr.ru/foto-video",
+      "status": 200,
+      "canonical": [
+        "https://maskarad-teatr.ru/foto-video"
+      ],
+      "robots": [],
+      "xRobots": null,
+      "title": [
+        "Фото и видео | Театр «Маскарад»"
+      ],
+      "h1": [
+        "Фото и видео"
+      ]
+    },
+    {
+      "url": "https://www.maskarad-teatr.ru/foto/galereya/art/m/1050/p/74/",
+      "hops": [
+        {
+          "url": "https://www.maskarad-teatr.ru/foto/galereya/art/m/1050/p/74/",
+          "status": 308,
+          "location": "/foto/galereya/art/m/1050/p/74"
+        },
+        {
+          "url": "https://www.maskarad-teatr.ru/foto/galereya/art/m/1050/p/74",
+          "status": 308,
+          "location": "/foto-video"
+        },
+        {
+          "url": "https://www.maskarad-teatr.ru/foto-video",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "final": "https://www.maskarad-teatr.ru/foto-video",
+      "status": 200,
+      "canonical": [
+        "https://maskarad-teatr.ru/foto-video"
+      ],
+      "robots": [],
+      "xRobots": null,
+      "title": [
+        "Фото и видео | Театр «Маскарад»"
+      ],
+      "h1": [
+        "Фото и видео"
+      ]
+    },
+    {
+      "url": "https://www.maskarad-teatr.ru/foto/galereya/art/m/1050/p/21/",
+      "hops": [
+        {
+          "url": "https://www.maskarad-teatr.ru/foto/galereya/art/m/1050/p/21/",
+          "status": 308,
+          "location": "/foto/galereya/art/m/1050/p/21"
+        },
+        {
+          "url": "https://www.maskarad-teatr.ru/foto/galereya/art/m/1050/p/21",
+          "status": 308,
+          "location": "/foto-video"
+        },
+        {
+          "url": "https://www.maskarad-teatr.ru/foto-video",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "final": "https://www.maskarad-teatr.ru/foto-video",
+      "status": 200,
+      "canonical": [
+        "https://maskarad-teatr.ru/foto-video"
+      ],
+      "robots": [],
+      "xRobots": null,
+      "title": [
+        "Фото и видео | Театр «Маскарад»"
+      ],
+      "h1": [
+        "Фото и видео"
+      ]
+    },
+    {
+      "url": "https://www.maskarad-teatr.ru/foto/galereya/art/m/1050/p/111/",
+      "hops": [
+        {
+          "url": "https://www.maskarad-teatr.ru/foto/galereya/art/m/1050/p/111/",
+          "status": 308,
+          "location": "/foto/galereya/art/m/1050/p/111"
+        },
+        {
+          "url": "https://www.maskarad-teatr.ru/foto/galereya/art/m/1050/p/111",
+          "status": 308,
+          "location": "/foto-video"
+        },
+        {
+          "url": "https://www.maskarad-teatr.ru/foto-video",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "final": "https://www.maskarad-teatr.ru/foto-video",
+      "status": 200,
+      "canonical": [
+        "https://maskarad-teatr.ru/foto-video"
+      ],
+      "robots": [],
+      "xRobots": null,
+      "title": [
+        "Фото и видео | Театр «Маскарад»"
+      ],
+      "h1": [
+        "Фото и видео"
+      ]
+    },
+    {
+      "url": "https://www.maskarad-teatr.ru/foto/galereya/art/m/1050/p/84/",
+      "hops": [
+        {
+          "url": "https://www.maskarad-teatr.ru/foto/galereya/art/m/1050/p/84/",
+          "status": 308,
+          "location": "/foto/galereya/art/m/1050/p/84"
+        },
+        {
+          "url": "https://www.maskarad-teatr.ru/foto/galereya/art/m/1050/p/84",
+          "status": 308,
+          "location": "/foto-video"
+        },
+        {
+          "url": "https://www.maskarad-teatr.ru/foto-video",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "final": "https://www.maskarad-teatr.ru/foto-video",
+      "status": 200,
+      "canonical": [
+        "https://maskarad-teatr.ru/foto-video"
+      ],
+      "robots": [],
+      "xRobots": null,
+      "title": [
+        "Фото и видео | Театр «Маскарад»"
+      ],
+      "h1": [
+        "Фото и видео"
+      ]
+    }
+  ]
+}

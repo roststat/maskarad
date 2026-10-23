@@ -1,0 +1,455 @@
+{
+  "date": "2026-10-23",
+  "applicationCommit": "26ecfbc",
+  "checks": [
+    {
+      "source": "https://maskarad-teatr.ru/",
+      "expected": "https://maskarad-teatr.ru/",
+      "hops": [
+        {
+          "url": "https://maskarad-teatr.ru/",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "errors": []
+    },
+    {
+      "source": "https://maskarad-teatr.ru/kontakty?utm_source=seo-check&next=%2Ffoto-video%3Fx%3D1&empty=",
+      "expected": "https://maskarad-teatr.ru/kontakty?utm_source=seo-check&next=%2Ffoto-video%3Fx%3D1&empty=",
+      "hops": [
+        {
+          "url": "https://maskarad-teatr.ru/kontakty?utm_source=seo-check&next=%2Ffoto-video%3Fx%3D1&empty=",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "errors": []
+    },
+    {
+      "source": "https://maskarad-teatr.ru/karta.html?utm_source=seo-check&next=%2Ffoto-video",
+      "expected": "https://maskarad-teatr.ru/karta-sayta?utm_source=seo-check&next=%2Ffoto-video",
+      "hops": [
+        {
+          "url": "https://maskarad-teatr.ru/karta.html?utm_source=seo-check&next=%2Ffoto-video",
+          "status": 308,
+          "location": "https://maskarad-teatr.ru/karta-sayta?utm_source=seo-check&next=%2Ffoto-video"
+        },
+        {
+          "url": "https://maskarad-teatr.ru/karta-sayta?utm_source=seo-check&next=%2Ffoto-video",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "errors": []
+    },
+    {
+      "source": "https://maskarad-teatr.ru/robots.txt",
+      "expected": "https://maskarad-teatr.ru/robots.txt",
+      "hops": [
+        {
+          "url": "https://maskarad-teatr.ru/robots.txt",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "errors": []
+    },
+    {
+      "source": "https://maskarad-teatr.ru/sitemap.xml",
+      "expected": "https://maskarad-teatr.ru/sitemap.xml",
+      "hops": [
+        {
+          "url": "https://maskarad-teatr.ru/sitemap.xml",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "errors": []
+    },
+    {
+      "source": "https://maskarad-teatr.ru/spektakli/novyy-god-na-snezhnoy-planete",
+      "expected": "https://maskarad-teatr.ru/spektakli/novyy-god-na-snezhnoy-planete",
+      "hops": [
+        {
+          "url": "https://maskarad-teatr.ru/spektakli/novyy-god-na-snezhnoy-planete",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "errors": []
+    },
+    {
+      "source": "https://maskarad-teatr.ru/seo-check-missing-080",
+      "expected": "https://maskarad-teatr.ru/seo-check-missing-080",
+      "hops": [
+        {
+          "url": "https://maskarad-teatr.ru/seo-check-missing-080",
+          "status": 404,
+          "location": null
+        }
+      ],
+      "errors": []
+    },
+    {
+      "source": "https://www.maskarad-teatr.ru/",
+      "expected": "https://maskarad-teatr.ru/",
+      "hops": [
+        {
+          "url": "https://www.maskarad-teatr.ru/",
+          "status": 308,
+          "location": "https://maskarad-teatr.ru/"
+        },
+        {
+          "url": "https://maskarad-teatr.ru/",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "errors": []
+    },
+    {
+      "source": "https://www.maskarad-teatr.ru/kontakty?utm_source=seo-check&next=%2Ffoto-video%3Fx%3D1&empty=",
+      "expected": "https://maskarad-teatr.ru/kontakty?utm_source=seo-check&next=%2Ffoto-video%3Fx%3D1&empty=",
+      "hops": [
+        {
+          "url": "https://www.maskarad-teatr.ru/kontakty?utm_source=seo-check&next=%2Ffoto-video%3Fx%3D1&empty=",
+          "status": 308,
+          "location": "https://maskarad-teatr.ru/kontakty?utm_source=seo-check&next=%2Ffoto-video%3Fx%3D1&empty="
+        },
+        {
+          "url": "https://maskarad-teatr.ru/kontakty?utm_source=seo-check&next=%2Ffoto-video%3Fx%3D1&empty=",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "errors": []
+    },
+    {
+      "source": "https://www.maskarad-teatr.ru/karta.html?utm_source=seo-check&next=%2Ffoto-video",
+      "expected": "https://maskarad-teatr.ru/karta-sayta?utm_source=seo-check&next=%2Ffoto-video",
+      "hops": [
+        {
+          "url": "https://www.maskarad-teatr.ru/karta.html?utm_source=seo-check&next=%2Ffoto-video",
+          "status": 308,
+          "location": "https://maskarad-teatr.ru/karta-sayta?utm_source=seo-check&next=%2Ffoto-video"
+        },
+        {
+          "url": "https://maskarad-teatr.ru/karta-sayta?utm_source=seo-check&next=%2Ffoto-video",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "errors": []
+    },
+    {
+      "source": "https://www.maskarad-teatr.ru/robots.txt",
+      "expected": "https://maskarad-teatr.ru/robots.txt",
+      "hops": [
+        {
+          "url": "https://www.maskarad-teatr.ru/robots.txt",
+          "status": 308,
+          "location": "https://maskarad-teatr.ru/robots.txt"
+        },
+        {
+          "url": "https://maskarad-teatr.ru/robots.txt",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "errors": []
+    },
+    {
+      "source": "https://www.maskarad-teatr.ru/sitemap.xml",
+      "expected": "https://maskarad-teatr.ru/sitemap.xml",
+      "hops": [
+        {
+          "url": "https://www.maskarad-teatr.ru/sitemap.xml",
+          "status": 308,
+          "location": "https://maskarad-teatr.ru/sitemap.xml"
+        },
+        {
+          "url": "https://maskarad-teatr.ru/sitemap.xml",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "errors": []
+    },
+    {
+      "source": "https://www.maskarad-teatr.ru/spektakli/novyy-god-na-snezhnoy-planete",
+      "expected": "https://maskarad-teatr.ru/spektakli/novyy-god-na-snezhnoy-planete",
+      "hops": [
+        {
+          "url": "https://www.maskarad-teatr.ru/spektakli/novyy-god-na-snezhnoy-planete",
+          "status": 308,
+          "location": "https://maskarad-teatr.ru/spektakli/novyy-god-na-snezhnoy-planete"
+        },
+        {
+          "url": "https://maskarad-teatr.ru/spektakli/novyy-god-na-snezhnoy-planete",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "errors": []
+    },
+    {
+      "source": "https://www.maskarad-teatr.ru/seo-check-missing-080",
+      "expected": "https://maskarad-teatr.ru/seo-check-missing-080",
+      "hops": [
+        {
+          "url": "https://www.maskarad-teatr.ru/seo-check-missing-080",
+          "status": 308,
+          "location": "https://maskarad-teatr.ru/seo-check-missing-080"
+        },
+        {
+          "url": "https://maskarad-teatr.ru/seo-check-missing-080",
+          "status": 404,
+          "location": null
+        }
+      ],
+      "errors": []
+    },
+    {
+      "source": "http://maskarad-teatr.ru/",
+      "expected": "https://maskarad-teatr.ru/",
+      "hops": [
+        {
+          "url": "http://maskarad-teatr.ru/",
+          "status": 301,
+          "location": "https://maskarad-teatr.ru/"
+        },
+        {
+          "url": "https://maskarad-teatr.ru/",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "errors": []
+    },
+    {
+      "source": "http://maskarad-teatr.ru/kontakty?utm_source=seo-check&next=%2Ffoto-video%3Fx%3D1&empty=",
+      "expected": "https://maskarad-teatr.ru/kontakty?utm_source=seo-check&next=%2Ffoto-video%3Fx%3D1&empty=",
+      "hops": [
+        {
+          "url": "http://maskarad-teatr.ru/kontakty?utm_source=seo-check&next=%2Ffoto-video%3Fx%3D1&empty=",
+          "status": 301,
+          "location": "https://maskarad-teatr.ru/kontakty?utm_source=seo-check&next=%2Ffoto-video%3Fx%3D1&empty="
+        },
+        {
+          "url": "https://maskarad-teatr.ru/kontakty?utm_source=seo-check&next=%2Ffoto-video%3Fx%3D1&empty=",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "errors": []
+    },
+    {
+      "source": "http://maskarad-teatr.ru/karta.html?utm_source=seo-check&next=%2Ffoto-video",
+      "expected": "https://maskarad-teatr.ru/karta-sayta?utm_source=seo-check&next=%2Ffoto-video",
+      "hops": [
+        {
+          "url": "http://maskarad-teatr.ru/karta.html?utm_source=seo-check&next=%2Ffoto-video",
+          "status": 308,
+          "location": "https://maskarad-teatr.ru/karta-sayta?utm_source=seo-check&next=%2Ffoto-video"
+        },
+        {
+          "url": "https://maskarad-teatr.ru/karta-sayta?utm_source=seo-check&next=%2Ffoto-video",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "errors": []
+    },
+    {
+      "source": "http://maskarad-teatr.ru/robots.txt",
+      "expected": "https://maskarad-teatr.ru/robots.txt",
+      "hops": [
+        {
+          "url": "http://maskarad-teatr.ru/robots.txt",
+          "status": 301,
+          "location": "https://maskarad-teatr.ru/robots.txt"
+        },
+        {
+          "url": "https://maskarad-teatr.ru/robots.txt",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "errors": []
+    },
+    {
+      "source": "http://maskarad-teatr.ru/sitemap.xml",
+      "expected": "https://maskarad-teatr.ru/sitemap.xml",
+      "hops": [
+        {
+          "url": "http://maskarad-teatr.ru/sitemap.xml",
+          "status": 301,
+          "location": "https://maskarad-teatr.ru/sitemap.xml"
+        },
+        {
+          "url": "https://maskarad-teatr.ru/sitemap.xml",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "errors": []
+    },
+    {
+      "source": "http://maskarad-teatr.ru/spektakli/novyy-god-na-snezhnoy-planete",
+      "expected": "https://maskarad-teatr.ru/spektakli/novyy-god-na-snezhnoy-planete",
+      "hops": [
+        {
+          "url": "http://maskarad-teatr.ru/spektakli/novyy-god-na-snezhnoy-planete",
+          "status": 301,
+          "location": "https://maskarad-teatr.ru/spektakli/novyy-god-na-snezhnoy-planete"
+        },
+        {
+          "url": "https://maskarad-teatr.ru/spektakli/novyy-god-na-snezhnoy-planete",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "errors": []
+    },
+    {
+      "source": "http://maskarad-teatr.ru/seo-check-missing-080",
+      "expected": "https://maskarad-teatr.ru/seo-check-missing-080",
+      "hops": [
+        {
+          "url": "http://maskarad-teatr.ru/seo-check-missing-080",
+          "status": 301,
+          "location": "https://maskarad-teatr.ru/seo-check-missing-080"
+        },
+        {
+          "url": "https://maskarad-teatr.ru/seo-check-missing-080",
+          "status": 404,
+          "location": null
+        }
+      ],
+      "errors": []
+    },
+    {
+      "source": "http://www.maskarad-teatr.ru/",
+      "expected": "https://maskarad-teatr.ru/",
+      "hops": [
+        {
+          "url": "http://www.maskarad-teatr.ru/",
+          "status": 301,
+          "location": "https://maskarad-teatr.ru/"
+        },
+        {
+          "url": "https://maskarad-teatr.ru/",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "errors": []
+    },
+    {
+      "source": "http://www.maskarad-teatr.ru/kontakty?utm_source=seo-check&next=%2Ffoto-video%3Fx%3D1&empty=",
+      "expected": "https://maskarad-teatr.ru/kontakty?utm_source=seo-check&next=%2Ffoto-video%3Fx%3D1&empty=",
+      "hops": [
+        {
+          "url": "http://www.maskarad-teatr.ru/kontakty?utm_source=seo-check&next=%2Ffoto-video%3Fx%3D1&empty=",
+          "status": 301,
+          "location": "https://maskarad-teatr.ru/kontakty?utm_source=seo-check&next=%2Ffoto-video%3Fx%3D1&empty="
+        },
+        {
+          "url": "https://maskarad-teatr.ru/kontakty?utm_source=seo-check&next=%2Ffoto-video%3Fx%3D1&empty=",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "errors": []
+    },
+    {
+      "source": "http://www.maskarad-teatr.ru/karta.html?utm_source=seo-check&next=%2Ffoto-video",
+      "expected": "https://maskarad-teatr.ru/karta-sayta?utm_source=seo-check&next=%2Ffoto-video",
+      "hops": [
+        {
+          "url": "http://www.maskarad-teatr.ru/karta.html?utm_source=seo-check&next=%2Ffoto-video",
+          "status": 308,
+          "location": "https://maskarad-teatr.ru/karta-sayta?utm_source=seo-check&next=%2Ffoto-video"
+        },
+        {
+          "url": "https://maskarad-teatr.ru/karta-sayta?utm_source=seo-check&next=%2Ffoto-video",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "errors": []
+    },
+    {
+      "source": "http://www.maskarad-teatr.ru/robots.txt",
+      "expected": "https://maskarad-teatr.ru/robots.txt",
+      "hops": [
+        {
+          "url": "http://www.maskarad-teatr.ru/robots.txt",
+          "status": 301,
+          "location": "https://maskarad-teatr.ru/robots.txt"
+        },
+        {
+          "url": "https://maskarad-teatr.ru/robots.txt",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "errors": []
+    },
+    {
+      "source": "http://www.maskarad-teatr.ru/sitemap.xml",
+      "expected": "https://maskarad-teatr.ru/sitemap.xml",
+      "hops": [
+        {
+          "url": "http://www.maskarad-teatr.ru/sitemap.xml",
+          "status": 301,
+          "location": "https://maskarad-teatr.ru/sitemap.xml"
+        },
+        {
+          "url": "https://maskarad-teatr.ru/sitemap.xml",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "errors": []
+    },
+    {
+      "source": "http://www.maskarad-teatr.ru/spektakli/novyy-god-na-snezhnoy-planete",
+      "expected": "https://maskarad-teatr.ru/spektakli/novyy-god-na-snezhnoy-planete",
+      "hops": [
+        {
+          "url": "http://www.maskarad-teatr.ru/spektakli/novyy-god-na-snezhnoy-planete",
+          "status": 301,
+          "location": "https://maskarad-teatr.ru/spektakli/novyy-god-na-snezhnoy-planete"
+        },
+        {
+          "url": "https://maskarad-teatr.ru/spektakli/novyy-god-na-snezhnoy-planete",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "errors": []
+    },
+    {
+      "source": "http://www.maskarad-teatr.ru/seo-check-missing-080",
+      "expected": "https://maskarad-teatr.ru/seo-check-missing-080",
+      "hops": [
+        {
+          "url": "http://www.maskarad-teatr.ru/seo-check-missing-080",
+          "status": 301,
+          "location": "https://maskarad-teatr.ru/seo-check-missing-080"
+        },
+        {
+          "url": "https://maskarad-teatr.ru/seo-check-missing-080",
+          "status": 404,
+          "location": null
+        }
+      ],
+      "errors": []
+    }
+  ],
+  "passed": 28,
+  "total": 28,
+  "TLS": "Default certificate validation enabled for all HTTPS requests."
+}
