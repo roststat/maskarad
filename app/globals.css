@@ -3130,3 +3130,13 @@ main > .breadcrumbs + .ny-hero {
 .party-guest-field select:focus-visible { outline: 3px solid var(--wine); outline-offset: 2px; }
 .party-guest-field > span { color: var(--muted); font-size: .85rem; line-height: 1.45; }
 .party-guest-field p { margin: .25rem 0 0; padding: .75rem 1rem; border-radius: .75rem; color: var(--wine); background: var(--rose); font-size: .9rem; line-height: 1.5; }
+
+@media (prefers-reduced-motion: reduce) {
+  .party-assistant-badge,
+  .party-assistant-equalizer i,
+  .party-assistant-trigger.is-scrolled,
+  .lead-brief-equalizer i {
+    animation: none;
+    transition: none;
+  }
+}

@@ -19,14 +19,29 @@ export const metadata: Metadata = {
   description: pageDescription,
   alternates: {
     canonical: pagePath
+  },
+  openGraph: {
+    type: "website",
+    locale: "ru_RU",
+    url: pagePath,
+    title: pageTitle,
+    description: pageDescription,
+    siteName: "Театр праздника «Маскарад»",
+    images: [{ url: newYearShowPhotos[0].src, width: 1536, height: 1024, alt: newYearShowPhotos[0].alt }]
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: pageTitle,
+    description: pageDescription,
+    images: [newYearShowPhotos[0].src]
   }
 };
 
 const formats = [
-  { title: "Интерактивный спектакль с Дедом Морозом и Снегурочкой", photo: "new-year-cast-and-children", caption: "Команда новогоднего спектакля с детьми" },
-  { title: "Сценарий под возраст детей и формат компании", photo: "new-year-round-dance", caption: "Дети участвуют в новогоднем хороводе" },
-  { title: "Мастер-классы: роспись игрушек, открытки, творческие станции", photo: "ded-moroz-bunny-game", caption: "Новогодняя игра с Дедом Морозом" },
-  { title: "Тематические шоу, фото, видео, оформление и сладкий стол", photo: "snegurochka-and-reindeer", caption: "Новогодняя фотозона со Снегурочкой" }
+  { title: "Интерактивный спектакль с Дедом Морозом и Снегурочкой", text: "Общая история с героями, заданиями для детей и праздничным финалом. Заранее обсудим, как встроить поздравление и вручение подарков.", photo: "new-year-cast-and-children", caption: "Команда новогоднего спектакля с детьми" },
+  { title: "Сценарий под возраст детей и формат компании", text: "Уточним возраст детей отдельно от общего числа гостей. Это поможет выбрать темп спектакля, способы участия и последовательность зон.", photo: "new-year-round-dance", caption: "Дети участвуют в новогоднем хороводе" },
+  { title: "Мастер-классы: роспись игрушек, открытки, творческие станции", text: "Творческие занятия можно включить в маршрут праздника. При подготовке согласуем материалы, рабочие места и очередность участия групп.", photo: "ded-moroz-bunny-game", caption: "Новогодняя игра с Дедом Морозом" },
+  { title: "Тематические шоу, фото, видео, оформление и сладкий стол", text: "Дополнения подбираем к основной программе. Уточним зоны для съёмки и оформления, место для угощений и переходы между блоками.", photo: "snegurochka-and-reindeer", caption: "Новогодняя фотозона со Снегурочкой" }
 ] as const;
 
 const secondSectionPhotos = newYearShowPhotos.slice(0, 4);
@@ -117,6 +132,7 @@ export default function CorporateNewYearPage() {
           <span>03</span>
           <h2>С режиссурой</h2>
           <p>Программу собирает команда театра: актерская подача, темп, внимание к детям и мягкое управление группой.</p>
+          <p><Link href="/o-teatre/anastasiya-emelyanova">Анастасия Емельянова — основатель и художественный руководитель театра</Link></p>
         </article>
       </section>
 
@@ -136,7 +152,7 @@ export default function CorporateNewYearPage() {
             <article key={item.title}>
               <CorporatePhoto photo={item.photo} caption={item.caption} />
               <h3>{item.title}</h3>
-              <p>Состав и условия этого элемента обсудим отдельно при подготовке программы.</p>
+              <p>{item.text}</p>
             </article>
           ))}
         </div>

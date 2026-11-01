@@ -17,7 +17,7 @@ import {
   type ContentPagePath
 } from "../content-data";
 import { pages, type CatalogItem, type PagePath } from "../data";
-import { catalogFaq, fiveFaq, hubFaq } from "../faq-data";
+import { catalogFaq, editorialFaq, hubFaq } from "../faq-data";
 import { landingPages, type LandingPath } from "../landing-data";
 import { newYearShowPhotos } from "../new-year-show-photos";
 import { winterGalleryPhotos } from "../winter-gallery-photos";
@@ -187,7 +187,7 @@ export default async function ContentPage({ params }: Params) {
   const contentPagePath = contentPagePathFromSlug(slug);
   if (contentPagePath) {
     const page: PortalContentPage = contentPages[contentPagePath];
-    const faq = fiveFaq(page.faq, page.sections);
+    const faq = editorialFaq(page.faq, page.sections);
     const breadcrumbs = buildBreadcrumbs(contentPagePath);
     const jsonLd = [
       createWebPageJsonLd({
@@ -375,7 +375,7 @@ export default async function ContentPage({ params }: Params) {
   const landingPath = landingPathFromSlug(slug);
   if (landingPath) {
     const page = landingPages[landingPath];
-    const faq = fiveFaq(page.faq, page.sections);
+    const faq = editorialFaq(page.faq, page.sections);
     const pagePhotos =
       landingPath === "/spektakli/novogodnie-spektakli" || landingPath === "/prazdniki/novogodniy-detskiy-prazdnik"
         ? newYearShowPhotos

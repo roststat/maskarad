@@ -2,6 +2,7 @@ import { contentHubs, contentPages, type ContentHubPath, type ContentPagePath } 
 import { pages, phoneE164, type PagePath } from "./data";
 import { landingPages, type LandingPath } from "./landing-data";
 import { StickyBreadcrumbs } from "./sticky-breadcrumbs";
+import { contentUpdatedAt } from "./content-updates";
 
 const siteUrl = "https://maskarad-teatr.ru";
 const siteName = "Театр праздника «Маскарад»";
@@ -18,8 +19,8 @@ const sectionLabels: Record<string, string> = {
   spektakli: "Спектакли",
   uslugi: "Услуги",
   prazdniki: "Праздники",
-  stati: "Идеи и кейсы",
-  kejsy: "Кейсы",
+  stati: "Идеи и сценарии",
+  kejsy: "Примеры сценариев",
   podboroki: "Подборки"
 };
 
@@ -192,7 +193,7 @@ export function createArticleJsonLd({
     description,
     image: `${siteUrl}${image}`,
     datePublished: publishedAt,
-    dateModified: updatedAt,
+    dateModified: contentUpdatedAt(path, updatedAt),
     inLanguage: "ru-RU",
     author: {
       "@type": "Organization",

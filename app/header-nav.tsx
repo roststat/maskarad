@@ -57,7 +57,7 @@ const menuGroupsByAudience: Record<AudienceKey, MenuGroup[]> = {
       { href: "/o-teatre/anastasiya-emelyanova", label: "Художественный руководитель" },
       { href: "/tseny", label: "Цены" },
       { href: "/otzyvy-pressa", label: "Отзывы и пресса" },
-      { href: "/stati", label: "Идеи и кейсы" },
+      { href: "/stati", label: "Идеи и сценарии" },
       { href: "/kontakty", label: "Контакты" }
     ]
   }
@@ -100,7 +100,7 @@ const menuGroupsByAudience: Record<AudienceKey, MenuGroup[]> = {
         { href: "/o-teatre/anastasiya-emelyanova", label: "Художественный руководитель" },
         { href: "/tseny", label: "Цены" },
         { href: "/otzyvy-pressa", label: "Отзывы и пресса" },
-        { href: "/stati", label: "Идеи и кейсы" },
+        { href: "/stati", label: "Идеи и сценарии" },
         { href: "/kontakty", label: "Контакты" }
       ]
     }
@@ -143,7 +143,7 @@ const menuGroupsByAudience: Record<AudienceKey, MenuGroup[]> = {
         { href: "/o-teatre/anastasiya-emelyanova", label: "Художественный руководитель" },
         { href: "/tseny", label: "Цены" },
         { href: "/otzyvy-pressa", label: "Отзывы и пресса" },
-        { href: "/stati", label: "Идеи и кейсы" },
+        { href: "/stati", label: "Идеи и сценарии" },
         { href: "/kontakty", label: "Контакты" }
       ]
     }

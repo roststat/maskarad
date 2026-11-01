@@ -2,22 +2,20 @@ export type FaqItem = { question: string; answer: string };
 
 type ContentSection = { title: string; text: string };
 
-/** Keep the visible answers and FAQPage schema sourced from the same page content. */
-export function fiveFaq(existing: FaqItem[], sections: ContentSection[]): FaqItem[] {
-  const questions = [...existing];
-  for (const section of sections) {
-    if (questions.length === 5) break;
-    if (/страничная масса|SEO|поисков/i.test(section.title)) continue;
-    const title = section.title.trim().replace(/[?.!]+$/, "");
-    const question = /^(Как|Что|Где|Когда|Для кого|Для каких|Для какого|Почему|Чем|Какие|Какой|Кому|С чего|Из чего|На чем)/i.test(title)
-      ? `${title}?`
-      : /^(Начните|Соберите|Дайте|Сделайте|Выберите|Проверьте|Согласуйте|Подберите|Разделите|Смотрите|Уточните|Распределите|Чередуйте|Завершите|Адаптируйте|Защитите|Считайте|Не полагайтесь|Разведите)/i.test(title)
-        ? `Как применить совет «${title}»?`
-        : `Что важно знать о теме «${title}»?`;
-    if (questions.some((item) => item.question.toLocaleLowerCase("ru") === question.toLocaleLowerCase("ru"))) continue;
-    questions.push({ question, answer: section.text });
-  }
-  return questions.slice(0, 5);
+/** Preserve authored answers; never pad an FAQ by copying the article's sections. */
+export function editorialFaq(existing: FaqItem[], sections: ContentSection[]): FaqItem[] {
+  const normalize = (value: string) => value.trim().replace(/\s+/g, " ").toLocaleLowerCase("ru");
+  const sectionText = new Set(sections.map((section) => normalize(section.text)));
+  const questions = new Set<string>();
+  const answers = new Set<string>();
+  return existing.filter((item) => {
+    const question = normalize(item.question);
+    const answer = normalize(item.answer);
+    if (!question || !answer || sectionText.has(answer) || questions.has(question) || answers.has(answer)) return false;
+    questions.add(question);
+    answers.add(answer);
+    return true;
+  });
 }
 
 export const catalogFaq: Record<string, FaqItem[]> = {
@@ -103,11 +101,11 @@ export const hubFaq: Record<string, FaqItem[]> = {
     { question: "Заменяют ли статьи обсуждение программы перед заказом?", answer: "Статьи помогают сузить выбор. Дату, доступность программы и условия площадки нужно уточнить при обращении." }
   ],
   "/kejsy": [
-    { question: "Что показывают материалы в разделе кейсов?", answer: "Они разбирают структуру возможного праздника: возраст группы, площадку, сценарные блоки и идеи, которые можно повторить." },
+    { question: "Что показывают примеры сценариев?", answer: "Они разбирают структуру возможного праздника: возраст группы, площадку, сценарные блоки и идеи, которые можно использовать при подготовке своего события." },
     { question: "Есть ли пример пиратского дня рождения?", answer: "Да, в разделе есть материал о празднике для семилетних детей с поиском клада, командными заданиями и аквагримом." },
     { question: "Есть ли пример программы для детского сада?", answer: "Да, отдельный материал показывает мягкий вход, общие задания и понятный финал для группы." },
     { question: "Можно ли использовать пример как готовый сценарий?", answer: "Пример служит ориентиром. Сценарий для заказа адаптируют под возраст детей, площадку и состав гостей." },
-    { question: "Являются ли все материалы подтвержденными отчетами о проведенных событиях?", answer: "Отдельные страницы помечены как редакционные примеры. Без явного подтверждения на странице их не следует воспринимать как отчет о конкретном заказе." }
+    { question: "Это отчёты о проведённых праздниках?", answer: "Нет. В этом разделе опубликованы примеры сценариев, а не отчёты о конкретных заказах. Фотографии спектаклей и программ можно посмотреть в галерее театра." }
   ],
   "/podboroki": [
     { question: "Для чего нужны подборки программ?", answer: "Они помогают сравнить спектакли и праздничные форматы по возрасту, теме, площадке, сезону и составу гостей." },

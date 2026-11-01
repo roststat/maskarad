@@ -37,7 +37,8 @@ def main():
     status, xml, error = fetch(base + "/sitemap.xml")
     if status != 200:
         raise SystemExit(f"Sitemap unavailable: {status} {error}")
-    urls = [node.text for node in ET.fromstring(xml).findall(".//{*}loc")]
+    # Page URLs only: image:image/image:loc describes a binary asset, not a page.
+    urls = [node.text for node in ET.fromstring(xml).findall("{*}url/{*}loc")]
     paths = {urllib.parse.urlsplit(url).path or "/" for url in urls}
     hosts = {urllib.parse.urlsplit(url).netloc for url in urls}
     hosts.add(urllib.parse.urlsplit(base).netloc)

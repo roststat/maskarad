@@ -1,4 +1,5 @@
 import type { MetadataRoute } from "next";
+import { contentUpdatedAt } from "./content-updates";
 import { contentHubs, contentPages } from "./content-data";
 import { pages } from "./data";
 import { landingPages } from "./landing-data";
@@ -30,6 +31,8 @@ const photoReleasePaths = new Set([
   "/uslugi/shou-mylnyh-puzyrey"
 ]);
 function pageUpdatedAt(path: string) {
+  const updated = contentUpdatedAt(path, "2026-10-04");
+  if (updated === "2026-11-01") return new Date(updated);
   if (path === "/o-teatre") return new Date("2026-10-15");
   if (path === "/prazdniki/novogodniy-detskiy-prazdnik") return newYearChildrensPartyUpdatedAt;
   return photoReleasePaths.has(path) ? homeUpdatedAt : defaultUpdatedAt;
@@ -42,7 +45,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   ];
 
   return [
-    { url: `${base}/karta-sayta`, lastModified: new Date("2026-10-17"), changeFrequency: "weekly", priority: 0.3 },
+    { url: `${base}/karta-sayta`, lastModified: new Date(contentUpdatedAt("/karta-sayta", "2026-10-17")), changeFrequency: "weekly", priority: 0.3 },
     {
       url: `${base}/o-teatre/anastasiya-emelyanova`,
       lastModified: new Date("2026-10-15"),
@@ -76,7 +79,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     })),
     ...Object.keys(contentPages).map((path) => ({
       url: `${base}${path}`,
-      lastModified: new Date(contentPages[path as keyof typeof contentPages].updatedAt),
+      lastModified: new Date(contentUpdatedAt(path, contentPages[path as keyof typeof contentPages].updatedAt)),
       changeFrequency: "monthly" as const,
       priority: 0.72
     }))

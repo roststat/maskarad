@@ -6,7 +6,7 @@ import styles from "./sitemap.module.css";
 
 const path = "/karta-sayta";
 const title = "Карта сайта";
-const description = "Все разделы театра «Маскарад»: праздники, спектакли, услуги, статьи, кейсы, фотографии и контакты.";
+const description = "Все разделы театра «Маскарад»: праздники, спектакли, услуги, статьи, примеры сценариев, фотографии и контакты.";
 export const metadata: Metadata = {
   title, description, alternates: { canonical: path },
   openGraph: { title, description, url: path },
@@ -19,7 +19,7 @@ const sections = [
   { id: "shows", title: "Спектакли", prefixes: ["/spektakli"] },
   { id: "services", title: "Услуги", prefixes: ["/uslugi"] },
   { id: "articles", title: "Статьи и советы", prefixes: ["/stati"] },
-  { id: "cases", title: "Кейсы", prefixes: ["/kejsy"] },
+  { id: "cases", title: "Примеры сценариев", prefixes: ["/kejsy"] },
   { id: "collections", title: "Подборки", prefixes: ["/podboroki"] }
 ];
 const documents = [

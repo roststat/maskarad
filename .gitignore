@@ -8,6 +8,7 @@ out
 *.log
 *.tsbuildinfo
 .DS_Store
+.local/search-console/
 old-site-source/
 /videos/*
 !/videos/README.md
