@@ -18,7 +18,9 @@ Live-тест профиля Анастасии: URL доступен, инде�
 
 Локальные доказательства: [полный gate](085-predeploy.txt), [HTML/даты](085-built-content-check.json), [граф 125/125](085-local-link-graph.json), [восемь DOM-сверок](085-browser-check.json). Подробности: [085-4](../development-steps/completed-steps/085-4-local-acceptance.md).
 
-Статус на момент подготовки коммита: пакет проверен локально, выпуск и публичная проверка выполняются в 085-5. Не считать этот текст подтверждением production до записи серверного коммита/маркера и публичных доказательств ниже.
+Приложение `0c13e4670580a29204ba2070519193a3f88007b3` опубликовано 1 ноября, 13:49 МСК через штатный origin/main/autodeploy. Серверный HEAD и маркер совпали, Result=success; процессы всех проектов online. [085-5](../development-steps/completed-steps/085-5-production-release.md), [сервер](085-production-status.json).
+
+Публично: [граф 125/125 без битых ссылок](085-public-link-graph.json), [SEO 12/12](085-public-smoke.txt), [новый HTML пяти страниц](085-public-content-check.json), [браузерный снимок](085-public-scenarios.png). Секреты, заявки, DNS и другие сайты не менялись.
 
 ## Что измерять дальше
 

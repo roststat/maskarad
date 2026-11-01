@@ -1,0 +1,56 @@
+{
+  "checkedAt": "2026-11-01T10:50:13.911Z",
+  "applicationCommit": "0c13e4670580a29204ba2070519193a3f88007b3",
+  "rows": [
+    {
+      "path": "/kejsy",
+      "status": 200,
+      "title": "Примеры сценариев детских праздников | Театр «Маскарад»",
+      "canonical": "https://maskarad-teatr.ru/kejsy",
+      "faqCount": 5,
+      "generatedFaq": false,
+      "oldCatalogueText": false,
+      "ogUrl": "https://maskarad-teatr.ru/kejsy"
+    },
+    {
+      "path": "/spektakli",
+      "status": 200,
+      "title": "Интерактивные спектакли | Театр «Маскарад»",
+      "canonical": "https://maskarad-teatr.ru/spektakli",
+      "faqCount": 5,
+      "generatedFaq": false,
+      "oldCatalogueText": false,
+      "ogUrl": "https://maskarad-teatr.ru/spektakli"
+    },
+    {
+      "path": "/podboroki/interaktivnye-spektakli-dlya-detey",
+      "status": 200,
+      "title": "Интерактивные спектакли для детей: как выбрать формат | Театр «Маскарад»",
+      "canonical": "https://maskarad-teatr.ru/podboroki/interaktivnye-spektakli-dlya-detey",
+      "faqCount": 2,
+      "generatedFaq": false,
+      "oldCatalogueText": false,
+      "ogUrl": "https://maskarad-teatr.ru/podboroki/interaktivnye-spektakli-dlya-detey"
+    },
+    {
+      "path": "/prazdniki/korporativnyy-novogodniy-prazdnik",
+      "status": 200,
+      "title": "Корпоративная ёлка для детей сотрудников в Москве | Театр «Маскарад»",
+      "canonical": "https://maskarad-teatr.ru/prazdniki/korporativnyy-novogodniy-prazdnik",
+      "faqCount": 5,
+      "generatedFaq": false,
+      "oldCatalogueText": false,
+      "ogUrl": "https://maskarad-teatr.ru/prazdniki/korporativnyy-novogodniy-prazdnik"
+    },
+    {
+      "path": "/o-teatre/anastasiya-emelyanova",
+      "status": 200,
+      "title": "Анастасия Емельянова — режиссёр и художественный руководитель | Театр «Маскарад»",
+      "canonical": "https://maskarad-teatr.ru/o-teatre/anastasiya-emelyanova",
+      "faqCount": 5,
+      "generatedFaq": false,
+      "oldCatalogueText": false,
+      "ogUrl": "https://maskarad-teatr.ru/o-teatre/anastasiya-emelyanova"
+    }
+  ]
+}
