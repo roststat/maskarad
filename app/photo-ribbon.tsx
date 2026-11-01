@@ -15,7 +15,7 @@ export function PhotoRibbon({ path, photos: suppliedPhotos }: { path?: string; p
       </div>
       <div className="portfolio-grid">
         {photos.map((photo, index) => <figure key={photo.src}>
-          <PhotoOpenButton photos={photos} index={index}><Image src={photo.src} alt={photo.alt} width={photo.width} height={photo.height} sizes="(max-width: 600px) calc(100vw - 32px), (max-width: 1000px) 45vw, 360px" loading="lazy" /></PhotoOpenButton>
+          <PhotoOpenButton photos={photos} index={index}><Image src={photo.src} alt={photo.alt} width={photo.width} height={photo.height} sizes="(max-width: 600px) calc(100vw - 32px), (max-width: 1000px) 45vw, 360px" quality={65} loading="lazy" fetchPriority="low" /></PhotoOpenButton>
           <figcaption>{photo.alt}</figcaption>
         </figure>)}
       </div>
