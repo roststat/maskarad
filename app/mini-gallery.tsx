@@ -38,7 +38,7 @@ export function MiniGallery({ path, photos: suppliedPhotos }: { path: string; ph
           const preview = !isWinterCollection ? miniGalleryThumbnails[photo.src] ?? photo : photo;
           return (
           <PhotoOpenButton key={photo.src} photos={photos} index={index}>
-            <Image src={preview.src} alt={photo.alt} width={preview.width} height={preview.height} sizes={photos.length === 3 && index === 2 ? "(max-width: 600px) calc(100vw - 32px), (max-width: 1200px) 23vw, 280px" : "(max-width: 600px) 45vw, (max-width: 1200px) 23vw, 280px"} quality={65} loading="lazy" />
+            <Image src={preview.src} alt={photo.alt} width={preview.width} height={preview.height} sizes={photos.length === 3 && index === 2 ? "(max-width: 600px) calc(100vw - 32px), (max-width: 1200px) 23vw, 280px" : "(max-width: 600px) 45vw, (max-width: 1200px) 23vw, 280px"} quality={65} loading="lazy" fetchPriority="low" />
           </PhotoOpenButton>
           );
         })}

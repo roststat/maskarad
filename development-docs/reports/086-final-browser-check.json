@@ -1,0 +1,21 @@
+[
+  {
+    "cookieVisible": false,
+    "overflow": false,
+    "path": "/"
+  },
+  {
+    "overflow": false,
+    "path": "/stati/igrovoy-scenariy-dlya-detskogo-prazdnika",
+    "preload": [
+      {
+        "sizes": "43px",
+        "srcset": "/_next/image?url=%2Fimages%2Flegacy%2Fmaskarad-mask-transparent.png&w=32&q=75 32w, /_next/image?url=%2Fimages%2Flegacy%2Fmaskarad-mask-transparent.png&w=48&q=75 48w, /_next/image?u"
+      },
+      {
+        "sizes": "(max-width: 1000px) calc(100vw - 32px), (max-width: 1200px) 42vw, 480px",
+        "srcset": "/_next/image?url=%2Fimages%2Flegacy%2Finteraktiv01.jpg&w=384&q=65 384w, /_next/image?url=%2Fimages%2Flegacy%2Finteraktiv01.jpg&w=640&q=65 640w, /_next/image?url=%2Fimages%2Flegacy%"
+      }
+    ]
+  }
+]

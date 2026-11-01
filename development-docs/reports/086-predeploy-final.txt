@@ -1,0 +1,97 @@
+
+> maskarad-teatr-next@0.1.0 seo:predeploy
+> npm run legal:predeploy && npm run seo:old-url-coverage && npm run seo:redirect-audit && npm run seo:image-alt && npm run lint && npm run build && npm run seo:faq-coverage && npm run seo:html-sitemap
+
+
+> maskarad-teatr-next@0.1.0 legal:predeploy
+> node scripts/legal/check-publish-ready.mjs
+
+Юридические реквизиты заполнены; подтвердите также маршрут заявки и обязанности оператора перед публикацией.
+
+> maskarad-teatr-next@0.1.0 seo:old-url-coverage
+> node scripts/migration/check-url-coverage.mjs
+
+Old URL coverage: 163 URLs, 180 redirect rules
+Catch-all-only URLs: 0
+Catch-all-only by group:
+Old URL coverage passed: every inventory URL matches a redirect rule
+
+> maskarad-teatr-next@0.1.0 seo:redirect-audit
+> node scripts/migration/check-redirect-chains.mjs
+
+Redirect audit: 179 rules
+Redirect audit passed: no redirect chains or cycles detected
+
+> maskarad-teatr-next@0.1.0 seo:image-alt
+> node scripts/seo/check-image-alt.mjs
+
+Image alt audit: 32 JSX/TSX files scanned
+Image alt audit passed: every Image/img tag has an alt attribute
+
+> maskarad-teatr-next@0.1.0 lint
+> tsc --noEmit
+
+
+> maskarad-teatr-next@0.1.0 build
+> next build
+
+▲ Next.js 16.3.5 (Turbopack)
+✓ Running next.config.ts took 14ms
+
+  Creating an optimized production build ...
+✓ Compiled successfully in 621ms
+  Running TypeScript ...
+  Finished TypeScript in 1155ms ...
+  Collecting page data using 7 workers ...
+  Generating static pages using 7 workers (0/204) ...
+  Generating static pages using 7 workers (51/204)
+  Generating static pages using 7 workers (102/204)
+  Generating static pages using 7 workers (153/204)
+✓ Generating static pages using 7 workers (204/204) in 747ms
+  Finalizing page optimization ...
+
+Route (app)
+┌ ○ /
+├ ○ /_not-found
+├   /[...slug]
+│ ├ ● /spektakli
+│ ├ ● /uslugi
+│ ├ ● /prazdniki
+│ └ ● [+118 more paths]
+├ ƒ /admin/analytics
+├ ƒ /admin/leads
+├ ƒ /api/analytics
+├ ƒ /api/leads
+├ ƒ /api/text-edit
+├ ○ /cookie-policy
+├ ○ /icon.svg
+├ ○ /karta-sayta
+├   /markdown/[...slug]
+│ ├ ● /markdown/dlya-detey
+│ ├ ● /markdown/dlya-vzroslyh
+│ ├ ● /markdown/dlya-biznesa
+│ └ ● [+62 more paths]
+├ ○ /o-teatre/anastasiya-emelyanova
+├ ○ /personal-data-consent
+├ ○ /prazdniki/korporativnyy-novogodniy-prazdnik
+├ ○ /privacy-policy
+├ ○ /robots.txt
+├ ○ /sitemap.xml
+└ ○ /terms
+
+
+○  (Static)   prerendered as static content
+●  (SSG)      prerendered as static HTML (uses generateStaticParams)
+ƒ  (Dynamic)  server-rendered on demand
+
+
+> maskarad-teatr-next@0.1.0 seo:faq-coverage
+> node scripts/seo/check-faq-coverage.mjs
+
+FAQ audit: 124 содержательных URL; служебная карта проверяется отдельно
+FAQ audit passed: {"2":109,"5":15}; неповторные ответы, один FAQPage и точное совпадение JSON-LD
+
+> maskarad-teatr-next@0.1.0 seo:html-sitemap
+> node scripts/seo/check-html-sitemap.mjs
+
+HTML sitemap passed: 125 индексируемых страниц + 4 документа; все ссылки однократные, покрытие полное.

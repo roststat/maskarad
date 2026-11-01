@@ -223,7 +223,7 @@ export default async function ContentPage({ params }: Params) {
               <p>{page.intro}</p>
             </div>
             <figure className={page.image.src === uncroppedWinterPhoto ? "landing-media landing-media--uncropped" : "landing-media"}>
-              <Image src={page.image.src} alt={page.image.alt} width={page.image.src === uncroppedWinterPhoto ? 1024 : 680} height={page.image.src === uncroppedWinterPhoto ? 858 : 480} sizes="(max-width: 1000px) calc(100vw - 32px), (max-width: 1200px) 42vw, 480px" quality={65} loading="eager" fetchPriority="high" />
+              <Image src={page.image.src} alt={page.image.alt} width={page.image.src === uncroppedWinterPhoto ? 1024 : 680} height={page.image.src === uncroppedWinterPhoto ? 858 : 480} sizes="(max-width: 1000px) calc(100vw - 32px), (max-width: 1200px) 42vw, 480px" quality={65} preload />
               <figcaption>{page.image.caption}</figcaption>
             </figure>
           </header>

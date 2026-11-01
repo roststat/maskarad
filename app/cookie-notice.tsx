@@ -5,7 +5,9 @@ import { useEffect, useState } from "react";
 const storageKey = "maskarad-cookie-notice-v3";
 
 export function CookieNotice() {
-  const [visible, setVisible] = useState(false);
+  // Render the information with the server HTML instead of inserting a large
+  // late block after hydration. Previously dismissed notices still close below.
+  const [visible, setVisible] = useState(true);
 
   useEffect(() => {
     try { setVisible(localStorage.getItem(storageKey) !== "closed"); }

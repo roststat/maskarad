@@ -83,7 +83,7 @@ export function SectionTransition({ path, moment = "story", photo = false }: {
     <aside className={`section-transition${image ? " section-transition-photo" : ""}`} aria-label="О вашем празднике" data-transition={moment}>
       {image && <figure>
         <PhotoOpenButton photos={viewerPhotos} index={0}>
-          <Image src={image.src} alt={image.alt} width={image.width} height={image.height} sizes="(max-width: 680px) calc(100vw - 64px), 390px" loading="lazy" />
+          <Image src={image.src} alt={image.alt} width={image.width} height={image.height} sizes="(max-width: 680px) calc(100vw - 64px), 390px" quality={65} loading="lazy" fetchPriority="low" />
         </PhotoOpenButton>
         <figcaption>{image.alt}</figcaption>
       </figure>}
