@@ -125,6 +125,7 @@ export default function Home() {
             width={1600}
             height={1052}
             sizes="(max-width: 1000px) calc(100vw - 32px), 580px"
+            quality={65}
             loading="eager"
             fetchPriority="high"
           />

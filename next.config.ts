@@ -1,6 +1,13 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
+  async headers() {
+    return [{
+      // Thumbnail names include a content hash; changed crops get a new URL.
+      source: "/images/mini-thumbnails/:path*",
+      headers: [{ key: "Cache-Control", value: "public, max-age=31536000, immutable" }]
+    }];
+  },
   images: {
     qualities: [65, 75],
     remotePatterns: [

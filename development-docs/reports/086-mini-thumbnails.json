@@ -1,0 +1,432 @@
+[
+  {
+    "source": "/images/portfolio/photo-003.webp",
+    "thumbnail": {
+      "src": "/images/mini-thumbnails/photo-003-b88d44e623b0.webp",
+      "width": 639,
+      "height": 333
+    },
+    "sourceBytes": 61346,
+    "thumbnailBytes": 21690
+  },
+  {
+    "source": "/images/portfolio/photo-004.webp",
+    "thumbnail": {
+      "src": "/images/mini-thumbnails/photo-004-3567d38302ad.webp",
+      "width": 768,
+      "height": 400
+    },
+    "sourceBytes": 173212,
+    "thumbnailBytes": 78518
+  },
+  {
+    "source": "/images/portfolio/photo-006.webp",
+    "thumbnail": {
+      "src": "/images/mini-thumbnails/photo-006-255c21106edc.webp",
+      "width": 449,
+      "height": 234
+    },
+    "sourceBytes": 37132,
+    "thumbnailBytes": 15504
+  },
+  {
+    "source": "/images/portfolio/photo-011.webp",
+    "thumbnail": {
+      "src": "/images/mini-thumbnails/photo-011-f9f57b49798e.webp",
+      "width": 768,
+      "height": 400
+    },
+    "sourceBytes": 247222,
+    "thumbnailBytes": 40452
+  },
+  {
+    "source": "/images/portfolio/photo-014.webp",
+    "thumbnail": {
+      "src": "/images/mini-thumbnails/photo-014-69f7208e4fb6.webp",
+      "width": 768,
+      "height": 400
+    },
+    "sourceBytes": 76586,
+    "thumbnailBytes": 35808
+  },
+  {
+    "source": "/images/portfolio/photo-016.webp",
+    "thumbnail": {
+      "src": "/images/mini-thumbnails/photo-016-651cec964504.webp",
+      "width": 768,
+      "height": 400
+    },
+    "sourceBytes": 203020,
+    "thumbnailBytes": 42520
+  },
+  {
+    "source": "/images/portfolio/photo-017.webp",
+    "thumbnail": {
+      "src": "/images/mini-thumbnails/photo-017-8aeef4d0da09.webp",
+      "width": 768,
+      "height": 400
+    },
+    "sourceBytes": 122734,
+    "thumbnailBytes": 36200
+  },
+  {
+    "source": "/images/portfolio/photo-024.webp",
+    "thumbnail": {
+      "src": "/images/mini-thumbnails/photo-024-113cef5de380.webp",
+      "width": 667,
+      "height": 347
+    },
+    "sourceBytes": 73838,
+    "thumbnailBytes": 44164
+  },
+  {
+    "source": "/images/portfolio/photo-025.webp",
+    "thumbnail": {
+      "src": "/images/mini-thumbnails/photo-025-582ea8765f6a.webp",
+      "width": 768,
+      "height": 400
+    },
+    "sourceBytes": 162918,
+    "thumbnailBytes": 45616
+  },
+  {
+    "source": "/images/portfolio/photo-028.webp",
+    "thumbnail": {
+      "src": "/images/mini-thumbnails/photo-028-c9ccf415f671.webp",
+      "width": 768,
+      "height": 400
+    },
+    "sourceBytes": 175898,
+    "thumbnailBytes": 79974
+  },
+  {
+    "source": "/images/portfolio/photo-030.webp",
+    "thumbnail": {
+      "src": "/images/mini-thumbnails/photo-030-3366be55bd06.webp",
+      "width": 682,
+      "height": 355
+    },
+    "sourceBytes": 65374,
+    "thumbnailBytes": 26022
+  },
+  {
+    "source": "/images/portfolio/photo-032.webp",
+    "thumbnail": {
+      "src": "/images/mini-thumbnails/photo-032-5ebd84d407ab.webp",
+      "width": 682,
+      "height": 355
+    },
+    "sourceBytes": 54142,
+    "thumbnailBytes": 23238
+  },
+  {
+    "source": "/images/portfolio/photo-033.webp",
+    "thumbnail": {
+      "src": "/images/mini-thumbnails/photo-033-93f81451ee2e.webp",
+      "width": 768,
+      "height": 400
+    },
+    "sourceBytes": 76820,
+    "thumbnailBytes": 26932
+  },
+  {
+    "source": "/images/portfolio/photo-037.webp",
+    "thumbnail": {
+      "src": "/images/mini-thumbnails/photo-037-66e538f5dc8c.webp",
+      "width": 768,
+      "height": 400
+    },
+    "sourceBytes": 301810,
+    "thumbnailBytes": 75692
+  },
+  {
+    "source": "/images/portfolio/photo-044.webp",
+    "thumbnail": {
+      "src": "/images/mini-thumbnails/photo-044-5446bfdc512a.webp",
+      "width": 459,
+      "height": 239
+    },
+    "sourceBytes": 28494,
+    "thumbnailBytes": 16074
+  },
+  {
+    "source": "/images/portfolio/photo-045.webp",
+    "thumbnail": {
+      "src": "/images/mini-thumbnails/photo-045-a5230dfd7e0d.webp",
+      "width": 768,
+      "height": 400
+    },
+    "sourceBytes": 225598,
+    "thumbnailBytes": 61998
+  },
+  {
+    "source": "/images/portfolio/photo-048.webp",
+    "thumbnail": {
+      "src": "/images/mini-thumbnails/photo-048-4a2b62faa81b.webp",
+      "width": 768,
+      "height": 400
+    },
+    "sourceBytes": 259672,
+    "thumbnailBytes": 84202
+  },
+  {
+    "source": "/images/portfolio/photo-049.webp",
+    "thumbnail": {
+      "src": "/images/mini-thumbnails/photo-049-a93cbffcb226.webp",
+      "width": 682,
+      "height": 355
+    },
+    "sourceBytes": 99522,
+    "thumbnailBytes": 41338
+  },
+  {
+    "source": "/images/portfolio/photo-050.webp",
+    "thumbnail": {
+      "src": "/images/mini-thumbnails/photo-050-3ebfc3e44d94.webp",
+      "width": 576,
+      "height": 300
+    },
+    "sourceBytes": 106532,
+    "thumbnailBytes": 50792
+  },
+  {
+    "source": "/images/corporate/balloon-game.webp",
+    "thumbnail": {
+      "src": "/images/mini-thumbnails/balloon-game-39cf9d6b25ce.webp",
+      "width": 768,
+      "height": 400
+    },
+    "sourceBytes": 203288,
+    "thumbnailBytes": 50610
+  },
+  {
+    "source": "/images/portfolio/photo-057.webp",
+    "thumbnail": {
+      "src": "/images/mini-thumbnails/photo-057-6d91456199e1.webp",
+      "width": 768,
+      "height": 400
+    },
+    "sourceBytes": 332742,
+    "thumbnailBytes": 80752
+  },
+  {
+    "source": "/images/portfolio/photo-058.webp",
+    "thumbnail": {
+      "src": "/images/mini-thumbnails/photo-058-e5ee125274c0.webp",
+      "width": 571,
+      "height": 297
+    },
+    "sourceBytes": 84424,
+    "thumbnailBytes": 37076
+  },
+  {
+    "source": "/images/portfolio/photo-060.webp",
+    "thumbnail": {
+      "src": "/images/mini-thumbnails/photo-060-c06af20782ff.webp",
+      "width": 768,
+      "height": 400
+    },
+    "sourceBytes": 158448,
+    "thumbnailBytes": 42966
+  },
+  {
+    "source": "/images/portfolio/photo-062.webp",
+    "thumbnail": {
+      "src": "/images/mini-thumbnails/photo-062-10eb63eb284f.webp",
+      "width": 768,
+      "height": 400
+    },
+    "sourceBytes": 226842,
+    "thumbnailBytes": 70982
+  },
+  {
+    "source": "/images/portfolio/photo-063.webp",
+    "thumbnail": {
+      "src": "/images/mini-thumbnails/photo-063-cd9449808119.webp",
+      "width": 768,
+      "height": 400
+    },
+    "sourceBytes": 216694,
+    "thumbnailBytes": 72162
+  },
+  {
+    "source": "/images/portfolio/photo-064.webp",
+    "thumbnail": {
+      "src": "/images/mini-thumbnails/photo-064-1bf47fe617c7.webp",
+      "width": 768,
+      "height": 400
+    },
+    "sourceBytes": 228000,
+    "thumbnailBytes": 65612
+  },
+  {
+    "source": "/images/portfolio/photo-069.webp",
+    "thumbnail": {
+      "src": "/images/mini-thumbnails/photo-069-21a218c18fb7.webp",
+      "width": 768,
+      "height": 400
+    },
+    "sourceBytes": 128812,
+    "thumbnailBytes": 30960
+  },
+  {
+    "source": "/images/portfolio/photo-071.webp",
+    "thumbnail": {
+      "src": "/images/mini-thumbnails/photo-071-778f9999edfd.webp",
+      "width": 750,
+      "height": 391
+    },
+    "sourceBytes": 151348,
+    "thumbnailBytes": 85084
+  },
+  {
+    "source": "/images/portfolio/photo-072.webp",
+    "thumbnail": {
+      "src": "/images/mini-thumbnails/photo-072-39b9d5063231.webp",
+      "width": 768,
+      "height": 400
+    },
+    "sourceBytes": 303892,
+    "thumbnailBytes": 95466
+  },
+  {
+    "source": "/images/portfolio/photo-073.webp",
+    "thumbnail": {
+      "src": "/images/mini-thumbnails/photo-073-d68e5ad01f75.webp",
+      "width": 768,
+      "height": 400
+    },
+    "sourceBytes": 200966,
+    "thumbnailBytes": 55164
+  },
+  {
+    "source": "/images/portfolio/photo-076.webp",
+    "thumbnail": {
+      "src": "/images/mini-thumbnails/photo-076-1533c9afa3e1.webp",
+      "width": 768,
+      "height": 400
+    },
+    "sourceBytes": 304638,
+    "thumbnailBytes": 84180
+  },
+  {
+    "source": "/images/portfolio/photo-080.webp",
+    "thumbnail": {
+      "src": "/images/mini-thumbnails/photo-080-b38aec6b5b65.webp",
+      "width": 768,
+      "height": 400
+    },
+    "sourceBytes": 284976,
+    "thumbnailBytes": 86362
+  },
+  {
+    "source": "/images/portfolio/photo-084.webp",
+    "thumbnail": {
+      "src": "/images/mini-thumbnails/photo-084-88cc760dcb64.webp",
+      "width": 768,
+      "height": 400
+    },
+    "sourceBytes": 156494,
+    "thumbnailBytes": 53786
+  },
+  {
+    "source": "/images/portfolio/photo-086.webp",
+    "thumbnail": {
+      "src": "/images/mini-thumbnails/photo-086-f0dc2781dfe4.webp",
+      "width": 659,
+      "height": 343
+    },
+    "sourceBytes": 64714,
+    "thumbnailBytes": 34474
+  },
+  {
+    "source": "/images/portfolio/photo-087.webp",
+    "thumbnail": {
+      "src": "/images/mini-thumbnails/photo-087-53c4be36a7e3.webp",
+      "width": 768,
+      "height": 400
+    },
+    "sourceBytes": 262974,
+    "thumbnailBytes": 79684
+  },
+  {
+    "source": "/images/portfolio/photo-088.webp",
+    "thumbnail": {
+      "src": "/images/mini-thumbnails/photo-088-004f6a981225.webp",
+      "width": 768,
+      "height": 400
+    },
+    "sourceBytes": 133310,
+    "thumbnailBytes": 38778
+  },
+  {
+    "source": "/images/corporate/theatrical-prop.webp",
+    "thumbnail": {
+      "src": "/images/mini-thumbnails/theatrical-prop-fd1e6d8f3853.webp",
+      "width": 768,
+      "height": 400
+    },
+    "sourceBytes": 290216,
+    "thumbnailBytes": 73944
+  },
+  {
+    "source": "/images/portfolio/photo-091.webp",
+    "thumbnail": {
+      "src": "/images/mini-thumbnails/photo-091-335720e1a352.webp",
+      "width": 768,
+      "height": 400
+    },
+    "sourceBytes": 211676,
+    "thumbnailBytes": 40684
+  },
+  {
+    "source": "/images/portfolio/photo-093.webp",
+    "thumbnail": {
+      "src": "/images/mini-thumbnails/photo-093-e2438e1bc5fd.webp",
+      "width": 325,
+      "height": 169
+    },
+    "sourceBytes": 37002,
+    "thumbnailBytes": 14258
+  },
+  {
+    "source": "/images/portfolio/photo-098.webp",
+    "thumbnail": {
+      "src": "/images/mini-thumbnails/photo-098-bf612d81f0b6.webp",
+      "width": 768,
+      "height": 400
+    },
+    "sourceBytes": 208042,
+    "thumbnailBytes": 73236
+  },
+  {
+    "source": "/images/corporate/restaurant-performance.webp",
+    "thumbnail": {
+      "src": "/images/mini-thumbnails/restaurant-performance-222a95e5958f.webp",
+      "width": 620,
+      "height": 323
+    },
+    "sourceBytes": 53548,
+    "thumbnailBytes": 23338
+  },
+  {
+    "source": "/images/portfolio/photo-100.webp",
+    "thumbnail": {
+      "src": "/images/mini-thumbnails/photo-100-b67b1eecdad2.webp",
+      "width": 768,
+      "height": 400
+    },
+    "sourceBytes": 328154,
+    "thumbnailBytes": 75026
+  },
+  {
+    "source": "/images/corporate/actor-and-child.webp",
+    "thumbnail": {
+      "src": "/images/mini-thumbnails/actor-and-child-14bd22231220.webp",
+      "width": 640,
+      "height": 333
+    },
+    "sourceBytes": 98164,
+    "thumbnailBytes": 40500
+  }
+]

@@ -1,0 +1,75 @@
+{
+  "rows": [
+    {
+      "name": "home hero",
+      "before": {
+        "bytes": 48486,
+        "type": "image/webp",
+        "cacheControl": "public, max-age=14400, must-revalidate"
+      },
+      "after": {
+        "bytes": 42640,
+        "type": "image/webp",
+        "cacheControl": "public, max-age=14400, must-revalidate"
+      },
+      "savedBytes": 5846
+    },
+    {
+      "name": "corporate hero",
+      "before": {
+        "bytes": 76846,
+        "type": "image/webp",
+        "cacheControl": "public, max-age=14400, must-revalidate"
+      },
+      "after": {
+        "bytes": 68396,
+        "type": "image/webp",
+        "cacheControl": "public, max-age=14400, must-revalidate"
+      },
+      "savedBytes": 8450
+    },
+    {
+      "name": "article hero",
+      "before": {
+        "bytes": 38306,
+        "type": "image/webp",
+        "cacheControl": "public, max-age=14400, must-revalidate"
+      },
+      "after": {
+        "bytes": 33452,
+        "type": "image/webp",
+        "cacheControl": "public, max-age=14400, must-revalidate"
+      },
+      "savedBytes": 4854
+    },
+    {
+      "name": "mini photo-063",
+      "before": {
+        "bytes": 37306,
+        "type": "image/webp",
+        "cacheControl": "public, max-age=14400, must-revalidate"
+      },
+      "after": {
+        "bytes": 16386,
+        "type": "image/webp",
+        "cacheControl": "public, max-age=31536000, must-revalidate"
+      },
+      "savedBytes": 20920
+    },
+    {
+      "name": "mini photo-076",
+      "before": {
+        "bytes": 43412,
+        "type": "image/webp",
+        "cacheControl": "public, max-age=14400, must-revalidate"
+      },
+      "after": {
+        "bytes": 16280,
+        "type": "image/webp",
+        "cacheControl": "public, max-age=31536000, must-revalidate"
+      },
+      "savedBytes": 27132
+    }
+  ],
+  "hashedThumbnailCacheControl": "public, max-age=31536000, immutable"
+}

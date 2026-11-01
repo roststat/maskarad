@@ -17,7 +17,6 @@ export function StickyBreadcrumbs({ items }: { items: BreadcrumbItem[] }) {
   const source = visit && visit.href.split(/[?#]/)[0] === current?.href ? visit.back : undefined;
 
   useEffect(() => {
-    document.body.classList.add("has-header-breadcrumbs");
     lastScrollY.current = window.scrollY;
     const handleScroll = () => {
       const scrollY = window.scrollY;
@@ -29,7 +28,6 @@ export function StickyBreadcrumbs({ items }: { items: BreadcrumbItem[] }) {
     window.addEventListener("scroll", handleScroll, { passive: true });
     window.addEventListener("header-menu-hover", revealBreadcrumbs);
     return () => {
-      document.body.classList.remove("has-header-breadcrumbs");
       window.removeEventListener("scroll", handleScroll);
       window.removeEventListener("header-menu-hover", revealBreadcrumbs);
     };

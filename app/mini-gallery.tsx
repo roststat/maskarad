@@ -4,6 +4,7 @@ import type { CSSProperties } from "react";
 import { createHash } from "node:crypto";
 import { PhotoOpenButton, type GalleryPhoto } from "./photo-viewer";
 import { portfolioPhotos, photosForPage } from "./photo-library";
+import { miniGalleryThumbnails } from "./mini-gallery-thumbnails";
 
 function photoScore(value: string) {
   return createHash("sha256").update(value).digest().readUInt32BE(0);
@@ -33,11 +34,14 @@ export function MiniGallery({ path, photos: suppliedPhotos }: { path: string; ph
         {!isWinterCollection && <Link href={galleryHref}>Все фотографии <span aria-hidden="true">→</span></Link>}
       </div>
       <div className="mini-gallery-photos" style={{ "--mini-photo-count": photos.length } as CSSProperties}>
-        {photos.map((photo, index) => (
+        {photos.map((photo, index) => {
+          const preview = !isWinterCollection ? miniGalleryThumbnails[photo.src] ?? photo : photo;
+          return (
           <PhotoOpenButton key={photo.src} photos={photos} index={index}>
-            <Image src={photo.src} alt={photo.alt} width={photo.width} height={photo.height} sizes={photos.length === 3 && index === 2 ? "(max-width: 600px) calc(100vw - 32px), (max-width: 1200px) 23vw, 280px" : "(max-width: 600px) 45vw, (max-width: 1200px) 23vw, 280px"} quality={65} loading="lazy" />
+            <Image src={preview.src} alt={photo.alt} width={preview.width} height={preview.height} sizes={photos.length === 3 && index === 2 ? "(max-width: 600px) calc(100vw - 32px), (max-width: 1200px) 23vw, 280px" : "(max-width: 600px) 45vw, (max-width: 1200px) 23vw, 280px"} quality={65} loading="lazy" />
           </PhotoOpenButton>
-        ))}
+          );
+        })}
       </div>
     </section>
   );

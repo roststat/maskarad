@@ -1,0 +1,107 @@
+[
+  {
+    "alt": "Дети с актёрами в костюмах пиратов",
+    "src": "http://127.0.0.1:4310/images/portfolio/photo-063.webp",
+    "popupOriginal": true
+  },
+  {
+    "bodyPadding": "113.6px",
+    "hero": [
+      {
+        "priority": "high",
+        "sizes": "(max-width: 1000px) calc(100vw - 32px), 580px",
+        "src": "http://127.0.0.1:4310/_next/image?url=%2Fimages%2Fcorporate%2Fchildren-and-actors.webp&w=384&q=65"
+      }
+    ],
+    "mainTop": 112.59375,
+    "url": "/",
+    "viewport": 390,
+    "width": 390
+  },
+  {
+    "bodyPadding": "113.6px",
+    "hero": [],
+    "mainTop": 113.59375,
+    "url": "/prazdniki",
+    "viewport": 390,
+    "width": 390
+  },
+  {
+    "bodyPadding": "113.6px",
+    "hero": [
+      {
+        "priority": "high",
+        "sizes": "(max-width: 760px) calc(100vw - 32px), (max-width: 1200px) 45vw, 560px",
+        "src": ""
+      }
+    ],
+    "mainTop": 113.59375,
+    "url": "/prazdniki/korporativnyy-novogodniy-prazdnik",
+    "viewport": 390,
+    "width": 390
+  },
+  {
+    "bodyPadding": "113.6px",
+    "hero": [
+      {
+        "priority": "high",
+        "sizes": "(max-width: 1000px) calc(100vw - 32px), (max-width: 1200px) 42vw, 480px",
+        "src": "http://127.0.0.1:4310/_next/image?url=%2Fimages%2Flegacy%2Finteraktiv01.jpg&w=384&q=65"
+      }
+    ],
+    "mainTop": 113.59375,
+    "url": "/stati/igrovoy-scenariy-dlya-detskogo-prazdnika",
+    "viewport": 390,
+    "width": 390
+  },
+  {
+    "bodyPadding": "143.2px",
+    "hero": [
+      {
+        "priority": "high",
+        "sizes": "(max-width: 1000px) calc(100vw - 32px), 580px",
+        "src": "http://127.0.0.1:4310/_next/image?url=%2Fimages%2Fcorporate%2Fchildren-and-actors.webp&w=640&q=65"
+      }
+    ],
+    "mainTop": 143.1953125,
+    "url": "/",
+    "viewport": 1280,
+    "width": 1280
+  },
+  {
+    "bodyPadding": "143.2px",
+    "hero": [],
+    "mainTop": 143.1953125,
+    "url": "/prazdniki",
+    "viewport": 1280,
+    "width": 1280
+  },
+  {
+    "bodyPadding": "143.2px",
+    "hero": [
+      {
+        "priority": "high",
+        "sizes": "(max-width: 760px) calc(100vw - 32px), (max-width: 1200px) 45vw, 560px",
+        "src": ""
+      }
+    ],
+    "mainTop": 143.1953125,
+    "url": "/prazdniki/korporativnyy-novogodniy-prazdnik",
+    "viewport": 1280,
+    "width": 1280
+  },
+  {
+    "bodyPadding": "143.2px",
+    "hero": [
+      {
+        "priority": "high",
+        "sizes": "(max-width: 1000px) calc(100vw - 32px), (max-width: 1200px) 42vw, 480px",
+        "src": "http://127.0.0.1:4310/_next/image?url=%2Fimages%2Flegacy%2Finteraktiv01.jpg&w=640&q=65"
+      }
+    ],
+    "mainTop": 143.1953125,
+    "url": "/stati/igrovoy-scenariy-dlya-detskogo-prazdnika",
+    "viewport": 1280,
+    "width": 1280
+  }
+]

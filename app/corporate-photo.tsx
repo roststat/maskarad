@@ -15,7 +15,7 @@ export function CorporatePhoto({ photo, caption, className = "", eager = false, 
   return (
     <figure className={`ny-photo ${className}`}>
       <PhotoOpenButton photos={corporatePhotoList} index={corporatePhotoList.findIndex(item => item.src === image.src)}>
-        <Image src={image.src} alt={image.alt} width={image.width} height={image.height} sizes={sizes} loading={eager ? "eager" : "lazy"} fetchPriority={eager ? "high" : undefined} />
+        <Image src={image.src} alt={image.alt} width={image.width} height={image.height} sizes={sizes} quality={65} loading={eager ? "eager" : "lazy"} fetchPriority={eager ? "high" : undefined} />
       </PhotoOpenButton>
       {caption && <figcaption>{caption}</figcaption>}
     </figure>
