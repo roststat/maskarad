@@ -1,0 +1,238 @@
+[
+  {
+    "name": "home",
+    "roundsPerPhase": 3,
+    "before": {
+      "LCP": {
+        "median": 1960.4575,
+        "min": 1958.8497,
+        "max": 3131.673
+      },
+      "CLS": {
+        "median": 0.04146069524558966,
+        "min": 0.04146069524558966,
+        "max": 0.04146069524558966
+      },
+      "TBT": {
+        "median": 4.5,
+        "min": 4,
+        "max": 22.999999999999773
+      },
+      "score": {
+        "median": 99,
+        "min": 93,
+        "max": 99
+      },
+      "bytes": {
+        "median": 379537,
+        "min": 379510,
+        "max": 379547
+      }
+    },
+    "after": {
+      "LCP": {
+        "median": 1960.8719,
+        "min": 1959.5259999999998,
+        "max": 2959.752
+      },
+      "CLS": {
+        "median": 0,
+        "min": 0,
+        "max": 0
+      },
+      "TBT": {
+        "median": 12,
+        "min": 10,
+        "max": 19
+      },
+      "score": {
+        "median": 99,
+        "min": 95,
+        "max": 99
+      },
+      "bytes": {
+        "median": 325860,
+        "min": 325842,
+        "max": 325879
+      }
+    },
+    "LCPDeltaMs": 0.41440000000011423
+  },
+  {
+    "name": "catalogue",
+    "roundsPerPhase": 3,
+    "before": {
+      "LCP": {
+        "median": 1958.969,
+        "min": 1811.9317999999998,
+        "max": 1960.5212999999999
+      },
+      "CLS": {
+        "median": 0.04146069524558966,
+        "min": 0.04146069524558966,
+        "max": 0.04146069524558966
+      },
+      "TBT": {
+        "median": 9,
+        "min": 6,
+        "max": 9
+      },
+      "score": {
+        "median": 99,
+        "min": 99,
+        "max": 99
+      },
+      "bytes": {
+        "median": 490548,
+        "min": 450356,
+        "max": 490593
+      }
+    },
+    "after": {
+      "LCP": {
+        "median": 1812.9013,
+        "min": 1363.2298,
+        "max": 1814.2124
+      },
+      "CLS": {
+        "median": 0,
+        "min": 0,
+        "max": 0
+      },
+      "TBT": {
+        "median": 10.5,
+        "min": 9.5,
+        "max": 22
+      },
+      "score": {
+        "median": 100,
+        "min": 100,
+        "max": 100
+      },
+      "bytes": {
+        "median": 476133,
+        "min": 440208,
+        "max": 476151
+      }
+    },
+    "LCPDeltaMs": -146.06770000000006
+  },
+  {
+    "name": "corporate",
+    "roundsPerPhase": 3,
+    "before": {
+      "LCP": {
+        "median": 2559.279,
+        "min": 2263.1486999999997,
+        "max": 2560.1807
+      },
+      "CLS": {
+        "median": 0.04146069524558966,
+        "min": 0.04146069524558966,
+        "max": 0.04146069524558966
+      },
+      "TBT": {
+        "median": 12,
+        "min": 0,
+        "max": 17
+      },
+      "score": {
+        "median": 97,
+        "min": 97,
+        "max": 98
+      },
+      "bytes": {
+        "median": 496622,
+        "min": 437316,
+        "max": 496631
+      }
+    },
+    "after": {
+      "LCP": {
+        "median": 2409.2257,
+        "min": 2113.3287,
+        "max": 2411.5303
+      },
+      "CLS": {
+        "median": 0,
+        "min": 0,
+        "max": 0
+      },
+      "TBT": {
+        "median": 5.5,
+        "min": 0,
+        "max": 7
+      },
+      "score": {
+        "median": 98,
+        "min": 98,
+        "max": 99
+      },
+      "bytes": {
+        "median": 476614,
+        "min": 423617,
+        "max": 476614
+      }
+    },
+    "LCPDeltaMs": -150.05330000000004
+  },
+  {
+    "name": "article",
+    "roundsPerPhase": 3,
+    "before": {
+      "LCP": {
+        "median": 1811.0144,
+        "min": 1810.2042000000001,
+        "max": 1811.1509
+      },
+      "CLS": {
+        "median": 0.04146069524558966,
+        "min": 0.04146069524558966,
+        "max": 0.04146069524558966
+      },
+      "TBT": {
+        "median": 5,
+        "min": 4.5,
+        "max": 5
+      },
+      "score": {
+        "median": 99,
+        "min": 99,
+        "max": 99
+      },
+      "bytes": {
+        "median": 361498,
+        "min": 361498,
+        "max": 361498
+      }
+    },
+    "after": {
+      "LCP": {
+        "median": 1812.4076,
+        "min": 1811.4142000000002,
+        "max": 1885.7478
+      },
+      "CLS": {
+        "median": 0,
+        "min": 0,
+        "max": 0
+      },
+      "TBT": {
+        "median": 5.5,
+        "min": 4.5,
+        "max": 6
+      },
+      "score": {
+        "median": 100,
+        "min": 100,
+        "max": 100
+      },
+      "bytes": {
+        "median": 313818,
+        "min": 313800,
+        "max": 313827
+      }
+    },
+    "LCPDeltaMs": 1.393199999999979
+  }
+]

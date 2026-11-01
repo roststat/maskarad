@@ -1,0 +1,43 @@
+{
+  "checkedAt": "2026-11-01T11:34:34.475Z",
+  "applicationCommit": "46e2bfd4d2a29ff7451685a0c71b08466ec6dd16",
+  "routes": [
+    {
+      "path": "/",
+      "status": 200,
+      "noticeInServerHtml": true,
+      "hashedThumbnailInHtml": true,
+      "lowPriorityImages": true,
+      "responsiveArticlePreload": null
+    },
+    {
+      "path": "/prazdniki",
+      "status": 200,
+      "noticeInServerHtml": true,
+      "hashedThumbnailInHtml": true,
+      "lowPriorityImages": true,
+      "responsiveArticlePreload": null
+    },
+    {
+      "path": "/prazdniki/korporativnyy-novogodniy-prazdnik",
+      "status": 200,
+      "noticeInServerHtml": true,
+      "hashedThumbnailInHtml": false,
+      "lowPriorityImages": true,
+      "responsiveArticlePreload": null
+    },
+    {
+      "path": "/stati/igrovoy-scenariy-dlya-detskogo-prazdnika",
+      "status": 200,
+      "noticeInServerHtml": true,
+      "hashedThumbnailInHtml": true,
+      "lowPriorityImages": true,
+      "responsiveArticlePreload": true
+    }
+  ],
+  "thumbnail": {
+    "status": 200,
+    "cacheControl": "public, max-age=31536000, immutable",
+    "bytes": 72162
+  }
+}

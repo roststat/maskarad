@@ -1,0 +1,14 @@
+SEO prelaunch check: https://maskarad-teatr.ru
+ok robots.txt
+ok sitemap.xml
+ok structured data /
+ok metadata /
+ok metadata /stati
+ok metadata /stati/kak-vybrat-spektakl-na-den-rozhdeniya
+ok metadata /spektakli/zolushka
+ok redirect /index.html
+ok redirect /maskarad/contacts.html
+ok redirect /detskii-prazdnik/zolushka.html
+ok redirect /detskie-uslugi/akvagrim.html
+ok redirect /detskie-prazdniki/vypusknoi
+SEO prelaunch check passed: 12/12
